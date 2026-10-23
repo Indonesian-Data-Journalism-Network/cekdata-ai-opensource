@@ -1,0 +1,9 @@
+fastapi==0.159.1
+starlette==1.9.0
+uvicorn==0.54.0
+httpx==0.28.1
+pydantic==2.14.1
+llama-index-core==0.14.25
+llama-index-llms-openai==0.8.3
+llama-index-workflows==2.26.1
+qdrant-client==1.19.1

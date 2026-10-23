@@ -1,0 +1,24 @@
+# Credentials and private/local data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/data/
+/exports/
+/qdrant_storage/
+**/exports/
+**/storage/
+**/pilot-catalog.json
+**/hasil-*.json
+*.log
+*.sqlite*
+# Generated dependencies/builds
+.venv/
+venv/
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
