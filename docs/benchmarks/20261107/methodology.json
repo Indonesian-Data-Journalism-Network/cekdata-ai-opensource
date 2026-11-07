@@ -1,0 +1,54 @@
+{
+  "rules": [
+    "Jawaban parsial dihitung akurat bila menjawab sekurangnya satu bagian relevan dengan fakta yang tepat dan tanpa kesalahan substantif dalam bagian lain.",
+    "Kesalahan angka, satuan, wilayah, indikator, status risiko/realisasi, sebab-akibat, atau label klaim tetap bermasalah.",
+    "Jawaban kosong/gagal memilih bukti tidak dihitung akurat hanya karena tidak mengarang angka.",
+    "Ketidaktersediaan periode/cakupan yang dijelaskan tepat tetap kategori terbatas; tidak dicampur dengan kesalahan fakta. Kategori terbatas untuk klaim Takalar #439 juga dipertahankan karena bukti hasil/pembanding belum cukup.",
+    "Gangguan layanan dicatat terpisah. Pada #420 dan #433, uji terakhir gagal layanan; tidak diganti diam-diam dengan jawaban lama.",
+    "31 pertanyaan memiliki hasil uji ulang; enam di antaranya juga memiliki jawaban pengembangan yang lebih baru. Sisa 469 memakai arsip awal. Tiap ID dihitung sekali; memilih versi terakhir, bukan jawaban terbaik.",
+    "16 jawaban diterima sebagai parsial menurut kriteria baru. Termasuk #127 yang semula terbatas. Catatan kelengkapan tetap disimpan.",
+    "Penilaian ini berasal dari satu audit internal. Persentase bukan estimasi akurasi semua pertanyaan pengguna, dan belum membuktikan semua jawaban lolos pada kode terbaru."
+  ],
+  "partial_ids": [
+    127,
+    410,
+    411,
+    428,
+    437,
+    438,
+    463,
+    473,
+    479,
+    482,
+    485,
+    486,
+    487,
+    489,
+    491,
+    498
+  ],
+  "latest_answer_regrades": [
+    415,
+    432,
+    454,
+    456
+  ],
+  "remaining_substantive_errors": {
+    "417": [
+      "wilayah",
+      "Jawaban revisi masih menempatkan Kabupaten Halmahera Tengah dalam cakupan Maluku, meski isi menyebut Maluku Utara. Ini kesalahan wilayah, bukan sekadar kurang lengkap."
+    ],
+    "440": [
+      "cakupan_angka",
+      "Rasio elektrifikasi sudah muncul, tetapi potensi bioenergi 923,1 MW untuk Sumatera Barat dapat terbaca sebagai potensi Mentawai. Kesalahan cakupan angka tetap menggugurkan akurasi jawaban."
+    ],
+    "468": [
+      "kesimpulan_melampaui_bukti",
+      "Temuan FPIC dan ekspansi lahan sudah muncul, tetapi kesimpulan mengubah ekspansi/izin kawasan hutan menjadi tren deforestasi signifikan tanpa seri kehilangan hutan. Bukan hanya tren GFW yang belum ditampilkan."
+    ],
+    "471": [
+      "kesimpulan_melampaui_bukti",
+      "Angka GFW dan kutipan kehilangan tutupan pohon tepat, tetapi kesimpulan menyatakan kontribusi signifikan terhadap ruang hidup warga tanpa bukti dampak warga dalam jawaban. Angka lingkungan saja belum membuktikan bagian tersebut."
+    ]
+  }
+}

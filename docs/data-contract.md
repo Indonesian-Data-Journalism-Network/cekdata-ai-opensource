@@ -8,6 +8,57 @@ Importer Pinecone membaca `metadata.value`, `year`, `area_name`, `unit`, `title`
 
 File ekspor memerlukan manifest dengan dimensi dan checksum SHA-256 `records.jsonl`; eksportir yang disertakan menghasilkan format ini. Model pembuat embedding asli belum diverifikasi, sehingga vektor tidak digunakan untuk pencarian semantik.
 
+## Syarat tautan sumber untuk impor data nyata berikutnya
+
+Keputusan pengguna, 5 November 2026: setiap data yang diambil harus memiliki
+tautan langsung ke sumber. Berlaku untuk rencana impor GFW dan sumber nyata
+lainnya berikutnya; data simulasi tetap diberi label simulasi.
+
+- `source_url` wajib mengarah ke halaman dataset, tabel, publikasi, atau metadata
+  resmi yang mendukung angka tersebut; halaman utama lembaga saja tidak cukup.
+- Simpan `download_url` menuju berkas atau endpoint API pengambilan jika tersedia.
+  Untuk API, simpan juga versi dataset, parameter/filter atau isi permintaan,
+  tanggal pengambilan, serta identitas baris agar angka bisa ditelusuri ulang.
+- Verifikasi bahwa tautan sesuai dengan dataset dan cakupan angka. Jangan
+  mengarang tautan atau menyisipkan API key/token ke URL yang disimpan/ditampilkan.
+  Jika akses sumber memerlukan autentikasi, nyatakan kebutuhan itu dengan jelas.
+- Data tanpa tautan sumber yang dapat diverifikasi ditahan dari penggunaan
+  sebagai bukti jawaban sampai sumbernya lengkap.
+- Jawaban harus menyertakan tautan sumber untuk angka yang dipakai. Hasil
+  perhitungan lintas sumber harus mengacu pada semua data masukan yang digunakan.
+
+Status: ketentuan ini menjadi syarat implementasi importer berikutnya. Importer
+pilot yang ada belum menegakkan kewajiban tautan ini secara otomatis.
+
+## Tambahan GFW Indonesia, 5 November 2026
+
+`workflow/gfw_expansion.py` mengarsipkan statistik nasional, provinsi, dan kabupaten
+dari `carbonflux_*` v20260327 dan `gadm__tcl__*_summary` v20260424. Filter tajuk
+dipilih tepat sekali; luas habitat memakai `area__ha` dari seluruh partisi lahan,
+termasuk sel di luar model karbon. Jumlah wilayah direkonsiliasi antar tingkat,
+emisi tahunan terhadap total periode, dan neraca terhadap emisi dikurangi penyerapan.
+
+- `temporal_basis=annual`: emisi 2001–2025; tahun kosong tidak diisi nol.
+- `temporal_basis=model_period`: total dan rata-rata 2001–2025, dengan
+  `period_start`/`period_end` dan `aggregation_kind=period_total|period_mean`.
+  Rata-rata berasal dari total dibagi 25, bukan nilai tahun 2025.
+- `temporal_basis=baseline`: mangrove GMW v3 acuan 2020; kategori SDPT acuan
+  global 2020 dengan tahun sumber lokal beragam. Kelas campuran dipisahkan.
+- `temporal_basis=map_version`: gambut gabungan sumber berbagai tahun, versi
+  v20230315. Tahun indeks 2023 adalah tahun versi, bukan pengamatan.
+
+Arsip, SQL, checksum, sumber peta, catatan yang ditahan, dan hasil rekonsiliasi ada
+di `data/gfw-expansion/`. Snapshot sebelum tambahan disalin ke
+`data/gfw-expansion/base-backup/`. Publikasi menambah ID baru; katalog diperbarui
+setelah payload Qdrant diverifikasi. Tidak ada angka observasi 2026, data konsesi
+Indonesia yang dibatasi, atau indikator peringatan dini yang diimpor.
+
+Delapan observasi penyerapan/neraca (total dan rata-rata) di Kabupaten Intan Jaya
+dan Paniai ditandai `usable=false` karena nilai penyerapan sumber negatif.
+Nilai asli tetap tersimpan. Geometri Water Body juga tidak masuk pencarian.
+Total resmi nasional dan Papua tetap dipertahankan dengan catatan sumber tentang
+anomali komponennya. CSV mencantumkan periode serta nilai asli, termasuk neraca negatif.
+
 ## Canonical di MySQL
 
 Jika Pinecone hanya berisi metadata string dan `mysql_reference`, nilainya memang bisa berada di MySQL. Prototipe ini belum melakukan pengambilan canonical tersebut. Jangan menganggap angka tidak ada dalam sumber hanya karena tidak berada dalam metadata pencarian. Jangan mengubah vektor `values` menjadi nilai statistik. Dukungan MySQL perlu pengambilan record lengkap berdasarkan ID dan pemeriksaan versi sebelum dipakai sebagai bukti.

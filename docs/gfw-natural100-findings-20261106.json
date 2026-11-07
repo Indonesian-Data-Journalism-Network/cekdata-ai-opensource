@@ -1,0 +1,224 @@
+{
+  "date": "2026-11-06",
+  "status": "dicatat;belum diperbaiki",
+  "report": "docs/test-evidence/20261106/gfw-natural100-20261106/laporan-uji.txt",
+  "counts": {
+    "memadai": 78,
+    "perlu_perbaikan": 10,
+    "terbatas": 12
+  },
+  "findings": [
+    {
+      "id": 29,
+      "question": "Berapa luas kehilangan tutupan pohon dalam hutan primer di Kota Bandung tahun 2023?",
+      "kind": "data",
+      "level": "kabupaten/kota",
+      "status": "perlu_perbaikan",
+      "note": "Diminta kehilangan dalam hutan primer Kota Bandung2023, tetapi jawaban mengganti dengan kehilangan tutupan pohon total0,23ha. Arsip primer untuk kota/tahun itu tidak tersedia; pergantian indikator tidak dijelaskan."
+    },
+    {
+      "id": 88,
+      "question": "Apa dampak tambang nikel di Sulawesi Tengah? Berapa kehilangan tutupan pohon di provinsi ini pada 2025?",
+      "kind": "gabungan",
+      "level": "provinsi",
+      "status": "perlu_perbaikan",
+      "note": "Bagian kehilangan tutupan pohon Sulawesi Tengah2025 tidak dijawab dan tidak dijelaskan keterbatasannya, padahal data provinsi tersedia."
+    },
+    {
+      "id": 89,
+      "question": "Apa dampak perkebunan kayu terhadap warga Kalimantan Barat? Bandingkan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "kind": "gabungan",
+      "level": "provinsi",
+      "status": "perlu_perbaikan",
+      "note": "Pertanyaan perkebunan kayu dijawab dominan sawit dan PLTU. Angka14 perusahaan berjalan/18 berencana pada Trend Asia halaman5 tidak dikhususkan Kalimantan Barat di sumber, tetapi jawaban menempatkannya di sana. Angka GFW sendiri benar; perbandingan hanya disimpulkan turun dan dijumlahkan."
+    },
+    {
+      "id": 91,
+      "question": "Bagaimana tambang memengaruhi nelayan di Kabupaten Raja Ampat? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "kind": "gabungan",
+      "level": "kabupaten/kota",
+      "status": "perlu_perbaikan",
+      "note": "Angka2024–2025 dan temuan Auriga tentang nelayan sesuai. Namun WALHI halaman3 membahas ribuan hektare kehilangan pada kawasan seperti Raja Ampat DAN pesisir Sulawesi Tenggara; jawaban menyempitkan besaran itu ke Raja Ampat saja. Perlu menjaga lingkup angka naratif."
+    },
+    {
+      "id": 92,
+      "question": "Apa dampak industri nikel terhadap warga Kabupaten Halmahera Tengah? Berapa kehilangan tutupan pohon di sana pada 2025?",
+      "kind": "gabungan",
+      "level": "kabupaten/kota",
+      "status": "perlu_perbaikan",
+      "note": "Angka GFW Halmahera Tengah dan16 sampel ikan Teluk Weda sesuai. Temuan umum industri nikel dari Trend Asia halaman5–6 tidak dibatasi sebagai konteks lintas wilayah, sehingga terbaca sebagai bukti spesifik Halmahera Tengah. Halaman6 membahas episentrum Maluku Utara/Sulawesi Tengah, bukan seluruh temuan khusus kabupaten yang ditanya."
+    },
+    {
+      "id": 93,
+      "question": "Apa masalah lingkungan di Kabupaten Morowali? Tampilkan tren kehilangan tutupan pohon selama 2022–2025.",
+      "kind": "gabungan",
+      "level": "kabupaten/kota",
+      "status": "perlu_perbaikan",
+      "note": "Seri GFW Morowali benar, tetapi temuan Pomalaa dibawa sebagai wilayah lebih luas/terkait Morowali tanpa hubungan yang dijelaskan oleh bukti. Konteks lintas lokasi mendominasi kesimpulan."
+    },
+    {
+      "id": 97,
+      "question": "Apa dampak tambang terhadap air bersih di Pulau Obi? Sertakan kehilangan tutupan pohon di pulau itu pada 2025.",
+      "kind": "gabungan",
+      "level": "pulau",
+      "status": "perlu_perbaikan",
+      "note": "Temuan pencemaran Obi disajikan, tetapi permintaan kehilangan tutupan pohon2025 diabaikan tanpa penjelasan batas data pulau."
+    },
+    {
+      "id": 98,
+      "question": "Apa dampak proyek industri terhadap warga Pulau Rempang? Bagaimana tren kehilangan tutupan pohon di pulau itu selama 2022–2025?",
+      "kind": "gabungan",
+      "level": "pulau",
+      "status": "perlu_perbaikan",
+      "note": "Keterbatasan tren Rempang dijelaskan, tetapi rencana penggunaan PLTU2GW dari Trend Asia halaman5 ditulis juga menggunakan/penggunaan PLTU; kesimpulan menguatkan hubungan dukungan JETP tanpa menjaga sifat analisis sumber. Rencana dan realisasi harus dibedakan."
+    },
+    {
+      "id": 99,
+      "question": "Apa dampak perkebunan sawit terhadap warga di Pulau Sumatera? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "kind": "gabungan",
+      "level": "pulau",
+      "status": "perlu_perbaikan",
+      "note": "Dampak terhadap warga Sumatera tidak dijawab memadai; jawaban hanya skenario lahan sawit5,97juta ha. Permintaan kehilangan2024–2025 hilang tanpa keterangan ketersediaan."
+    },
+    {
+      "id": 100,
+      "question": "Apa dampak pertambangan terhadap warga di Pulau Kalimantan? Bagaimana tren kehilangan tutupan pohon selama 2022–2025?",
+      "kind": "gabungan",
+      "level": "pulau",
+      "status": "perlu_perbaikan",
+      "note": "Temuan konsesi dan risiko bencana Kalimantan tampil, tetapi tren kehilangan2022–2025 yang diminta tidak dijawab atau diberi penjelasan keterbatasan."
+    }
+  ],
+  "limitations": [
+    {
+      "id": 37,
+      "question": "Berapa luas kehilangan tutupan pohon dalam hutan primer di Pulau Sumatera tahun 2022?",
+      "kind": "data",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 38,
+      "question": "Berapa luas kehilangan tutupan pohon di Pulau Kalimantan tahun 2023?",
+      "kind": "data",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 39,
+      "question": "Berapa luas kehilangan tutupan pohon akibat kebakaran di Pulau Sulawesi tahun 2024?",
+      "kind": "data",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 40,
+      "question": "Berapa luas kehilangan tutupan pohon dalam hutan primer di Pulau Lombok tahun 2022?",
+      "kind": "data",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 63,
+      "question": "Bagaimana tren kehilangan tutupan pohon akibat kebakaran di Pulau Jawa selama 2022–2025?",
+      "kind": "tren",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 64,
+      "question": "Bagaimana tren kehilangan tutupan pohon dalam hutan primer di Pulau Sumbawa selama 2022–2025?",
+      "kind": "tren",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 65,
+      "question": "Bagaimana tren kehilangan tutupan pohon di Pulau Halmahera selama 2022–2025?",
+      "kind": "tren",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 83,
+      "question": "Benarkah kehilangan tutupan pohon dalam hutan primer di Pulau Seram naik pada 2025 dibanding 2024?",
+      "kind": "klaim_arah",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 84,
+      "question": "Bandingkan kehilangan tutupan pohon di Pulau Flores pada 2023 dan 2024. Berapa selisihnya?",
+      "kind": "perbandingan",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 85,
+      "question": "Benarkah kehilangan tutupan pohon akibat kebakaran di Pulau Kabaena turun pada 2025 dibanding 2024?",
+      "kind": "klaim_arah",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Tidak menyajikan angka pulau dan tidak menggantinya dengan angka wilayah administratif. Menyatakan bukti belum ditemukan; penjelasan perlu lebih spesifik mengenai belum adanya agregat pulau pada seri lokal."
+    },
+    {
+      "id": 90,
+      "question": "Apa dampak proyek pangan terhadap warga Papua Selatan? Berapa kehilangan tutupan pohon di provinsi ini pada 2025?",
+      "kind": "gabungan",
+      "level": "provinsi",
+      "status": "terbatas",
+      "note": "Menjawab dampak proyek pangan dan menyatakan angka Papua Selatan2025 tidak tersedia. Tidak mengganti dengan angka Papua lama. Perlu memperjelas bahwa keterbatasan berlaku pada seri lokal/batas sumber, bukan semua kemungkinan data di luar aplikasi."
+    },
+    {
+      "id": 96,
+      "question": "Bagaimana tambang memengaruhi pendapatan warga Pulau Kabaena? Berapa kehilangan tutupan pohon di pulau itu pada 2025?",
+      "kind": "gabungan",
+      "level": "pulau",
+      "status": "terbatas",
+      "note": "Temuan pendapatan Kabaena38,2persen sesuai laporan; bagian kehilangan2025 dinyatakan tidak tersedia dan tidak diganti angka Bombana. Perlu memperjelas bahwa yang belum tersedia adalah agregat pulau dalam koleksi lokal."
+    }
+  ],
+  "quality_notes": [
+    {
+      "id": 86,
+      "question": "Apa dampak perkebunan sawit terhadap warga di Aceh? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "kind": "gabungan",
+      "level": "provinsi",
+      "status": "memadai",
+      "note": "Temuan laporan dan dua angka Aceh tersedia serta cocok dengan sumber. Catatan mutu sumber: Kabupaten Subulussalam tersalin dari Auriga halaman20, sedangkan referensi wilayah dan halaman17 sumber menyebut Kota Subulussalam; perlu normalisasi/koreksi atribusi. Konteks dampak WALHI mencakup beberapa provinsi dan perlu dijelaskan lebih ringkas."
+    },
+    {
+      "id": 87,
+      "question": "Apa masalah perkebunan sawit di Riau dan bagaimana tren kehilangan tutupan pohon selama 2022–2025?",
+      "kind": "gabungan",
+      "level": "provinsi",
+      "status": "memadai",
+      "note": "Temuan WALHI tentang Riau dan konteks nasional Auriga dapat ditelusuri. Seri2022–2025 lengkap dan sesuai. Angka kehilangan hutan alam dari laporan dan tutupan pohon GFW tetap indikator berbeda; jangan diperlakukan sebagai satu seri."
+    },
+    {
+      "id": 94,
+      "question": "Bagaimana perkebunan kayu memengaruhi warga Kabupaten Ketapang? Berapa kehilangan tutupan pohon pada 2024 dan 2025?",
+      "kind": "gabungan",
+      "level": "kabupaten/kota",
+      "status": "memadai",
+      "note": "Dampak Mayawana/Kualan Hilir, angka tumpang tindih3.650ha, dan tahun perjanjian dapat ditelusuri; kedua angka GFW tepat. Catatan:64persen merujuk habitat orangutan; jangan dibaca sebagai angka luas gambut atau seluruh konsesi3.650ha."
+    },
+    {
+      "id": 95,
+      "question": "Apa dampak proyek pangan terhadap masyarakat adat di Kabupaten Merauke? Sertakan kehilangan tutupan pohon pada 2025.",
+      "kind": "gabungan",
+      "level": "kabupaten/kota",
+      "status": "memadai",
+      "note": "Temuan Satya Bumi/WALHI dan angka kehilangan Merauke2025 tersedia dan sesuai. Catatan:besaran rencana/proyeksi dalam laporan perlu tetap dibedakan dari kehilangan tahunan GFW; nama induk Papua mengikuti batas sumber lama."
+    }
+  ]
+}

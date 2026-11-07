@@ -74,7 +74,7 @@ class AnswerRegressionTests(unittest.TestCase):
         self.assertIn('Lasem lebih banyak daripada Pamotan',result['parsed']['kesimpulan'])
         self.assertNotIn('Selisih',result['answer'])
         self.assertNotIn('lebih banyak',result['parsed']['temuan_data'])
-        self.assertLess(result['answer'].index('703 orang'),result['answer'].index('Kesimpulan'))
+        self.assertLess(result['answer'].index(result['parsed']['jawaban_utama']),result['answer'].index('Temuan Data'))
 
     def test_explanation_does_not_get_program_template_or_verdict(self):
         i=intent(kind='explanation',requires_series=True)

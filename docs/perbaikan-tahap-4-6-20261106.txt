@@ -1,0 +1,107 @@
+PERBAIKAN TAHAP 4–6
+Tanggal: 6 November 2026
+
+4. Kesimpulan tidak melampaui bukti
+Akar masalah: pemeriksaan status rencana/ancaman sebelumnya terutama bergantung
+pada angka. Ringkasan tanpa angka bisa kehilangan penanda rencana, risiko,
+analisis penerbit atau hasil model, meskipun katanya berasal dari sumber.
+
+Ditambahkan pemeriksaan status pada klausa sumber yang paling sesuai, untuk
+temuan dan ringkasan. Kejadian nyata pada kalimat lain tetap dapat dipakai sebagai
+kejadian; risiko yang tidak terkait tidak mengubah status seluruh dokumen.
+Temuan risiko/rencana/model yang dipertahankan sebagai konteks tidak dapat
+menjadi bukti penentu kejadian nyata hanya karena model memberi label observed.
+Klaim tentang isi laporan atau rencana tetap dibedakan dari klaim realisasi.
+Ini pengamanan tambahan terhadap kesalahan yang terdeteksi, bukan pengganti
+pemeriksaan semantik dan bukan jaminan semua parafrasa dapat diperiksa otomatis.
+
+5. Label klaim selaras dengan bukti
+- Klaim semua/seluruh/setiap/tidak ada/nol mempunyai pemeriksaan cakupan.
+  Penilaian Benar memerlukan cakupan lengkap sesuai populasi klaim, bukan
+  sekadar sampel di wilayah yang sama. Cakupan diperiksa pada temuan dan pada
+  keputusan akhir. Klaim tidak semua memiliki arah pembuktian yang berbeda.
+- Contoh tandingan yang nyata, relevan dan sebanding dapat membantah klaim
+  menyeluruh. Risiko, dampak lain atau ketiadaan hasil pencarian tidak cukup.
+- Bukti langsung yang mendukung sekaligus membantah tidak dipilih sepihak
+  untuk menghasilkan label tegas.
+- Klaim angka tentang jawaban responden dapat diperiksa meskipun pengguna
+  tidak menyebut organisasi atau judul laporan. Angka sumber dibandingkan
+  setelah ukuran, populasi, lokasi dan waktu dicocokkan; ini bukan pembuktian
+  sebab-akibat dari persepsi responden.
+- Ditemukan bug tambahan: selisih absolut dan persentase sama-sama dimasukkan
+  ke pembanding klaim persentase sehingga dianggap ambigu. Jenis perhitungan
+  kini dipilih sesuai klaim; kedua hasil tetap tersedia untuk ditampilkan.
+- Data kosong tetap bukan nol. Penilaian menggunakan nilai asli, bukan angka
+  yang sudah dibulatkan untuk tampilan.
+
+6. Penjelasan dan penyajian
+- Pembagi nol: persentase tidak terdefinisi, bukan perubahan nol persen.
+  Nilai kedua periode dan selisih absolut tetap tampil. Kasus 0 ke 0 juga
+  tidak mempunyai persentase perubahan yang terdefinisi.
+- Pembagi negatif dibedakan alasannya: persentase biasa tidak digunakan;
+  arah perubahan tetap dibaca dari selisih absolut.
+- Tidak menambahkan tahun konteks yang tidak diminta hanya karena masalah
+  pembagi, jika seluruh observasi yang dibutuhkan sebenarnya sudah tersedia.
+- Nilai kecil bukan nol tidak lagi menjadi 0,00 akibat pembulatan tampilan.
+- Jika angka yang berbeda tampak sama setelah pembulatan, alasan penilaian
+  menyebut nilai aslinya. Penjelasan khusus ini tidak dapat ditimpa redaksi AI.
+- Alasan klaim yang sama persis tidak diulang menjadi Kesimpulan. Label di atas
+  jawaban, Temuan Data, tabel, dan sumber tetap ada.
+- Alasan umum tentang mayoritas warga tidak otomatis membahas pekerja lokal
+  jika pertanyaannya tidak menyebut pekerjaan.
+
+Verifikasi
+357 uji workflow lulus, termasuk 14 metode uji baru dengan data sintetis dan
+variasi status bukti, populasi, negasi, nilai kecil, nol, persentase dan duplikasi.
+10 uji HTTP lulus. Dua fixture uji lama diperbarui mengikuti kontrak cakupan
+klaim dan penghapusan kesimpulan yang identik; tujuan pengamanannya dipertahankan.
+Pemutaran ulang tiga pernyataan terhadap halaman PDF asli petisi Muara Laboh
+menerima pernyataan risiko dan kejadian yang dilaporkan, serta menolak perubahan
+risiko menjadi kejadian pasti. Ini pemeriksaan ekstraksi, bukan audit isi laporan.
+
+Uji aplikasi melalui browser
+9 pengiriman untuk 7 pertanyaan berbeda. Dua pengiriman merupakan diagnosis
+sebelum perbaikan tambahan, sehingga bukan sembilan hasil versi akhir.
+
+Kontrol dengan perilaku yang diharapkan:
+1. Klaim 100 persen rumah tangga melaporkan penurunan produksi: Salah, dengan
+   pembanding sekitar 45,8 persen dari Satya Bumi.
+2. Versi 45,8 persen: Benar untuk angka yang dilaporkan; bukan bukti kausal mandiri.
+3. Kehilangan tutupan pohon akibat kebakaran Kota Bandung 2023 nol: Benar,
+   sesuai nilai nol yang benar-benar tercatat.
+4. Persentase perubahan Kota Bandung 2023–2024, keduanya nol: dijelaskan tidak
+   terdefinisi; dua tahun dan selisih absolut 0,00 ha tetap tampil.
+5. Klaim tidak ada kehilangan akibat kebakaran Kota Bandung 2026: Tidak dapat
+   diverifikasi; angka tahun lain tidak dijadikan bukti nol pada 2026.
+
+Masih terbatas:
+Dua pertanyaan risiko Muara Laboh (risiko sumber air/lahan dan pengembangan
+tahap 2) menjawab belum cukup data, walaupun laporan terkait ada dalam ekstraksi.
+Belum diisolasi apakah bukti gagal dipilih atau ditolak pada tahap pemeriksaan.
+Jangan menyebut keduanya lulus, atau menganggap sumber tidak memiliki data.
+Masalah kelengkapan pemilihan bukti dari tahap 3 tetap terbuka; tidak diselesaikan
+dengan melemahkan pemeriksaan wilayah, status bukti, atau menambah jawaban kasus.
+
+Tidak ada pengecualian baru berdasarkan nama wilayah, organisasi, perusahaan
+atau angka contoh pada kode produksi. Angka/nama khusus ada pada fixture dan
+bukti pengujian, bukan sebagai aturan jawaban.
+Server tidak dimulai ulang dan indeks Qdrant tidak diubah pada tahap ini.
+Rekap historis 300 pertanyaan tetap sama. Uji terarah ini bukan estimasi akurasi
+keseluruhan mesin dan belum merupakan pengujian ulang seluruh 300 pertanyaan.
+
+Berkas utama
+workflow/ngo_evidence_status.py
+workflow/ngo_evidence_policy.py
+workflow/ngo_numeric_claim.py
+workflow/ngo_combined.py
+workflow/ngo_answer.py
+workflow/flow.py
+workflow/answer_format.py
+workflow/contextualize.py
+workflow/tests/test_evidence_status_verdict_presentation.py
+
+Bukti
+docs/test-evidence/20261106/stages-4-6/
+  workflow-tests.log, http-tests.log, browser-results.json,
+  source-status-replay.json, source-checks.json, code-hashes.json,
+  claim-false.png, zero-baseline.png.

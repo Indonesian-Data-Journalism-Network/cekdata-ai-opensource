@@ -7,7 +7,7 @@ def render_answer(parsed: Dict[str, Any]) -> str:
     """
     Render dict hasil analisis menjadi teks yang siap ditampilkan ke pengguna.
 
-    Urutan section: Klaim → Temuan data → Kesimpulan (tren) → Konteks penting → Penilaian → Alasan
+    Urutan section: Klaim → Temuan data → Kesimpulan (tren) → Konteks → Penilaian → Alasan
                     → Peringatan editorial → Sumber + Unduh data
     """
     if parsed.get("compact_message"):
@@ -15,20 +15,80 @@ def render_answer(parsed: Dict[str, Any]) -> str:
 
     sections: List[str] = []
 
-    for label, key in [
-        ("Klaim", "claim"),
-        ("Temuan data", "temuan_data"),
-        ("Kesimpulan", "kesimpulan"),
-        ("Konteks penting", "konteks_penting"),
-        ("Penilaian", "penilaian"),
-        ("Alasan", "alasan"),
-        ("Peringatan editorial", "peringatan_editorial"),
-    ]:
-        value = parsed.get(key)
-        if value:
-            sections.append(f"{label}\n{value}")
+    grouped = parsed.get('document_answer') and 'finding_groups' in parsed
+    if grouped:
+        from answer_format import markdown_table
+        if parsed.get('claim'): sections.append('Klaim\n' + parsed['claim'])
+        if parsed.get('penilaian'):
+            sections.append('Penilaian: ' + parsed['penilaian'] + ('\n\n' + parsed['alasan'] if parsed.get('alasan') else ''))
+        for group in parsed['finding_groups']:
+            text = 'Temuan Data ' + group['source'] + '\n' + '\n'.join('- ' + point for point in group['findings'])
+            if group.get('table'): text += '\n\n' + markdown_table(group['table'])
+            sections.append(text)
+        gfw = parsed.get('gfw_context')
+        if gfw:
+            sections.append('Temuan Data Global Forest Watch\n' + gfw['summary'] + '\n\n' + markdown_table(gfw['table']))
+        if parsed.get('kesimpulan'): sections.append('Kesimpulan\n' + parsed['kesimpulan'])
+        if parsed.get('peringatan_editorial'): sections.append('Peringatan Editorial\n' + parsed['peringatan_editorial'])
+    elif parsed.get('answer_format') == 2:
+        if parsed.get('claim'): sections.append('Klaim\n' + parsed['claim'])
+        if parsed.get('penilaian'):
+            sections.append('Penilaian: ' + parsed['penilaian'] + ('\n\n' + parsed['alasan'] if parsed.get('alasan') else ''))
+        elif parsed.get('jawaban_utama'):
+            sections.append(parsed['jawaban_utama'])
+        table = parsed.get('findings_table')
+        if table:
+            from answer_format import markdown_table
+            if parsed.get('document_answer') and parsed.get('temuan_data'):
+                sections.append('Temuan Data\n'+parsed['temuan_data']+'\n\n'+markdown_table(table))
+            else:
+                sections.append('Temuan Data\n' + markdown_table(table))
+        elif parsed.get('temuan_data'):
+            sections.append('Temuan Data\n' + parsed['temuan_data'])
+        for label,key in [('Konteks','konteks_penting'),('Peringatan editorial','peringatan_editorial')]:
+            if parsed.get(key): sections.append(label+'\n'+parsed[key])
+    else:
+        for label,key in [('Klaim','claim'),('Penilaian','penilaian'),('Alasan','alasan'),
+                          ('Kesimpulan','kesimpulan'),('Temuan Data','temuan_data'),
+                          ('Konteks','konteks_penting'),('Peringatan editorial','peringatan_editorial')]:
+            if parsed.get(key): sections.append(label+'\n'+str(parsed[key]))
 
     footer: List[str] = []
+    if not parsed.get('document_answer') and any(item.get('source_record_id', '').startswith('mapbiomas:')
+                                               for item in parsed.get('source_items', [])):
+        seen = set()
+        for item in parsed.get('source_items', []):
+            is_map = item.get('source_record_id', '').startswith('mapbiomas:')
+            version = item.get('dataset_version') or (item.get('source_record_id', '').split(':') + ['', '', ''])[2]
+            key = (item.get('source'), version, item.get('url'))
+            if key in seen:
+                continue
+            seen.add(key)
+            label = f"{item.get('source', '')} — {'Koleksi' if is_map else 'versi'} {version}"
+            footer.append(f"Sumber: {label}\n{item.get('url', '')}")
+            if is_map:
+                footer.append(f"Unduh: Tutupan dan transisi lahan Indonesia — Koleksi {version} (XLSX)\n{item.get('download_url', '')}")
+        if footer:
+            sections.append('\n'.join(footer))
+        return '\n\n'.join(sections).strip()
+    if parsed.get('document_answer'):
+        gfw = parsed.get('gfw_context') or {}
+        if gfw and not grouped:
+            from answer_format import markdown_table
+            sections.append('Data Global Forest Watch\n' + gfw['summary'] + '\n\n' + markdown_table(gfw['table']) + '\n\n' + gfw['context'])
+        for item in parsed.get('source_items', []):
+            pages = ', '.join(str(p) for p in item.get('pdf_pages', []))
+            number=f"[{item['source_number']}] " if item.get('source_number') else ''
+            footer.append(f"{number}Sumber: {item['display']}" + (f" — halaman PDF {pages}" if pages else '') + f"\n{item['url']}")
+            footer.append(f"Unduh: {item['title']} (PDF)\n{item['download_url']}")
+        seen_gfw=set()
+        for item in (gfw.get('parsed') or {}).get('source_items', []):
+            key=(item.get('display','Global Forest Watch'),item.get('url',''))
+            if key not in seen_gfw:
+                seen_gfw.add(key)
+                footer.append(f"Sumber: {key[0]}\n{key[1]}")
+        if footer: sections.append('\n'.join(footer))
+        return '\n\n'.join(sections).strip()
     if parsed.get("sumber"):
         footer.append(f"Sumber: {parsed['sumber']}")
 
@@ -42,6 +102,11 @@ def render_answer(parsed: Dict[str, Any]) -> str:
                 footer.extend(f"* {item}" for item in link_sumber)
         else:
             footer.append(f"Link sumber: {link_sumber}")
+
+    methodology = list(dict.fromkeys(item.get('methodology_url') for item in parsed.get('source_items', [])
+                                    if item.get('methodology_url')))
+    if methodology:
+        footer.append('Dataset dasar dan metode: ' + '; '.join(methodology))
 
     unduh = parsed.get("unduh_data")
     if unduh:

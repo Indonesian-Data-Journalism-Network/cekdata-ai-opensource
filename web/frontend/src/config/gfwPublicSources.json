@@ -1,0 +1,2452 @@
+{
+  "adm1:1": {
+    "name": "Aceh",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/",
+    "checked_at": "2026-11-05T08:37:06.341237+00:00"
+  },
+  "adm1:10": {
+    "name": "Jawa Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/",
+    "checked_at": "2026-11-05T08:37:06.341092+00:00"
+  },
+  "adm1:11": {
+    "name": "Jawa Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/",
+    "checked_at": "2026-11-05T08:37:06.341288+00:00"
+  },
+  "adm1:12": {
+    "name": "Kalimantan Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/",
+    "checked_at": "2026-11-05T08:37:06.341336+00:00"
+  },
+  "adm1:13": {
+    "name": "Kalimantan Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/",
+    "checked_at": "2026-11-05T08:37:07.879496+00:00"
+  },
+  "adm1:14": {
+    "name": "Kalimantan Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/",
+    "checked_at": "2026-11-05T08:37:08.007011+00:00"
+  },
+  "adm1:16": {
+    "name": "Kepulauan Riau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/",
+    "checked_at": "2026-11-05T08:37:08.013651+00:00"
+  },
+  "adm1:17": {
+    "name": "Lampung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/",
+    "checked_at": "2026-11-05T08:37:08.054819+00:00"
+  },
+  "adm1:18": {
+    "name": "Maluku Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/",
+    "checked_at": "2026-11-05T08:37:08.071565+00:00"
+  },
+  "adm1:19": {
+    "name": "Maluku",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/",
+    "checked_at": "2026-11-05T08:37:09.348442+00:00"
+  },
+  "adm1:2": {
+    "name": "Bali",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/",
+    "checked_at": "2026-11-05T08:37:09.561320+00:00"
+  },
+  "adm1:20": {
+    "name": "Nusa Tenggara Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/",
+    "checked_at": "2026-11-05T08:37:09.474032+00:00"
+  },
+  "adm1:21": {
+    "name": "Nusa Tenggara Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/",
+    "checked_at": "2026-11-05T08:37:09.605712+00:00"
+  },
+  "adm1:22": {
+    "name": "Papua Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/",
+    "checked_at": "2026-11-05T08:37:09.612489+00:00"
+  },
+  "adm1:23": {
+    "name": "Papua",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/",
+    "checked_at": "2026-11-05T08:37:10.836937+00:00"
+  },
+  "adm1:24": {
+    "name": "Riau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/",
+    "checked_at": "2026-11-05T08:37:10.979701+00:00"
+  },
+  "adm1:25": {
+    "name": "Sulawesi Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/25/",
+    "checked_at": "2026-11-05T08:37:11.112224+00:00"
+  },
+  "adm1:26": {
+    "name": "Sulawesi Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/",
+    "checked_at": "2026-11-05T08:37:11.177301+00:00"
+  },
+  "adm1:27": {
+    "name": "Sulawesi Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/",
+    "checked_at": "2026-11-05T08:37:11.184307+00:00"
+  },
+  "adm1:28": {
+    "name": "Sulawesi Tenggara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/",
+    "checked_at": "2026-11-05T08:37:12.310474+00:00"
+  },
+  "adm1:29": {
+    "name": "Sulawesi Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/",
+    "checked_at": "2026-11-05T08:37:12.505146+00:00"
+  },
+  "adm1:3": {
+    "name": "Bangka Belitung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/",
+    "checked_at": "2026-11-05T08:37:12.645205+00:00"
+  },
+  "adm1:30": {
+    "name": "Sumatera Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/",
+    "checked_at": "2026-11-05T08:37:12.581295+00:00"
+  },
+  "adm1:31": {
+    "name": "Sumatera Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/",
+    "checked_at": "2026-11-05T08:37:12.663038+00:00"
+  },
+  "adm1:32": {
+    "name": "Sumatera Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/",
+    "checked_at": "2026-11-05T08:37:13.816748+00:00"
+  },
+  "adm1:33": {
+    "name": "Yogyakarta",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/",
+    "checked_at": "2026-11-05T08:37:14.044310+00:00"
+  },
+  "adm1:34": {
+    "name": "Kalimantan Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/",
+    "checked_at": "2026-11-05T08:37:14.091193+00:00"
+  },
+  "adm1:35": {
+    "name": "Kalimantan Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/35/",
+    "checked_at": "2026-11-05T08:37:14.106061+00:00"
+  },
+  "adm1:4": {
+    "name": "Banten",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/",
+    "checked_at": "2026-11-05T08:37:14.122486+00:00"
+  },
+  "adm1:5": {
+    "name": "Bengkulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/",
+    "checked_at": "2026-11-05T08:37:15.292313+00:00"
+  },
+  "adm1:6": {
+    "name": "Gorontalo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/",
+    "checked_at": "2026-11-05T08:37:15.517523+00:00"
+  },
+  "adm1:7": {
+    "name": "Jakarta Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/",
+    "checked_at": "2026-11-05T08:37:15.617078+00:00"
+  },
+  "adm1:8": {
+    "name": "Jambi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/",
+    "checked_at": "2026-11-05T08:37:15.654721+00:00"
+  },
+  "adm1:9": {
+    "name": "Jawa Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/",
+    "checked_at": "2026-11-05T08:37:15.665240+00:00"
+  },
+  "adm2:1.1": {
+    "name": "Aceh Barat Daya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/1/",
+    "checked_at": "2026-11-05T08:37:29.837580+00:00"
+  },
+  "adm2:1.10": {
+    "name": "Aceh Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/10/",
+    "checked_at": "2026-11-05T08:37:29.832113+00:00"
+  },
+  "adm2:1.11": {
+    "name": "Aceh Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/11/",
+    "checked_at": "2026-11-05T08:37:34.585381+00:00"
+  },
+  "adm2:1.12": {
+    "name": "Banda Aceh",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/12/",
+    "checked_at": "2026-11-05T08:37:40.694703+00:00"
+  },
+  "adm2:1.13": {
+    "name": "Bener Meriah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/13/",
+    "checked_at": "2026-11-05T08:37:40.733047+00:00"
+  },
+  "adm2:1.14": {
+    "name": "Bireuen",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/14/",
+    "checked_at": "2026-11-05T08:37:41.131458+00:00"
+  },
+  "adm2:1.15": {
+    "name": "Gayo Lues",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/15/",
+    "checked_at": "2026-11-05T08:37:42.103553+00:00"
+  },
+  "adm2:1.16": {
+    "name": "Langsa",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/16/",
+    "checked_at": "2026-11-05T08:37:42.127673+00:00"
+  },
+  "adm2:1.17": {
+    "name": "Lhokseumawe",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/17/",
+    "checked_at": "2026-11-05T08:37:44.437016+00:00"
+  },
+  "adm2:1.18": {
+    "name": "Nagan Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/18/",
+    "checked_at": "2026-11-05T08:37:44.473855+00:00"
+  },
+  "adm2:1.19": {
+    "name": "Pidie Jaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/19/",
+    "checked_at": "2026-11-05T08:37:44.494206+00:00"
+  },
+  "adm2:1.2": {
+    "name": "Aceh Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/2/",
+    "checked_at": "2026-11-05T08:37:44.676924+00:00"
+  },
+  "adm2:1.20": {
+    "name": "Pidie",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/20/",
+    "checked_at": "2026-11-05T08:37:44.623499+00:00"
+  },
+  "adm2:1.21": {
+    "name": "Sabang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/21/",
+    "checked_at": "2026-11-05T08:37:45.953310+00:00"
+  },
+  "adm2:1.22": {
+    "name": "Simeulue",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/22/",
+    "checked_at": "2026-11-05T08:37:48.007881+00:00"
+  },
+  "adm2:1.23": {
+    "name": "Subulussalam",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/23/",
+    "checked_at": "2026-11-05T08:37:49.028625+00:00"
+  },
+  "adm2:1.3": {
+    "name": "Aceh Besar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/3/",
+    "checked_at": "2026-11-05T08:37:49.556029+00:00"
+  },
+  "adm2:1.4": {
+    "name": "Aceh Jaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/4/",
+    "checked_at": "2026-11-05T08:37:50.112023+00:00"
+  },
+  "adm2:1.6": {
+    "name": "Aceh Singkil",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/6/",
+    "checked_at": "2026-11-05T08:37:51.803798+00:00"
+  },
+  "adm2:1.7": {
+    "name": "Aceh Tamiang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/7/",
+    "checked_at": "2026-11-05T08:37:55.221649+00:00"
+  },
+  "adm2:1.8": {
+    "name": "Aceh Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/8/",
+    "checked_at": "2026-11-05T08:37:58.288842+00:00"
+  },
+  "adm2:1.9": {
+    "name": "Aceh Tenggara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/1/9/",
+    "checked_at": "2026-11-05T08:37:58.843739+00:00"
+  },
+  "adm2:10.1": {
+    "name": "Banjarnegara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/1/",
+    "checked_at": "2026-11-05T08:37:16.934906+00:00"
+  },
+  "adm2:10.10": {
+    "name": "Jepara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/10/",
+    "checked_at": "2026-11-05T08:37:16.852941+00:00"
+  },
+  "adm2:10.11": {
+    "name": "Karanganyar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/11/",
+    "checked_at": "2026-11-05T08:37:17.082830+00:00"
+  },
+  "adm2:10.12": {
+    "name": "Kebumen",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/12/",
+    "checked_at": "2026-11-05T08:37:17.141650+00:00"
+  },
+  "adm2:10.13": {
+    "name": "Kendal",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/13/",
+    "checked_at": "2026-11-05T08:37:17.380401+00:00"
+  },
+  "adm2:10.14": {
+    "name": "Klaten",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/14/",
+    "checked_at": "2026-11-05T08:37:18.278023+00:00"
+  },
+  "adm2:10.15": {
+    "name": "Kota Magelang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/15/",
+    "checked_at": "2026-11-05T08:37:18.491356+00:00"
+  },
+  "adm2:10.16": {
+    "name": "Kota Pekalongan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/16/",
+    "checked_at": "2026-11-05T08:37:18.561122+00:00"
+  },
+  "adm2:10.17": {
+    "name": "Kota Semarang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/17/",
+    "checked_at": "2026-11-05T08:37:18.587415+00:00"
+  },
+  "adm2:10.18": {
+    "name": "Kota Tegal",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/18/",
+    "checked_at": "2026-11-05T08:37:18.831913+00:00"
+  },
+  "adm2:10.19": {
+    "name": "Kudus",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/19/",
+    "checked_at": "2026-11-05T08:37:19.694124+00:00"
+  },
+  "adm2:10.2": {
+    "name": "Banyumas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/2/",
+    "checked_at": "2026-11-05T08:37:20.107406+00:00"
+  },
+  "adm2:10.20": {
+    "name": "Magelang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/20/",
+    "checked_at": "2026-11-05T08:37:20.106571+00:00"
+  },
+  "adm2:10.21": {
+    "name": "Pati",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/21/",
+    "checked_at": "2026-11-05T08:37:20.119041+00:00"
+  },
+  "adm2:10.22": {
+    "name": "Pekalongan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/22/",
+    "checked_at": "2026-11-05T08:37:20.311921+00:00"
+  },
+  "adm2:10.23": {
+    "name": "Pemalang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/23/",
+    "checked_at": "2026-11-05T08:37:21.159801+00:00"
+  },
+  "adm2:10.24": {
+    "name": "Purbalingga",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/24/",
+    "checked_at": "2026-11-05T08:37:21.618674+00:00"
+  },
+  "adm2:10.25": {
+    "name": "Purworejo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/25/",
+    "checked_at": "2026-11-05T08:37:21.622285+00:00"
+  },
+  "adm2:10.26": {
+    "name": "Rembang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/26/",
+    "checked_at": "2026-11-05T08:37:21.626640+00:00"
+  },
+  "adm2:10.27": {
+    "name": "Salatiga",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/27/",
+    "checked_at": "2026-11-05T08:37:21.759890+00:00"
+  },
+  "adm2:10.28": {
+    "name": "Semarang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/28/",
+    "checked_at": "2026-11-05T08:37:22.608884+00:00"
+  },
+  "adm2:10.29": {
+    "name": "Sragen",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/29/",
+    "checked_at": "2026-11-05T08:37:23.098030+00:00"
+  },
+  "adm2:10.3": {
+    "name": "Batang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/3/",
+    "checked_at": "2026-11-05T08:37:23.294738+00:00"
+  },
+  "adm2:10.30": {
+    "name": "Sukoharjo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/30/",
+    "checked_at": "2026-11-05T08:37:23.235683+00:00"
+  },
+  "adm2:10.31": {
+    "name": "Surakarta",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/31/",
+    "checked_at": "2026-11-05T08:37:23.418619+00:00"
+  },
+  "adm2:10.32": {
+    "name": "Tegal",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/32/",
+    "checked_at": "2026-11-05T08:37:24.221511+00:00"
+  },
+  "adm2:10.33": {
+    "name": "Temanggung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/33/",
+    "checked_at": "2026-11-05T08:37:24.647535+00:00"
+  },
+  "adm2:10.35": {
+    "name": "Wonogiri",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/35/",
+    "checked_at": "2026-11-05T08:37:24.797943+00:00"
+  },
+  "adm2:10.36": {
+    "name": "Wonosobo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/36/",
+    "checked_at": "2026-11-05T08:37:24.863682+00:00"
+  },
+  "adm2:10.4": {
+    "name": "Blora",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/4/",
+    "checked_at": "2026-11-05T08:37:24.882933+00:00"
+  },
+  "adm2:10.5": {
+    "name": "Boyolali",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/5/",
+    "checked_at": "2026-11-05T08:37:25.709310+00:00"
+  },
+  "adm2:10.6": {
+    "name": "Brebes",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/6/",
+    "checked_at": "2026-11-05T08:37:26.424740+00:00"
+  },
+  "adm2:10.7": {
+    "name": "Cilacap",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/7/",
+    "checked_at": "2026-11-05T08:37:26.708404+00:00"
+  },
+  "adm2:10.8": {
+    "name": "Demak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/8/",
+    "checked_at": "2026-11-05T08:37:29.362790+00:00"
+  },
+  "adm2:10.9": {
+    "name": "Grobogan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/10/9/",
+    "checked_at": "2026-11-05T08:37:29.831293+00:00"
+  },
+  "adm2:11.1": {
+    "name": "Bangkalan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/1/",
+    "checked_at": "2026-11-05T08:37:59.892823+00:00"
+  },
+  "adm2:11.10": {
+    "name": "Kediri",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/10/",
+    "checked_at": "2026-11-05T08:37:59.580845+00:00"
+  },
+  "adm2:11.11": {
+    "name": "Kota Blitar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/11/",
+    "checked_at": "2026-11-05T08:38:00.301579+00:00"
+  },
+  "adm2:11.12": {
+    "name": "Kota Kediri",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/12/",
+    "checked_at": "2026-11-05T08:38:00.325935+00:00"
+  },
+  "adm2:11.13": {
+    "name": "Kota Madiun",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/13/",
+    "checked_at": "2026-11-05T08:38:14.076582+00:00"
+  },
+  "adm2:11.14": {
+    "name": "Kota Malang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/14/",
+    "checked_at": "2026-11-05T08:38:14.089992+00:00"
+  },
+  "adm2:11.15": {
+    "name": "Kota Mojokerto",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/15/",
+    "checked_at": "2026-11-05T08:38:15.393758+00:00"
+  },
+  "adm2:11.16": {
+    "name": "Kota Pasuruan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/16/",
+    "checked_at": "2026-11-05T08:38:15.404979+00:00"
+  },
+  "adm2:11.17": {
+    "name": "Kota Probolinggo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/17/",
+    "checked_at": "2026-11-05T08:38:15.916835+00:00"
+  },
+  "adm2:11.18": {
+    "name": "Lamongan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/18/",
+    "checked_at": "2026-11-05T08:38:16.571547+00:00"
+  },
+  "adm2:11.19": {
+    "name": "Lumajang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/19/",
+    "checked_at": "2026-11-05T08:38:17.237427+00:00"
+  },
+  "adm2:11.2": {
+    "name": "Banyuwangi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/2/",
+    "checked_at": "2026-11-05T08:38:17.618663+00:00"
+  },
+  "adm2:11.20": {
+    "name": "Madiun",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/20/",
+    "checked_at": "2026-11-05T08:38:17.517999+00:00"
+  },
+  "adm2:11.21": {
+    "name": "Magetan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/21/",
+    "checked_at": "2026-11-05T08:38:18.402167+00:00"
+  },
+  "adm2:11.22": {
+    "name": "Malang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/22/",
+    "checked_at": "2026-11-05T08:38:18.602651+00:00"
+  },
+  "adm2:11.23": {
+    "name": "Mojokerto",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/23/",
+    "checked_at": "2026-11-05T08:38:18.870299+00:00"
+  },
+  "adm2:11.24": {
+    "name": "Nganjuk",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/24/",
+    "checked_at": "2026-11-05T08:38:19.026209+00:00"
+  },
+  "adm2:11.25": {
+    "name": "Ngawi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/25/",
+    "checked_at": "2026-11-05T08:38:19.123946+00:00"
+  },
+  "adm2:11.26": {
+    "name": "Pacitan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/26/",
+    "checked_at": "2026-11-05T08:38:20.035787+00:00"
+  },
+  "adm2:11.27": {
+    "name": "Pamekasan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/27/",
+    "checked_at": "2026-11-05T08:38:20.098475+00:00"
+  },
+  "adm2:11.28": {
+    "name": "Pasuruan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/28/",
+    "checked_at": "2026-11-05T08:38:20.545316+00:00"
+  },
+  "adm2:11.29": {
+    "name": "Ponorogo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/29/",
+    "checked_at": "2026-11-05T08:38:20.686208+00:00"
+  },
+  "adm2:11.3": {
+    "name": "Batu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/3/",
+    "checked_at": "2026-11-05T08:38:21.671969+00:00"
+  },
+  "adm2:11.30": {
+    "name": "Probolinggo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/30/",
+    "checked_at": "2026-11-05T08:38:20.752404+00:00"
+  },
+  "adm2:11.31": {
+    "name": "Sampang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/31/",
+    "checked_at": "2026-11-05T08:38:27.727802+00:00"
+  },
+  "adm2:11.32": {
+    "name": "Sidoarjo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/32/",
+    "checked_at": "2026-11-05T08:38:28.261995+00:00"
+  },
+  "adm2:11.33": {
+    "name": "Situbondo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/33/",
+    "checked_at": "2026-11-05T08:38:28.557122+00:00"
+  },
+  "adm2:11.34": {
+    "name": "Sumenep",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/34/",
+    "checked_at": "2026-11-05T08:38:28.969528+00:00"
+  },
+  "adm2:11.35": {
+    "name": "Surabaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/35/",
+    "checked_at": "2026-11-05T08:38:28.977212+00:00"
+  },
+  "adm2:11.36": {
+    "name": "Trenggalek",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/36/",
+    "checked_at": "2026-11-05T08:38:29.257243+00:00"
+  },
+  "adm2:11.37": {
+    "name": "Tuban",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/37/",
+    "checked_at": "2026-11-05T08:38:29.798988+00:00"
+  },
+  "adm2:11.38": {
+    "name": "Tulungagung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/38/",
+    "checked_at": "2026-11-05T08:38:30.032096+00:00"
+  },
+  "adm2:11.4": {
+    "name": "Blitar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/4/",
+    "checked_at": "2026-11-05T08:38:30.406287+00:00"
+  },
+  "adm2:11.5": {
+    "name": "Bojonegoro",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/5/",
+    "checked_at": "2026-11-05T08:38:30.453684+00:00"
+  },
+  "adm2:11.6": {
+    "name": "Bondowoso",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/6/",
+    "checked_at": "2026-11-05T08:38:30.717115+00:00"
+  },
+  "adm2:11.7": {
+    "name": "Gresik",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/7/",
+    "checked_at": "2026-11-05T08:38:31.299018+00:00"
+  },
+  "adm2:11.8": {
+    "name": "Jember",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/8/",
+    "checked_at": "2026-11-05T08:38:31.560282+00:00"
+  },
+  "adm2:11.9": {
+    "name": "Jombang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/11/9/",
+    "checked_at": "2026-11-05T08:38:32.101152+00:00"
+  },
+  "adm2:12.1": {
+    "name": "Bengkayang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/1/",
+    "checked_at": "2026-11-05T08:38:32.172288+00:00"
+  },
+  "adm2:12.10": {
+    "name": "Sambas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/10/",
+    "checked_at": "2026-11-05T08:38:32.103347+00:00"
+  },
+  "adm2:12.11": {
+    "name": "Sanggau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/11/",
+    "checked_at": "2026-11-05T08:38:34.685330+00:00"
+  },
+  "adm2:12.12": {
+    "name": "Sekadau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/12/",
+    "checked_at": "2026-11-05T08:38:34.872152+00:00"
+  },
+  "adm2:12.13": {
+    "name": "Singkawang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/13/",
+    "checked_at": "2026-11-05T08:38:34.952591+00:00"
+  },
+  "adm2:12.14": {
+    "name": "Sintang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/14/",
+    "checked_at": "2026-11-05T08:38:36.224598+00:00"
+  },
+  "adm2:12.2": {
+    "name": "Kapuas Hulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/2/",
+    "checked_at": "2026-11-05T08:38:36.537703+00:00"
+  },
+  "adm2:12.3": {
+    "name": "Kayong Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/3/",
+    "checked_at": "2026-11-05T08:38:36.837285+00:00"
+  },
+  "adm2:12.4": {
+    "name": "Ketapang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/4/",
+    "checked_at": "2026-11-05T08:38:36.854296+00:00"
+  },
+  "adm2:12.5": {
+    "name": "Kota Pontianak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/5/",
+    "checked_at": "2026-11-05T08:38:37.089731+00:00"
+  },
+  "adm2:12.6": {
+    "name": "Kubu Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/6/",
+    "checked_at": "2026-11-05T08:38:37.819181+00:00"
+  },
+  "adm2:12.7": {
+    "name": "Landak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/7/",
+    "checked_at": "2026-11-05T08:38:38.069951+00:00"
+  },
+  "adm2:12.8": {
+    "name": "Melawi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/8/",
+    "checked_at": "2026-11-05T08:38:38.330376+00:00"
+  },
+  "adm2:12.9": {
+    "name": "Pontianak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/12/9/",
+    "checked_at": "2026-11-05T08:38:38.458352+00:00"
+  },
+  "adm2:13.1": {
+    "name": "Balangan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/1/",
+    "checked_at": "2026-11-05T08:38:39.316050+00:00"
+  },
+  "adm2:13.10": {
+    "name": "Tabalong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/10/",
+    "checked_at": "2026-11-05T08:38:38.615984+00:00"
+  },
+  "adm2:13.11": {
+    "name": "Tanah Bumbu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/11/",
+    "checked_at": "2026-11-05T08:38:39.513286+00:00"
+  },
+  "adm2:13.12": {
+    "name": "Tanah Laut",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/12/",
+    "checked_at": "2026-11-05T08:38:39.927154+00:00"
+  },
+  "adm2:13.13": {
+    "name": "Tapin",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/13/",
+    "checked_at": "2026-11-05T08:38:40.051844+00:00"
+  },
+  "adm2:13.2": {
+    "name": "Banjar Baru",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/2/",
+    "checked_at": "2026-11-05T08:38:40.182666+00:00"
+  },
+  "adm2:13.3": {
+    "name": "Banjar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/3/",
+    "checked_at": "2026-11-05T08:38:40.949110+00:00"
+  },
+  "adm2:13.4": {
+    "name": "Banjarmasin",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/4/",
+    "checked_at": "2026-11-05T08:38:41.146587+00:00"
+  },
+  "adm2:13.5": {
+    "name": "Barito Kuala",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/5/",
+    "checked_at": "2026-11-05T08:38:41.480413+00:00"
+  },
+  "adm2:13.6": {
+    "name": "Hulu Sungai Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/6/",
+    "checked_at": "2026-11-05T08:38:41.531900+00:00"
+  },
+  "adm2:13.7": {
+    "name": "Hulu Sungai Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/7/",
+    "checked_at": "2026-11-05T08:38:41.701540+00:00"
+  },
+  "adm2:13.8": {
+    "name": "Hulu Sungai Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/8/",
+    "checked_at": "2026-11-05T08:38:42.470386+00:00"
+  },
+  "adm2:13.9": {
+    "name": "Kota Baru",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/13/9/",
+    "checked_at": "2026-11-05T08:38:42.785614+00:00"
+  },
+  "adm2:14.1": {
+    "name": "Barito Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/1/",
+    "checked_at": "2026-11-05T08:38:43.540482+00:00"
+  },
+  "adm2:14.10": {
+    "name": "Murung Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/10/",
+    "checked_at": "2026-11-05T08:38:43.176966+00:00"
+  },
+  "adm2:14.11": {
+    "name": "Palangka Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/11/",
+    "checked_at": "2026-11-05T08:38:43.688513+00:00"
+  },
+  "adm2:14.12": {
+    "name": "Pulang Pisau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/12/",
+    "checked_at": "2026-11-05T08:38:49.113545+00:00"
+  },
+  "adm2:14.13": {
+    "name": "Seruyan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/13/",
+    "checked_at": "2026-11-05T08:38:49.703929+00:00"
+  },
+  "adm2:14.14": {
+    "name": "Sukamara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/14/",
+    "checked_at": "2026-11-05T08:38:52.740703+00:00"
+  },
+  "adm2:14.2": {
+    "name": "Barito Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/2/",
+    "checked_at": "2026-11-05T08:38:52.982360+00:00"
+  },
+  "adm2:14.3": {
+    "name": "Barito Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/3/",
+    "checked_at": "2026-11-05T08:38:53.285735+00:00"
+  },
+  "adm2:14.4": {
+    "name": "Gunung Mas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/4/",
+    "checked_at": "2026-11-05T08:38:53.449878+00:00"
+  },
+  "adm2:14.5": {
+    "name": "Kapuas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/5/",
+    "checked_at": "2026-11-05T08:38:53.855013+00:00"
+  },
+  "adm2:14.6": {
+    "name": "Katingan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/6/",
+    "checked_at": "2026-11-05T08:38:54.622167+00:00"
+  },
+  "adm2:14.7": {
+    "name": "Kotawaringin Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/7/",
+    "checked_at": "2026-11-05T08:38:55.042159+00:00"
+  },
+  "adm2:14.8": {
+    "name": "Kotawaringin Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/8/",
+    "checked_at": "2026-11-05T08:38:55.343701+00:00"
+  },
+  "adm2:14.9": {
+    "name": "Lamandau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/14/9/",
+    "checked_at": "2026-11-05T08:38:55.397829+00:00"
+  },
+  "adm2:16.1": {
+    "name": "Batam",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/1/",
+    "checked_at": "2026-11-05T08:38:55.677881+00:00"
+  },
+  "adm2:16.2": {
+    "name": "Bintan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/2/",
+    "checked_at": "2026-11-05T08:38:59.917562+00:00"
+  },
+  "adm2:16.3": {
+    "name": "Karimun",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/3/",
+    "checked_at": "2026-11-05T08:39:01.605042+00:00"
+  },
+  "adm2:16.4": {
+    "name": "Kepulauan Anambas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/4/",
+    "checked_at": "2026-11-05T08:39:03.383570+00:00"
+  },
+  "adm2:16.5": {
+    "name": "Lingga",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/5/",
+    "checked_at": "2026-11-05T08:39:03.620362+00:00"
+  },
+  "adm2:16.6": {
+    "name": "Natuna",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/6/",
+    "checked_at": "2026-11-05T08:39:04.126779+00:00"
+  },
+  "adm2:16.7": {
+    "name": "Tanjungpinang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/16/7/",
+    "checked_at": "2026-11-05T08:39:05.031817+00:00"
+  },
+  "adm2:17.1": {
+    "name": "Bandar Lampung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/1/",
+    "checked_at": "2026-11-05T08:39:06.832695+00:00"
+  },
+  "adm2:17.10": {
+    "name": "Pringsewu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/10/",
+    "checked_at": "2026-11-05T08:39:06.770803+00:00"
+  },
+  "adm2:17.11": {
+    "name": "Tanggamus",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/11/",
+    "checked_at": "2026-11-05T08:39:06.862834+00:00"
+  },
+  "adm2:17.12": {
+    "name": "Tulang Bawang Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/12/",
+    "checked_at": "2026-11-05T08:39:09.624446+00:00"
+  },
+  "adm2:17.13": {
+    "name": "Tulangbawang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/13/",
+    "checked_at": "2026-11-05T08:39:11.079692+00:00"
+  },
+  "adm2:17.14": {
+    "name": "Way Kanan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/14/",
+    "checked_at": "2026-11-05T08:39:11.099764+00:00"
+  },
+  "adm2:17.2": {
+    "name": "Lampung Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/2/",
+    "checked_at": "2026-11-05T08:39:11.328618+00:00"
+  },
+  "adm2:17.3": {
+    "name": "Lampung Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/3/",
+    "checked_at": "2026-11-05T08:39:12.642051+00:00"
+  },
+  "adm2:17.5": {
+    "name": "Lampung Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/5/",
+    "checked_at": "2026-11-05T08:39:13.105791+00:00"
+  },
+  "adm2:17.7": {
+    "name": "Mesuji",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/7/",
+    "checked_at": "2026-11-05T08:39:20.459475+00:00"
+  },
+  "adm2:17.8": {
+    "name": "Metro",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/8/",
+    "checked_at": "2026-11-05T08:39:22.478059+00:00"
+  },
+  "adm2:17.9": {
+    "name": "Pesawaran",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/17/9/",
+    "checked_at": "2026-11-05T08:39:22.480476+00:00"
+  },
+  "adm2:18.1": {
+    "name": "Halmahera Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/1/",
+    "checked_at": "2026-11-05T08:39:22.480736+00:00"
+  },
+  "adm2:18.2": {
+    "name": "Halmahera Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/2/",
+    "checked_at": "2026-11-05T08:39:25.307099+00:00"
+  },
+  "adm2:18.3": {
+    "name": "Halmahera Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/3/",
+    "checked_at": "2026-11-05T08:39:25.541704+00:00"
+  },
+  "adm2:18.4": {
+    "name": "Halmahera Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/4/",
+    "checked_at": "2026-11-05T08:39:25.625845+00:00"
+  },
+  "adm2:18.5": {
+    "name": "Halmahera Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/5/",
+    "checked_at": "2026-11-05T08:39:25.694345+00:00"
+  },
+  "adm2:18.6": {
+    "name": "Kepulauan Sula",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/6/",
+    "checked_at": "2026-11-05T08:39:25.709220+00:00"
+  },
+  "adm2:18.7": {
+    "name": "Pulau Morotai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/7/",
+    "checked_at": "2026-11-05T08:39:26.979139+00:00"
+  },
+  "adm2:18.8": {
+    "name": "Ternate",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/8/",
+    "checked_at": "2026-11-05T08:39:27.505303+00:00"
+  },
+  "adm2:18.9": {
+    "name": "Tidore Kepulauan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/18/9/",
+    "checked_at": "2026-11-05T08:39:27.753251+00:00"
+  },
+  "adm2:19.1": {
+    "name": "Ambon",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/1/",
+    "checked_at": "2026-11-05T08:39:27.934336+00:00"
+  },
+  "adm2:19.10": {
+    "name": "Seram Bagian Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/10/",
+    "checked_at": "2026-11-05T08:39:27.828318+00:00"
+  },
+  "adm2:19.11": {
+    "name": "Tual",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/11/",
+    "checked_at": "2026-11-05T08:39:28.488190+00:00"
+  },
+  "adm2:19.2": {
+    "name": "Buru Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/2/",
+    "checked_at": "2026-11-05T08:39:29.103017+00:00"
+  },
+  "adm2:19.3": {
+    "name": "Buru",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/3/",
+    "checked_at": "2026-11-05T08:39:31.687377+00:00"
+  },
+  "adm2:19.4": {
+    "name": "Kepulauan Aru",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/4/",
+    "checked_at": "2026-11-05T08:39:31.696748+00:00"
+  },
+  "adm2:19.5": {
+    "name": "Maluku Barat Daya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/5/",
+    "checked_at": "2026-11-05T08:39:31.817744+00:00"
+  },
+  "adm2:19.6": {
+    "name": "Maluku Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/6/",
+    "checked_at": "2026-11-05T08:39:31.881668+00:00"
+  },
+  "adm2:19.7": {
+    "name": "Maluku Tenggara Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/7/",
+    "checked_at": "2026-11-05T08:39:32.025800+00:00"
+  },
+  "adm2:19.8": {
+    "name": "Maluku Tenggara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/8/",
+    "checked_at": "2026-11-05T08:39:35.233652+00:00"
+  },
+  "adm2:19.9": {
+    "name": "Seram Bagian Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/19/9/",
+    "checked_at": "2026-11-05T08:39:35.235651+00:00"
+  },
+  "adm2:2.1": {
+    "name": "Badung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/1/",
+    "checked_at": "2026-11-05T08:39:42.284211+00:00"
+  },
+  "adm2:2.2": {
+    "name": "Bangli",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/2/",
+    "checked_at": "2026-11-05T08:39:42.383509+00:00"
+  },
+  "adm2:2.3": {
+    "name": "Buleleng",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/3/",
+    "checked_at": "2026-11-05T08:39:42.459119+00:00"
+  },
+  "adm2:2.4": {
+    "name": "Denpasar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/4/",
+    "checked_at": "2026-11-05T08:39:45.529120+00:00"
+  },
+  "adm2:2.5": {
+    "name": "Gianyar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/5/",
+    "checked_at": "2026-11-05T08:39:45.539702+00:00"
+  },
+  "adm2:2.6": {
+    "name": "Jembrana",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/6/",
+    "checked_at": "2026-11-05T08:39:45.764737+00:00"
+  },
+  "adm2:2.7": {
+    "name": "Karangasem",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/7/",
+    "checked_at": "2026-11-05T08:39:45.769164+00:00"
+  },
+  "adm2:2.8": {
+    "name": "Klungkung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/8/",
+    "checked_at": "2026-11-05T08:39:45.777395+00:00"
+  },
+  "adm2:2.9": {
+    "name": "Tabanan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/2/9/",
+    "checked_at": "2026-11-05T08:39:48.478296+00:00"
+  },
+  "adm2:20.1": {
+    "name": "Bima",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/1/",
+    "checked_at": "2026-11-05T08:39:35.342256+00:00"
+  },
+  "adm2:20.10": {
+    "name": "Sumbawa",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/10/",
+    "checked_at": "2026-11-05T08:39:35.339134+00:00"
+  },
+  "adm2:20.2": {
+    "name": "Dompu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/2/",
+    "checked_at": "2026-11-05T08:39:35.461175+00:00"
+  },
+  "adm2:20.3": {
+    "name": "Kota Bima",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/3/",
+    "checked_at": "2026-11-05T08:39:38.579918+00:00"
+  },
+  "adm2:20.4": {
+    "name": "Lombok Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/4/",
+    "checked_at": "2026-11-05T08:39:38.593317+00:00"
+  },
+  "adm2:20.5": {
+    "name": "Lombok Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/5/",
+    "checked_at": "2026-11-05T08:39:38.719576+00:00"
+  },
+  "adm2:20.6": {
+    "name": "Lombok Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/6/",
+    "checked_at": "2026-11-05T08:39:38.720496+00:00"
+  },
+  "adm2:20.7": {
+    "name": "Lombok Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/7/",
+    "checked_at": "2026-11-05T08:39:38.804705+00:00"
+  },
+  "adm2:20.8": {
+    "name": "Mataram",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/8/",
+    "checked_at": "2026-11-05T08:39:42.151617+00:00"
+  },
+  "adm2:20.9": {
+    "name": "Sumbawa Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/20/9/",
+    "checked_at": "2026-11-05T08:39:42.242456+00:00"
+  },
+  "adm2:21.1": {
+    "name": "Alor",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/1/",
+    "checked_at": "2026-11-05T08:39:49.966450+00:00"
+  },
+  "adm2:21.10": {
+    "name": "Manggarai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/10/",
+    "checked_at": "2026-11-05T08:39:48.487394+00:00"
+  },
+  "adm2:21.11": {
+    "name": "Nagekeo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/11/",
+    "checked_at": "2026-11-05T08:39:50.152652+00:00"
+  },
+  "adm2:21.12": {
+    "name": "Ngada",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/12/",
+    "checked_at": "2026-11-05T08:39:50.159553+00:00"
+  },
+  "adm2:21.13": {
+    "name": "Rote Ndao",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/13/",
+    "checked_at": "2026-11-05T08:40:00.617816+00:00"
+  },
+  "adm2:21.14": {
+    "name": "Sabu Raijua",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/14/",
+    "checked_at": "2026-11-05T08:40:00.697309+00:00"
+  },
+  "adm2:21.15": {
+    "name": "Sikka",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/15/",
+    "checked_at": "2026-11-05T08:40:03.129321+00:00"
+  },
+  "adm2:21.16": {
+    "name": "Sumba Barat Daya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/16/",
+    "checked_at": "2026-11-05T08:40:06.718655+00:00"
+  },
+  "adm2:21.17": {
+    "name": "Sumba Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/17/",
+    "checked_at": "2026-11-05T08:40:07.734133+00:00"
+  },
+  "adm2:21.18": {
+    "name": "Sumba Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/18/",
+    "checked_at": "2026-11-05T08:40:08.091060+00:00"
+  },
+  "adm2:21.19": {
+    "name": "Sumba Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/19/",
+    "checked_at": "2026-11-05T08:40:12.321240+00:00"
+  },
+  "adm2:21.20": {
+    "name": "Timor Tengah Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/20/",
+    "checked_at": "2026-11-05T08:40:13.253018+00:00"
+  },
+  "adm2:21.21": {
+    "name": "Timor Tengah Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/21/",
+    "checked_at": "2026-11-05T08:40:15.644338+00:00"
+  },
+  "adm2:21.3": {
+    "name": "Ende",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/3/",
+    "checked_at": "2026-11-05T08:40:18.853596+00:00"
+  },
+  "adm2:21.4": {
+    "name": "Flores Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/4/",
+    "checked_at": "2026-11-05T08:40:21.125609+00:00"
+  },
+  "adm2:21.5": {
+    "name": "Kota Kupang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/5/",
+    "checked_at": "2026-11-05T08:40:21.343584+00:00"
+  },
+  "adm2:21.6": {
+    "name": "Kupang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/6/",
+    "checked_at": "2026-11-05T08:40:22.409148+00:00"
+  },
+  "adm2:21.7": {
+    "name": "Lembata",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/7/",
+    "checked_at": "2026-11-05T08:40:25.200294+00:00"
+  },
+  "adm2:21.8": {
+    "name": "Manggarai Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/8/",
+    "checked_at": "2026-11-05T08:40:31.221174+00:00"
+  },
+  "adm2:21.9": {
+    "name": "Manggarai Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/21/9/",
+    "checked_at": "2026-11-05T08:40:32.906252+00:00"
+  },
+  "adm2:22.10": {
+    "name": "Teluk Bintuni",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/10/",
+    "checked_at": "2026-11-05T08:40:36.420050+00:00"
+  },
+  "adm2:22.11": {
+    "name": "Teluk Wondama",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/11/",
+    "checked_at": "2026-11-05T08:40:38.273506+00:00"
+  },
+  "adm2:22.2": {
+    "name": "Kaimana",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/2/",
+    "checked_at": "2026-11-05T08:40:45.088402+00:00"
+  },
+  "adm2:22.3": {
+    "name": "Kota Sorong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/3/",
+    "checked_at": "2026-11-05T08:40:46.079411+00:00"
+  },
+  "adm2:22.7": {
+    "name": "Sorong Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/7/",
+    "checked_at": "2026-11-05T08:40:54.136556+00:00"
+  },
+  "adm2:22.8": {
+    "name": "Sorong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/8/",
+    "checked_at": "2026-11-05T08:40:58.506877+00:00"
+  },
+  "adm2:22.9": {
+    "name": "Tambrauw",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/22/9/",
+    "checked_at": "2026-11-05T08:41:11.915560+00:00"
+  },
+  "adm2:23.1": {
+    "name": "Asmat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/1/",
+    "checked_at": "2026-11-05T08:41:17.442327+00:00"
+  },
+  "adm2:23.10": {
+    "name": "Kepulauan Yapen",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/10/",
+    "checked_at": "2026-11-05T08:41:12.148043+00:00"
+  },
+  "adm2:23.11": {
+    "name": "Kota Jayapura",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/11/",
+    "checked_at": "2026-11-05T08:41:17.679029+00:00"
+  },
+  "adm2:23.12": {
+    "name": "Lanny Jaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/12/",
+    "checked_at": "2026-11-05T08:41:18.281294+00:00"
+  },
+  "adm2:23.13": {
+    "name": "Mamberamo Raya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/13/",
+    "checked_at": "2026-11-05T08:41:25.279870+00:00"
+  },
+  "adm2:23.14": {
+    "name": "Mamberamo Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/14/",
+    "checked_at": "2026-11-05T08:41:25.691710+00:00"
+  },
+  "adm2:23.15": {
+    "name": "Mappi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/15/",
+    "checked_at": "2026-11-05T08:41:28.376504+00:00"
+  },
+  "adm2:23.2": {
+    "name": "Biak Numfor",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/2/",
+    "checked_at": "2026-11-05T08:41:54.645949+00:00"
+  },
+  "adm2:23.21": {
+    "name": "Pegunungan Bintang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/21/",
+    "checked_at": "2026-11-05T08:41:59.496860+00:00"
+  },
+  "adm2:23.22": {
+    "name": "Puncak Jaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/22/",
+    "checked_at": "2026-11-05T08:42:04.554973+00:00"
+  },
+  "adm2:23.23": {
+    "name": "Puncak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/23/",
+    "checked_at": "2026-11-05T08:42:13.876311+00:00"
+  },
+  "adm2:23.24": {
+    "name": "Sarmi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/24/",
+    "checked_at": "2026-11-05T08:42:14.106164+00:00"
+  },
+  "adm2:23.25": {
+    "name": "Supiori",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/25/",
+    "checked_at": "2026-11-05T08:42:15.930384+00:00"
+  },
+  "adm2:23.26": {
+    "name": "Tolikara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/26/",
+    "checked_at": "2026-11-05T08:42:21.512018+00:00"
+  },
+  "adm2:23.27": {
+    "name": "Waropen",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/27/",
+    "checked_at": "2026-11-05T08:42:27.561937+00:00"
+  },
+  "adm2:23.28": {
+    "name": "Yahukimo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/28/",
+    "checked_at": "2026-11-05T08:42:29.594228+00:00"
+  },
+  "adm2:23.29": {
+    "name": "Yalimo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/29/",
+    "checked_at": "2026-11-05T08:42:35.033132+00:00"
+  },
+  "adm2:23.3": {
+    "name": "Boven Digoel",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/3/",
+    "checked_at": "2026-11-05T08:42:35.165191+00:00"
+  },
+  "adm2:23.4": {
+    "name": "Deiyai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/4/",
+    "checked_at": "2026-11-05T08:42:37.591987+00:00"
+  },
+  "adm2:23.5": {
+    "name": "Dogiyai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/5/",
+    "checked_at": "2026-11-05T08:42:37.984821+00:00"
+  },
+  "adm2:23.6": {
+    "name": "Intan Jaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/23/6/",
+    "checked_at": "2026-11-05T08:42:38.432862+00:00"
+  },
+  "adm2:24.1": {
+    "name": "Bengkalis",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/1/",
+    "checked_at": "2026-11-05T08:42:52.725022+00:00"
+  },
+  "adm2:24.10": {
+    "name": "Rokan Hilir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/10/",
+    "checked_at": "2026-11-05T08:42:44.266524+00:00"
+  },
+  "adm2:24.11": {
+    "name": "Rokan Hulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/11/",
+    "checked_at": "2026-11-05T08:42:59.210361+00:00"
+  },
+  "adm2:24.12": {
+    "name": "Siak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/12/",
+    "checked_at": "2026-11-05T08:43:01.084161+00:00"
+  },
+  "adm2:24.2": {
+    "name": "Dumai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/2/",
+    "checked_at": "2026-11-05T08:43:01.587206+00:00"
+  },
+  "adm2:24.3": {
+    "name": "Indragiri Hilir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/3/",
+    "checked_at": "2026-11-05T08:43:06.705122+00:00"
+  },
+  "adm2:24.4": {
+    "name": "Indragiri Hulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/4/",
+    "checked_at": "2026-11-05T08:43:06.853701+00:00"
+  },
+  "adm2:24.5": {
+    "name": "Kampar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/5/",
+    "checked_at": "2026-11-05T08:43:09.474700+00:00"
+  },
+  "adm2:24.6": {
+    "name": "Kepulauan Meranti",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/6/",
+    "checked_at": "2026-11-05T08:43:13.716742+00:00"
+  },
+  "adm2:24.7": {
+    "name": "Kuantan Singingi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/24/7/",
+    "checked_at": "2026-11-05T08:43:17.081868+00:00"
+  },
+  "adm2:25.2": {
+    "name": "Mamasa",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/25/2/",
+    "checked_at": "2026-11-05T08:43:19.419747+00:00"
+  },
+  "adm2:25.3": {
+    "name": "Mamuju Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/25/3/",
+    "checked_at": "2026-11-05T08:43:21.296011+00:00"
+  },
+  "adm2:25.4": {
+    "name": "Mamuju",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/25/4/",
+    "checked_at": "2026-11-05T08:43:22.803922+00:00"
+  },
+  "adm2:25.5": {
+    "name": "Polewali Mandar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/25/5/",
+    "checked_at": "2026-11-05T08:43:37.392490+00:00"
+  },
+  "adm2:26.23": {
+    "name": "Toraja Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/23/",
+    "checked_at": "2026-11-05T08:43:57.530054+00:00"
+  },
+  "adm2:26.24": {
+    "name": "Wajo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/24/",
+    "checked_at": "2026-11-05T08:43:57.601724+00:00"
+  },
+  "adm2:26.3": {
+    "name": "Bone",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/3/",
+    "checked_at": "2026-11-05T08:43:57.631531+00:00"
+  },
+  "adm2:26.4": {
+    "name": "Bulukumba",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/4/",
+    "checked_at": "2026-11-05T08:43:58.069167+00:00"
+  },
+  "adm2:26.5": {
+    "name": "Enrekang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/5/",
+    "checked_at": "2026-11-05T08:43:58.726209+00:00"
+  },
+  "adm2:26.6": {
+    "name": "Gowa",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/6/",
+    "checked_at": "2026-11-05T08:43:59.790373+00:00"
+  },
+  "adm2:26.8": {
+    "name": "Kepulauan Selayar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/8/",
+    "checked_at": "2026-11-05T08:44:09.380151+00:00"
+  },
+  "adm2:26.9": {
+    "name": "Luwu Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/26/9/",
+    "checked_at": "2026-11-05T08:44:13.858361+00:00"
+  },
+  "adm2:27.1": {
+    "name": "Banggai Kepulauan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/1/",
+    "checked_at": "2026-11-05T08:44:14.386110+00:00"
+  },
+  "adm2:27.10": {
+    "name": "Tojo Una-Una",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/10/",
+    "checked_at": "2026-11-05T08:44:14.306297+00:00"
+  },
+  "adm2:27.11": {
+    "name": "Toli-Toli",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/11/",
+    "checked_at": "2026-11-05T08:44:23.320853+00:00"
+  },
+  "adm2:27.2": {
+    "name": "Banggai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/2/",
+    "checked_at": "2026-11-05T08:44:23.823451+00:00"
+  },
+  "adm2:27.3": {
+    "name": "Buol",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/3/",
+    "checked_at": "2026-11-05T08:44:23.824811+00:00"
+  },
+  "adm2:27.4": {
+    "name": "Donggala",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/4/",
+    "checked_at": "2026-11-05T08:44:24.512093+00:00"
+  },
+  "adm2:27.5": {
+    "name": "Morowali",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/5/",
+    "checked_at": "2026-11-05T08:44:25.856986+00:00"
+  },
+  "adm2:27.6": {
+    "name": "Palu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/6/",
+    "checked_at": "2026-11-05T08:44:26.250430+00:00"
+  },
+  "adm2:27.7": {
+    "name": "Parigi Moutong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/7/",
+    "checked_at": "2026-11-05T08:44:26.665300+00:00"
+  },
+  "adm2:27.8": {
+    "name": "Poso",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/8/",
+    "checked_at": "2026-11-05T08:44:29.222958+00:00"
+  },
+  "adm2:27.9": {
+    "name": "Sigi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/27/9/",
+    "checked_at": "2026-11-05T08:44:29.771463+00:00"
+  },
+  "adm2:28.1": {
+    "name": "Bau-Bau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/1/",
+    "checked_at": "2026-11-05T08:44:33.931327+00:00"
+  },
+  "adm2:28.10": {
+    "name": "Konawe",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/10/",
+    "checked_at": "2026-11-05T08:44:33.615287+00:00"
+  },
+  "adm2:28.11": {
+    "name": "Muna",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/11/",
+    "checked_at": "2026-11-05T08:44:33.959649+00:00"
+  },
+  "adm2:28.12": {
+    "name": "Wakatobi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/12/",
+    "checked_at": "2026-11-05T08:44:34.327864+00:00"
+  },
+  "adm2:28.2": {
+    "name": "Bombana",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/2/",
+    "checked_at": "2026-11-05T08:44:36.467208+00:00"
+  },
+  "adm2:28.3": {
+    "name": "Buton Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/3/",
+    "checked_at": "2026-11-05T08:44:41.291286+00:00"
+  },
+  "adm2:28.4": {
+    "name": "Buton",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/4/",
+    "checked_at": "2026-11-05T08:44:41.462936+00:00"
+  },
+  "adm2:28.5": {
+    "name": "Kendari",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/5/",
+    "checked_at": "2026-11-05T08:44:41.689491+00:00"
+  },
+  "adm2:28.6": {
+    "name": "Kolaka Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/6/",
+    "checked_at": "2026-11-05T08:44:41.944419+00:00"
+  },
+  "adm2:28.7": {
+    "name": "Kolaka",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/7/",
+    "checked_at": "2026-11-05T08:44:43.911621+00:00"
+  },
+  "adm2:28.8": {
+    "name": "Konawe Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/8/",
+    "checked_at": "2026-11-05T08:44:46.825985+00:00"
+  },
+  "adm2:28.9": {
+    "name": "Konawe Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/28/9/",
+    "checked_at": "2026-11-05T08:44:51.458864+00:00"
+  },
+  "adm2:29.1": {
+    "name": "Bitung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/1/",
+    "checked_at": "2026-11-05T08:44:52.283062+00:00"
+  },
+  "adm2:29.10": {
+    "name": "Minahasa Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/10/",
+    "checked_at": "2026-11-05T08:44:52.242311+00:00"
+  },
+  "adm2:29.11": {
+    "name": "Minahasa Tenggara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/11/",
+    "checked_at": "2026-11-05T08:44:52.725105+00:00"
+  },
+  "adm2:29.12": {
+    "name": "Minahasa Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/12/",
+    "checked_at": "2026-11-05T08:44:52.965137+00:00"
+  },
+  "adm2:29.13": {
+    "name": "Minahasa",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/13/",
+    "checked_at": "2026-11-05T08:45:00.045067+00:00"
+  },
+  "adm2:29.14": {
+    "name": "Siau Tagulandang Biaro",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/14/",
+    "checked_at": "2026-11-05T08:45:02.621261+00:00"
+  },
+  "adm2:29.15": {
+    "name": "Tomohon",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/15/",
+    "checked_at": "2026-11-05T08:45:03.020034+00:00"
+  },
+  "adm2:29.2": {
+    "name": "Bolaang Mongondow Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/2/",
+    "checked_at": "2026-11-05T08:45:06.701367+00:00"
+  },
+  "adm2:29.3": {
+    "name": "Bolaang Mongondow Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/3/",
+    "checked_at": "2026-11-05T08:45:08.023300+00:00"
+  },
+  "adm2:29.4": {
+    "name": "Bolaang Mongondow Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/4/",
+    "checked_at": "2026-11-05T08:45:08.697357+00:00"
+  },
+  "adm2:29.5": {
+    "name": "Bolaang Mongondow",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/5/",
+    "checked_at": "2026-11-05T08:45:09.193103+00:00"
+  },
+  "adm2:29.6": {
+    "name": "Kepulauan Sangihe",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/29/6/",
+    "checked_at": "2026-11-05T08:45:17.898096+00:00"
+  },
+  "adm2:3.1": {
+    "name": "Bangka Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/1/",
+    "checked_at": "2026-11-05T08:45:42.752155+00:00"
+  },
+  "adm2:3.2": {
+    "name": "Bangka Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/2/",
+    "checked_at": "2026-11-05T08:45:43.217880+00:00"
+  },
+  "adm2:3.3": {
+    "name": "Bangka Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/3/",
+    "checked_at": "2026-11-05T08:45:43.796282+00:00"
+  },
+  "adm2:3.4": {
+    "name": "Bangka",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/4/",
+    "checked_at": "2026-11-05T08:45:44.180410+00:00"
+  },
+  "adm2:3.5": {
+    "name": "Belitung Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/5/",
+    "checked_at": "2026-11-05T08:45:45.675471+00:00"
+  },
+  "adm2:3.6": {
+    "name": "Belitung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/6/",
+    "checked_at": "2026-11-05T08:45:46.756489+00:00"
+  },
+  "adm2:3.7": {
+    "name": "Pangkalpinang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/3/7/",
+    "checked_at": "2026-11-05T08:45:47.514899+00:00"
+  },
+  "adm2:30.1": {
+    "name": "Agam",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/1/",
+    "checked_at": "2026-11-05T08:45:24.246654+00:00"
+  },
+  "adm2:30.10": {
+    "name": "Padang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/10/",
+    "checked_at": "2026-11-05T08:45:18.916474+00:00"
+  },
+  "adm2:30.11": {
+    "name": "Pariaman",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/11/",
+    "checked_at": "2026-11-05T08:45:26.762295+00:00"
+  },
+  "adm2:30.12": {
+    "name": "Pasaman Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/12/",
+    "checked_at": "2026-11-05T08:45:26.784190+00:00"
+  },
+  "adm2:30.13": {
+    "name": "Pasaman",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/13/",
+    "checked_at": "2026-11-05T08:45:30.363831+00:00"
+  },
+  "adm2:30.14": {
+    "name": "Payakumbuh",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/14/",
+    "checked_at": "2026-11-05T08:45:34.771088+00:00"
+  },
+  "adm2:30.15": {
+    "name": "Pesisir Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/15/",
+    "checked_at": "2026-11-05T08:45:35.651639+00:00"
+  },
+  "adm2:30.16": {
+    "name": "Sawahlunto",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/16/",
+    "checked_at": "2026-11-05T08:45:35.947361+00:00"
+  },
+  "adm2:30.17": {
+    "name": "Sijunjung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/17/",
+    "checked_at": "2026-11-05T08:45:36.029921+00:00"
+  },
+  "adm2:30.18": {
+    "name": "Solok Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/18/",
+    "checked_at": "2026-11-05T08:45:37.012180+00:00"
+  },
+  "adm2:30.19": {
+    "name": "Solok",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/19/",
+    "checked_at": "2026-11-05T08:45:39.926000+00:00"
+  },
+  "adm2:30.2": {
+    "name": "Bukittinggi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/2/",
+    "checked_at": "2026-11-05T08:45:40.719325+00:00"
+  },
+  "adm2:30.20": {
+    "name": "Tanah Datar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/20/",
+    "checked_at": "2026-11-05T08:45:40.388888+00:00"
+  },
+  "adm2:30.4": {
+    "name": "Dharmasraya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/4/",
+    "checked_at": "2026-11-05T08:45:41.086000+00:00"
+  },
+  "adm2:30.5": {
+    "name": "Kepulauan Mentawai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/5/",
+    "checked_at": "2026-11-05T08:45:41.139541+00:00"
+  },
+  "adm2:30.6": {
+    "name": "Kota Solok",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/6/",
+    "checked_at": "2026-11-05T08:45:41.576316+00:00"
+  },
+  "adm2:30.7": {
+    "name": "Lima Puluh Kota",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/7/",
+    "checked_at": "2026-11-05T08:45:42.109848+00:00"
+  },
+  "adm2:30.8": {
+    "name": "Padang Panjang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/8/",
+    "checked_at": "2026-11-05T08:45:42.544255+00:00"
+  },
+  "adm2:30.9": {
+    "name": "Padang Pariaman",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/30/9/",
+    "checked_at": "2026-11-05T08:45:42.663975+00:00"
+  },
+  "adm2:31.1": {
+    "name": "Banyu Asin",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/1/",
+    "checked_at": "2026-11-05T08:45:48.185361+00:00"
+  },
+  "adm2:31.10": {
+    "name": "Ogan Komering Ulu Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/10/",
+    "checked_at": "2026-11-05T08:45:48.047261+00:00"
+  },
+  "adm2:31.11": {
+    "name": "Ogan Komering Ulu Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/11/",
+    "checked_at": "2026-11-05T08:45:48.201281+00:00"
+  },
+  "adm2:31.12": {
+    "name": "Ogan Komering Ulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/12/",
+    "checked_at": "2026-11-05T08:45:49.358609+00:00"
+  },
+  "adm2:31.13": {
+    "name": "Pagar Alam",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/13/",
+    "checked_at": "2026-11-05T08:45:49.687526+00:00"
+  },
+  "adm2:31.14": {
+    "name": "Palembang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/14/",
+    "checked_at": "2026-11-05T08:45:49.704928+00:00"
+  },
+  "adm2:31.15": {
+    "name": "Prabumulih",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/15/",
+    "checked_at": "2026-11-05T08:45:50.139359+00:00"
+  },
+  "adm2:31.2": {
+    "name": "Empat Lawang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/2/",
+    "checked_at": "2026-11-05T08:45:50.448137+00:00"
+  },
+  "adm2:31.3": {
+    "name": "Lahat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/3/",
+    "checked_at": "2026-11-05T08:45:50.860763+00:00"
+  },
+  "adm2:31.4": {
+    "name": "Lubuklinggau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/4/",
+    "checked_at": "2026-11-05T08:45:51.332979+00:00"
+  },
+  "adm2:31.5": {
+    "name": "Muara Enim",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/5/",
+    "checked_at": "2026-11-05T08:45:51.359997+00:00"
+  },
+  "adm2:31.6": {
+    "name": "Musi Banyuasin",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/6/",
+    "checked_at": "2026-11-05T08:45:51.747882+00:00"
+  },
+  "adm2:31.7": {
+    "name": "Musi Rawas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/7/",
+    "checked_at": "2026-11-05T08:45:51.918554+00:00"
+  },
+  "adm2:31.8": {
+    "name": "Ogan Ilir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/8/",
+    "checked_at": "2026-11-05T08:45:52.423577+00:00"
+  },
+  "adm2:31.9": {
+    "name": "Ogan Komering Ilir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/31/9/",
+    "checked_at": "2026-11-05T08:45:52.890111+00:00"
+  },
+  "adm2:32.1": {
+    "name": "Asahan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/1/",
+    "checked_at": "2026-11-05T08:45:53.207626+00:00"
+  },
+  "adm2:32.10": {
+    "name": "Kota Tanjungbalai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/10/",
+    "checked_at": "2026-11-05T08:45:53.110163+00:00"
+  },
+  "adm2:32.11": {
+    "name": "Labuhanbatu Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/11/",
+    "checked_at": "2026-11-05T08:45:53.631804+00:00"
+  },
+  "adm2:32.12": {
+    "name": "Labuhanbatu Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/12/",
+    "checked_at": "2026-11-05T08:45:53.935635+00:00"
+  },
+  "adm2:32.13": {
+    "name": "Labuhanbatu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/13/",
+    "checked_at": "2026-11-05T08:45:54.405523+00:00"
+  },
+  "adm2:32.15": {
+    "name": "Langkat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/15/",
+    "checked_at": "2026-11-05T08:45:55.075360+00:00"
+  },
+  "adm2:32.16": {
+    "name": "Mandailing Natal",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/16/",
+    "checked_at": "2026-11-05T08:45:55.567187+00:00"
+  },
+  "adm2:32.17": {
+    "name": "Nias Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/17/",
+    "checked_at": "2026-11-05T08:45:55.693958+00:00"
+  },
+  "adm2:32.18": {
+    "name": "Nias Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/18/",
+    "checked_at": "2026-11-05T08:45:55.798752+00:00"
+  },
+  "adm2:32.19": {
+    "name": "Nias Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/19/",
+    "checked_at": "2026-11-05T08:45:55.890613+00:00"
+  },
+  "adm2:32.2": {
+    "name": "Batu Bara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/2/",
+    "checked_at": "2026-11-05T08:45:57.310492+00:00"
+  },
+  "adm2:32.20": {
+    "name": "Nias",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/20/",
+    "checked_at": "2026-11-05T08:45:56.628543+00:00"
+  },
+  "adm2:32.21": {
+    "name": "Padang Lawas Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/21/",
+    "checked_at": "2026-11-05T08:45:57.433738+00:00"
+  },
+  "adm2:32.22": {
+    "name": "Padang Lawas",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/22/",
+    "checked_at": "2026-11-05T08:45:57.489782+00:00"
+  },
+  "adm2:32.23": {
+    "name": "Padangsidimpuan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/23/",
+    "checked_at": "2026-11-05T08:45:57.570995+00:00"
+  },
+  "adm2:32.24": {
+    "name": "Pakpak Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/24/",
+    "checked_at": "2026-11-05T08:45:58.239679+00:00"
+  },
+  "adm2:32.25": {
+    "name": "Pematangsiantar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/25/",
+    "checked_at": "2026-11-05T08:45:58.906358+00:00"
+  },
+  "adm2:32.26": {
+    "name": "Samosir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/26/",
+    "checked_at": "2026-11-05T08:45:58.971409+00:00"
+  },
+  "adm2:32.27": {
+    "name": "Serdang Bedagai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/27/",
+    "checked_at": "2026-11-05T08:45:59.059793+00:00"
+  },
+  "adm2:32.28": {
+    "name": "Sibolga",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/28/",
+    "checked_at": "2026-11-05T08:45:59.105460+00:00"
+  },
+  "adm2:32.29": {
+    "name": "Simalungun",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/29/",
+    "checked_at": "2026-11-05T08:45:59.798156+00:00"
+  },
+  "adm2:32.3": {
+    "name": "Dairi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/3/",
+    "checked_at": "2026-11-05T08:46:00.837005+00:00"
+  },
+  "adm2:32.30": {
+    "name": "Tapanuli Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/30/",
+    "checked_at": "2026-11-05T08:46:00.674709+00:00"
+  },
+  "adm2:32.31": {
+    "name": "Tapanuli Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/31/",
+    "checked_at": "2026-11-05T08:46:00.852852+00:00"
+  },
+  "adm2:32.32": {
+    "name": "Tapanuli Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/32/",
+    "checked_at": "2026-11-05T08:46:00.915185+00:00"
+  },
+  "adm2:32.33": {
+    "name": "Tebingtinggi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/33/",
+    "checked_at": "2026-11-05T08:46:01.576178+00:00"
+  },
+  "adm2:32.34": {
+    "name": "Toba Samosir",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/34/",
+    "checked_at": "2026-11-05T08:46:02.263577+00:00"
+  },
+  "adm2:32.4": {
+    "name": "Deli Serdang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/4/",
+    "checked_at": "2026-11-05T08:46:02.505869+00:00"
+  },
+  "adm2:32.5": {
+    "name": "Gunungsitoli",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/5/",
+    "checked_at": "2026-11-05T08:46:02.605890+00:00"
+  },
+  "adm2:32.6": {
+    "name": "Humbang Hasundutan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/6/",
+    "checked_at": "2026-11-05T08:46:02.825825+00:00"
+  },
+  "adm2:32.7": {
+    "name": "Karo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/7/",
+    "checked_at": "2026-11-05T08:46:03.433334+00:00"
+  },
+  "adm2:32.8": {
+    "name": "Kota Binjai",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/8/",
+    "checked_at": "2026-11-05T08:46:04.161799+00:00"
+  },
+  "adm2:32.9": {
+    "name": "Kota Medan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/32/9/",
+    "checked_at": "2026-11-05T08:46:04.224374+00:00"
+  },
+  "adm2:33.1": {
+    "name": "Bantul",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/1/",
+    "checked_at": "2026-11-05T08:46:04.451808+00:00"
+  },
+  "adm2:33.2": {
+    "name": "Gunung Kidul",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/2/",
+    "checked_at": "2026-11-05T08:46:04.475527+00:00"
+  },
+  "adm2:33.3": {
+    "name": "Kota Yogyakarta",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/3/",
+    "checked_at": "2026-11-05T08:46:04.888207+00:00"
+  },
+  "adm2:33.4": {
+    "name": "Kulon Progo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/4/",
+    "checked_at": "2026-11-05T08:46:05.836010+00:00"
+  },
+  "adm2:33.5": {
+    "name": "Sleman",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/33/5/",
+    "checked_at": "2026-11-05T08:46:05.994967+00:00"
+  },
+  "adm2:34.1": {
+    "name": "Balikpapan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/1/",
+    "checked_at": "2026-11-05T08:46:06.012136+00:00"
+  },
+  "adm2:34.10": {
+    "name": "Paser",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/10/",
+    "checked_at": "2026-11-05T08:46:05.997795+00:00"
+  },
+  "adm2:34.11": {
+    "name": "Penajam Paser Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/11/",
+    "checked_at": "2026-11-05T08:46:06.434055+00:00"
+  },
+  "adm2:34.12": {
+    "name": "Samarinda",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/12/",
+    "checked_at": "2026-11-05T08:46:07.349914+00:00"
+  },
+  "adm2:34.2": {
+    "name": "Berau",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/2/",
+    "checked_at": "2026-11-05T08:46:07.579094+00:00"
+  },
+  "adm2:34.3": {
+    "name": "Bontang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/3/",
+    "checked_at": "2026-11-05T08:46:07.609518+00:00"
+  },
+  "adm2:34.5": {
+    "name": "Kutai Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/5/",
+    "checked_at": "2026-11-05T08:46:08.076570+00:00"
+  },
+  "adm2:34.6": {
+    "name": "Kutai Kartanegara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/6/",
+    "checked_at": "2026-11-05T08:46:08.104751+00:00"
+  },
+  "adm2:34.7": {
+    "name": "Kutai Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/34/7/",
+    "checked_at": "2026-11-05T08:46:08.844458+00:00"
+  },
+  "adm2:4.1": {
+    "name": "Cilegon",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/1/",
+    "checked_at": "2026-11-05T08:46:11.210819+00:00"
+  },
+  "adm2:4.2": {
+    "name": "Kota Serang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/2/",
+    "checked_at": "2026-11-05T08:46:11.468483+00:00"
+  },
+  "adm2:4.3": {
+    "name": "Kota Tangerang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/3/",
+    "checked_at": "2026-11-05T08:46:11.484074+00:00"
+  },
+  "adm2:4.4": {
+    "name": "Lebak",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/4/",
+    "checked_at": "2026-11-05T08:46:11.578861+00:00"
+  },
+  "adm2:4.5": {
+    "name": "Pandeglang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/5/",
+    "checked_at": "2026-11-05T08:46:12.018070+00:00"
+  },
+  "adm2:4.6": {
+    "name": "Serang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/6/",
+    "checked_at": "2026-11-05T08:46:12.746945+00:00"
+  },
+  "adm2:4.7": {
+    "name": "Tangerang Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/7/",
+    "checked_at": "2026-11-05T08:46:12.995118+00:00"
+  },
+  "adm2:4.8": {
+    "name": "Tangerang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/4/8/",
+    "checked_at": "2026-11-05T08:46:13.050100+00:00"
+  },
+  "adm2:5.1": {
+    "name": "Bengkulu Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/1/",
+    "checked_at": "2026-11-05T08:46:13.660762+00:00"
+  },
+  "adm2:5.10": {
+    "name": "Seluma",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/10/",
+    "checked_at": "2026-11-05T08:46:13.221674+00:00"
+  },
+  "adm2:5.2": {
+    "name": "Bengkulu Tengah",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/2/",
+    "checked_at": "2026-11-05T08:46:14.231422+00:00"
+  },
+  "adm2:5.3": {
+    "name": "Bengkulu Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/3/",
+    "checked_at": "2026-11-05T08:46:14.622709+00:00"
+  },
+  "adm2:5.4": {
+    "name": "Bengkulu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/4/",
+    "checked_at": "2026-11-05T08:46:14.671403+00:00"
+  },
+  "adm2:5.5": {
+    "name": "Kaur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/5/",
+    "checked_at": "2026-11-05T08:46:15.102355+00:00"
+  },
+  "adm2:5.6": {
+    "name": "Kepahiang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/6/",
+    "checked_at": "2026-11-05T08:46:15.773530+00:00"
+  },
+  "adm2:5.7": {
+    "name": "Lebong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/7/",
+    "checked_at": "2026-11-05T08:46:15.802876+00:00"
+  },
+  "adm2:5.8": {
+    "name": "Mukomuko",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/8/",
+    "checked_at": "2026-11-05T08:46:16.182967+00:00"
+  },
+  "adm2:5.9": {
+    "name": "Rejang Lebong",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/5/9/",
+    "checked_at": "2026-11-05T08:46:16.676740+00:00"
+  },
+  "adm2:6.1": {
+    "name": "Boalemo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/1/",
+    "checked_at": "2026-11-05T08:46:16.952878+00:00"
+  },
+  "adm2:6.2": {
+    "name": "Bone Bolango",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/2/",
+    "checked_at": "2026-11-05T08:46:17.434870+00:00"
+  },
+  "adm2:6.3": {
+    "name": "Danau Limboto",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/3/",
+    "checked_at": "2026-11-05T08:46:17.447984+00:00"
+  },
+  "adm2:6.4": {
+    "name": "Gorontalo Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/4/",
+    "checked_at": "2026-11-05T08:46:18.167830+00:00"
+  },
+  "adm2:6.5": {
+    "name": "Gorontalo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/5/",
+    "checked_at": "2026-11-05T08:46:18.579099+00:00"
+  },
+  "adm2:6.6": {
+    "name": "Kota Gorontalo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/6/",
+    "checked_at": "2026-11-05T08:46:18.845310+00:00"
+  },
+  "adm2:6.7": {
+    "name": "Pohuwato",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/6/7/",
+    "checked_at": "2026-11-05T08:46:19.228714+00:00"
+  },
+  "adm2:7.1": {
+    "name": "Jakarta Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/1/",
+    "checked_at": "2026-11-05T08:46:19.649755+00:00"
+  },
+  "adm2:7.2": {
+    "name": "Jakarta Pusat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/2/",
+    "checked_at": "2026-11-05T08:46:19.703744+00:00"
+  },
+  "adm2:7.3": {
+    "name": "Jakarta Selatan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/3/",
+    "checked_at": "2026-11-05T08:46:20.070609+00:00"
+  },
+  "adm2:7.4": {
+    "name": "Jakarta Timur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/4/",
+    "checked_at": "2026-11-05T08:46:20.605138+00:00"
+  },
+  "adm2:7.5": {
+    "name": "Jakarta Utara",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/5/",
+    "checked_at": "2026-11-05T08:46:21.086154+00:00"
+  },
+  "adm2:7.6": {
+    "name": "Kepulauan Seribu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/7/6/",
+    "checked_at": "2026-11-05T08:46:21.395308+00:00"
+  },
+  "adm2:8.1": {
+    "name": "Batang Hari",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/1/",
+    "checked_at": "2026-11-05T08:46:21.821608+00:00"
+  },
+  "adm2:8.10": {
+    "name": "Tanjung Jabung T",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/10/",
+    "checked_at": "2026-11-05T08:46:21.434861+00:00"
+  },
+  "adm2:8.11": {
+    "name": "Tebo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/11/",
+    "checked_at": "2026-11-05T08:46:22.061586+00:00"
+  },
+  "adm2:8.2": {
+    "name": "Bungo",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/2/",
+    "checked_at": "2026-11-05T08:46:22.992736+00:00"
+  },
+  "adm2:8.3": {
+    "name": "Jambi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/3/",
+    "checked_at": "2026-11-05T08:46:23.293502+00:00"
+  },
+  "adm2:8.4": {
+    "name": "Kerinci",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/4/",
+    "checked_at": "2026-11-05T08:46:23.489454+00:00"
+  },
+  "adm2:8.5": {
+    "name": "Merangin",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/5/",
+    "checked_at": "2026-11-05T08:46:24.107648+00:00"
+  },
+  "adm2:8.6": {
+    "name": "Muaro Jambi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/6/",
+    "checked_at": "2026-11-05T08:46:24.400750+00:00"
+  },
+  "adm2:8.7": {
+    "name": "Sarolangun",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/7/",
+    "checked_at": "2026-11-05T08:46:24.801083+00:00"
+  },
+  "adm2:8.8": {
+    "name": "Sungai Penuh",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/8/",
+    "checked_at": "2026-11-05T08:46:25.231339+00:00"
+  },
+  "adm2:8.9": {
+    "name": "Tanjung Jabung B",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/8/9/",
+    "checked_at": "2026-11-05T08:46:25.574657+00:00"
+  },
+  "adm2:9.1": {
+    "name": "Bandung Barat",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/1/",
+    "checked_at": "2026-11-05T08:46:26.474637+00:00"
+  },
+  "adm2:9.10": {
+    "name": "Depok",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/10/",
+    "checked_at": "2026-11-05T08:46:25.668818+00:00"
+  },
+  "adm2:9.11": {
+    "name": "Garut",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/11/",
+    "checked_at": "2026-11-05T08:46:26.481663+00:00"
+  },
+  "adm2:9.12": {
+    "name": "Indramayu",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/12/",
+    "checked_at": "2026-11-05T08:46:27.379117+00:00"
+  },
+  "adm2:9.13": {
+    "name": "Karawang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/13/",
+    "checked_at": "2026-11-05T08:46:27.615506+00:00"
+  },
+  "adm2:9.14": {
+    "name": "Kota Bandung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/14/",
+    "checked_at": "2026-11-05T08:46:27.780689+00:00"
+  },
+  "adm2:9.15": {
+    "name": "Kota Bekasi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/15/",
+    "checked_at": "2026-11-05T08:46:28.230667+00:00"
+  },
+  "adm2:9.16": {
+    "name": "Kota Bogor",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/16/",
+    "checked_at": "2026-11-05T08:46:28.822490+00:00"
+  },
+  "adm2:9.17": {
+    "name": "Kota Cirebon",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/17/",
+    "checked_at": "2026-11-05T08:46:29.455936+00:00"
+  },
+  "adm2:9.18": {
+    "name": "Kota Sukabumi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/18/",
+    "checked_at": "2026-11-05T08:46:29.584058+00:00"
+  },
+  "adm2:9.19": {
+    "name": "Kota Tasikmalaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/19/",
+    "checked_at": "2026-11-05T08:46:30.048939+00:00"
+  },
+  "adm2:9.2": {
+    "name": "Bandung",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/2/",
+    "checked_at": "2026-11-05T08:46:30.681190+00:00"
+  },
+  "adm2:9.20": {
+    "name": "Kuningan",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/20/",
+    "checked_at": "2026-11-05T08:46:30.215280+00:00"
+  },
+  "adm2:9.21": {
+    "name": "Majalengka",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/21/",
+    "checked_at": "2026-11-05T08:46:31.105943+00:00"
+  },
+  "adm2:9.22": {
+    "name": "Purwakarta",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/22/",
+    "checked_at": "2026-11-05T08:46:31.204171+00:00"
+  },
+  "adm2:9.23": {
+    "name": "Subang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/23/",
+    "checked_at": "2026-11-05T08:46:32.227472+00:00"
+  },
+  "adm2:9.24": {
+    "name": "Sukabumi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/24/",
+    "checked_at": "2026-11-05T08:46:32.349318+00:00"
+  },
+  "adm2:9.25": {
+    "name": "Sumedang",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/25/",
+    "checked_at": "2026-11-05T08:46:32.690438+00:00"
+  },
+  "adm2:9.26": {
+    "name": "Tasikmalaya",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/26/",
+    "checked_at": "2026-11-05T08:46:32.826908+00:00"
+  },
+  "adm2:9.3": {
+    "name": "Banjar",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/3/",
+    "checked_at": "2026-11-05T08:46:32.889752+00:00"
+  },
+  "adm2:9.4": {
+    "name": "Bekasi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/4/",
+    "checked_at": "2026-11-05T08:46:34.473338+00:00"
+  },
+  "adm2:9.5": {
+    "name": "Bogor",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/5/",
+    "checked_at": "2026-11-05T08:46:34.525194+00:00"
+  },
+  "adm2:9.6": {
+    "name": "Ciamis",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/6/",
+    "checked_at": "2026-11-05T08:46:34.671800+00:00"
+  },
+  "adm2:9.7": {
+    "name": "Cianjur",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/7/",
+    "checked_at": "2026-11-05T08:46:34.681435+00:00"
+  },
+  "adm2:9.8": {
+    "name": "Cimahi",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/8/",
+    "checked_at": "2026-11-05T08:46:34.827152+00:00"
+  },
+  "adm2:9.9": {
+    "name": "Cirebon",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/9/9/",
+    "checked_at": "2026-11-05T08:46:36.294568+00:00"
+  },
+  "iso:IDN": {
+    "name": "Indonesia",
+    "url": "https://www.globalforestwatch.org/dashboards/country/IDN/",
+    "checked_at": "2026-11-05T08:37:06.340682+00:00"
+  }
+}

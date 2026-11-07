@@ -1,0 +1,2 @@
+# Empty TSV columns legitimately end with tabs.
+workflow/reference/*.tsv whitespace=-blank-at-eol

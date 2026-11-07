@@ -1,0 +1,83 @@
+PERBAIKAN TAHAP 3 — KELENGKAPAN BUKTI NGO DAN GFW
+Tanggal: 6 November 2026
+
+Hasil
+Perbaikan diterapkan untuk bukti valid yang sebelumnya gugur karena hubungan
+wilayah atau pemisahan angka dalam satu kalimat. Tidak ada aturan khusus nama
+daerah, perusahaan, atau angka kasus pada perubahan kode produksi ini.
+Belum berarti semua jawaban gabungan sudah lengkap atau akurat.
+
+Akar masalah yang dibuktikan
+1. Temuan menyebut desa; alamat lengkap desa–kecamatan–kabupaten ada pada
+   halaman lain laporan. Pemeriksaan literal dan alamat yang tidak lengkap
+   menolak nama kecamatan/kabupaten meskipun hubungannya ada dalam sumber.
+   Bukti yang lolos kemudian hanya paragraf umum, sehingga penolakan pada
+   tahap berikutnya terlihat seperti masalah kecocokan aktivitas.
+2. Pemenggalan baris PDF memotong nama wilayah. Daftar beberapa desa sejajar
+   juga bisa terbaca sebagai rantai alamat. Keduanya merusak hubungan wilayah.
+3. Dua nilai untuk dua wilayah dalam satu kalimat dianggap satu cakupan bersama.
+   Temuan yang mengambil hanya nilai dan wilayah pasangannya ikut ditolak.
+
+Perbaikan umum
+- Normalisasi pemenggalan baris sebelum pembacaan nama wilayah.
+- Hubungan alamat mengikuti tingkat wilayah dan bukti eksplisit dari laporan.
+  Daftar desa sejajar tidak menjadi hubungan anak–induk.
+- Alamat desa dengan induk berbeda tetap dianggap ambigu, bukan ditebak.
+- Pemeriksaan kutipan dan penyajian akhir menerima induk wilayah yang didukung
+  alamat sumber. Nama lokasi asal tetap harus dipertahankan: kejadian desa
+  tidak boleh diubah menjadi kejadian seluruh kabupaten.
+- Klausa angka yang terpisah dan memiliki wilayah masing-masing diperiksa
+  berdasarkan pasangan nilai–wilayah. Angka agregat bersama tidak dipisahkan.
+- Pengamanan wilayah lain, kejadian, aktivitas, serta sebab-akibat dipertahankan.
+
+Validasi
+- 343 uji workflow lulus, termasuk 5 metode uji baru dengan variasi wilayah,
+  alamat, nilai, bukti ambigu, dan kontrol agregat bersama.
+- 10 uji layanan HTTP lulus.
+- Pemutaran ulang draf asli: alamat lama menolak bukti; alamat hasil pembacaan
+  yang diperbaiki menerima bukti sama, tanpa membuat ulang jawaban model.
+- 9 pengiriman di browser untuk 5 pertanyaan berbeda. Empat pengiriman awal
+  merupakan diagnosis bertahap, bukan sampel keberhasilan versi akhir.
+- 10 baris tabel GFW (8 pasangan wilayah–tahun unik) cocok dengan data lokal.
+
+Hasil pengamatan browser
+Ketapang, pertanyaan dampak perkebunan kayu:
+  Temuan Satya Bumi 76,6 ha, lokasi desa dan periode sumber tampil bersama
+  tabel GFW 2021–2025. Sebelumnya hanya GFW. Bukti angka dan alamat diperiksa
+  terhadap ekstraksi halaman laporan asli.
+Halmahera Tengah:
+  Temuan Trend Asia 26,1 ribu ha periode 2001–2022 tampil bersama GFW 2025.
+  Temuan WALHI berskala Maluku Utara ditandai sebagai konteks wilayah lebih
+  luas. Kemunculan tiga sumber tidak otomatis membuktikan semua dampak lokal.
+Cilacap:
+  Temuan Trend Asia terkait PLTU tampil; hasil pemodelan dan konteks nasional
+  Auriga tetap diberi batas cakupan. Bukan audit independen seluruh temuan.
+Kalimantan Barat:
+  Bukti perusahaan dari Kalimantan Tengah tetap tidak dipindahkan ke Kalbar.
+  Namun jawaban masih hanya GFW; bagian dampak NGO belum lengkap.
+Variasi Ketapang dengan permintaan angka 2024–2025:
+  NGO dan GFW tampil, tetapi kutipan NGO terlalu umum dan dampak lokal belum
+  dijelaskan memadai. Ini tetap keterbatasan, bukan keberhasilan penuh.
+
+Pekerjaan yang masih diperlukan
+Pemilihan kutipan yang relevan dan kelengkapan jawaban masih sensitif terhadap
+redaksi pertanyaan. Perlu menelusuri apakah bukti lokal tidak masuk hasil
+pencarian, tidak dipilih model, atau ditolak pada pemeriksaan berikutnya.
+Kesimpulan juga masih dapat mengulang temuan dan belum selalu menyampaikan
+perubahan antartahun yang diminta. Jangan mengatasinya dengan melonggarkan
+batas wilayah atau membuat pengecualian kasus.
+
+Berkas kode
+workflow/ngo_geography_policy.py
+workflow/ngo_answer.py
+workflow/ngo_evidence_policy.py
+workflow/tests/test_ngo_completeness.py
+
+Bukti uji
+docs/test-evidence/20261106/ngo-completeness/
+  workflow-tests.log, http-tests.log, address-replay.json,
+  browser-results.json, numeric-checks.json, code-hashes.json,
+  ketapang.png, halteng.png, ketapang-variant-final.png.
+
+Rekap historis 300 pertanyaan tidak diubah. Uji baru ini merupakan verifikasi
+perbaikan terarah, bukan persentase akurasi keseluruhan mesin.

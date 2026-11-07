@@ -1,11 +1,14 @@
 """Offline HTTP integration with real workflow/Qdrant; no live OpenAI calls."""
 import sys
+import json
+import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from fastapi.testclient import TestClient
 from qdrant_client import QdrantClient, models
-from server import create_app
+from server import create_app, gfw_location, GFW_COLLECTION, GFW_DISTRICT_COLLECTION
 from flow import CekDataWorkflow, Intent, Predicate
 from storage import QdrantEvidenceRetriever, make_catalog
 
@@ -17,8 +20,25 @@ HEADERS = {'Origin': BASE}
 FAKE_KEY = 'sk-test-fixture-not-a-real-key'
 
 
+class GFWLocationTests(unittest.TestCase):
+    def test_district_snapshot_activates_only_after_publication(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory)
+            districts=root/'districts';districts.mkdir()
+            parent=root/'parent'
+            with patch('server.GFW_DISTRICT_DIRECTORY',districts), patch('server.GFW_DIRECTORY',parent):
+                self.assertEqual(gfw_location(),(parent,GFW_COLLECTION))
+                report=districts/'import-report.json'
+                report.write_text(json.dumps({'publication_status':'validated'}))
+                self.assertEqual(gfw_location(),(parent,GFW_COLLECTION))
+                report.write_text(json.dumps({'publication_status':'published'}))
+                self.assertEqual(gfw_location(),(districts,GFW_DISTRICT_COLLECTION))
+
+
 class ServerTests(unittest.TestCase):
     def setUp(self):
+        self.gfw_status = patch('server.gfw_report', return_value={}).start()
+        self.addCleanup(patch.stopall)
         self.db = QdrantClient(':memory:')
         self.db.create_collection('test', vectors_config={})
         self.record = row('fixture', 2025, '12.33', indicator_id='poverty',
@@ -84,7 +104,7 @@ class ServerTests(unittest.TestCase):
         self.assertIn('Tabel simulasi kemiskinan', result['parsed']['sumber'])
         self.assertIn('https://example.org/source', result['parsed']['link_sumber'])
         self.assertIn('https://example.org/data.csv', result['parsed']['unduh_data'])
-        self.assertLess(result['answer'].index('Temuan data'), result['answer'].index('Sumber:'))
+        self.assertLess(result['answer'].index('Temuan Data'), result['answer'].index('Sumber:'))
         self.assertNotIn('fixture', result['answer'])
         self.assertNotIn(FAKE_KEY, response.text)
         self.assertEqual(self.seen[0][0], FAKE_KEY)
@@ -104,7 +124,8 @@ class ServerTests(unittest.TestCase):
             'predicate': Predicate(metric='change', operator='lt', threshold='0', unit='persen')})
         result = self.client.post('/api/ask', json={'question': 'Benarkah kemiskinan Aceh turun tahun ini?'}).json()
         self.assertEqual(result['parsed']['penilaian'], 'Tidak dapat diverifikasi')
-        self.assertIn('2025', result['parsed']['konteks_penting'])
+        self.assertIn('2025', str(result['parsed']['findings_table']))
+        self.assertIn('bukan sebagai pengganti',result['parsed']['konteks_penting'])
         self.assertIn(result['reference_date'][:4], result['parsed']['alasan'])
 
     def test_failure_is_not_missing_data_and_does_not_echo_key(self):
@@ -122,6 +143,22 @@ class ServerTests(unittest.TestCase):
                            ({'question': 'Kalau 2024?', 'previous_question': 'Aceh?'}, 422)]:
             self.assertEqual(self.client.post('/api/ask', json=data).status_code, code)
         self.assertEqual(self.seen, [])
+
+    def test_gfw_is_available_only_after_publish_and_routes_separately(self):
+        called=[]
+        async def environment_runner(key, question, reference):
+            called.append(question)
+            return {'answer':'GFW fixture','parsed':{},'kind':'lookup','reference_date':reference}
+        with TestClient(create_app(self.seen.append, environment_runner),base_url=BASE,headers=HEADERS) as client:
+            self.assertNotIn('environment',client.get('/api/search/sources').json()['sources'])
+            self.gfw_status.return_value={'records':100,'province_count':34}
+            self.assertEqual(client.get('/api/search/sources').json()['default_source'],'environment')
+            client.post('/api/local/session',json={'api_key':FAKE_KEY})
+            result=client.post('/api/ask',json={'question':'Kehilangan tutupan pohon Aceh 2025?','sources':['environment']})
+            self.assertEqual(result.status_code,200)
+            self.assertEqual(result.json()['answer'],'GFW fixture')
+            self.assertEqual(len(called),1)
+            self.assertEqual(self.seen,[])
 
 
 if __name__ == '__main__':

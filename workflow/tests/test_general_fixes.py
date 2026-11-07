@@ -31,7 +31,7 @@ class GeneralFixTests(unittest.TestCase):
         rs=[row('a',2024,3,unit='desa/kelurahan'),row('b',2025,1,unit='jumlah desa/kelurahan')]
         r=self.result(rs,intent(kind='trend',baseline_year=2024,year=2025,temporal='explicit'))
         self.assertNotIn('incompatible_definitions',r['gaps'])
-        self.assertIn('trennya turun',r['parsed']['kesimpulan'])
+        self.assertIn('turun pada',r['parsed']['kesimpulan'])
         self.assertEqual(r['calculations'][0]['value'],'-2')
 
     def test_scale_unit_is_not_count_prefix_alias(self):
@@ -65,9 +65,9 @@ class GeneralFixTests(unittest.TestCase):
         i=intent(kind='comparison',relative_change=True,year=2025,baseline_year=2024,temporal='explicit')
         r=self.result([row('a',2024,80),row('b',2025,100)],i,'Berapa persen kenaikannya?')
         self.assertIn('25,00 persen',r['parsed']['kesimpulan'])
-        self.assertIn('÷ 80',r['parsed']['kesimpulan'])
+        self.assertIn('20 orang',r['parsed']['kesimpulan'])
         self.assertNotIn('25,00',r['parsed']['temuan_data'])
-        self.assertLess(r['answer'].index('Temuan data'),r['answer'].index('Kesimpulan'))
+        self.assertLess(r['answer'].index(r['parsed']['jawaban_utama']),r['answer'].index('Temuan Data'))
 
     def test_zero_baseline_never_invents_percent(self):
         i=intent(kind='comparison',relative_change=True,year=2025,baseline_year=2024,temporal='explicit')
@@ -88,6 +88,6 @@ class GeneralFixTests(unittest.TestCase):
     def test_period_comparison_always_has_data_then_relationship(self):
         i=intent(kind='comparison',year=2025,baseline_year=2024,temporal='explicit')
         r=self.result([row('a',2024,3),row('b',2025,1)],i,'Bagaimana perubahan dari2024ke2025?')
-        self.assertIn('trennya turun',r['parsed']['kesimpulan'])
+        self.assertIn('turun pada',r['parsed']['kesimpulan'])
         self.assertNotIn('selisih',r['parsed']['kesimpulan'].lower())
         self.assertNotIn('Perubahan',r['parsed']['temuan_data'])

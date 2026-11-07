@@ -1,0 +1,19 @@
+DAFTAR TEMUAN TERBUKA — 6 November 2026
+
+UJI-20261106-11 — BELUM DIPERBAIKI
+Buton–Kediri: Kediri 2023 tidak tersedia, tetapi jawaban tidak menjelaskan bahwa perbandingan belum dapat diselesaikan.
+Bukti: tmp/gfw-new100-20261106/jawaban-lengkap.txt, kasus 11.
+
+UJI-20261106-81 — BELUM DIPERBAIKI
+Jakarta Selatan–Kepulauan Selayar: data Jakarta Selatan 2025 hilang; alasan tidak dapat membandingkan belum tegas.
+Bukti: tmp/gfw-new100-20261106/jawaban-lengkap.txt, kasus 81.
+
+UJI-20261106-55 — BELUM DIPERBAIKI
+Tangerang: data tersedia, nilai awal nol. Persentase ditolak dengan benar tetapi alasannya disebut belum cukup data.
+Bukti: tmp/gfw-new100-20261106/jawaban-lengkap.txt, kasus 55.
+
+UJI-20261106-12 — BELUM DIPERBAIKI
+Mojokerto: label Tidak dapat diverifikasi benar, tetapi alasan menyajikan 0,07629724033284506 ha tanpa pembulatan tampilan.
+Bukti: tmp/gfw-new100-20261106/jawaban-lengkap.txt, kasus 12.
+
+Batas tautan: 12 jawaban masih memakai halaman metodologi resmi; dashboard wilayah belum terverifikasi.

@@ -1,14 +1,25 @@
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import React, { useEffect, useMemo, useState, useRef, useLayoutEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Search, Link2, ThumbsUp, ThumbsDown, CircleHelp, LogIn, MessageSquare, Send, Info, Copy, Check, Shield, FolderUp, Database, BarChart3, RefreshCw, ChevronDown, Layers3 } from "lucide-react";
+import { Menu, X, Search, Link2, ThumbsUp, ThumbsDown, CircleHelp, LogIn, MessageSquare, Send, Info, Copy, Check, Shield, FolderUp, Database, BarChart3, RefreshCw, ChevronDown, Layers3, ArrowLeft } from "lucide-react";
+import HomeFooter from "./ui/HomeFooter.jsx";
 import AdminLoginPage from "./auth/admin/AdminLoginPage";
 import UserLoginPage from "./auth/user/UserLoginPage";
 import { API_BASE } from "./config/api";
 import { askQuestion, getPublicSearchSources } from "./features/chat/chatApi.js";
 import { verifiedSourcesFromClaims } from "./config/verifiedSources.js";
+import { upgradeGfwSources } from "./config/gfwPublicLinks.js";
 import CanonicalAnswer from "./features/chat/CanonicalAnswer.jsx";
 import SourcePicker from "./features/chat/SourcePicker.jsx";
+import "./features/chat/ChatLayout.css";
+import WorkspaceSidebar from "./features/chat/WorkspaceSidebar.jsx";
+import WorkspaceDialog from "./features/chat/WorkspaceDialog.jsx";
 import SourceLinks from "./features/chat/SourceLinks.jsx";
+import FindingsTable from "./features/chat/FindingsTable.jsx";
+import GfwSourceFooter, { hasGfwSources } from "./features/chat/GfwSourceFooter.jsx";
+import MapbiomasSourceFooter from "./features/chat/MapbiomasSourceFooter.jsx";
+import { hasMapbiomasSources } from "./features/chat/mapbiomasSources.js";
+import DocumentSourceFooter from "./features/chat/DocumentSourceFooter.jsx";
+import { upgradeContext } from "./features/chat/contextView.js";
 import BPSArchiveSearch from "./features/chat/BPSArchiveSearch.jsx";
 import BPSStatisticsSearch from "./features/chat/BPSStatisticsSearch.jsx";
 import WorkerStatusCard from "./features/admin-normalization/WorkerStatusCard.jsx";
@@ -234,6 +245,10 @@ function DownloadLinks({ value }) {
 
   function labelFromLink(link) {
     try {
+      const url = new URL(link);
+      if (url.hostname === 'data-api.globalforestwatch.org' && url.pathname.endsWith('/download/json')) {
+        return 'Data terfilter GFW (JSON/API)';
+      }
       // Google Drive URL: ambil nama file dari parameter &filename=
       if (link.includes("drive.google.com") && link.includes("filename=")) {
         const match = link.match(/filename=([^&]+)/);
@@ -459,7 +474,7 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
                     }}
                     style={mobileMenuButtonStyle}
                   >
-                    User Sign In
+                    Sign In
                   </button>
                 ) : (
                   <>
@@ -507,7 +522,7 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
 
             {!isLoggedIn && page !== "signin" ? (
               <Button variant="outline" onClick={() => setPage("signin")}>
-                User Sign In
+                Sign In
               </Button>
             ) : null}
 
@@ -557,7 +572,7 @@ const secondaryButtonStyle = {
   cursor: "pointer",
 };
 
-function HomePage({ setPage }) {
+export function HomePage({ setPage, localMode = false, onStart }) {
   const [demoQuestion, setDemoQuestion] = useState(demoQuestions[0]);
   const [showDemoAnswer, setShowDemoAnswer] = useState(false);
   const [demoResult, setDemoResult] = useState(null);
@@ -581,6 +596,7 @@ function HomePage({ setPage }) {
   }
 
   async function handleDemoAsk() {
+    if (localMode) { onStart?.(); return; }
     try {
       setDemoLoading(true);
       setDemoError("");
@@ -669,7 +685,7 @@ function HomePage({ setPage }) {
 
               <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap" }}>
                 <Button onClick={handleDemoAsk} disabled={demoLoading}>
-                  {demoLoading ? "Memverifikasi..." : "Verifikasi"}
+                  {demoLoading ? "Memverifikasi..." : localMode ? "Masuk untuk verifikasi" : "Verifikasi"}
                 </Button>
                 <Button variant="outline" onClick={refreshDemoQuestion} disabled={demoLoading}>
                   Refresh
@@ -744,7 +760,7 @@ function HomePage({ setPage }) {
                       <Section title="Kesimpulan">{demoResult.parsed.kesimpulan}</Section>
                     ) : null}
                     {demoResult.parsed.konteks_penting ? (
-                      <Section title="Konteks penting">{demoResult.parsed.konteks_penting}</Section>
+                      <Section title="Konteks">{demoResult.parsed.konteks_penting}</Section>
                     ) : null}
                     {demoResult.parsed.penilaian ? (
                       <Section title="Penilaian">{demoResult.parsed.penilaian}</Section>
@@ -835,7 +851,7 @@ function HomePage({ setPage }) {
             boxSizing: "border-box",
           }}
         >
-          Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.
+          {localMode ? 'Buka chat dan hubungkan sesi untuk memeriksa data. Riwayat sebelumnya tetap tersimpan di browser ini.' : 'Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.'}
         </div>
       </div>
     </div>
@@ -3908,9 +3924,13 @@ function AdminPage({ isAdmin, onAuthExpired }) {
   );
 }
 
-export function ChatPage({ localMode = false, ready = true }) {
-  const chatHistoryLimit = 20;
+export function ChatPage({ localMode = false, ready = true, navigation = null }) {
+  const chatHistoryLimit = 200;
   const activeRequest = useRef(null);
+  const transcript = useRef(null);
+  const savedReadPosition = useRef(0);
+  const previousView = useRef(navigation?.page);
+  const [pendingConversation, setPendingConversation] = useState(null);
   const [conversations, setConversations] = useState([]);
   const [selectedId, setSelectedId] = useState(null);
   const [draft, setDraft] = useState("");
@@ -3929,6 +3949,31 @@ export function ChatPage({ localMode = false, ready = true }) {
   }, []);
 
   useEffect(() => {
+    if (ready || !activeRequest.current) return;
+    activeRequest.current.abort();
+    activeRequest.current = null;
+    setLoading(false);
+    setPendingConversation(null);
+    setDraft(current => current || pendingConversation?.question || '');
+    setError('');
+  }, [ready]);
+
+  useLayoutEffect(() => {
+    if (navigation?.page === 'chat' && previousView.current === 'about') {
+      transcript.current?.scrollTo({ top: savedReadPosition.current, behavior: 'instant' });
+    }
+    previousView.current = navigation?.page;
+  }, [navigation?.page]);
+
+  function navigate(page) {
+    if (page === 'about' && navigation?.page !== 'about') savedReadPosition.current = transcript.current?.scrollTop || 0;
+    setMobileHistoryOpen(false);
+    navigation?.onNavigate(page);
+  }
+
+  function openSettings() { setMobileHistoryOpen(false); navigation?.onSettings(); }
+
+  useEffect(() => {
     const controller = new AbortController();
     getPublicSearchSources({ signal: controller.signal })
       .then((response) => {
@@ -3938,6 +3983,7 @@ export function ChatPage({ localMode = false, ready = true }) {
           enabled: enabled.has(option.value),
           preview: (response.preview_sources || []).includes(option.value),
         })));
+        if (localMode && enabled.has(response.default_source)) setSelectedSource(response.default_source);
       })
       .catch(() => {});
     return () => controller.abort();
@@ -3954,7 +4000,7 @@ export function ChatPage({ localMode = false, ready = true }) {
         if (Array.isArray(parsed)) {
           const trimmed = parsed.filter(item => item && typeof item.id === 'string'
             && typeof item.question === 'string' && item.result && typeof item.result === 'object').slice(-chatHistoryLimit);
-          setConversations(trimmed);
+          setConversations(trimmed.map(item => ({ ...item, result: upgradeContext(localMode ? upgradeGfwSources(item.result) : item.result) })));
 
           if (savedSelectedId && trimmed.some((item) => item.id === savedSelectedId)) {
             setSelectedId(savedSelectedId);
@@ -3999,7 +4045,14 @@ export function ChatPage({ localMode = false, ready = true }) {
     }
   }, [conversations, selectedId, historyReady]);
 
-  const selectedConversation = conversations.find((item) => item.id === selectedId) || null;
+  const selectedConversation = pendingConversation || conversations.find((item) => item.id === selectedId) || null;
+
+  // A new question/history selection starts at the top. Completing the same
+  // request keeps its ID, so it never pulls a reader away from their position.
+  useLayoutEffect(() => {
+    savedReadPosition.current = 0;
+    transcript.current?.scrollTo({ top: 0, behavior: 'instant' });
+  }, [selectedConversation?.id]);
 
   function buildCopyText(result) {
     if (!result) return "";
@@ -4012,7 +4065,7 @@ export function ChatPage({ localMode = false, ready = true }) {
     const sections = [];
     if (result.parsed?.temuan_data) sections.push("Temuan data\n" + result.parsed.temuan_data);
     if (result.parsed?.kesimpulan) sections.push("Kesimpulan\n" + result.parsed.kesimpulan);
-    if (result.parsed?.konteks_penting) sections.push("Konteks penting\n" + result.parsed.konteks_penting);
+    if (result.parsed?.konteks_penting) sections.push("Konteks\n" + result.parsed.konteks_penting);
     if (result.parsed?.penilaian) sections.push("Penilaian\n" + result.parsed.penilaian);
     if (result.parsed?.alasan) sections.push("Alasan\n" + result.parsed.alasan);
     if (result.parsed?.peringatan_editorial) sections.push("Peringatan editorial\n" + result.parsed.peringatan_editorial);
@@ -4057,15 +4110,25 @@ export function ChatPage({ localMode = false, ready = true }) {
 
   async function handleAsk() {
     const question = draft.trim();
-    if (!question || !ready || activeRequest.current) return;
+    if (question.length < 3 || !ready || activeRequest.current) return;
     const controller = new AbortController();
     activeRequest.current = controller;
+    const continuationParent = localMode ? null : selectedConversation;
+    const submitted = {
+      id: crypto.randomUUID(), question,
+      continuation_of: continuationParent?.id || "",
+      continuation_of_question: continuationParent?.question || "",
+      source: selectedSource, result: null, feedback: null,
+      created_at: new Date().toISOString(),
+    };
+    setPendingConversation(submitted);
+    setDraft("");
+    setMobileHistoryOpen(false);
 
     try {
       setLoading(true);
       setError("");
 
-      const continuationParent = localMode ? null : selectedConversation;
       const requestQuestion = buildContinuationQuestion(question, continuationParent);
       const authToken = localMode ? '' : getStoredAuthToken();
       const data = await askQuestion({
@@ -4079,23 +4142,18 @@ export function ChatPage({ localMode = false, ready = true }) {
       });
       if (controller.signal.aborted) return;
 
-      const newItem = {
-        id: crypto.randomUUID(),
-        question,
-        continuation_of: continuationParent?.id || "",
-        continuation_of_question: continuationParent?.question || "",
-        source: selectedSource,
-        result: data,
-        feedback: null,
-        created_at: new Date().toISOString(),
-      };
+      const newItem = { ...submitted, result: upgradeContext(data) };
 
       setConversations((prev) => [...prev, newItem].slice(-chatHistoryLimit));
       setSelectedId(newItem.id);
-      setDraft("");
+      setPendingConversation(null);
       setMobileHistoryOpen(false);
     } catch (err) {
-      if (!controller.signal.aborted) setError(err.message || "Terjadi kesalahan");
+      if (!controller.signal.aborted) {
+        setError(err.message || "Terjadi kesalahan");
+        setDraft(question);
+        if (err.status === 401) navigation?.onSessionExpired();
+      }
     } finally {
       if (activeRequest.current === controller) {
         activeRequest.current = null;
@@ -4109,6 +4167,7 @@ export function ChatPage({ localMode = false, ready = true }) {
     activeRequest.current = null;
     setLoading(false);
     setSelectedId(null);
+    setPendingConversation(null);
     setDraft("");
     setError("");
     setMobileHistoryOpen(false);
@@ -4166,6 +4225,8 @@ export function ChatPage({ localMode = false, ready = true }) {
                   disabled={loading}
                   onClick={() => {
                     setSelectedId(item.id);
+                    setPendingConversation(null);
+                    setError("");
                     setMobileHistoryOpen(false);
                   }}
                   style={{
@@ -4198,18 +4259,28 @@ export function ChatPage({ localMode = false, ready = true }) {
     );
   }
 
+  const sidebarProps = navigation ? {
+    navigation: { ...navigation, onNavigate: navigate, onSettings: openSettings,
+      onSignOut: () => { setMobileHistoryOpen(false); navigation.onSignOut(); } },
+    items: historyItems, selectedId: pendingConversation?.id || selectedId, loading,
+    onSelect: item => {
+      if (loading) return;
+      setSelectedId(item.id); setPendingConversation(null); setError('');
+      if (sourceOptions.some(option => option.value === item.source && option.enabled)) setSelectedSource(item.source);
+      navigate('chat');
+    },
+    onClear: () => {
+      if (loading) return;
+      setConversations([]); setSelectedId(null); setPendingConversation(null); setError('');
+    },
+  } : null;
+
   return (
-    <div style={{ minHeight: localMode ? 0 : "calc(100vh - 57px)", position: "relative", display: 'flex', flexDirection: 'column', flex: localMode ? 1 : undefined }}>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: isMobile ? "1fr" : "280px minmax(0,1fr)",
-          minHeight: localMode ? 0 : "calc(100vh - 57px)",
-          flex: localMode ? 1 : undefined,
-        }}
-      >
-        {!isMobile ? (
-          <aside
+    <div className="chat-layout">
+      <div className="chat-columns" style={{ gridTemplateColumns: isMobile ? "1fr" : "280px minmax(0,1fr)" }}>
+        {!isMobile && navigation && <aside className="workspace-sidebar-host" aria-label="Navigasi"><WorkspaceSidebar {...sidebarProps} /></aside>}
+        {!isMobile && !navigation ? (
+          <aside className="chat-history" aria-label="Riwayat pertanyaan"
             style={{
               background: COLORS.panel,
               borderRight: "1px solid rgba(17,17,17,0.08)",
@@ -4220,8 +4291,8 @@ export function ChatPage({ localMode = false, ready = true }) {
           </aside>
         ) : null}
 
-        <main style={{ minWidth: 0, display: "flex", flexDirection: "column" }}>
-          <div
+        <main className="chat-main">
+          {isMobile && <div className="chat-heading"
             style={{
               borderBottom: "1px solid rgba(17,17,17,0.08)",
               padding: "14px 18px",
@@ -4235,7 +4306,7 @@ export function ChatPage({ localMode = false, ready = true }) {
             {isMobile ? (
               <button
                 onClick={() => setMobileHistoryOpen(true)}
-                aria-label="Buka riwayat chat"
+                aria-label={navigation ? "Buka navigasi" : "Buka riwayat chat"}
                 style={{
                   border: "none",
                   background: "transparent",
@@ -4253,10 +4324,12 @@ export function ChatPage({ localMode = false, ready = true }) {
                 <Menu size={22} />
               </button>
             ) : null}
-            <span>Cek Data AI Chat</span>
-          </div>
 
-          <div style={{ flex: 1, padding: isMobile ? 16 : 24 }}>
+          </div>}
+
+          <div className="chat-view" hidden={navigation?.page === 'about'}>
+          <div ref={transcript} className="chat-transcript" role="region" aria-label="Pertanyaan dan jawaban" tabIndex={0}
+            style={{ padding: isMobile ? 16 : 24 }}>
             <div style={{ maxWidth: 860, margin: "0 auto", display: "grid", gap: 18 }}>
               {!localMode && <><BPSArchiveSearch /><BPSStatisticsSearch /></>}
               {selectedConversation ? (
@@ -4272,7 +4345,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                     </div>
                   ) : null}
 
-                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                  <div className="chat-question" style={{ display: "flex", justifyContent: "flex-end" }}>
                     <div
                       style={{
                         maxWidth: "100%",
@@ -4289,7 +4362,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                     </div>
                   </div>
 
-                  <div style={{ display: "flex", justifyContent: "flex-start" }}>
+                  {selectedConversation.result && <div className="chat-answer" style={{ display: "flex", justifyContent: "flex-start" }}>
                     <div
                       style={{
                         maxWidth: "100%",
@@ -4338,8 +4411,31 @@ export function ChatPage({ localMode = false, ready = true }) {
                           </Pill>
                         </div>
                       ) : null}
-                      {selectedConversation.result?.parsed?.temuan_data ? (
-                        <Section title="Temuan data">{selectedConversation.result.parsed.temuan_data}</Section>
+                      {selectedConversation.result?.parsed?.claim && <Section title="Klaim">{selectedConversation.result.parsed.claim}</Section>}
+                      {selectedConversation.result?.parsed?.penilaian ? (
+                        <Section title={`Penilaian: ${selectedConversation.result.parsed.penilaian}`}>
+                          {selectedConversation.result.parsed.alasan}
+                        </Section>
+                      ) : !selectedConversation.result?.parsed?.finding_groups && (selectedConversation.result?.parsed?.jawaban_utama || selectedConversation.result?.parsed?.kesimpulan) ? (
+                        <div style={{ marginTop: 16, lineHeight: 1.8 }}>{renderReadableText(selectedConversation.result.parsed.jawaban_utama || selectedConversation.result.parsed.kesimpulan)}</div>
+                      ) : null}
+                      {selectedConversation.result?.parsed?.finding_groups ? (<>
+                        {selectedConversation.result.parsed.finding_groups.map(group => <Section key={group.source} title={`Temuan Data ${group.source}`}><>
+                          {renderReadableText(group.findings.map(point => `- ${point}`).join('\n'))}
+                          {group.table && <FindingsTable table={group.table} />}
+                        </></Section>)}
+                        {selectedConversation.result.parsed.gfw_context && <Section title="Temuan Data Global Forest Watch"><>
+                          <p>{selectedConversation.result.parsed.gfw_context.summary}</p>
+                          <FindingsTable table={selectedConversation.result.parsed.gfw_context.table} />
+                        </></Section>}
+                        {selectedConversation.result.parsed.kesimpulan && <Section title="Kesimpulan">{selectedConversation.result.parsed.kesimpulan}</Section>}
+                      </>) : selectedConversation.result?.parsed?.document_answer && selectedConversation.result?.parsed?.findings_table ? (<>
+                        <Section title="Temuan Data">{selectedConversation.result.parsed.temuan_data}</Section>
+                        <FindingsTable table={selectedConversation.result.parsed.findings_table} />
+                      </>) : selectedConversation.result?.parsed?.findings_table ? (
+                        <Section title="Temuan Data"><FindingsTable table={selectedConversation.result.parsed.findings_table} /></Section>
+                      ) : selectedConversation.result?.parsed?.temuan_data ? (
+                        <Section title="Temuan Data">{selectedConversation.result.parsed.temuan_data}</Section>
                       ) : null}
 
                       {!selectedConversation.result?.parsed?.temuan_data &&
@@ -4361,22 +4457,10 @@ export function ChatPage({ localMode = false, ready = true }) {
                         </p>
                       ) : null}
 
-                      {selectedConversation.result?.parsed?.kesimpulan ? (
-                        <Section title="Kesimpulan">{selectedConversation.result.parsed.kesimpulan}</Section>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.konteks_penting ? (
-                        <Section title="Konteks penting">
+                      {!selectedConversation.result?.parsed?.finding_groups && selectedConversation.result?.parsed?.konteks_penting ? (
+                        <Section title="Konteks">
                           {selectedConversation.result.parsed.konteks_penting}
                         </Section>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.penilaian ? (
-                        <Section title="Penilaian">{selectedConversation.result.parsed.penilaian}</Section>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.alasan ? (
-                        <Section title="Alasan">{selectedConversation.result.parsed.alasan}</Section>
                       ) : null}
 
                       {selectedConversation.result?.parsed?.peringatan_editorial ? (
@@ -4433,15 +4517,30 @@ export function ChatPage({ localMode = false, ready = true }) {
                         </div>
                       ) : null}
 
-                      {selectedConversation.result?.parsed?.sumber ? (
-                        <Section title="Sumber"><SourceLinks title={selectedConversation.result.parsed.sumber}
-                          items={selectedConversation.result.parsed.source_items}
-                          value={selectedConversation.result.parsed.link_sumber} /></Section>
-                      ) : <SourceLinks value={selectedConversation.result?.parsed?.link_sumber} />}
-
-                      {selectedConversation.result?.parsed?.unduh_data ? (
-                        <DownloadLinks value={selectedConversation.result.parsed.unduh_data} />
-                      ) : null}
+                      {selectedConversation.result?.parsed?.document_answer ? (
+                        <>
+                          {!selectedConversation.result.parsed.finding_groups && selectedConversation.result.parsed.gfw_context && <Section title="Data Global Forest Watch"><>
+                            <p>{selectedConversation.result.parsed.gfw_context.summary}</p>
+                            <FindingsTable table={selectedConversation.result.parsed.gfw_context.table} />
+                            <p>{selectedConversation.result.parsed.gfw_context.context}</p>
+                          </></Section>}
+                          <DocumentSourceFooter result={selectedConversation.result} />
+                          {selectedConversation.result.parsed.gfw_context && <GfwSourceFooter result={selectedConversation.result.parsed.gfw_context} />}
+                        </>
+                      ) : hasMapbiomasSources(selectedConversation.result) ? (
+                        <MapbiomasSourceFooter result={selectedConversation.result} />
+                      ) : hasGfwSources(selectedConversation.result) ? (
+                        <GfwSourceFooter result={selectedConversation.result} />
+                      ) : <>
+                        {selectedConversation.result?.parsed?.sumber ? (
+                          <Section title="Sumber"><SourceLinks title={selectedConversation.result.parsed.sumber}
+                            items={selectedConversation.result.parsed.source_items}
+                            value={selectedConversation.result.parsed.link_sumber} /></Section>
+                        ) : <SourceLinks value={selectedConversation.result?.parsed?.link_sumber} />}
+                        {selectedConversation.result?.parsed?.unduh_data ? (
+                          <DownloadLinks value={selectedConversation.result.parsed.unduh_data} />
+                        ) : null}
+                      </>}
 
                       <VerifiedSources claims={selectedConversation.result?.claims} />
                       </>}
@@ -4490,7 +4589,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div>}
                 </>
               ) : (
                 <div
@@ -4501,11 +4600,15 @@ export function ChatPage({ localMode = false, ready = true }) {
                     padding: "48px 16px",
                   }}
                 >
-                  {ready ? 'Tulis pertanyaan atau klaim untuk mulai memeriksa data.' : 'Masukkan API key di atas untuk mulai menggunakan Cek Data AI.'}
+                  {ready ? 'Tulis pertanyaan atau klaim untuk mulai memeriksa data.' : 'Buka Pengaturan API key untuk mulai menggunakan Cek Data AI.'}
                 </div>
               )}
 
-              {loading ? <p role="status" aria-live="polite">Sedang mencari dan memeriksa bukti…</p> : null}
+              {!ready && navigation && <button type="button" className="workspace-button" onClick={openSettings}>Buka Pengaturan API key</button>}
+              {loading && <div className="chat-pending" role="status" aria-live="polite">
+                <span className="chat-pending-dots" aria-hidden="true"><i /><i /><i /></span>
+                <span>Sedang memeriksa data…</span>
+              </div>}
               {error ? (
                 <div
                   role="alert"
@@ -4523,11 +4626,11 @@ export function ChatPage({ localMode = false, ready = true }) {
             </div>
           </div>
 
-          <div
+          <div className="chat-composer"
             style={{
               borderTop: "1px solid rgba(17,17,17,0.08)",
-              paddingTop: isMobile ? 16 : 24,
-              paddingBottom: isMobile ? 18 : 26,
+              paddingTop: isMobile ? 10 : 14,
+              paddingBottom: "max(10px, env(safe-area-inset-bottom))",
               paddingLeft: isMobile ? 12 : 16,
               paddingRight: isMobile ? 12 : 16,
               background: COLORS.bg,
@@ -4539,7 +4642,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                 margin: "0 auto",
               }}
             >
-              {selectedConversation ? (
+              {!localMode && selectedConversation ? (
                 <div
                   style={{
                     marginBottom: 10,
@@ -4548,7 +4651,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                     lineHeight: 1.5,
                   }}
                 >
-                  {localMode ? 'Tuliskan indikator, wilayah, dan periode kembali bila ingin mengajukan pertanyaan lanjutan.' : <>Melanjutkan dari chat terpilih. Klik <strong>New chat</strong> bila ingin memulai konteks baru.</>}
+                  <>Melanjutkan dari chat terpilih. Klik <strong>New chat</strong> bila ingin memulai konteks baru.</>
                 </div>
               ) : null}
 
@@ -4597,7 +4700,7 @@ export function ChatPage({ localMode = false, ready = true }) {
                   }}
                 >
                   <SourcePicker value={selectedSource} options={sourceOptions} disabled={loading}
-                    onChange={value => { setSelectedSource(value); setSelectedId(null); setError(''); }} />
+                    onChange={value => { setSelectedSource(value); setSelectedId(null); setPendingConversation(null); setError(''); }} />
                   <Button onClick={handleAsk} disabled={!ready || loading || draft.trim().length < 3} style={{ height: 36, minHeight: 36, padding: "8px 14px", pointerEvents: "auto" }}>
                     <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
                       <Send size={15} />
@@ -4616,19 +4719,27 @@ export function ChatPage({ localMode = false, ready = true }) {
                   marginTop: 10,
                   marginBottom: 0,
                   textAlign: "center",
-                  fontSize: 12,
+                  fontSize: 11,
                   lineHeight: 1.5,
                   color: COLORS.muted,
                 }}
               >
-                Periksa sumber, wilayah, dan periode sebelum menggunakan hasil cek fakta.
+                Periksa dulu sumber sebelum menggunakan hasil.
               </p>
             </div>
           </div>
+          </div>
+          {navigation?.page === 'about' && <section className="workspace-about-page" aria-label="About Cek Data AI">
+            <button className="workspace-button workspace-back" onClick={() => navigate('chat')}><ArrowLeft size={17} />Back to chat</button>
+            <AboutPage />
+          </section>}
         </main>
       </div>
 
-      {isMobile && mobileHistoryOpen ? (
+      {navigation && <WorkspaceDialog open={isMobile && mobileHistoryOpen} onClose={() => setMobileHistoryOpen(false)} title="Navigasi" className="workspace-drawer">
+        <WorkspaceSidebar {...sidebarProps} />
+      </WorkspaceDialog>}
+      {!navigation && isMobile && mobileHistoryOpen ? (
         <>
           <div
             onClick={() => setMobileHistoryOpen(false)}
@@ -4796,7 +4907,7 @@ export default function App() {
   }
 
   return (
-    <div
+    <div className={page === "chat" && isLoggedIn ? "chat-app-shell" : undefined}
       style={{
         minHeight: "100vh",
         background: COLORS.bg,
@@ -4808,7 +4919,7 @@ export default function App() {
     >
       <Header page={page} setPage={setPage} isLoggedIn={isLoggedIn} isAdmin={isAdmin} handleSignOut={handleSignOut} />
 
-      <div style={{ flex: 1 }}>
+      <div className={page === "chat" && isLoggedIn ? "chat-app-content" : undefined} style={{ flex: 1 }}>
         {page === "home" ? <HomePage setPage={setPage} /> : null}
         {page === "about" ? <AboutPage /> : null}
         {page === "signin" ? <UserLoginPage setPage={setPage} setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole} /> : null}
@@ -4830,91 +4941,7 @@ export default function App() {
       </div>
 
       {page !== "chat" && page !== "admin" ? (
-        <footer style={{ background: COLORS.primary }}>
-          <div
-            style={{
-              maxWidth: 1280,
-              margin: "0 auto",
-              padding: "16px 24px",
-              display: "flex",
-              justifyContent: "center",
-              gap: 12,
-              flexWrap: "wrap",
-              color: "white",
-              fontSize: 14,
-              textAlign: "center",
-              width: "100%",
-              boxSizing: "border-box",
-            }}
-          >
-            {/* Top */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 24,
-          flexWrap: "wrap",
-        }}
-      >
-        {/* Developed */}
-        <div style={{ minWidth: 200 }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 8,
-              fontSize: 14,
-            }}
-          >
-            <span>Developed by</span>
-            <span style={{ fontWeight: 600 }}>
-              Indonesian Data Journalism Network (IDJN)
-            </span>
-            <img
-              src="/assets/pyproject.png"
-              alt="IDJN"
-              style={{ height: 32 }}
-            />
-          </div>
-        </div>
-
-        {/* Supported */}
-        <div style={{ minWidth: 200 }}>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: 8,
-              fontSize: 14,
-            }}
-          >
-            <span>Supported by</span>
-            <div
-              style={{
-                display: "flex",
-                gap: 12,
-                alignItems: "center",
-              }}
-            >
-              <img
-                src="/assets/logo_eu-BaS7zlNS.png"
-                alt="EU"
-                style={{ height: 32 }}
-              />
-              <img
-                src="/assets/logo_internews-CLywPOlF.png"
-                alt="Internews"
-                style={{ height: 32 }}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-          </div>
-        </footer>
+        <HomeFooter />
       ) : null}
     </div>
   );

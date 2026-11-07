@@ -64,6 +64,9 @@ class QdrantEvidenceRetriever:
                     population_label=p.get('breakdown_value', ''),
                     source_record_id=p.get('pinecone_id') or str(point.id))
             else:
+                if p.get('provider') == 'gfw':
+                    from gfw_sources import public_evidence
+                    p = public_evidence(p)
                 row = Evidence.model_validate(p)
                 family = self.member_families.get(row.indicator_id)
                 if family:

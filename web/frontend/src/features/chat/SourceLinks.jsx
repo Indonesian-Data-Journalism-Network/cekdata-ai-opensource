@@ -5,7 +5,14 @@ export default function SourceLinks({ value, title = '', items }) {
   if (Array.isArray(items) && items.length) {
     return <div style={{ display: 'grid', gap: 8 }}>
       {items.map((item, index) => <div key={`${item.display}-${index}`}>
-        <SourceLinks title={item.display} value={item.url} />
+        {item.methodology_url && item.methodology_url === item.url ? <>
+          <div>{item.display}</div>
+          <SourceLinks title="Dataset dasar dan metode · UMD 2000–2025" value={item.url} />
+          <div style={{ fontSize: 12, marginTop: 4 }}>Rincian angka wilayah tersedia dalam unduhan CSV.</div>
+        </> : <SourceLinks title={item.display} value={item.url} />}
+        {item.methodology_url && item.methodology_url !== item.url && <div style={{ fontSize: 13, marginTop: 4 }}>
+          <SourceLinks title="Dataset dasar dan metode · UMD 2000–2025" value={item.methodology_url} />
+        </div>}
       </div>)}
     </div>;
   }

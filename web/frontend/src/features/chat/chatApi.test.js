@@ -2,6 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { askQuestion } from './chatApi.js';
 
+test('expired sessions retain status so the workspace can reopen session settings', async (t) => {
+  t.mock.method(globalThis, 'fetch', async () => new Response(JSON.stringify({ detail: 'expired' }), {
+    status: 401, headers: { 'content-type': 'application/json' },
+  }));
+  await assert.rejects(askQuestion({ question: 'test' }), error => error.status === 401 && /Sesi API key berakhir/.test(error.message));
+});
+
 test('chat handles transport errors and rejects non-answer success payloads', async (t) => {
   t.mock.method(globalThis, 'fetch', async () => new Response(JSON.stringify({ detail: 'internal provider error' }), {
     status: 503, headers: { 'content-type': 'application/json' },

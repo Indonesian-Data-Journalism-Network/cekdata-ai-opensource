@@ -1,0 +1,34 @@
+CEK DATA AI — PEMBARUAN 7 NOVEMBER 2026
+
+Sudah diterapkan
+- Data GFW nasional, provinsi dan kabupaten/kota, tambahan indikator karbon/habitat/tanaman; importer MapBiomas.
+- Impor laporan NGO, OCR opsional, pengindeksan ulang dan metadata wilayah/entitas/sumber.
+- Referensi wilayah dan alias; pemahaman periode, perubahan tahunan, indikator, satuan, pembulatan dan pembagi nol.
+- Pemilihan bukti menurut topik/wilayah/kegiatan, kutipan asli, sumber/halaman, subjek survei serta status rencana, risiko dan kejadian.
+- Penyusunan temuan beberapa laporan dan konteks GFW, label klaim, tabel angka dan tautan publik/unduhan.
+- Perbaikan chat: pengiriman dan indikator proses, kolom ketik tetap terlihat, sidebar, histori, sign-out, kategori sumber dan footer organisasi/donor.
+
+Benchmark
+Rekap publik: docs/benchmarks/20261107/rekap-benchmark.html.
+500 pertanyaan: 428 akurat (85,6%), 43 bermasalah (8,6%), 26 terbatas (5,2%), 3 gangguan (0,6%).
+Akurat mencakup jawaban parsial yang faktanya tepat. Ini penggabungan jawaban terakhir yang tersimpan dari beberapa revisi, bukan uji ulang semua soal pada commit rilis ini. Delapan perbaikan jawaban dan 16 penerimaan jawaban parsial menjelaskan kenaikan dari 404 menjadi 428. Pertanyaan dampak umum tidak sepenuhnya mewakili penggunaan utama yang diinginkan, yaitu permintaan/verifikasi data.
+
+Belum diterapkan — hasil diskusi berikutnya
+- Jawaban data utama yang kemudian otomatis diperkaya konteks NGO pada pertanyaan statistik murni.
+- Pemisahan peran bukti menurut fungsi (data utama versus konteks), bukan berdasarkan penerbit.
+- Penyajian isi laporan langsung dan utuh, tanpa pembuka berulang “Laporan ...”, dengan penanda sumber.
+- Evaluasi terpisah untuk akurasi data utama dan ketepatan konteks tambahan.
+- Perbaikan kasus tersisa: konteks wilayah/angka, generalisasi kesimpulan dan klaim manfaat/dampak.
+
+Batas publikasi
+Kode, tes, referensi wilayah, dokumentasi dan rekap audit dibagikan. Kredensial, sesi, histori chat pengguna, isi Qdrant, dataset sumber, PDF, model embedding dan paket evaluasi mentah tidak diunggah. Lisensi kode tidak mengubah lisensi sumber data. Instalasi baru harus mengimpor sumber masing-masing.
+Tidak ada deployment publik atau perubahan konfigurasi server lokal dalam pembaruan ini.
+
+Pemeriksaan sebelum publikasi
+- Alur lokal: 409 tes lulus.
+- Salinan bersih tanpa data lokal: 409 tes dijalankan, 408 lulus dan satu uji arsip evaluasi lokal dilewati sesuai desain.
+- Server: 10 tes lulus, termasuk dari salinan bersih.
+- Ekspor Pinecone: 11 tes lulus.
+- Frontend: 56 tes lulus; build produksi berhasil.
+- Dua tes diperbaiki agar menyediakan fixture wilayah sendiri, tanpa bergantung pada arsip GFW lokal. Tidak mengubah perilaku jawaban produksi.
+- Pemindaian pola kredensial pada berkas Git yang dipublikasikan tidak menemukan kecocokan; direktori data/sesi/berkas kerja tidak disertakan.

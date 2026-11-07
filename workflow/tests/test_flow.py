@@ -135,7 +135,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
 
     async def test_explanation_has_no_verdict(self):
         result = await self.run_case(intent(kind='explanation'),
-            [row('old',2024,100),row('new',2025,110)])
+            [row('old',2024,100),row('new',2025,110)],question='Mengapa jumlah penduduk bekerja meningkat?')
         self.assertIsNone(result['verdict'])
         self.assertIn('belum menjelaskan sebab-akibat', result['answer'])
 
@@ -237,13 +237,13 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         result = await self.run_case(intent(),[row('a',2025,100),
             row('b',2025,105,source='Sumber Simulasi Lain')])
         self.assertIn('Ada nilai berbeda',result['answer'])
-        self.assertIn('100 orang',result['answer'])
-        self.assertIn('105 orang',result['answer'])
+        self.assertIn('100,00',result['answer'])
+        self.assertIn('105,00',result['answer'])
         self.assertIsNone(result['verdict'])
 
     async def test_simple_lookup_hides_unrequested_historical_context(self):
         result = await self.run_case(intent(),[row('old',2024,90),row('new',2025,100)])
-        self.assertIn('100 orang',result['answer'])
+        self.assertIn('100,00',result['answer'])
         self.assertNotIn('90 orang',result['answer'])
 
     async def test_question_uses_existing_parsed_contract_and_source_footer(self):
@@ -259,7 +259,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(parsed['link_sumber'],'https://example.org/table')
         self.assertEqual(parsed['unduh_data'],'https://example.org/data.csv')
         self.assertEqual(parsed['raw_answer'],result['answer'])
-        self.assertIn('Temuan data\n',result['answer'])
+        self.assertIn('Temuan Data\n',result['answer'])
         self.assertNotIn('private-id',result['answer'])
         self.assertTrue(result['answer'].endswith('Unduh data: https://example.org/data.csv'))
 
@@ -269,8 +269,7 @@ class WorkflowTests(unittest.IsolatedAsyncioTestCase):
             [row('before',2025,100,title='Tabel Simulasi'),row('after',2026,110,title='Tabel Simulasi')],
             question='Klaim simulasi tentang keberhasilan program')
         text = result['answer']
-        positions = [text.index(label) for label in ['Klaim\n','Temuan data\n','Konteks penting\n',
-            'Penilaian\n','Alasan\n','Peringatan editorial\n','Sumber:']]
+        positions = [text.index(label) for label in ['Klaim\n','Penilaian:','Temuan Data\n','Konteks\n','Peringatan editorial\n','Sumber:']]
         self.assertEqual(positions,sorted(positions))
         self.assertEqual(result['parsed']['penilaian'],result['verdict'])
         self.assertEqual(result['parsed']['alasan'],result['reason'])

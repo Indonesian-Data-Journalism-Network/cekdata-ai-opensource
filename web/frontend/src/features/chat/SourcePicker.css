@@ -26,10 +26,8 @@
 .source-picker-option:disabled { cursor: not-allowed; color: #827b76; }
 .source-picker-details { display: grid; gap: 5px; min-width: 0; }
 .source-picker-name { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; }
-.source-picker-description { font-size: 13px; line-height: 1.5; color: #7b736d; }
 .source-picker-tag { font-size: 10px; font-weight: 500; border: 1px solid #e7cdad; background: #fff4e5; color: #85551f; padding: 2px 5px; border-radius: 5px; white-space: nowrap; }
 .source-picker-unavailable { font-size: 10px; font-weight: 400; border: 1px solid #e0dad5; border-radius: 5px; padding: 2px 5px; }
 .source-picker-check { color: #ed4b9a; flex-shrink: 0; }
-.source-picker-footer { margin: 7px 3px 0; padding: 12px 7px 7px; border-top: 1px solid #e7e0da; color: #827971; font-size: 12px; line-height: 1.5; }
 @keyframes source-picker-appear { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { .source-picker-menu { animation: none; } }

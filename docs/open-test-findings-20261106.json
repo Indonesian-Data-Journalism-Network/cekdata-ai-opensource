@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-06",
+  "source_run": "tmp/gfw-new100-20261106",
+  "issues": [
+    {
+      "id": "UJI-20261106-11",
+      "status": "open",
+      "type": "missing_comparison_explanation",
+      "case": 11,
+      "description": "Buton–Kediri: Kediri 2023 tidak tersedia, tetapi jawaban tidak menjelaskan bahwa perbandingan belum dapat diselesaikan."
+    },
+    {
+      "id": "UJI-20261106-81",
+      "status": "open",
+      "type": "missing_comparison_explanation",
+      "case": 81,
+      "description": "Jakarta Selatan–Kepulauan Selayar: data Jakarta Selatan 2025 hilang; alasan tidak dapat membandingkan belum tegas."
+    },
+    {
+      "id": "UJI-20261106-55",
+      "status": "open",
+      "type": "zero_denominator_explanation",
+      "case": 55,
+      "description": "Tangerang: data tersedia, nilai awal nol. Persentase ditolak dengan benar tetapi alasannya disebut belum cukup data."
+    },
+    {
+      "id": "UJI-20261106-12",
+      "status": "open",
+      "type": "decimal_format",
+      "case": 12,
+      "description": "Mojokerto: label Tidak dapat diverifikasi benar, tetapi alasan menyajikan 0,07629724033284506 ha tanpa pembulatan tampilan."
+    }
+  ],
+  "known_limitations": [
+    {
+      "description": "12 jawaban masih memuat halaman metodologi umum karena dashboard wilayah belum terverifikasi.",
+      "case_ids": [
+        8,
+        28,
+        35,
+        39,
+        42,
+        44,
+        46,
+        56,
+        62,
+        63,
+        66,
+        89
+      ]
+    }
+  ],
+  "note": "Disimpan sebelum batch pertanyaan sederhana. Belum ada perbaikan terhadap temuan ini."
+}

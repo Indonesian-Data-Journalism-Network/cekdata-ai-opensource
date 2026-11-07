@@ -14,18 +14,19 @@ class TrendFormatTests(unittest.TestCase):
         return render(state,Analysis(summary=Note(text='Trennya naik.',evidence_ids=[r.id for r in records])))
 
     def test_all_four_patterns_follow_data_not_ai_summary(self):
-        for values,label in [([10,12,14],'naik'),([14,12,10],'turun'),([10,14,10],'fluktuatif'),([10,10,10],'datar')]:
+        for values,label in [([10,12,14],'naik'),([14,12,10],'turun'),([10,14,10],'kemudian turun'),([10,10,10],'tetap')]:
             with self.subTest(values=values):
                 r=self.result(values)
-                self.assertIn('trennya '+label,r['parsed']['kesimpulan'])
+                self.assertIn(label,r['parsed']['kesimpulan'])
                 self.assertNotIn('Trennya',r['parsed']['temuan_data'])
                 self.assertNotIn('Perubahan',r['parsed']['temuan_data'])
-                self.assertLess(r['answer'].index('pada Agustus 2025'),r['answer'].index('Kesimpulan'))
-                self.assertLess(r['answer'].index('Kesimpulan'),r['answer'].index('Sumber:'))
+                self.assertLess(r['answer'].index(r['parsed']['jawaban_utama']),r['answer'].index('Temuan Data'))
+                self.assertLess(r['answer'].index('Temuan Data'),r['answer'].index('Sumber:'))
+                self.assertEqual(len(r['parsed']['findings_table']['rows']),3)
                 self.assertIsNone(r['verdict'])
 
     def test_flat_intervals_do_not_hide_direction(self):
-        self.assertIn('trennya naik',self.result([10,10,14])['parsed']['kesimpulan'])
+        self.assertIn('naik pada',self.result([10,10,14])['parsed']['kesimpulan'])
 
     def test_one_point_cannot_imply_flat_trend(self):
         r=self.result([10])
@@ -35,11 +36,11 @@ class TrendFormatTests(unittest.TestCase):
     def test_incompatible_series_remains_unclassified(self):
         r=self.result([10,12,14],incompatible=True)
         self.assertIn('kesetaraan',r['parsed']['kesimpulan'])
-        self.assertNotIn('trennya naik',r['parsed']['kesimpulan'])
+        self.assertNotIn('naik pada',r['parsed']['kesimpulan'])
 
     def test_incomplete_series_limits_conclusion_to_displayed_periods(self):
         r=self.result([10,12])
-        self.assertIn('trennya naik',r['parsed']['kesimpulan'])
+        self.assertIn('naik pada',r['parsed']['kesimpulan'])
         self.assertIn('hanya berlaku pada periode yang ditampilkan',r['parsed']['kesimpulan'])
         self.assertNotIn('periode yang diminta belum lengkap',r['answer'])
 

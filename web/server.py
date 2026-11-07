@@ -26,6 +26,8 @@ from flow import CekDataWorkflow, LlamaAI
 from storage import QdrantEvidenceRetriever
 from pilot_data import COLLECTION, CATALOG_PATH, REPORT_PATH, PilotAI, group_catalog
 from settings import QDRANT_URL
+from gfw_data import DIRECTORY as GFW_DIRECTORY, COLLECTION as GFW_COLLECTION
+from gfw_district_data import DIRECTORY as GFW_DISTRICT_DIRECTORY, COLLECTION as GFW_DISTRICT_COLLECTION
 
 COOKIE = 'cekdata_local_session'
 SESSION_SECONDS = 8 * 60 * 60
@@ -44,6 +46,29 @@ class AskInput(BaseModel):
 
 
 async def run_workflow(key: str, question: str, reference: str):
+    return await run_dataset_workflow(key, question, reference, CATALOG_PATH, COLLECTION)
+
+
+async def run_environment_workflow(key: str, question: str, reference: str):
+    directory,collection = gfw_location()
+    return await run_dataset_workflow(key, question, reference, directory / 'catalog.json', collection)
+
+
+def gfw_location():
+    path = GFW_DISTRICT_DIRECTORY / 'import-report.json'
+    if path.exists() and json.loads(path.read_text()).get('publication_status') == 'published':
+        return GFW_DISTRICT_DIRECTORY, GFW_DISTRICT_COLLECTION
+    return GFW_DIRECTORY, GFW_COLLECTION
+
+
+def gfw_report():
+    directory,_ = gfw_location()
+    path = directory / 'import-report.json'
+    report = json.loads(path.read_text()) if path.exists() else {}
+    return report if report.get('publication_status') == 'published' else {}
+
+
+async def run_dataset_workflow(key, question, reference, catalog_path, collection):
     from llama_index.llms.openai import OpenAI
     from qdrant_client import QdrantClient
 
@@ -52,19 +77,19 @@ async def run_workflow(key: str, question: str, reference: str):
     import flow, storage, pilot_data
     for module in (flow, storage, pilot_data):
         importlib.reload(module)
-    catalog = pilot_data.group_catalog(json.loads(CATALOG_PATH.read_text()))
+    catalog = pilot_data.group_catalog(json.loads(catalog_path.read_text()))
     llm = OpenAI(model=os.environ.get('CEKDATA_MODEL', 'gpt-4.1-mini-2025-04-14'),
                  api_key=key, temperature=0, max_tokens=2400, timeout=45, max_retries=0)
     client = QdrantClient(url=QDRANT_URL, timeout=10)
     try:
         workflow = flow.CekDataWorkflow(pilot_data.PilotAI(llm, catalog),
-            storage.QdrantEvidenceRetriever(client, COLLECTION, usable_only=True, catalog=catalog, limit=2000), catalog)
+            storage.QdrantEvidenceRetriever(client, collection, usable_only=True, catalog=catalog, limit=2000), catalog)
         return await workflow.run(question=question, reference_date=reference)
     finally:
         client.close()
 
 
-def create_app(runner=run_workflow):
+def create_app(runner=run_workflow, environment_runner=run_environment_workflow):
     app = FastAPI(docs_url=None, redoc_url=None, openapi_url=None)
     # Credentials never enter files, responses, browser storage, or application logs.
     sessions: dict[str, tuple[str, float]] = {}
@@ -111,9 +136,11 @@ def create_app(runner=run_workflow):
     @app.get('/api/local/session')
     async def session_status(request: Request):
         report = json.loads(REPORT_PATH.read_text()) if REPORT_PATH.exists() else {}
+        environment = gfw_report()
         return {'configured': session(request) is not None, 'mode': 'local',
-                'sample_records': report.get('records', 0),
-                'searchable_records': report.get('searchable_records', 0)}
+                'sample_records': report.get('records', 0) + environment.get('records', 0),
+                'searchable_records': report.get('searchable_records', 0) + environment.get('searchable_records', 0),
+                'gfw_records': environment.get('records', 0), 'gfw_provinces': environment.get('province_count', 0)}
 
     @app.post('/api/local/session')
     async def set_session(data: SessionInput, request: Request, response: Response):
@@ -137,14 +164,17 @@ def create_app(runner=run_workflow):
 
     @app.get('/api/search/sources')
     async def sources():
-        return {'sources': ['bps'], 'preview_sources': [], 'mode': 'local'}
+        available = bool(gfw_report())
+        return {'sources': ['bps', 'environment'] if available else ['bps'],
+                'default_source': 'environment' if available else 'bps',
+                'preview_sources': [], 'mode': 'local'}
 
     @app.post('/api/ask')
     async def ask(data: AskInput, request: Request):
         credentials = session(request)
         if not credentials:
             raise HTTPException(401, 'Masukkan API key melalui Pengaturan API key.')
-        if data.sources != ['bps']:
+        if data.sources != ['bps'] and not (data.sources == ['environment'] and gfw_report()):
             raise HTTPException(409, 'Sumber yang dipilih belum terhubung ke database lokal.')
         question = data.question.strip()
         if len(question) < 3:
@@ -156,7 +186,8 @@ def create_app(runner=run_workflow):
         reference = datetime.now(ZoneInfo('Asia/Jakarta')).date().isoformat()
         async with active:
             try:
-                result = await asyncio.wait_for(runner(credentials[0], question, reference), timeout=155)
+                selected_runner = environment_runner if data.sources == ['environment'] else runner
+                result = await asyncio.wait_for(selected_runner(credentials[0], question, reference), timeout=155)
             except Exception as exc:
                 # Only exception class and code locations; never exception text,
                 # local variables, request body, headers or provider payloads.

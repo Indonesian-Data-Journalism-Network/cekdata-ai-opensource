@@ -1,0 +1,913 @@
+{
+  "date": "2026-11-06",
+  "scope": "42 jawaban bermasalah dari 300 pertanyaan setelah perbaikan awal",
+  "method": "Pengelompokan manual atas deskripsi temuan pengujian yang telah dicatat. Bukan uji ulang aplikasi atau diagnosis akar masalah kode. Satu kasus dihitung sekali dalam setiap kategori, tetapi boleh masuk beberapa kategori.",
+  "denominator": 42,
+  "category_assignments": 71,
+  "summary": [
+    {
+      "code": "E",
+      "category": "Penjelasan atau penyajian kurang tepat",
+      "definition": "Alasan keterbatasan/pembanding menyesatkan atau tidak jelas, klarifikasi yang diperlukan tidak diberikan, teks terpotong, kode internal, sumber berulang, atau desimal berlebihan.",
+      "count": 16,
+      "percent_of_42": 38.1,
+      "case_ids": [
+        "UJI-20261106-11",
+        "UJI-20261106-81",
+        "UJI-20261106-55",
+        "UJI-20261106-12",
+        "SIMPLE-20261106-037",
+        "SIMPLE-20261106-038",
+        "SIMPLE-20261106-045",
+        "SIMPLE-20261106-046",
+        "SIMPLE-20261106-047",
+        "SIMPLE-20261106-048",
+        "SIMPLE-20261106-087",
+        "SIMPLE-20261106-088",
+        "SIMPLE-20261106-089",
+        "SIMPLE-20261106-097",
+        "NATURAL-20261106-097",
+        "NATURAL-20261106-100"
+      ]
+    },
+    {
+      "code": "O",
+      "category": "Kesimpulan melampaui bukti",
+      "definition": "Menguatkan kepastian, mengubah rencana/risiko menjadi realisasi, menggeneralisasi kelompok, atau mempersempit bukti lintas wilayah tanpa dasar.",
+      "count": 12,
+      "percent_of_42": 28.57,
+      "case_ids": [
+        "SIMPLE-20261106-037",
+        "SIMPLE-20261106-047",
+        "SIMPLE-20261106-048",
+        "SIMPLE-20261106-079",
+        "SIMPLE-20261106-083",
+        "SIMPLE-20261106-084",
+        "SIMPLE-20261106-090",
+        "SIMPLE-20261106-099",
+        "NATURAL-20261106-089",
+        "NATURAL-20261106-091",
+        "NATURAL-20261106-092",
+        "NATURAL-20261106-098"
+      ]
+    },
+    {
+      "code": "N",
+      "category": "Jawaban tidak lengkap",
+      "definition": "Bagian substantif yang diminta, seperti perubahan antarperiode, angka, tren, atau dampak terhadap warga, tidak dijawab memadai.",
+      "count": 11,
+      "percent_of_42": 26.19,
+      "case_ids": [
+        "SIMPLE-20261106-031",
+        "SIMPLE-20261106-034",
+        "SIMPLE-20261106-038",
+        "SIMPLE-20261106-039",
+        "SIMPLE-20261106-096",
+        "SIMPLE-20261106-097",
+        "SIMPLE-20261106-098",
+        "NATURAL-20261106-088",
+        "NATURAL-20261106-097",
+        "NATURAL-20261106-099",
+        "NATURAL-20261106-100"
+      ]
+    },
+    {
+      "code": "W",
+      "category": "Wilayah atau cakupan lokasi tidak sesuai",
+      "definition": "Bukti lokasi lain salah diatribusikan; lokasi diklaim sebagai wilayah induk tanpa dasar; atau bukti lintas wilayah dinyatakan spesifik pada lokasi pertanyaan.",
+      "count": 10,
+      "percent_of_42": 23.81,
+      "case_ids": [
+        "SIMPLE-20261106-080",
+        "SIMPLE-20261106-081",
+        "SIMPLE-20261106-090",
+        "SIMPLE-20261106-096",
+        "SIMPLE-20261106-099",
+        "SIMPLE-20261106-100",
+        "NATURAL-20261106-089",
+        "NATURAL-20261106-091",
+        "NATURAL-20261106-092",
+        "NATURAL-20261106-093"
+      ]
+    },
+    {
+      "code": "C",
+      "category": "Penilaian klaim tidak tepat",
+      "definition": "Label hilang, label tidak selaras dengan bukti, atau logika klaim negasi/universalitas tidak diterapkan. Tidak otomatis menandai setiap salah indikator sebagai salah label.",
+      "count": 9,
+      "percent_of_42": 21.43,
+      "case_ids": [
+        "SIMPLE-20261106-033",
+        "SIMPLE-20261106-037",
+        "SIMPLE-20261106-048",
+        "SIMPLE-20261106-049",
+        "SIMPLE-20261106-086",
+        "SIMPLE-20261106-087",
+        "SIMPLE-20261106-088",
+        "SIMPLE-20261106-089",
+        "SIMPLE-20261106-090"
+      ]
+    },
+    {
+      "code": "I",
+      "category": "Indikator atau topik tidak sesuai",
+      "definition": "Indikator total/primer diganti, indikator keadaan dipakai untuk perubahan, atau sektor kegiatan utama bergeser seperti sawit menjadi tebu dan perkebunan kayu menjadi sawit/PLTU.",
+      "count": 7,
+      "percent_of_42": 16.67,
+      "case_ids": [
+        "SIMPLE-20261106-022",
+        "SIMPLE-20261106-033",
+        "SIMPLE-20261106-034",
+        "SIMPLE-20261106-035",
+        "SIMPLE-20261106-098",
+        "NATURAL-20261106-029",
+        "NATURAL-20261106-089"
+      ]
+    },
+    {
+      "code": "T",
+      "category": "Periode atau pembanding waktu kurang tepat",
+      "definition": "Salah memilih periode, mengarang rentang, tidak memetakan ungkapan waktu, atau mengambil satu tahun untuk pertanyaan perubahan padahal pembanding tersedia.",
+      "count": 6,
+      "percent_of_42": 14.29,
+      "case_ids": [
+        "SIMPLE-20261106-031",
+        "SIMPLE-20261106-034",
+        "SIMPLE-20261106-038",
+        "SIMPLE-20261106-045",
+        "SIMPLE-20261106-046",
+        "SIMPLE-20261106-047"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "UJI-20261106-11",
+      "status": "open",
+      "type": "missing_comparison_explanation",
+      "case": 11,
+      "description": "Buton–Kediri: Kediri 2023 tidak tersedia, tetapi jawaban tidak menjelaskan bahwa perbandingan belum dapat diselesaikan.",
+      "source_run": "gfw-new100-20261106",
+      "evidence": "docs/test-evidence/20261106/gfw-new100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "E"
+      ],
+      "categories": [
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "UJI-20261106-81",
+      "status": "open",
+      "type": "missing_comparison_explanation",
+      "case": 81,
+      "description": "Jakarta Selatan–Kepulauan Selayar: data Jakarta Selatan 2025 hilang; alasan tidak dapat membandingkan belum tegas.",
+      "source_run": "gfw-new100-20261106",
+      "evidence": "docs/test-evidence/20261106/gfw-new100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "E"
+      ],
+      "categories": [
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "UJI-20261106-55",
+      "status": "open",
+      "type": "zero_denominator_explanation",
+      "case": 55,
+      "description": "Tangerang: data tersedia, nilai awal nol. Persentase ditolak dengan benar tetapi alasannya disebut belum cukup data.",
+      "source_run": "gfw-new100-20261106",
+      "evidence": "docs/test-evidence/20261106/gfw-new100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "E"
+      ],
+      "categories": [
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "UJI-20261106-12",
+      "status": "open",
+      "type": "decimal_format",
+      "case": 12,
+      "description": "Mojokerto: label Tidak dapat diverifikasi benar, tetapi alasan menyajikan 0,07629724033284506 ha tanpa pembulatan tampilan.",
+      "source_run": "gfw-new100-20261106",
+      "evidence": "docs/test-evidence/20261106/gfw-new100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "E"
+      ],
+      "categories": [
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-022",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 22,
+      "type": "klaim_gfw",
+      "question": "Kehilangan tutupan pohon di Sulawesi Tenggara naik pada 2025 dibanding 2024. Benarkah?",
+      "description": "Indikator hutan primer dipakai menggantikan kehilangan tutupan pohon total.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-031",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 31,
+      "type": "bahasa_alami",
+      "question": "Pejabat bilang deforestasi di Papua sudah turun setahun terakhir. Benarkah?",
+      "description": "Klaim setahun terakhir dijawab dengan konteks lama dan seri 2021–2025, tanpa membedah perubahan 2024–2025, batas indikator deforestasi, dan cakupan Papua sumber secara cukup jelas.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "N"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-033",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 33,
+      "type": "bahasa_alami",
+      "question": "Katanya kerusakan hutan di Riau sudah menurun. Betul?",
+      "description": "Kerusakan hutan yang luas maknanya dibenarkan memakai penurunan kehilangan dalam hutan primer saja. Asumsi periode disebut, tetapi penyempitan indikator tidak dijustifikasi.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I",
+        "C"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai",
+        "Penilaian klaim tidak tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-034",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 34,
+      "type": "bahasa_alami",
+      "question": "Deforestasi di Kalimantan Timur tahun lalu turun. Benarkah?",
+      "description": "Pernyataan penurunan tahun lalu dijawab dengan luas hutan belum terlindungi tahun 2019. Tidak menawarkan seri perubahan relevan atau menjelaskan batas data deforestasi terbaru.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "I",
+        "N"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Indikator atau topik tidak sesuai",
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-035",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 35,
+      "type": "bahasa_alami",
+      "question": "Berapa hutan yang hilang di Sulawesi Tengah tahun lalu?",
+      "description": "Pertanyaan hutan yang hilang dijawab hanya kehilangan dalam hutan primer tanpa menjelaskan mengapa subset itu dipilih. Tahun lalu sudah benar dipetakan ke 2025.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-037",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 37,
+      "type": "bahasa_alami",
+      "question": "Kebakaran hutan di Kalimantan Tengah makin parah. Benarkah?",
+      "description": "Sebagian benar didasarkan pada keberadaan dampak kebakaran, bukan perubahan keparahan antarwaktu. Alasan mengakui tidak ada tren; teks terpotong pada kata karena dan menampilkan F1/F3.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C",
+        "O",
+        "E"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat",
+        "Kesimpulan melampaui bukti",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-038",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 38,
+      "type": "bahasa_alami",
+      "question": "Hutan primer di Papua makin banyak yang hilang. Betul?",
+      "description": "Frasa makin banyak hanya mengambil 2025 lalu menyatakan tidak ada pembanding, padahal seri tahun sebelumnya tersedia lokal.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "N",
+        "E"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Jawaban tidak lengkap",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-039",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 39,
+      "type": "bahasa_alami",
+      "question": "Pemerintah bilang deforestasi di Sumatera Selatan sudah berhasil ditekan. Benarkah?",
+      "description": "Klaim deforestasi berhasil ditekan hanya dijawab konteks kebijakan/kerusakan tanpa membedah penurunan indikator dan atribusi keberhasilan secara terpisah.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-045",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 45,
+      "type": "bahasa_alami",
+      "question": "Deforestasi di Papua Selatan tahun lalu paling rendah. Benarkah?",
+      "description": "Mengarang rentang 10 tahun sebagai rentang yang diminta untuk klaim paling rendah; pembanding terendah tidak diperjelas dan data 2025 yang absen tidak dijelaskan langsung.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "E"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-046",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 46,
+      "type": "bahasa_alami",
+      "question": "Hutan di Kalimantan Barat sekarang lebih luas daripada lima tahun lalu. Betul?",
+      "description": "Sekarang dibanding lima tahun lalu diubah menjadi rangkaian 5 tahun. Tidak menjelaskan ketiadaan 2026 serta pasangan tahun pembanding secara tepat.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "E"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-047",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 47,
+      "type": "bahasa_alami",
+      "question": "Sejak gubernur baru menjabat, kehilangan hutan di Sulawesi Tenggara menurun. Benarkah?",
+      "description": "Tidak menanyakan gubernur/periode jabatan; menyisipkan klausa tanpa indikasi penurunan sejak pergantian gubernur dalam temuan lintas Sulawesi tanpa bukti pergantian tersebut.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "T",
+        "O",
+        "E"
+      ],
+      "categories": [
+        "Periode atau pembanding waktu kurang tepat",
+        "Kesimpulan melampaui bukti",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-048",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 48,
+      "type": "bahasa_alami",
+      "question": "Katanya pembukaan lahan di Kalimantan Utara sudah berhenti. Benar?",
+      "description": "Klaim dengan Benar? tidak mendapat label. Rencana proyek dan relokasi dipakai menyimpulkan pembukaan lahan masih berlangsung tanpa bukti langsung waktunya. Dua edisi laporan sama tampil sebagai sumber terpisah.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C",
+        "O",
+        "E"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat",
+        "Kesimpulan melampaui bukti",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-049",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 49,
+      "type": "bahasa_alami",
+      "question": "Kehilangan tutupan pohon di Maluku sudah nol tahun lalu. Benarkah?",
+      "description": "Klaim nol diberi tidak dapat diverifikasi meskipun angka 2025 sebesar 4.079,10 ha langsung membantah nol.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-079",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 79,
+      "type": "laporan_ngo",
+      "question": "Apa masalah masyarakat adat dalam proyek pangan di Merauke?",
+      "description": "Mengubah hampir bisa dipastikan/akan dalam TLH2026 halaman40 menjadi dipastikan dan peristiwa tergusur yang lebih tegas. Perlu menjaga tingkat kepastian dan membedakan rencana, proyeksi, dan kejadian.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "O"
+      ],
+      "categories": [
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-080",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 80,
+      "type": "laporan_ngo",
+      "question": "Apa dampak industri nikel terhadap warga Pulau Obi?",
+      "description": "Kasus Weda Bay dimasukkan sebagai konteks wilayah lebih luas untuk Pulau Obi; Weda Bay lokasi berbeda, bukan cakupan induk Obi. Terbawa ke kesimpulan.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-081",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 81,
+      "type": "laporan_ngo",
+      "question": "Apa yang terjadi dalam konflik lahan di Pundenrejo?",
+      "description": "Pengalaman relokasi warga Rempang dari laporan JETP halaman29 dinyatakan sebagai pengalaman warga Pundenrejo. Salah atribusi lokasi terkonfirmasi dari halaman sumber.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-083",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 83,
+      "type": "laporan_ngo",
+      "question": "Apa dampak industri nikel terhadap perempuan di Sulawesi?",
+      "description": "Temuan tentang seluruh buruh IMIP disandingkan dengan dampak khusus perempuan tanpa membatasi populasi/jenis kelamin; kesimpulan tidak menyaring konteks tersebut.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "O"
+      ],
+      "categories": [
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-084",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 84,
+      "type": "laporan_ngo",
+      "question": "Apa masalah lingkungan dalam rencana PLTP Muara Laboh?",
+      "description": "Kesimpulan menyebut rencana PLTP menyebabkan banjir; perlu membedakan dampak operasi yang telah berjalan dari risiko rencana tahap2. Temuan awal lebih hati-hati dibanding kesimpulan.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "O"
+      ],
+      "categories": [
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-086",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 86,
+      "type": "laporan_ngo",
+      "question": "Tambang nikel membuat semua warga Kabaena lebih sejahtera. Benarkah?",
+      "description": "Klaim semua warga lebih sejahtera tidak dibedah universalitasnya walau ada bukti warga mengalami kemunduran. Alasan meminta pembuktian seluruh populasi tanpa menilai bukti tandingan yang ditemukan.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-087",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 87,
+      "type": "laporan_ngo",
+      "question": "Proyek Rempang Eco City tidak merugikan warga setempat. Benarkah?",
+      "description": "Alasan meminta perbandingan pekerja lokal/nonlokal tidak relevan dengan klaim tidak merugikan warga. Bukti kerugian langsung tidak tercermin dalam penilaian.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C",
+        "E"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-088",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 88,
+      "type": "laporan_ngo",
+      "question": "Industri nikel di Pulau Obi tidak menimbulkan masalah lingkungan. Benarkah?",
+      "description": "Klaim tidak menimbulkan masalah lingkungan dijawab alasan generik tidak cukup pembanding, meskipun temuan menunjukkan pencemaran Obi. Klaim negasi tidak dibedah.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C",
+        "E"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-089",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 89,
+      "type": "laporan_ngo",
+      "question": "Proyek pangan di Merauke tidak berdampak pada masyarakat adat. Benarkah?",
+      "description": "Klaim tidak berdampak pada masyarakat adat tidak dibandingkan dengan bukti dampak yang ditemukan. Alasan tidak cukup generik menutupi temuan langsung.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "C",
+        "E"
+      ],
+      "categories": [
+        "Penilaian klaim tidak tepat",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-090",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 90,
+      "type": "laporan_ngo",
+      "question": "Pertambangan di Raja Ampat tidak mengancam hutan. Benarkah?",
+      "description": "Keterangan foto Gam Island Raja Ampat pada Unheeded Warnings halaman4 dijadikan bukti ancaman biomassa di Raja Ampat. Label juga tidak mempertimbangkan bukti tambang yang ditemukan.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W",
+        "O",
+        "C"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Kesimpulan melampaui bukti",
+        "Penilaian klaim tidak tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-096",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 96,
+      "type": "gabungan",
+      "question": "Apa dampak tambang nikel di Halmahera Timur dan bagaimana perkembangan kehilangan tutupan pohonnya?",
+      "description": "Tidak menjawab seri kehilangan tutupan pohon yang diminta. Weda Tengah ditulis berada di Halmahera Timur; temuan lokasi lintas kabupaten bercampur.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W",
+        "N"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-097",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 97,
+      "type": "gabungan",
+      "question": "Apa masalah lingkungan di Kabupaten Berau dan apakah luas hutannya berkurang?",
+      "description": "Bagian apakah luas hutan Berau berkurang diabaikan; tidak ada angka maupun penjelasan batas seri luas hutan kabupaten.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N",
+        "E"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-098",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 98,
+      "type": "gabungan",
+      "question": "Apa dampak perkebunan sawit terhadap masyarakat adat di Papua Selatan dan bagaimana perubahan tutupan hutannya?",
+      "description": "Pertanyaan sawit dijawab dominan temuan tebu/PSN pangan. Perubahan tutupan hutan yang diminta tidak disajikan atau dinyatakan belum terjawab.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I",
+        "N"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai",
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-099",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 99,
+      "type": "gabungan",
+      "question": "Apa dampak tambang di Raja Ampat dan berapa kehilangan tutupan pohon di sana pada 2025?",
+      "description": "Bagian angka2025 sesuai, tetapi kesimpulan menyisipkan lubang tambang tidak direklamasi/tambang ilegal dari konteks nasional WALHI halaman154 tanpa batas wilayah sehingga berisiko terbaca sebagai temuan Raja Ampat.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W",
+        "O"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "SIMPLE-20261106-100",
+      "status": "open",
+      "source_run": "simple100-20261106",
+      "case": 100,
+      "type": "gabungan",
+      "question": "Bagaimana dampak pertambangan di Bombana terhadap warga dan tren kehilangan tutupan pohonnya?",
+      "description": "Talaga Raya ditulis Bombana, padahal sumber Satya Bumi halaman3 dan15 menyebut Kabupaten Buton Tengah. Angka245KK milik wilayah lain; angka GFW Bombana sendiri sesuai.",
+      "evidence": "docs/test-evidence/20261106/simple100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-029",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 29,
+      "type": "data",
+      "question": "Berapa luas kehilangan tutupan pohon dalam hutan primer di Kota Bandung tahun 2023?",
+      "description": "Diminta kehilangan dalam hutan primer Kota Bandung2023, tetapi jawaban mengganti dengan kehilangan tutupan pohon total0,23ha. Arsip primer untuk kota/tahun itu tidak tersedia; pergantian indikator tidak dijelaskan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-088",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 88,
+      "type": "gabungan",
+      "question": "Apa dampak tambang nikel di Sulawesi Tengah? Berapa kehilangan tutupan pohon di provinsi ini pada 2025?",
+      "description": "Bagian kehilangan tutupan pohon Sulawesi Tengah2025 tidak dijawab dan tidak dijelaskan keterbatasannya, padahal data provinsi tersedia.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-089",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 89,
+      "type": "gabungan",
+      "question": "Apa dampak perkebunan kayu terhadap warga Kalimantan Barat? Bandingkan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "description": "Pertanyaan perkebunan kayu dijawab dominan sawit dan PLTU. Angka14 perusahaan berjalan/18 berencana pada Trend Asia halaman5 tidak dikhususkan Kalimantan Barat di sumber, tetapi jawaban menempatkannya di sana. Angka GFW sendiri benar; perbandingan hanya disimpulkan turun dan dijumlahkan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "I",
+        "W",
+        "O"
+      ],
+      "categories": [
+        "Indikator atau topik tidak sesuai",
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-091",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 91,
+      "type": "gabungan",
+      "question": "Bagaimana tambang memengaruhi nelayan di Kabupaten Raja Ampat? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "description": "Angka2024–2025 dan temuan Auriga tentang nelayan sesuai. Namun WALHI halaman3 membahas ribuan hektare kehilangan pada kawasan seperti Raja Ampat DAN pesisir Sulawesi Tenggara; jawaban menyempitkan besaran itu ke Raja Ampat saja. Perlu menjaga lingkup angka naratif.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W",
+        "O"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-092",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 92,
+      "type": "gabungan",
+      "question": "Apa dampak industri nikel terhadap warga Kabupaten Halmahera Tengah? Berapa kehilangan tutupan pohon di sana pada 2025?",
+      "description": "Angka GFW Halmahera Tengah dan16 sampel ikan Teluk Weda sesuai. Temuan umum industri nikel dari Trend Asia halaman5–6 tidak dibatasi sebagai konteks lintas wilayah, sehingga terbaca sebagai bukti spesifik Halmahera Tengah. Halaman6 membahas episentrum Maluku Utara/Sulawesi Tengah, bukan seluruh temuan khusus kabupaten yang ditanya.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W",
+        "O"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai",
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-093",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 93,
+      "type": "gabungan",
+      "question": "Apa masalah lingkungan di Kabupaten Morowali? Tampilkan tren kehilangan tutupan pohon selama 2022–2025.",
+      "description": "Seri GFW Morowali benar, tetapi temuan Pomalaa dibawa sebagai wilayah lebih luas/terkait Morowali tanpa hubungan yang dijelaskan oleh bukti. Konteks lintas lokasi mendominasi kesimpulan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "W"
+      ],
+      "categories": [
+        "Wilayah atau cakupan lokasi tidak sesuai"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-097",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 97,
+      "type": "gabungan",
+      "question": "Apa dampak tambang terhadap air bersih di Pulau Obi? Sertakan kehilangan tutupan pohon di pulau itu pada 2025.",
+      "description": "Temuan pencemaran Obi disajikan, tetapi permintaan kehilangan tutupan pohon2025 diabaikan tanpa penjelasan batas data pulau.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N",
+        "E"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-098",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 98,
+      "type": "gabungan",
+      "question": "Apa dampak proyek industri terhadap warga Pulau Rempang? Bagaimana tren kehilangan tutupan pohon di pulau itu selama 2022–2025?",
+      "description": "Keterbatasan tren Rempang dijelaskan, tetapi rencana penggunaan PLTU2GW dari Trend Asia halaman5 ditulis juga menggunakan/penggunaan PLTU; kesimpulan menguatkan hubungan dukungan JETP tanpa menjaga sifat analisis sumber. Rencana dan realisasi harus dibedakan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "O"
+      ],
+      "categories": [
+        "Kesimpulan melampaui bukti"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-099",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 99,
+      "type": "gabungan",
+      "question": "Apa dampak perkebunan sawit terhadap warga di Pulau Sumatera? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.",
+      "description": "Dampak terhadap warga Sumatera tidak dijawab memadai; jawaban hanya skenario lahan sawit5,97juta ha. Permintaan kehilangan2024–2025 hilang tanpa keterangan ketersediaan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap"
+      ]
+    },
+    {
+      "id": "NATURAL-20261106-100",
+      "status": "open",
+      "source_run": "gfw-natural100-20261106",
+      "case": 100,
+      "type": "gabungan",
+      "question": "Apa dampak pertambangan terhadap warga di Pulau Kalimantan? Bagaimana tren kehilangan tutupan pohon selama 2022–2025?",
+      "description": "Temuan konsesi dan risiko bencana Kalimantan tampil, tetapi tren kehilangan2022–2025 yang diminta tidak dijawab atau diberi penjelasan keterbatasan.",
+      "evidence": "docs/test-evidence/20261106/gfw-natural100-20261106/results.json",
+      "note_type": "temuan pengujian; akar masalah kode belum dipastikan",
+      "category_codes": [
+        "N",
+        "E"
+      ],
+      "categories": [
+        "Jawaban tidak lengkap",
+        "Penjelasan atau penyajian kurang tepat"
+      ]
+    }
+  ]
+}

@@ -62,19 +62,19 @@ export default function SourcePicker({ value, options, disabled, onChange }) {
 
   return <>
     <button ref={trigger} type="button" className="source-picker-trigger" disabled={disabled}
-      aria-label={`Sumber utama: ${selected?.label || 'Pilih sumber'}`} aria-haspopup="menu"
+      aria-label={`Topik: ${selected?.label || 'Pilih topik'}`} aria-haspopup="menu"
       aria-expanded={open} aria-controls={open ? id : undefined}
       onClick={() => setOpen(!open)}
       onKeyDown={event => { if (['ArrowDown', 'ArrowUp'].includes(event.key)) { event.preventDefault(); setOpen(true); } }}>
       <Database size={15} aria-hidden="true" />
-      <span>{selected?.label || 'Pilih sumber'}</span>
+      <span>{selected?.label || 'Pilih topik'}</span>
       {selected?.preview && <span className="source-picker-tag">Uji coba</span>}
       <ChevronDown size={14} aria-hidden="true" style={{ transform: open ? 'rotate(180deg)' : undefined }} />
     </button>
-    {open && createPortal(<div ref={menu} id={id} role="menu" aria-label="Pilih sumber utama"
+    {open && createPortal(<div ref={menu} id={id} role="menu" aria-label="Pilih topik"
       className="source-picker-menu" style={position} onKeyDown={navigate}
       onBlur={event => { if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false); }}>
-      <div className="source-picker-heading">Sumber pencarian</div>
+      <div className="source-picker-heading">Pilih topik</div>
       {options.map(option => <button type="button" key={option.value} role="menuitemradio"
         aria-checked={value === option.value} disabled={!option.enabled} tabIndex={-1}
         className="source-picker-option"
@@ -84,11 +84,9 @@ export default function SourcePicker({ value, options, disabled, onChange }) {
             {option.preview && <span className="source-picker-tag">Uji coba</span>}
             {!option.enabled && <span className="source-picker-unavailable">Belum tersedia</span>}
           </span>
-          <span className="source-picker-description">{option.description}</span>
         </span>
         {value === option.value && <Check size={18} className="source-picker-check" aria-hidden="true" />}
       </button>)}
-      <div className="source-picker-footer">Jawaban menggunakan sumber yang kamu pilih.</div>
     </div>, document.body)}
   </>;
 }

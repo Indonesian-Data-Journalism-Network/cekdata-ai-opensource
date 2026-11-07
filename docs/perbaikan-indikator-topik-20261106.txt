@@ -1,0 +1,45 @@
+PERBAIKAN TAHAP 1 — INDIKATOR DAN TOPIK
+6 November 2026
+
+Lingkup: tujuh kasus indikator/topik dari rekap 42 jawaban bermasalah. Tidak mengganti angka historis rekap 300 tes.
+
+Akar masalah yang ditemukan dalam kode:
+1. PilotAI.understand mengandalkan pemilihan model; prefer_direct_scope hanya menjaga qualifier non-..., belum membedakan kehilangan total, primer, dan akibat kebakaran. Parafrasa dan ranking cakupan wilayah dapat mengarahkan pilihan ke subset lain.
+2. NGO retrieval memberi penalti topik lunak berdasarkan metadata; perkebunan kayu belum tercakup dalam tag lama. activity_context menggabungkan kutipan, konteks, dan judul: kata sawit di judul dapat menutupi bahwa kutipan membahas kegiatan lain.
+3. check_fits menerima general_context sebagai temuan dan masih membiarkannya mendominasi jawaban khusus komoditas.
+
+Perubahan:
+- Pemilihan keluarga kehilangan diperiksa kembali terhadap pertanyaan asli, tanpa memakai ketersediaan wilayah/tahun sebagai alasan mengganti indikator.
+- Permintaan luas tutupan, karbon, konsesi, transisi, serta sumber lain tetap melalui pencocokan konsep masing-masing. Irisan primer-akibat-kebakaran tidak disamakan dengan dua total terpisah.
+- Istilah kerusakan hutan/deforestasi pada pertanyaan statistik yang belum menentukan ukuran meminta klarifikasi, bukan diam-diam menjadi kehilangan primer.
+- Ranking laporan mempertimbangkan kegiatan dalam kutipan. Validasi akhir menolak kegiatan berbeda, penambahan komoditas tanpa dasar kutipan/konteks, serta general_context untuk pertanyaan kegiatan spesifik.
+- Tidak ada aturan khusus nama kabupaten, provinsi, perusahaan, atau angka kasus uji. Tidak membangun ulang indeks, mengubah data sumber, atau memulai ulang server.
+
+Pengujian:
+- 325 tes workflow lulus, termasuk 10 tes baru dengan beberapa variasi setiap tes.
+- 10 tes HTTP integrasi lulus.
+- 12 pertanyaan berbeda melalui UI: tujuh kasus lama dan lima pertanyaan kontrol/variasi; 15 pengiriman termasuk tiga pengulangan selama penyempurnaan.
+- 15 nilai tabel dibandingkan dengan arsip lokal, semuanya cocok setelah pembulatan tampilan. Ini bukan audit independen metodologi satelit atau sertifikasi semua klaim NGO.
+
+Hasil tujuh kasus:
+- S022: Indikator total kembali dipakai; 2024=16.907,69 ha dan 2025=23.554,82 ha. Label Benar sesuai angka.
+- S033: Meminta klarifikasi arti kerusakan hutan; tidak lagi membenarkan klaim menggunakan subset primer. Belum merupakan jawaban angka.
+- S034: Meminta klarifikasi ukuran deforestasi; tidak lagi menggunakan luas hutan belum terlindungi 2019 untuk klaim perubahan tahun lalu. Belum merupakan jawaban angka.
+- S035: Menggunakan kehilangan tutupan pohon total Sulawesi Tengah 2025: 34.321,72 ha.
+- N029: Data primer Bandung 2023 yang tidak ditemukan tidak diganti angka total 0,23 ha. Hasil terbatas, bukan berhasil memperoleh angka.
+- S098: Jawaban akhir hanya memakai temuan sawit Satya Bumi; konteks pangan/tebu yang tidak sesuai tersaring. Dampak terhadap masyarakat dan perubahan tutupan hutan belum dijawab lengkap; kasus keseluruhan tetap belum selesai.
+- N089: Jawaban tidak lagi diganti sawit/PLTU. Akan tetapi contoh PT Bumi Hijau Prima berada di Kalimantan Tengah, bukan Kalimantan Barat (Auriga Risky Business Lampiran, PDF halaman 8). Kasus keseluruhan tetap belum selesai; perbaikan wilayah diperlukan.
+
+Kontrol/variasi tambahan:
+- Kebakaran Sumatera Selatan 2023 tetap menggunakan indikator kebakaran (3.348,47 ha).
+- Hutan primer Bali 2025 tetap menggunakan indikator primer (32,67 ha).
+- Luas sawit Riau 2024 tetap memakai MapBiomas (3.457.032,47 ha).
+- Permintaan perbandingan total dan primer Aceh 2025 menampilkan kedua indikator dan angka yang benar. Namun pembuka keliru menyebut agregat belum dapat disimpulkan. Ini masalah interpretasi perbandingan/penjelasan yang perlu diperbaiki terpisah.
+- Pertanyaan perkebunan kayu di Ketapang mengambil temuan Mayawana dari Satya Bumi dan konteks kehilangan tutupan pohon Ketapang. Seluruh lima angka tahunan cocok dengan arsip. Sintesis NGO belum diaudit ulang menyeluruh pada tahap ini.
+
+Batas hasil: pemeriksaan pemilihan indikator/topik telah diperketat, tetapi dua jawaban NGO lama belum lengkap/tepat wilayah. Jangan menyebut seluruh tujuh jawaban sudah benar. Riwayat penilaian 42 kasus tetap tersimpan. Prioritas berikutnya adalah kecocokan wilayah dan kelengkapan jawaban gabungan.
+
+Bukti: docs/test-evidence/20261106/indicator-topic-repair/browser-results.json
+Angka pembanding: docs/test-evidence/20261106/indicator-topic-repair/numeric-check.json
+Pengujian otomatis: docs/test-evidence/20261106/indicator-topic-repair/workflow-tests.log dan http-tests.log
+Kode: workflow/environment_data.py; workflow/pilot_data.py; workflow/ngo_source_facts.py; workflow/ngo_evidence_policy.py; workflow/ngo_retrieval.py.

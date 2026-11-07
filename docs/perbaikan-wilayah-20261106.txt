@@ -1,0 +1,39 @@
+PERBAIKAN TAHAP 2 — KECOCOKAN WILAYAH BUKTI NGO
+6 November 2026
+
+Lingkup: mencegah pemindahan lokasi temuan NGO pada jawaban gabungan laporan dan data terstruktur. Tidak mengubah data GFW, indeks Qdrant, angka historis 300 tes, atau label penilaian yang tersedia.
+
+Akar masalah:
+- check_fits menerima penilaian geography dari model tanpa pemeriksaan hubungan wilayah secara terpisah. Daerah berbeda bisa dilabeli broader_context.
+- event_scope_valid mengizinkan tempat berbeda bila namanya dipertahankan dalam temuan; hal itu tidak membuktikan hubungan dengan wilayah pertanyaan.
+- Pemeriksaan sebelumnya terutama menjaga angka digit, sehingga cakupan kalimat seperti “ribuan hektare” dapat dipersempit.
+- Nama provinsi berbahasa Inggris, lokasi di keterangan foto, dan alamat desa di halaman lain memerlukan penanganan berbeda.
+
+Perubahan:
+- Pemeriksaan terpisah memakai referensi wilayah, alias, dan hubungan induk yang tersedia. Nama berawalan sama tidak otomatis menjadi wilayah yang sama; arah mata angin bahasa Inggris dinormalisasi.
+- Cakupan berasal dari kalimat substantif terpilih dan konteks sebelumnya, bukan judul atau lokasi yang diminta pengguna. Keterangan foto tidak digunakan untuk melokalkan temuan umum.
+- Alamat eksplisit dari halaman lain dalam laporan yang sama dapat menghubungkan desa dan kabupaten. Disimpan bersama kalimat asal dan nomor halaman. Dua tempat yang sekadar disebut bersama bukan bukti hubungan administratif. Alamat bertentangan memerlukan kejelasan lebih lanjut.
+- Bukti daerah berbeda/yang cakupannya dipersempit ditolak. Konteks regional yang diterima harus menyebut wilayah aslinya, menjadi context_only, dan tidak menjadi dasar penilaian klaim lokal.
+- Pemeriksaan kesimpulan menjaga agar temuan regional tidak dipindahkan ke lokasi tabel GFW.
+- Tidak memakai pengecualian nama kasus, perusahaan atau angka tertentu pada logika produksi.
+
+Validasi:
+- 338 tes workflow dan 10 tes integrasi HTTP lulus. Ada 13 tes workflow baru, dengan beberapa variasi lokasi dan skenario per tes.
+- Fixture lama untuk pengujian format diberi alamat sintetis eksplisit agar hubungan pulau–kabupaten mempunyai dasar sumber; tidak ada data laporan asli yang diubah.
+- Pemeriksaan teks asli Auriga, PDF halaman 8: tanggapan PT Bumi Hijau Prima dikembalikan ke Kalimantan Tengah, sehingga ditolak untuk Kalimantan Barat.
+- Pemeriksaan teks asli Satya Bumi, halaman 15: temuan Desa Kualan Hilir dapat dihubungkan ke Ketapang melalui alamat eksplisit pada halaman lain. Pemeriksaan wilayah saja menerima bukti ini.
+- Empat pertanyaan berbeda melalui aplikasi, enam pengiriman termasuk tiga percobaan Ketapang selama penyempurnaan. Ini uji terbatas, bukan pengulangan seluruh 10 kasus wilayah atau 300 pertanyaan.
+
+Hasil aplikasi:
+1. N089 / Kalimantan Barat: temuan Bumi Hijau Prima tidak lagi ditampilkan; tabel GFW tetap tampil. Dampak kepada warga belum terjawab. Status terbatas, bukan berhasil penuh.
+2. S081 / Pundenrejo: jawaban memakai laporan konflik Pundenrejo, dengan temuan pada halaman PDF 40 dan 51; kasus relokasi Rempang tidak terbawa. Lokasi dan isi temuan dicocokkan dengan laporan lokal. Ini tidak memverifikasi secara independen semua tuduhan dalam laporan.
+3. N092 / Halmahera Tengah: angka GFW 2025 tampil, tetapi temuan NGO tidak tampil. Jawaban gabungan masih terbatas.
+4. Kontrol Ketapang: ketiga percobaan hanya menampilkan GFW. Ini lebih terbatas daripada jawaban kontrol tahap 1 yang memuat 76,6 ha. Bukti asli tersedia dan lolos pemeriksaan wilayah langsung, tetapi belum tampil melalui rangkaian pencarian, ekstraksi, dan pemeriksaan bukti. Penyebab penolakan di rangkaian lengkap belum terisolasi; jangan menyebut kasus ini selesai atau menyatakan data NGO tidak ada.
+
+Pekerjaan tersisa:
+- Telusuri penolakan bukti lokal valid pada rangkaian lengkap, terutama Ketapang dan Halmahera Tengah. Pertahankan pemeriksaan wilayah saat memperbaiki kelengkapan jawaban.
+- Perlu uji ulang seluruh kasus wilayah dan variasi pertanyaan baru sebelum menghitung persentase keberhasilan terbaru.
+- Pengenalan nama kecil yang belum ada di referensi, alamat ambigu, serta penghubungan paragraf lintas halaman masih dapat menghasilkan keterbatasan. Pemeriksaan ini tidak menjamin semua kesalahan wilayah hilang.
+
+Bukti dan hasil rinci: docs/test-evidence/20261106/geographic-repair/
+Kode utama: workflow/ngo_geography_policy.py; workflow/ngo_evidence_policy.py; workflow/ngo_answer.py; workflow/ngo_combined.py.

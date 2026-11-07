@@ -6,6 +6,7 @@
 *.key
 /data/
 /exports/
+/web/frontend/public/gfw-evidence/
 /qdrant_storage/
 **/exports/
 **/storage/
@@ -22,3 +23,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .DS_Store
+
+# Local sessions, working files and raw evaluation packets
+/.local/
+/tmp/
+/docs/test-evidence/

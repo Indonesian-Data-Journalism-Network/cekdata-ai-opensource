@@ -1,20 +1,17 @@
 export const publicSourceOptions = Object.freeze([
   {
     value: "bps",
-    label: "BPS",
-    description: "Statistik resmi Badan Pusat Statistik.",
+    label: "General",
     enabled: true,
   },
   {
     value: "environment",
     label: "Environment",
-    description: "Data iklim, hutan, dan lingkungan dari sumber yang tersedia.",
     enabled: false,
   },
   {
     value: "legal",
     label: "Legal",
-    description: "Peraturan dan dokumen hukum. Akses sedang disiapkan.",
     enabled: false,
   },
 ]);

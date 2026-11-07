@@ -1,0 +1,263 @@
+CATATAN MASALAH CEK DATA AI — 6 NOVEMBER 2026
+
+Status: DICATAT, BELUM DIPERBAIKI.
+Total terkini: 42 kasus terbuka dari tiga batch.
+Arsip awal: 32 kasus (4 kasus terdahulu + 28 kasus pengujian sederhana); tambahan 10 kasus pada bagian akhir. Satu akar masalah dapat memengaruhi beberapa kasus.
+Ini catatan gejala dan bukti pengujian; bukan kesimpulan final akar masalah di kode.
+
+Kelompok masalah yang perlu ditindaklanjuti:
+- Kecocokan lokasi dan cakupan wilayah antara pertanyaan, laporan, dan kesimpulan.
+- Keterangan foto atau konteks umum terbaca sebagai bukti analisis lokasi.
+- Pemilihan indikator yang menyempit atau berbeda dari pertanyaan.
+- Penafsiran periode relatif, tren, dan pembanding.
+- Penilaian klaim nol, negasi, universalitas, serta sebab-akibat.
+- Kelengkapan jawaban yang meminta lebih dari satu jenis data.
+- Ketepatan tingkat kepastian dan sintesis kesimpulan.
+- Alasan data tidak tersedia dibanding pembagi nol, pembulatan angka, dan tautan sumber.
+
+DAFTAR KASUS
+
+UJI-20261106-11 — BELUM DIPERBAIKI
+Buton–Kediri: Kediri 2023 tidak tersedia, tetapi jawaban tidak menjelaskan bahwa perbandingan belum dapat diselesaikan.
+Bukti: docs/test-evidence/20261106/gfw-new100-20261106/results.json — kasus 11.
+
+UJI-20261106-81 — BELUM DIPERBAIKI
+Jakarta Selatan–Kepulauan Selayar: data Jakarta Selatan 2025 hilang; alasan tidak dapat membandingkan belum tegas.
+Bukti: docs/test-evidence/20261106/gfw-new100-20261106/results.json — kasus 81.
+
+UJI-20261106-55 — BELUM DIPERBAIKI
+Tangerang: data tersedia, nilai awal nol. Persentase ditolak dengan benar tetapi alasannya disebut belum cukup data.
+Bukti: docs/test-evidence/20261106/gfw-new100-20261106/results.json — kasus 55.
+
+UJI-20261106-12 — BELUM DIPERBAIKI
+Mojokerto: label Tidak dapat diverifikasi benar, tetapi alasan menyajikan 0,07629724033284506 ha tanpa pembulatan tampilan.
+Bukti: docs/test-evidence/20261106/gfw-new100-20261106/results.json — kasus 12.
+
+SIMPLE-20261106-022 — BELUM DIPERBAIKI
+Pertanyaan: Kehilangan tutupan pohon di Sulawesi Tenggara naik pada 2025 dibanding 2024. Benarkah?
+Indikator hutan primer dipakai menggantikan kehilangan tutupan pohon total.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 22.
+
+SIMPLE-20261106-031 — BELUM DIPERBAIKI
+Pertanyaan: Pejabat bilang deforestasi di Papua sudah turun setahun terakhir. Benarkah?
+Klaim setahun terakhir dijawab dengan konteks lama dan seri 2021–2025, tanpa membedah perubahan 2024–2025, batas indikator deforestasi, dan cakupan Papua sumber secara cukup jelas.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 31.
+
+SIMPLE-20261106-033 — BELUM DIPERBAIKI
+Pertanyaan: Katanya kerusakan hutan di Riau sudah menurun. Betul?
+Kerusakan hutan yang luas maknanya dibenarkan memakai penurunan kehilangan dalam hutan primer saja. Asumsi periode disebut, tetapi penyempitan indikator tidak dijustifikasi.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 33.
+
+SIMPLE-20261106-034 — BELUM DIPERBAIKI
+Pertanyaan: Deforestasi di Kalimantan Timur tahun lalu turun. Benarkah?
+Pernyataan penurunan tahun lalu dijawab dengan luas hutan belum terlindungi tahun 2019. Tidak menawarkan seri perubahan relevan atau menjelaskan batas data deforestasi terbaru.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 34.
+
+SIMPLE-20261106-035 — BELUM DIPERBAIKI
+Pertanyaan: Berapa hutan yang hilang di Sulawesi Tengah tahun lalu?
+Pertanyaan hutan yang hilang dijawab hanya kehilangan dalam hutan primer tanpa menjelaskan mengapa subset itu dipilih. Tahun lalu sudah benar dipetakan ke 2025.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 35.
+
+SIMPLE-20261106-037 — BELUM DIPERBAIKI
+Pertanyaan: Kebakaran hutan di Kalimantan Tengah makin parah. Benarkah?
+Sebagian benar didasarkan pada keberadaan dampak kebakaran, bukan perubahan keparahan antarwaktu. Alasan mengakui tidak ada tren; teks terpotong pada kata karena dan menampilkan F1/F3.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 37.
+
+SIMPLE-20261106-038 — BELUM DIPERBAIKI
+Pertanyaan: Hutan primer di Papua makin banyak yang hilang. Betul?
+Frasa makin banyak hanya mengambil 2025 lalu menyatakan tidak ada pembanding, padahal seri tahun sebelumnya tersedia lokal.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 38.
+
+SIMPLE-20261106-039 — BELUM DIPERBAIKI
+Pertanyaan: Pemerintah bilang deforestasi di Sumatera Selatan sudah berhasil ditekan. Benarkah?
+Klaim deforestasi berhasil ditekan hanya dijawab konteks kebijakan/kerusakan tanpa membedah penurunan indikator dan atribusi keberhasilan secara terpisah.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 39.
+
+SIMPLE-20261106-045 — BELUM DIPERBAIKI
+Pertanyaan: Deforestasi di Papua Selatan tahun lalu paling rendah. Benarkah?
+Mengarang rentang 10 tahun sebagai rentang yang diminta untuk klaim paling rendah; pembanding terendah tidak diperjelas dan data 2025 yang absen tidak dijelaskan langsung.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 45.
+
+SIMPLE-20261106-046 — BELUM DIPERBAIKI
+Pertanyaan: Hutan di Kalimantan Barat sekarang lebih luas daripada lima tahun lalu. Betul?
+Sekarang dibanding lima tahun lalu diubah menjadi rangkaian 5 tahun. Tidak menjelaskan ketiadaan 2026 serta pasangan tahun pembanding secara tepat.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 46.
+
+SIMPLE-20261106-047 — BELUM DIPERBAIKI
+Pertanyaan: Sejak gubernur baru menjabat, kehilangan hutan di Sulawesi Tenggara menurun. Benarkah?
+Tidak menanyakan gubernur/periode jabatan; menyisipkan klausa tanpa indikasi penurunan sejak pergantian gubernur dalam temuan lintas Sulawesi tanpa bukti pergantian tersebut.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 47.
+
+SIMPLE-20261106-048 — BELUM DIPERBAIKI
+Pertanyaan: Katanya pembukaan lahan di Kalimantan Utara sudah berhenti. Benar?
+Klaim dengan Benar? tidak mendapat label. Rencana proyek dan relokasi dipakai menyimpulkan pembukaan lahan masih berlangsung tanpa bukti langsung waktunya. Dua edisi laporan sama tampil sebagai sumber terpisah.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 48.
+
+SIMPLE-20261106-049 — BELUM DIPERBAIKI
+Pertanyaan: Kehilangan tutupan pohon di Maluku sudah nol tahun lalu. Benarkah?
+Klaim nol diberi tidak dapat diverifikasi meskipun angka 2025 sebesar 4.079,10 ha langsung membantah nol.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 49.
+
+SIMPLE-20261106-079 — BELUM DIPERBAIKI
+Pertanyaan: Apa masalah masyarakat adat dalam proyek pangan di Merauke?
+Mengubah hampir bisa dipastikan/akan dalam TLH2026 halaman40 menjadi dipastikan dan peristiwa tergusur yang lebih tegas. Perlu menjaga tingkat kepastian dan membedakan rencana, proyeksi, dan kejadian.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 79.
+
+SIMPLE-20261106-080 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak industri nikel terhadap warga Pulau Obi?
+Kasus Weda Bay dimasukkan sebagai konteks wilayah lebih luas untuk Pulau Obi; Weda Bay lokasi berbeda, bukan cakupan induk Obi. Terbawa ke kesimpulan.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 80.
+
+SIMPLE-20261106-081 — BELUM DIPERBAIKI
+Pertanyaan: Apa yang terjadi dalam konflik lahan di Pundenrejo?
+Pengalaman relokasi warga Rempang dari laporan JETP halaman29 dinyatakan sebagai pengalaman warga Pundenrejo. Salah atribusi lokasi terkonfirmasi dari halaman sumber.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 81.
+
+SIMPLE-20261106-083 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak industri nikel terhadap perempuan di Sulawesi?
+Temuan tentang seluruh buruh IMIP disandingkan dengan dampak khusus perempuan tanpa membatasi populasi/jenis kelamin; kesimpulan tidak menyaring konteks tersebut.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 83.
+
+SIMPLE-20261106-084 — BELUM DIPERBAIKI
+Pertanyaan: Apa masalah lingkungan dalam rencana PLTP Muara Laboh?
+Kesimpulan menyebut rencana PLTP menyebabkan banjir; perlu membedakan dampak operasi yang telah berjalan dari risiko rencana tahap2. Temuan awal lebih hati-hati dibanding kesimpulan.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 84.
+
+SIMPLE-20261106-086 — BELUM DIPERBAIKI
+Pertanyaan: Tambang nikel membuat semua warga Kabaena lebih sejahtera. Benarkah?
+Klaim semua warga lebih sejahtera tidak dibedah universalitasnya walau ada bukti warga mengalami kemunduran. Alasan meminta pembuktian seluruh populasi tanpa menilai bukti tandingan yang ditemukan.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 86.
+
+SIMPLE-20261106-087 — BELUM DIPERBAIKI
+Pertanyaan: Proyek Rempang Eco City tidak merugikan warga setempat. Benarkah?
+Alasan meminta perbandingan pekerja lokal/nonlokal tidak relevan dengan klaim tidak merugikan warga. Bukti kerugian langsung tidak tercermin dalam penilaian.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 87.
+
+SIMPLE-20261106-088 — BELUM DIPERBAIKI
+Pertanyaan: Industri nikel di Pulau Obi tidak menimbulkan masalah lingkungan. Benarkah?
+Klaim tidak menimbulkan masalah lingkungan dijawab alasan generik tidak cukup pembanding, meskipun temuan menunjukkan pencemaran Obi. Klaim negasi tidak dibedah.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 88.
+
+SIMPLE-20261106-089 — BELUM DIPERBAIKI
+Pertanyaan: Proyek pangan di Merauke tidak berdampak pada masyarakat adat. Benarkah?
+Klaim tidak berdampak pada masyarakat adat tidak dibandingkan dengan bukti dampak yang ditemukan. Alasan tidak cukup generik menutupi temuan langsung.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 89.
+
+SIMPLE-20261106-090 — BELUM DIPERBAIKI
+Pertanyaan: Pertambangan di Raja Ampat tidak mengancam hutan. Benarkah?
+Keterangan foto Gam Island Raja Ampat pada Unheeded Warnings halaman4 dijadikan bukti ancaman biomassa di Raja Ampat. Label juga tidak mempertimbangkan bukti tambang yang ditemukan.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 90.
+
+SIMPLE-20261106-096 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak tambang nikel di Halmahera Timur dan bagaimana perkembangan kehilangan tutupan pohonnya?
+Tidak menjawab seri kehilangan tutupan pohon yang diminta. Weda Tengah ditulis berada di Halmahera Timur; temuan lokasi lintas kabupaten bercampur.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 96.
+
+SIMPLE-20261106-097 — BELUM DIPERBAIKI
+Pertanyaan: Apa masalah lingkungan di Kabupaten Berau dan apakah luas hutannya berkurang?
+Bagian apakah luas hutan Berau berkurang diabaikan; tidak ada angka maupun penjelasan batas seri luas hutan kabupaten.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 97.
+
+SIMPLE-20261106-098 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak perkebunan sawit terhadap masyarakat adat di Papua Selatan dan bagaimana perubahan tutupan hutannya?
+Pertanyaan sawit dijawab dominan temuan tebu/PSN pangan. Perubahan tutupan hutan yang diminta tidak disajikan atau dinyatakan belum terjawab.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 98.
+
+SIMPLE-20261106-099 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak tambang di Raja Ampat dan berapa kehilangan tutupan pohon di sana pada 2025?
+Bagian angka2025 sesuai, tetapi kesimpulan menyisipkan lubang tambang tidak direklamasi/tambang ilegal dari konteks nasional WALHI halaman154 tanpa batas wilayah sehingga berisiko terbaca sebagai temuan Raja Ampat.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 99.
+
+SIMPLE-20261106-100 — BELUM DIPERBAIKI
+Pertanyaan: Bagaimana dampak pertambangan di Bombana terhadap warga dan tren kehilangan tutupan pohonnya?
+Talaga Raya ditulis Bombana, padahal sumber Satya Bumi halaman3 dan15 menyebut Kabupaten Buton Tengah. Angka245KK milik wilayah lain; angka GFW Bombana sendiri sesuai.
+Bukti: docs/test-evidence/20261106/simple100-20261106/results.json — kasus 100.
+
+KETERBATASAN SUMBER
+12 jawaban masih memuat halaman metodologi umum karena dashboard wilayah belum terverifikasi.
+Kasus batch terdahulu: 8, 28, 35, 39, 42, 44, 46, 56, 62, 63, 66, 89.
+
+CATATAN MUTU TAMBAHAN PADA JAWABAN YANG DINILAI MEMADAI
+Catatan di bawah bukan tambahan pada jumlah 28 kasus gagal.
+
+Kasus SIMPLE 36: Bagaimana kondisi hutan di Maluku Utara belakangan ini?
+Memberikan angka kehilangan 2021–2025 dan membatasi konteks NGO yang lebih luas/lama. Catatan mutu: terlalu banyak konteks dan belum memberi sintesis kondisi terkini yang ringkas.
+
+Kasus SIMPLE 50: Deforestasi nasional turun karena pemerintah memperketat izin tambang. Benarkah?
+Tidak menganggap perubahan angka membuktikan dampak pengetatan izin. Menyebut atribusi sebab belum didukung. Catatan: konteks kebijakan panjang dan kutipan angka perlu tetap dibaca sebagai analisis penerbit.
+
+Kasus SIMPLE 76: Apa dampak tambang nikel terhadap nelayan di Pulau Kabaena?
+Temuan nelayan dan angka 45,8/33,6 persen dapat ditelusuri ke laporan Satya Bumi. Catatan: terdapat temuan politik yang kurang relevan dan kesimpulan hanya mengulang satu poin.
+
+Kasus SIMPLE 77: Apa masalah lingkungan akibat tambang nikel di Raja Ampat?
+Temuan kerusakan dari Auriga/WALHI dan angka GFW Raja Ampat tersedia; batas atribusi sebab disebut. Catatan: konteks aktivisme tidak menambah bukti dampak fisik.
+
+Kasus SIMPLE 78: Apa dampak proyek Rempang Eco City terhadap warga?
+Dampak relokasi, ruang hidup, dan konsultasi AMDAL sesuai temuan laporan Trend Asia. Kesimpulan terlalu singkat dibanding temuan.
+
+Kasus SIMPLE 82: Bagaimana pertambangan memengaruhi pendapatan warga Kabaena?
+Angka 38,2 persen, >82 persen dari52 narasumber, dan >80 persen terdapat pada teks laporan. Catatan: basis dua studi berbeda perlu dijelaskan; angka laporan bukan validasi representativitas populasi.
+
+Kasus SIMPLE 95: Kehilangan tutupan pohon di Jawa turun tahun lalu. Benarkah?
+Menyatakan agregat Jawa tidak ditemukan dalam pencarian dan tidak menganggap sumber asli tidak memilikinya. Catatan pengembangan: agregasi pulau GFW dapat dipertimbangkan kemudian.
+
+ARSIP BUKTI
+Seluruh pertanyaan, jawaban, hasil penilaian, dan bukti halaman sumber disalin ke docs/test-evidence/20261106 agar tidak hanya bergantung pada folder tmp.
+
+Tidak ada perubahan kode aplikasi, aturan jawaban, indeks data, atau layanan pada langkah pencatatan ini.
+
+
+TAMBAHAN UJI TANPA NAMA SUMBER — 6 NOVEMBER 2026
+Total kini 42 kasus terbuka (32 sebelumnya + 10 baru), bukan 42 akar masalah unik.
+12 respons terbatas dicatat terpisah.
+Laporan: docs/test-evidence/20261106/gfw-natural100-20261106/laporan-uji.txt
+
+NATURAL-20261106-029 — BELUM DIPERBAIKI
+Pertanyaan: Berapa luas kehilangan tutupan pohon dalam hutan primer di Kota Bandung tahun 2023?
+Diminta kehilangan dalam hutan primer Kota Bandung2023, tetapi jawaban mengganti dengan kehilangan tutupan pohon total0,23ha. Arsip primer untuk kota/tahun itu tidak tersedia; pergantian indikator tidak dijelaskan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus29.
+
+NATURAL-20261106-088 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak tambang nikel di Sulawesi Tengah? Berapa kehilangan tutupan pohon di provinsi ini pada 2025?
+Bagian kehilangan tutupan pohon Sulawesi Tengah2025 tidak dijawab dan tidak dijelaskan keterbatasannya, padahal data provinsi tersedia.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus88.
+
+NATURAL-20261106-089 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak perkebunan kayu terhadap warga Kalimantan Barat? Bandingkan kehilangan tutupan pohon pada 2024 dan 2025.
+Pertanyaan perkebunan kayu dijawab dominan sawit dan PLTU. Angka14 perusahaan berjalan/18 berencana pada Trend Asia halaman5 tidak dikhususkan Kalimantan Barat di sumber, tetapi jawaban menempatkannya di sana. Angka GFW sendiri benar; perbandingan hanya disimpulkan turun dan dijumlahkan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus89.
+
+NATURAL-20261106-091 — BELUM DIPERBAIKI
+Pertanyaan: Bagaimana tambang memengaruhi nelayan di Kabupaten Raja Ampat? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.
+Angka2024–2025 dan temuan Auriga tentang nelayan sesuai. Namun WALHI halaman3 membahas ribuan hektare kehilangan pada kawasan seperti Raja Ampat DAN pesisir Sulawesi Tenggara; jawaban menyempitkan besaran itu ke Raja Ampat saja. Perlu menjaga lingkup angka naratif.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus91.
+
+NATURAL-20261106-092 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak industri nikel terhadap warga Kabupaten Halmahera Tengah? Berapa kehilangan tutupan pohon di sana pada 2025?
+Angka GFW Halmahera Tengah dan16 sampel ikan Teluk Weda sesuai. Temuan umum industri nikel dari Trend Asia halaman5–6 tidak dibatasi sebagai konteks lintas wilayah, sehingga terbaca sebagai bukti spesifik Halmahera Tengah. Halaman6 membahas episentrum Maluku Utara/Sulawesi Tengah, bukan seluruh temuan khusus kabupaten yang ditanya.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus92.
+
+NATURAL-20261106-093 — BELUM DIPERBAIKI
+Pertanyaan: Apa masalah lingkungan di Kabupaten Morowali? Tampilkan tren kehilangan tutupan pohon selama 2022–2025.
+Seri GFW Morowali benar, tetapi temuan Pomalaa dibawa sebagai wilayah lebih luas/terkait Morowali tanpa hubungan yang dijelaskan oleh bukti. Konteks lintas lokasi mendominasi kesimpulan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus93.
+
+NATURAL-20261106-097 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak tambang terhadap air bersih di Pulau Obi? Sertakan kehilangan tutupan pohon di pulau itu pada 2025.
+Temuan pencemaran Obi disajikan, tetapi permintaan kehilangan tutupan pohon2025 diabaikan tanpa penjelasan batas data pulau.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus97.
+
+NATURAL-20261106-098 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak proyek industri terhadap warga Pulau Rempang? Bagaimana tren kehilangan tutupan pohon di pulau itu selama 2022–2025?
+Keterbatasan tren Rempang dijelaskan, tetapi rencana penggunaan PLTU2GW dari Trend Asia halaman5 ditulis juga menggunakan/penggunaan PLTU; kesimpulan menguatkan hubungan dukungan JETP tanpa menjaga sifat analisis sumber. Rencana dan realisasi harus dibedakan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus98.
+
+NATURAL-20261106-099 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak perkebunan sawit terhadap warga di Pulau Sumatera? Sertakan kehilangan tutupan pohon pada 2024 dan 2025.
+Dampak terhadap warga Sumatera tidak dijawab memadai; jawaban hanya skenario lahan sawit5,97juta ha. Permintaan kehilangan2024–2025 hilang tanpa keterangan ketersediaan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus99.
+
+NATURAL-20261106-100 — BELUM DIPERBAIKI
+Pertanyaan: Apa dampak pertambangan terhadap warga di Pulau Kalimantan? Bagaimana tren kehilangan tutupan pohon selama 2022–2025?
+Temuan konsesi dan risiko bencana Kalimantan tampil, tetapi tren kehilangan2022–2025 yang diminta tidak dijawab atau diberi penjelasan keterbatasan.
+Bukti: docs/test-evidence/20261106/gfw-natural100-20261106/results.json — kasus100.

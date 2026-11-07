@@ -1,0 +1,32 @@
+REKAP 400 PERTANYAAN — 6 NOVEMBER 2026
+
+400 pertanyaan berbeda dalam empat putaran; tes kecil dan uji ulang tidak dihitung.
+
+Menjawab memadai: 232 (58,00%).
+Terbatas atau perlu klarifikasi, dijelaskan tepat: 27 (6,75%).
+Salah/kurang tepat/gagal proses: 141 (35,25%).
+
+Putaran | Menjawab memadai | Terbatas/klarifikasi | Perlu perbaikan
+1. Kabupaten awal | 1 | 0 | 99
+2. GFW setelah perbaikan | 88 | 8 | 4
+3. Sederhana dan sumber campuran | 65 | 7 | 28
+4. Tanpa menyebut nama sumber | 78 | 12 | 10
+
+Tiga putaran terakhir: 231/300 menjawab memadai (77%), 27/300 terbatas (9%), 42/300 perlu perbaikan (14%).
+
+Definisi dan batas pembacaan:
+- answered_adequately: Permintaan substantif dijawab dan tidak ditemukan masalah material dalam penilaian tersimpan; bukan audit independen seluruh metodologi sumber.
+- limited_or_clarification: Belum memperoleh jawaban substantif lengkap, tetapi keterbatasan data, bukti sebab-akibat, atau kebutuhan klarifikasi dijelaskan tepat.
+- needs_improvement: Ada kesalahan angka/indikator/lingkup, jawaban tidak lengkap, penilaian/alasan keliru, masalah penyajian tercatat, atau gangguan proses.
+
+Empat putaran adalah pertanyaan berbeda, bukan tes ulang pertanyaan identik.
+Hasil historis mencampur versi sebelum/sesudah perbaikan dan komposisi pertanyaan berbeda; bukan estimasi akurasi versi sekarang.
+Putaran pertama: 94 kasus memasukkan provinsi sebagai wilayah tambahan, lima gangguan proses, satu jawaban tanpa masalah terdeteksi. Angka yang benar belum menjamin keseluruhan jawaban tepat.
+Putaran kedua memakai penilaian manual tambahan kasus 12; delapan kasus terbatas dipisahkan dari 96 memadai lama.
+Putaran ketiga: tujuh kasus terbatas/klarifikasi dipisahkan dari 72 memadai lama. Kasus 50 adalah keterbatasan bukti sebab-akibat.
+Putaran keempat mempertahankan kategori 78 memadai, 12 terbatas, 10 perlu perbaikan.
+Tidak menghitung tes kecil dan uji ulang terarah.
+
+Pola berhasil: permintaan angka dengan indikator/wilayah/tahun jelas; tren seri lengkap; selisih, total, rata-rata; klaim naik/turun dengan pembanding; sebagian pertanyaan NGO dengan bukti langsung sesuai lokasi.
+
+Pola masalah: wilayah tambahan/tertukar; indikator total/primer tertukar; bahasa waktu samar; klaim dan bukti tidak selaras; rencana/risiko dianggap kejadian; generalisasi bukti lintas wilayah; permintaan gabungan hanya dijawab sebagian; batas data/angka nol/penyajian tidak jelas.

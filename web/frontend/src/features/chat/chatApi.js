@@ -30,7 +30,7 @@ export async function askQuestion({ question, previousQuestion, sources, token, 
       503: 'Layanan pencarian sedang tidak tersedia. Silakan coba kembali.',
       500: 'Pencarian mengalami gangguan. Silakan coba kembali.',
       422: 'Pertanyaan tidak valid. Periksa panjang dan isi pertanyaan.' };
-    if (messages[error.status]) throw new Error(messages[error.status]);
+    if (messages[error.status]) throw Object.assign(new Error(messages[error.status]), { status: error.status });
     if (error instanceof TypeError) throw new Error('Tidak dapat terhubung ke layanan. Periksa koneksi lalu coba kembali.');
     throw error;
   } finally {

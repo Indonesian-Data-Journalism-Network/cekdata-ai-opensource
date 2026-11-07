@@ -8,6 +8,9 @@ import uuid
 from collections import Counter
 from decimal import Decimal, InvalidOperation
 from pathlib import Path
+import importlib
+import geography
+geography = importlib.reload(geography)
 from flow import Evidence, LlamaAI, MONTHS, Intent, Alternatives, canonical_unit, absence_count_claim
 from llama_index.core import PromptTemplate
 from pydantic import BaseModel, Field
@@ -84,7 +87,10 @@ def select_catalog(question, catalog, limit=24):
     for _, c in chosen:
         entry = dict(c)
         areas = c.get('areas', [])
-        matching = [a for a in areas if a.casefold() in question.casefold()]
+        matches = [(len(a),a) for a in areas if a.casefold() in question.casefold()]
+        matches += [(len(alias),target) for alias,target in c.get('area_aliases',{}).items()
+                     if re.search(r'(?<!\w)'+re.escape(alias)+r'(?!\w)', question.casefold())]
+        matching = [target for _,target in sorted(matches,reverse=True)]
         entry['areas'] = list(dict.fromkeys(matching + areas))[:24]
         result.append(entry)
     return result
@@ -110,7 +116,11 @@ def group_catalog(catalog):
         key = hashlib.sha256(json.dumps(signature, ensure_ascii=False).encode()).hexdigest()[:24]
         c = groups.setdefault(key, {'indicator_id':key, 'label':label,
             'source':entry.get('source',''), 'definition':entry.get('definition',''),
-            'member_ids':[], 'areas':set(), 'years':set(), 'populations':set(), 'units':set()})
+            'member_ids':[], 'areas':set(), 'years':set(), 'populations':set(), 'units':set(), 'area_aliases':{}})
+        for alias,target in entry.get('area_aliases',{}).items():
+            if alias in c['area_aliases'] and c['area_aliases'][alias] != target:
+                raise ValueError('Conflicting geographic alias')
+            c['area_aliases'][alias] = target
         c['member_ids'].append(entry['indicator_id'])
         for name in ('areas','years','populations'):
             c[name].update(entry.get(name, []))
@@ -129,6 +139,17 @@ Ini pencocokan konsep, bukan penilaian ketersediaan data. Jangan ubah maksud pen
 Pilih seri/kategori yang tepat setelah tanda —; tabel Nikah dan Rujuk tidak berarti
 keduanya diperlukan untuk pertanyaan pernikahan. Jangan pilih total dan bagiannya sekaligus.
 Indikator dikelompokkan lintas tahun; pilih kategori yang diminta, jangan indikator lain untuk melengkapi tahun.
+Luas tutupan lahan adalah stok pada tahun peta; kehilangan tutupan pohon adalah aliran perubahan.
+Keduanya tidak saling menggantikan. Untuk luas hutan/sawit tahunan, pilih luas tutupan,
+bukan kehilangan atau transisi menjadi kelas itu. Untuk perubahan kelas A menjadi B,
+pilih arah transisi A ke B. Transisi tahunan memakai tahun akhir pasangan peta;
+transisi antarperiode langsung hanya untuk permintaan dua tahun ujung interval,
+bukan tren, akumulasi, atau rata-rata tahunan. Jangan pilih kelas induk dan komponen
+kelasnya sekaligus. Jangan mengganti luas tutupan sawit dengan luas izin konsesi.
+Permintaan "selama [rentang]" atau angka setiap/masing-masing tahun membutuhkan transisi
+tahunan, bukan satu transisi langsung antarpeta ujung interval. Jika pertanyaan menyebut
+lebih dari satu sumber, pilih konsep yang diminta dari sumber dalam KATALOG ini; sumber
+lain diproses terpisah. Jangan menghilangkan indikator hanya karena dataset lain berbeda metode.
 Jangan pilih proxy di tahap ini. Jika konsep tidak cocok, indicator_ids kosong.
 Jangan mengganti wilayah pengguna dengan wilayah lain. Wilayah dalam katalog merupakan cakupan yang ditemukan.
 Kategori umur/jenis dapat berada setelah tanda — pada label indikator. Jangan memaksakan
@@ -171,11 +192,16 @@ class PilotAI(LlamaAI):
         super().__init__(llm)
         self.catalog = full_catalog
         self.area_names = {area.casefold(): area for c in full_catalog for area in c.get('areas', [])}
+        self.area_aliases = {alias.casefold():target for c in full_catalog
+                             for alias,target in c.get('area_aliases',{}).items()
+                             if target.casefold() in self.area_names}
         self.source_names = {c['source'].casefold():c['source'] for c in full_catalog}
         geographic = [c for c in full_catalog if re.search(
             r'menurut kecamatan|per kecamatan|kabupaten/kota|menurut provinsi|menurut desa', c['label'], re.I)]
         self.geo_names = {a.casefold():a for c in geographic for a in c['areas']
                           if len(a) >= 4 and not re.search(r'\d|total|jumlah|district|school|^provinsi$', a, re.I)}
+        self.geo_names.update(self.area_aliases)
+        self.geography = geography.Geography(full_catalog)
 
     def stated_areas(self, question):
         matches = []
@@ -189,6 +215,12 @@ class PilotAI(LlamaAI):
     def resolve_sources(self, sources):
         resolved = []
         for source in sources:
+            if source.casefold().replace(' ', '') in {'mapbiomas', 'mapbiomasindonesia', 'landy'}:
+                resolved.extend(name for name in self.source_names.values() if name == 'MapBiomas Indonesia')
+                continue
+            if source.casefold() in {'gfw','gnw','global forest watch','global nature watch'}:
+                resolved.extend(name for name in self.source_names.values() if name.startswith('Global Forest Watch /'))
+                continue
             if source.casefold() in self.source_names:
                 resolved.append(self.source_names[source.casefold()])
                 continue
@@ -200,17 +232,52 @@ class PilotAI(LlamaAI):
         return list(dict.fromkeys(resolved))
 
     def canonical_area(self, area):
+        resolved = self.geography.canonical(area)
+        if resolved:
+            return resolved
         key = area.strip().casefold()
+        if key in self.area_aliases:
+            return self.area_aliases[key]
         if key not in self.area_names:
             key = re.sub(r'^(?:kecamatan|kabupaten|provinsi|desa|kelurahan|kota|kec\.|kab\.)\s+', '', key)
-        return self.area_names.get(key, area.strip())
+        return self.area_names.get(key, self.area_aliases.get(key, area.strip()))
 
     def candidates(self, text, areas=()):
         # Concept reformulation has already happened. Geographic coverage helps
         # ranking without removing entries whose geographic coverage is incomplete.
-        ranked = select_catalog(text, self.catalog, limit=80)
+        sources=self.stated_sources(text)
+        if len(sources)>1:
+            # Reserve space for each explicitly requested publisher before
+            # truncation; one provider's many similar tables must not crowd out another.
+            ranked=[]
+            from environment_data import prioritize
+            groups=self.publisher_groups(sources)
+            for group in groups:
+                subset=[c for c in self.catalog if c['source'] in group]
+                # Rank the measurement/direction before cutting the shortlist.
+                choices=prioritize(select_catalog(text,subset,limit=80),text)
+                ranked.extend(choices[:max(8,40//len(groups))])
+        else:
+            ranked = select_catalog(text, self.catalog, limit=80)
         ranked.sort(key=lambda c: not any(a.casefold() in {v.casefold() for v in c['areas']} for a in areas))
+        from environment_data import prioritize
+        ranked = prioritize(ranked, text)
         return ranked[:40]
+
+    @staticmethod
+    def publisher_groups(sources):
+        groups={}
+        for source in sources:groups.setdefault(source.split(' / ')[0],[]).append(source)
+        return list(groups.values())
+
+    def stated_sources(self, question):
+        names=[name for key,name in self.source_names.items()
+               if re.search(r'(?<!\w)'+re.escape(key)+r'(?!\w)',question,re.I)]
+        if re.search(r'\bgfw\b|global (?:forest|nature) watch',question,re.I):
+            names.extend(name for name in self.source_names.values() if name.startswith('Global Forest Watch /'))
+        if re.search(r'\bmap\s*biomas\b',question,re.I):
+            names.extend(name for name in self.source_names.values() if name=='MapBiomas Indonesia')
+        return list(dict.fromkeys(names))
 
     async def understand(self, question, reference, catalog):
         # First AI sees NO shortlist: it translates everyday language independently.
@@ -226,27 +293,67 @@ class PilotAI(LlamaAI):
         if stated and (not intent.areas or intent.areas == ['Indonesia']):
             intent.areas = [self.canonical_area(a) for a in stated]
             intent.clarification = ''
+        geographic = self.geography.reconcile(question, intent.areas)
+        if geographic.clarification:
+            intent.areas = []
+            intent.clarification = geographic.clarification
+            return intent
+        if geographic.areas:
+            intent.areas = geographic.areas
+            intent.clarification = ''
         village = re.search(r'\bdi\s+(?:desa|kelurahan)\s+([^,]+),\s*kecamatan\b', question, re.I)
         if village and not re.search(r'\b(?:bandingkan|perbandingan|versus)\b', question, re.I):
             name = self.canonical_area(village[1].strip())
             if name.casefold() in self.area_names:
                 intent.areas = [name]
-        intent.sources = self.resolve_sources(intent.sources)
+        stated_sources=self.stated_sources(question)
+        intent.sources = stated_sources or self.resolve_sources(intent.sources)
         if intent.clarification:
+            return intent
+        from environment_data import forest_measure_clarification, preserve_loss_selection
+        clarification = forest_measure_clarification(question, self.catalog)
+        if clarification:
+            intent.indicator_ids = []
+            intent.needs_reports = False
+            intent.clarification = clarification
             return intent
         search = ' '.join([question, intent.reformulated, *intent.indicator_terms, *intent.search_terms])
         choices = self.candidates(search, intent.areas)
+        # Explicit source/measurement constraints come from the original words.
+        # Inject the exact family even when geographic coverage or a generated
+        # paraphrase ranked another family higher.
+        exact_choices = preserve_loss_selection([], self.catalog, question, intent.sources)
+        exact_choices = [{**c, 'areas': list(dict.fromkeys(intent.areas + c.get('areas', [])))[:24]}
+                         for c in exact_choices]
+        choices = list({c['indicator_id']: c for c in exact_choices + choices}.values())
         self.last_selection = {'concept_request': intent.model_dump(mode='json'),
                                'catalog_choices':len(choices)}
         if not choices:
             intent.indicator_ids = []
             return intent
-        public_choices = [{k:v for k,v in c.items() if k!='member_ids'} for c in choices]
-        selection = await self.llm.astructured_predict(IndicatorSelection, MATCH_PROMPT,
-            question=question, intent=intent.model_dump_json(), catalog=json.dumps(public_choices, ensure_ascii=False))
+        public_choices = [{k:v for k,v in c.items() if k not in ('member_ids','area_aliases')} for c in choices]
+        if len(stated_sources)>1:
+            import asyncio
+            groups=self.publisher_groups(stated_sources)
+            async def choose(group):
+                return await self.llm.astructured_predict(IndicatorSelection,MATCH_PROMPT,
+                    question=question,intent=intent.model_dump_json(),catalog=json.dumps(
+                        [c for c in public_choices if c['source'] in group],ensure_ascii=False))
+            parts=await asyncio.gather(*(choose(group) for group in groups))
+            # Keep the match bound to the provider it was asked to resolve.
+            ids=[i for group,part in zip(groups,parts) for i in part.indicator_ids
+                 if any(c['indicator_id']==i and c['source'] in group for c in public_choices)]
+            selection=IndicatorSelection(indicator_ids=list(dict.fromkeys(ids))[:4],
+                population=parts[0].population if len({p.population for p in parts})==1 else intent.population)
+        else:
+            selection = await self.llm.astructured_predict(IndicatorSelection, MATCH_PROMPT,
+                question=question, intent=intent.model_dump_json(), catalog=json.dumps(public_choices, ensure_ascii=False))
         allowed = {c['indicator_id']:c for c in choices}
         intent.indicator_ids = [i for i in selection.indicator_ids if i in allowed]
         selected = prefer_direct_scope([allowed[i] for i in intent.indicator_ids], question)
+        from environment_data import prefer_requested_transitions
+        selected=prefer_requested_transitions(selected,question)
+        selected=preserve_loss_selection(selected,self.catalog,question,intent.sources)
         if absence_count_claim(question):
             # Resolve only paired presence categories in the very same table/source.
             mapped = []

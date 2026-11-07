@@ -1,0 +1,207 @@
+{
+  "source": "tmp/simple100-20261106/results.json",
+  "report": "tmp/simple100-20261106/laporan-uji.txt",
+  "summary": {
+    "memadai": 72,
+    "perlu_perbaikan": 28
+  },
+  "status": "belum diperbaiki",
+  "findings": [
+    {
+      "id": 22,
+      "kind": "klaim_gfw",
+      "question": "Kehilangan tutupan pohon di Sulawesi Tenggara naik pada 2025 dibanding 2024. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Indikator hutan primer dipakai menggantikan kehilangan tutupan pohon total."
+    },
+    {
+      "id": 31,
+      "kind": "bahasa_alami",
+      "question": "Pejabat bilang deforestasi di Papua sudah turun setahun terakhir. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim setahun terakhir dijawab dengan konteks lama dan seri 2021–2025, tanpa membedah perubahan 2024–2025, batas indikator deforestasi, dan cakupan Papua sumber secara cukup jelas."
+    },
+    {
+      "id": 33,
+      "kind": "bahasa_alami",
+      "question": "Katanya kerusakan hutan di Riau sudah menurun. Betul?",
+      "status": "perlu_perbaikan",
+      "note": "Kerusakan hutan yang luas maknanya dibenarkan memakai penurunan kehilangan dalam hutan primer saja. Asumsi periode disebut, tetapi penyempitan indikator tidak dijustifikasi."
+    },
+    {
+      "id": 34,
+      "kind": "bahasa_alami",
+      "question": "Deforestasi di Kalimantan Timur tahun lalu turun. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Pernyataan penurunan tahun lalu dijawab dengan luas hutan belum terlindungi tahun 2019. Tidak menawarkan seri perubahan relevan atau menjelaskan batas data deforestasi terbaru."
+    },
+    {
+      "id": 35,
+      "kind": "bahasa_alami",
+      "question": "Berapa hutan yang hilang di Sulawesi Tengah tahun lalu?",
+      "status": "perlu_perbaikan",
+      "note": "Pertanyaan hutan yang hilang dijawab hanya kehilangan dalam hutan primer tanpa menjelaskan mengapa subset itu dipilih. Tahun lalu sudah benar dipetakan ke 2025."
+    },
+    {
+      "id": 37,
+      "kind": "bahasa_alami",
+      "question": "Kebakaran hutan di Kalimantan Tengah makin parah. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Sebagian benar didasarkan pada keberadaan dampak kebakaran, bukan perubahan keparahan antarwaktu. Alasan mengakui tidak ada tren; teks terpotong pada kata karena dan menampilkan F1/F3."
+    },
+    {
+      "id": 38,
+      "kind": "bahasa_alami",
+      "question": "Hutan primer di Papua makin banyak yang hilang. Betul?",
+      "status": "perlu_perbaikan",
+      "note": "Frasa makin banyak hanya mengambil 2025 lalu menyatakan tidak ada pembanding, padahal seri tahun sebelumnya tersedia lokal."
+    },
+    {
+      "id": 39,
+      "kind": "bahasa_alami",
+      "question": "Pemerintah bilang deforestasi di Sumatera Selatan sudah berhasil ditekan. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim deforestasi berhasil ditekan hanya dijawab konteks kebijakan/kerusakan tanpa membedah penurunan indikator dan atribusi keberhasilan secara terpisah."
+    },
+    {
+      "id": 45,
+      "kind": "bahasa_alami",
+      "question": "Deforestasi di Papua Selatan tahun lalu paling rendah. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Mengarang rentang 10 tahun sebagai rentang yang diminta untuk klaim paling rendah; pembanding terendah tidak diperjelas dan data 2025 yang absen tidak dijelaskan langsung."
+    },
+    {
+      "id": 46,
+      "kind": "bahasa_alami",
+      "question": "Hutan di Kalimantan Barat sekarang lebih luas daripada lima tahun lalu. Betul?",
+      "status": "perlu_perbaikan",
+      "note": "Sekarang dibanding lima tahun lalu diubah menjadi rangkaian 5 tahun. Tidak menjelaskan ketiadaan 2026 serta pasangan tahun pembanding secara tepat."
+    },
+    {
+      "id": 47,
+      "kind": "bahasa_alami",
+      "question": "Sejak gubernur baru menjabat, kehilangan hutan di Sulawesi Tenggara menurun. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Tidak menanyakan gubernur/periode jabatan; menyisipkan klausa tanpa indikasi penurunan sejak pergantian gubernur dalam temuan lintas Sulawesi tanpa bukti pergantian tersebut."
+    },
+    {
+      "id": 48,
+      "kind": "bahasa_alami",
+      "question": "Katanya pembukaan lahan di Kalimantan Utara sudah berhenti. Benar?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim dengan Benar? tidak mendapat label. Rencana proyek dan relokasi dipakai menyimpulkan pembukaan lahan masih berlangsung tanpa bukti langsung waktunya. Dua edisi laporan sama tampil sebagai sumber terpisah."
+    },
+    {
+      "id": 49,
+      "kind": "bahasa_alami",
+      "question": "Kehilangan tutupan pohon di Maluku sudah nol tahun lalu. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim nol diberi tidak dapat diverifikasi meskipun angka 2025 sebesar 4.079,10 ha langsung membantah nol."
+    },
+    {
+      "id": 79,
+      "kind": "laporan_ngo",
+      "question": "Apa masalah masyarakat adat dalam proyek pangan di Merauke?",
+      "status": "perlu_perbaikan",
+      "note": "Mengubah hampir bisa dipastikan/akan dalam TLH2026 halaman40 menjadi dipastikan dan peristiwa tergusur yang lebih tegas. Perlu menjaga tingkat kepastian dan membedakan rencana, proyeksi, dan kejadian."
+    },
+    {
+      "id": 80,
+      "kind": "laporan_ngo",
+      "question": "Apa dampak industri nikel terhadap warga Pulau Obi?",
+      "status": "perlu_perbaikan",
+      "note": "Kasus Weda Bay dimasukkan sebagai konteks wilayah lebih luas untuk Pulau Obi; Weda Bay lokasi berbeda, bukan cakupan induk Obi. Terbawa ke kesimpulan."
+    },
+    {
+      "id": 81,
+      "kind": "laporan_ngo",
+      "question": "Apa yang terjadi dalam konflik lahan di Pundenrejo?",
+      "status": "perlu_perbaikan",
+      "note": "Pengalaman relokasi warga Rempang dari laporan JETP halaman29 dinyatakan sebagai pengalaman warga Pundenrejo. Salah atribusi lokasi terkonfirmasi dari halaman sumber."
+    },
+    {
+      "id": 83,
+      "kind": "laporan_ngo",
+      "question": "Apa dampak industri nikel terhadap perempuan di Sulawesi?",
+      "status": "perlu_perbaikan",
+      "note": "Temuan tentang seluruh buruh IMIP disandingkan dengan dampak khusus perempuan tanpa membatasi populasi/jenis kelamin; kesimpulan tidak menyaring konteks tersebut."
+    },
+    {
+      "id": 84,
+      "kind": "laporan_ngo",
+      "question": "Apa masalah lingkungan dalam rencana PLTP Muara Laboh?",
+      "status": "perlu_perbaikan",
+      "note": "Kesimpulan menyebut rencana PLTP menyebabkan banjir; perlu membedakan dampak operasi yang telah berjalan dari risiko rencana tahap2. Temuan awal lebih hati-hati dibanding kesimpulan."
+    },
+    {
+      "id": 86,
+      "kind": "laporan_ngo",
+      "question": "Tambang nikel membuat semua warga Kabaena lebih sejahtera. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim semua warga lebih sejahtera tidak dibedah universalitasnya walau ada bukti warga mengalami kemunduran. Alasan meminta pembuktian seluruh populasi tanpa menilai bukti tandingan yang ditemukan."
+    },
+    {
+      "id": 87,
+      "kind": "laporan_ngo",
+      "question": "Proyek Rempang Eco City tidak merugikan warga setempat. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Alasan meminta perbandingan pekerja lokal/nonlokal tidak relevan dengan klaim tidak merugikan warga. Bukti kerugian langsung tidak tercermin dalam penilaian."
+    },
+    {
+      "id": 88,
+      "kind": "laporan_ngo",
+      "question": "Industri nikel di Pulau Obi tidak menimbulkan masalah lingkungan. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim tidak menimbulkan masalah lingkungan dijawab alasan generik tidak cukup pembanding, meskipun temuan menunjukkan pencemaran Obi. Klaim negasi tidak dibedah."
+    },
+    {
+      "id": 89,
+      "kind": "laporan_ngo",
+      "question": "Proyek pangan di Merauke tidak berdampak pada masyarakat adat. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Klaim tidak berdampak pada masyarakat adat tidak dibandingkan dengan bukti dampak yang ditemukan. Alasan tidak cukup generik menutupi temuan langsung."
+    },
+    {
+      "id": 90,
+      "kind": "laporan_ngo",
+      "question": "Pertambangan di Raja Ampat tidak mengancam hutan. Benarkah?",
+      "status": "perlu_perbaikan",
+      "note": "Keterangan foto Gam Island Raja Ampat pada Unheeded Warnings halaman4 dijadikan bukti ancaman biomassa di Raja Ampat. Label juga tidak mempertimbangkan bukti tambang yang ditemukan."
+    },
+    {
+      "id": 96,
+      "kind": "gabungan",
+      "question": "Apa dampak tambang nikel di Halmahera Timur dan bagaimana perkembangan kehilangan tutupan pohonnya?",
+      "status": "perlu_perbaikan",
+      "note": "Tidak menjawab seri kehilangan tutupan pohon yang diminta. Weda Tengah ditulis berada di Halmahera Timur; temuan lokasi lintas kabupaten bercampur."
+    },
+    {
+      "id": 97,
+      "kind": "gabungan",
+      "question": "Apa masalah lingkungan di Kabupaten Berau dan apakah luas hutannya berkurang?",
+      "status": "perlu_perbaikan",
+      "note": "Bagian apakah luas hutan Berau berkurang diabaikan; tidak ada angka maupun penjelasan batas seri luas hutan kabupaten."
+    },
+    {
+      "id": 98,
+      "kind": "gabungan",
+      "question": "Apa dampak perkebunan sawit terhadap masyarakat adat di Papua Selatan dan bagaimana perubahan tutupan hutannya?",
+      "status": "perlu_perbaikan",
+      "note": "Pertanyaan sawit dijawab dominan temuan tebu/PSN pangan. Perubahan tutupan hutan yang diminta tidak disajikan atau dinyatakan belum terjawab."
+    },
+    {
+      "id": 99,
+      "kind": "gabungan",
+      "question": "Apa dampak tambang di Raja Ampat dan berapa kehilangan tutupan pohon di sana pada 2025?",
+      "status": "perlu_perbaikan",
+      "note": "Bagian angka2025 sesuai, tetapi kesimpulan menyisipkan lubang tambang tidak direklamasi/tambang ilegal dari konteks nasional WALHI halaman154 tanpa batas wilayah sehingga berisiko terbaca sebagai temuan Raja Ampat."
+    },
+    {
+      "id": 100,
+      "kind": "gabungan",
+      "question": "Bagaimana dampak pertambangan di Bombana terhadap warga dan tren kehilangan tutupan pohonnya?",
+      "status": "perlu_perbaikan",
+      "note": "Talaga Raya ditulis Bombana, padahal sumber Satya Bumi halaman3 dan15 menyebut Kabupaten Buton Tengah. Angka245KK milik wilayah lain; angka GFW Bombana sendiri sesuai."
+    }
+  ]
+}
