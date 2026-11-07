@@ -1,0 +1,8 @@
+# Copy to .local/cloudflared.yml; use a named tunnel and a hostname you control.
+# Keep the tunnel credentials file outside Git. Do not route Qdrant's port.
+tunnel: REPLACE_WITH_TUNNEL_UUID
+credentials-file: /absolute/private/path/TUNNEL_UUID.json
+ingress:
+  - hostname: api.example.org
+    service: http://127.0.0.1:8780
+  - service: http_status:404

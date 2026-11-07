@@ -1,0 +1,19 @@
+[build]
+  base = "web/frontend"
+  command = "npm run build:public"
+  publish = "dist-public"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[functions]
+  directory = "../../netlify/functions"
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"

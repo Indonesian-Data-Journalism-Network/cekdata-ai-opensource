@@ -572,22 +572,23 @@ const secondaryButtonStyle = {
   cursor: "pointer",
 };
 
-export function HomePage({ setPage, localMode = false, onStart }) {
-  const [demoQuestion, setDemoQuestion] = useState(demoQuestions[0]);
+export function HomePage({ setPage, localMode = false, publicMode = false, onStart }) {
+  const questions = publicMode ? ['Bagaimana tren kehilangan tutupan pohon di Aceh selama 2021–2025?', 'Berapa luas kehilangan tutupan pohon di Riau pada 2025?', 'Bandingkan kehilangan tutupan pohon di Kalimantan Timur pada 2024 dan 2025.'] : demoQuestions;
+  const [demoQuestion, setDemoQuestion] = useState(questions[0]);
   const [showDemoAnswer, setShowDemoAnswer] = useState(false);
   const [demoResult, setDemoResult] = useState(null);
   const [demoLoading, setDemoLoading] = useState(false);
   const [demoError, setDemoError] = useState("");
 
   useEffect(() => {
-    const pick = demoQuestions[Math.floor(Math.random() * demoQuestions.length)];
+    const pick = questions[Math.floor(Math.random() * questions.length)];
     setDemoQuestion(pick);
   }, []);
 
   function refreshDemoQuestion() {
     let next = demoQuestion;
-    while (demoQuestions.length > 1 && next === demoQuestion) {
-      next = demoQuestions[Math.floor(Math.random() * demoQuestions.length)];
+    while (questions.length > 1 && next === demoQuestion) {
+      next = questions[Math.floor(Math.random() * questions.length)];
     }
     setDemoQuestion(next);
     setShowDemoAnswer(false);
@@ -661,7 +662,7 @@ export function HomePage({ setPage, localMode = false, onStart }) {
                 textAlign: "center",
               }}
             >
-              Coba versi demo
+              {publicMode ? 'Contoh pertanyaan' : 'Coba versi demo'}
             </div>
 
             <div style={{ display: "grid", gap: 16 }}>
@@ -851,7 +852,7 @@ export function HomePage({ setPage, localMode = false, onStart }) {
             boxSizing: "border-box",
           }}
         >
-          {localMode ? 'Buka chat dan hubungkan sesi untuk memeriksa data. Riwayat sebelumnya tetap tersimpan di browser ini.' : 'Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.'}
+          {publicMode ? 'Daftar atau masuk untuk memeriksa data. Riwayat chat tersimpan di browser ini.' : localMode ? 'Buka chat dan hubungkan sesi untuk memeriksa data. Riwayat sebelumnya tetap tersimpan di browser ini.' : 'Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.'}
         </div>
       </div>
     </div>
@@ -3924,8 +3925,9 @@ function AdminPage({ isAdmin, onAuthExpired }) {
   );
 }
 
-export function ChatPage({ localMode = false, ready = true, navigation = null }) {
+export function ChatPage({ localMode = false, ready = true, navigation = null, historyNamespace = "cekdata_chat" }) {
   const chatHistoryLimit = 200;
+  const [processingStatus, setProcessingStatus] = useState("Sedang memeriksa data…");
   const activeRequest = useRef(null);
   const transcript = useRef(null);
   const savedReadPosition = useRef(0);
@@ -3991,8 +3993,8 @@ export function ChatPage({ localMode = false, ready = true, navigation = null })
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("cekdata_chat_history");
-      const savedSelectedId = localStorage.getItem("cekdata_chat_selected_id");
+      const saved = localStorage.getItem(`${historyNamespace}_history`);
+      const savedSelectedId = localStorage.getItem(`${historyNamespace}_selected_id`);
 
       if (saved) {
         const parsed = JSON.parse(saved);
@@ -4031,14 +4033,14 @@ export function ChatPage({ localMode = false, ready = true, navigation = null })
 
     try {
       const trimmed = conversations.slice(-chatHistoryLimit);
-      localStorage.setItem("cekdata_chat_history", JSON.stringify(trimmed));
+      localStorage.setItem(`${historyNamespace}_history`, JSON.stringify(trimmed));
 
       if (selectedId && trimmed.some((item) => item.id === selectedId)) {
-        localStorage.setItem("cekdata_chat_selected_id", selectedId);
+        localStorage.setItem(`${historyNamespace}_selected_id`, selectedId);
       } else if (trimmed.length > 0) {
-        localStorage.setItem("cekdata_chat_selected_id", trimmed[trimmed.length - 1].id);
+        localStorage.setItem(`${historyNamespace}_selected_id`, trimmed[trimmed.length - 1].id);
       } else {
-        localStorage.removeItem("cekdata_chat_selected_id");
+        localStorage.removeItem(`${historyNamespace}_selected_id`);
       }
     } catch (e) {
       console.error("Gagal menyimpan histori chat", e);
@@ -4129,10 +4131,12 @@ export function ChatPage({ localMode = false, ready = true, navigation = null })
       setLoading(true);
       setError("");
 
+      setProcessingStatus("Mengirim pertanyaan…");
       const requestQuestion = buildContinuationQuestion(question, continuationParent);
       const authToken = localMode ? '' : getStoredAuthToken();
       const data = await askQuestion({
         question: requestQuestion,
+        onProgress: setProcessingStatus,
         previousQuestion: continuationParent?.source === selectedSource
           ? (continuationParent?.result?.conversation_scope?.resolved_question || continuationParent?.question || '')
           : '',
@@ -4600,14 +4604,14 @@ export function ChatPage({ localMode = false, ready = true, navigation = null })
                     padding: "48px 16px",
                   }}
                 >
-                  {ready ? 'Tulis pertanyaan atau klaim untuk mulai memeriksa data.' : 'Buka Pengaturan API key untuk mulai menggunakan Cek Data AI.'}
+                  {ready ? 'Tulis pertanyaan atau klaim untuk mulai memeriksa data.' : (navigation?.publicMode ? 'Silakan masuk untuk mulai menggunakan Cek Data AI.' : 'Buka Pengaturan API key untuk mulai menggunakan Cek Data AI.')}
                 </div>
               )}
 
-              {!ready && navigation && <button type="button" className="workspace-button" onClick={openSettings}>Buka Pengaturan API key</button>}
+              {!ready && navigation && <button type="button" className="workspace-button" onClick={openSettings}>{navigation?.publicMode ? "Sign in" : "Buka Pengaturan API key"}</button>}
               {loading && <div className="chat-pending" role="status" aria-live="polite">
                 <span className="chat-pending-dots" aria-hidden="true"><i /><i /><i /></span>
-                <span>Sedang memeriksa data…</span>
+                <span>{processingStatus}</span>
               </div>}
               {error ? (
                 <div

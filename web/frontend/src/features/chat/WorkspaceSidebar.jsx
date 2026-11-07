@@ -50,7 +50,7 @@ export default function WorkspaceSidebar({ navigation, items, selectedId, loadin
           <strong>{userName}</strong>
           <p>Uji coba lokal · {navigation.recordCount === null ? 'Memeriksa data…' : `${navigation.recordCount.toLocaleString('id-ID')} catatan data`}</p>
           <p>{navigation.configured ? 'Sesi aktif' : 'Sesi belum terhubung'}</p>
-          <button type="button" disabled={navigation.sessionBusy} onClick={() => { setMenuOpen(false); navigation.onSettings(); }}><KeyRound size={16} />Pengaturan API key</button>
+          <button type="button" disabled={navigation.sessionBusy} onClick={() => { setMenuOpen(false); navigation.onSettings(); }}><KeyRound size={16} />{navigation.publicMode ? "Akun saya" : "Pengaturan API key"}</button>
           <button type="button" disabled={loading || !items.length} onClick={() => { setMenuOpen(false); setConfirmClear(true); }}><Trash2 size={16} />Hapus semua riwayat</button>
           <small>Menyimpan 20 riwayat terakhir di browser ini.</small>
         </div>}

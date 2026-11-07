@@ -1,6 +1,8 @@
+import { PUBLIC_MODE } from "../../config/api.js";
+import { askPublic } from "./publicJobs.js";
 import { requestJson } from "../../services/httpClient.js";
 
-export async function askQuestion({ question, previousQuestion, sources, token, signal }) {
+export async function askQuestion({ question, previousQuestion, sources, token, signal, onProgress }) {
   const payload = { question };
   if (previousQuestion) payload.previous_question = previousQuestion;
   if (Array.isArray(sources) && sources.length) payload.sources = sources;
@@ -9,9 +11,12 @@ export async function askQuestion({ question, previousQuestion, sources, token, 
   signal?.addEventListener('abort', abort, { once: true });
   if (signal?.aborted) abort();
   let timedOut = false;
-  const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 165000);
+  const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, PUBLIC_MODE ? 900000 : 165000);
   try {
-  const result = await requestJson("/ask", {
+  if (!PUBLIC_MODE) onProgress?.('Sedang memeriksa data…');
+  const result = PUBLIC_MODE
+    ? await askPublic({question, sources, signal: controller.signal, onProgress})
+    : await requestJson("/ask", {
     method: "POST",
     body: payload,
     token,
@@ -24,7 +29,8 @@ export async function askQuestion({ question, previousQuestion, sources, token, 
   return result;
   } catch (error) {
     if (timedOut) throw new Error('Pencarian melewati batas waktu. Silakan coba kembali.');
-    const messages = { 401: 'Sesi API key berakhir. Buka Pengaturan API key untuk memasukkannya kembali.',
+    if (PUBLIC_MODE && [409,429].includes(error.status) && typeof error.payload?.detail === 'string') throw error;
+    const messages = { 401: PUBLIC_MODE ? 'Sesi berakhir. Silakan masuk kembali.' : 'Sesi API key berakhir. Buka Pengaturan API key untuk memasukkannya kembali.',
       409: 'Sumber ini belum siap untuk pencarian publik. Pilih sumber lain atau coba kembali nanti.',
       429: 'Terlalu banyak permintaan. Tunggu satu menit sebelum mencoba kembali.',
       503: 'Layanan pencarian sedang tidak tersedia. Silakan coba kembali.',
