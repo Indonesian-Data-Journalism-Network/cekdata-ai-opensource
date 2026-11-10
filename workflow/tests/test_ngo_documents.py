@@ -251,17 +251,21 @@ class DocumentRouteTests(unittest.IsolatedAsyncioTestCase):
 
  async def test_grouped_environment_catalog_routes_document_questions(self):
   from unittest.mock import AsyncMock, patch
-  from flow import CekDataWorkflow
+  from flow import CekDataWorkflow, Intent
   import ngo_answer
   class AI:
    llm=object()
+   calls=0
    async def understand(self,*args):
-    raise AssertionError('Document question reached the statistical workflow')
+    self.calls+=1
+    return Intent(kind='lookup',needs_reports=True,question_parts=['Temuan WALHI tentang food estate'])
   expected={'answer':'Laporan ditemukan','parsed':{'document_answer':True}}
   engine=CekDataWorkflow(AI(),object(),[{'indicator_id':'grouped-hash','member_ids':['gfw-tree-cover-loss']}])
-  with patch('importlib.reload',side_effect=lambda module:module), patch.object(ngo_answer,'active',return_value={'status':'published'}), patch.object(ngo_answer,'answer_question',new=AsyncMock(return_value=expected)):
+  with patch('importlib.reload',side_effect=lambda module:module), patch.object(ngo_answer,'active',return_value={'status':'published'}), patch.object(ngo_answer,'answer_question',new=AsyncMock(return_value=expected)) as answer_call:
    result=await engine.run(question='Apa temuan WALHI tentang food estate?',reference_date='2026-11-05')
   self.assertEqual(result,expected)
+  self.assertEqual(engine.ai.calls,1)
+  self.assertEqual(answer_call.call_args.kwargs['request_intent'].question_parts,['Temuan WALHI tentang food estate'])
 
  async def test_answer_review_receives_only_cited_passages(self):
   import json

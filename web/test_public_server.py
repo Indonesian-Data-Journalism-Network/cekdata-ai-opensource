@@ -68,6 +68,37 @@ class PublicTests(unittest.TestCase):
         for _ in range(self.cfg.daily_limit):self.app.state.accounts.use(uid,day,self.cfg.daily_limit)
         r=self.client.post('/api/jobs',json={'question':'Luas hutan?'})
         self.assertEqual(r.status_code,429);self.assertIn('harian',r.text)
+    def test_demo_without_account_uses_catalog_and_preserves_login_boundary(self):
+        import json
+        catalog=json.loads((Path(__file__).parent/'frontend/src/config/homeQuestions.json').read_text())
+        entry=next(x for x in catalog if x['source']=='environment')
+        self.assertEqual(self.client.post('/api/jobs',json={'question':'Arbitrary prompt'}).status_code,401)
+        response=self.client.post('/api/demo/jobs',json={'question_id':entry['id']})
+        self.assertEqual(response.status_code,202,response.text)
+        for flag in ['HttpOnly','Secure','Path=/api/demo']:self.assertIn(flag,response.headers['set-cookie'])
+        jid=response.json()['job_id']
+        for _ in range(100):
+            result=self.client.get('/api/demo/jobs/'+jid)
+            if result.json()['status']=='completed':break
+            time.sleep(.01)
+        self.assertEqual(result.json()['result']['answer'],'Jawaban '+entry['question'])
+        self.assertNotIn('fixture-model-key',result.text)
+        self.assertEqual(self.client.get('/api/auth/me').status_code,401)
+        self.assertEqual(self.client.get('/api/jobs/'+jid).status_code,401)
+        self.client.cookies.clear()
+        self.assertEqual(self.client.get('/api/demo/jobs/'+jid).status_code,401)
+        self.client.post('/api/demo/jobs',json={'question_id':entry['id']})
+        self.assertEqual(self.client.get('/api/demo/jobs/'+jid).status_code,404)
+        with self.app.state.accounts.connect() as db:
+            self.assertEqual(db.execute('SELECT count(*) FROM users').fetchone()[0],0)
+
+    def test_demo_rejects_arbitrary_question_and_limits_requests(self):
+        for payload in [{'question_id':101},{'question_id':True},{'question_id':41,'question':'override'}, {'question_id':41,'sources':['legal']}]:
+            self.assertEqual(self.client.post('/api/demo/jobs',json=payload).status_code,422)
+        self.assertEqual(self.client.post('/api/demo/jobs',json={'question_id':41},headers={'origin':'https://evil.example'}).status_code,403)
+        for _ in range(3):self.client.post('/api/demo/jobs',json={'question_id':41})
+        self.assertEqual(self.client.post('/api/demo/jobs',json={'question_id':41}).status_code,429)
+
     def test_configuration_rejects_insecure_public_origin(self):
         for origin in ['http://example.org','https://example.org/path','https://user:pass@example.org']:
             with self.assertRaises(ValueError):replace(self.cfg,origin=origin)

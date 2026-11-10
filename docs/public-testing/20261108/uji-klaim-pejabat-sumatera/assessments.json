@@ -1,0 +1,442 @@
+[
+  {
+    "id": 1,
+    "question": "Benarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20.",
+    "pejabat": "M. Edy Afrizal",
+    "tanggal_pernyataan": "2025-07-20",
+    "url_sumber": "https://riau.suara.com/amp/read/2025/07/20/214040/bantu-pemadaman-karhutla-riau-heli-water-bombing-otw-dari-palembang",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Persentase penyebab tidak terbukti oleh kutipan yang dipakai. Label menahan kesimpulan sesuai bukti. Konteks Rokan Hilir berasal dari perkara gugatan ahli, bukan penelitian persentase penyebab.",
+    "review_note": "Pencarian teks lokal menemukan kutipan 99 persen dalam laporan Auriga yang merujuk pernyataan nasional Jokowi pada 2020; itu bukan bukti khusus Riau untuk klaim ini.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20.\n\nPenilaian: Tidak dapat diverifikasi\n\nLaporan dari Satya Bumi menyebutkan adanya kasus kebakaran hutan di Rokan Hilir, Riau, namun tidak memberikan informasi atau data mengenai persentase penyebab kebakaran yang terkait aktivitas manusia. Oleh karena itu, klaim bahwa hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan oleh aktivitas manusia tidak dapat diverifikasi dengan temuan yang tersedia.\n\nTemuan Data Satya Bumi\n- Laporan Satya Bumi mencatat adanya kasus kebakaran hutan di daerah Rokan Hilir, Riau, namun tidak menyebutkan persentase penyebab kebakaran yang terkait aktivitas manusia. [1]\n\n[1] Sumber: Satya Bumi — Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1 — halaman PDF 32\nhttps://satyabumi.org/en/laporan-ehrd-indonesia-semester1-2024/\nUnduh: Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1 (PDF)\nhttps://satyabumi.org/wp-content/uploads/2024/09/LAPORAN-PEMANTAUAN-SITUASI-PEMBELA-HAM-LINGKUNGAN-HIDUP-INDONESIA-SEMESTER-I-Tahun-2024_FINAL_OK.pdf",
+    "error_type": null,
+    "seconds": 50.85,
+    "source_items": [
+      {
+        "source": "Satya Bumi",
+        "title": "Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1",
+        "url": "https://satyabumi.org/en/laporan-ehrd-indonesia-semester1-2024/",
+        "download_url": "https://satyabumi.org/wp-content/uploads/2024/09/LAPORAN-PEMANTAUAN-SITUASI-PEMBELA-HAM-LINGKUNGAN-HIDUP-INDONESIA-SEMESTER-I-Tahun-2024_FINAL_OK.pdf",
+        "display": "Satya Bumi — Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1",
+        "document_id": "8b42b83f435a66be1649",
+        "pdf_pages": [
+          32
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 32,
+            "printed_page": "26",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": 2024,
+        "source_record_id": "ngo:8b42b83f435a66be1649"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-01.json"
+  },
+  {
+    "id": 2,
+    "question": "Benarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28.",
+    "pejabat": "Al Haris",
+    "tanggal_pernyataan": "2025-07-28",
+    "url_sumber": "https://opendata.jambiprov.go.id/publikasi/berita/54/417-hektare-terbakar-gubernur-al-haris-serukan-aksi-cepat-tanggulangi-karhutla-jambi54",
+    "route": "environment",
+    "review_status": "masalah_pemilihan_indikator",
+    "review_reason": "Label menahan kesimpulan, tetapi intent memilih luas tutupan hutan dan luas hutan rawa gambut MapBiomas untuk pertanyaan luas terbakar. Kedua ukuran itu tidak setara.",
+    "review_note": "Tidak ada angka pengganti yang ditampilkan. Kegagalan pemilihan indikator tetap dicatat, terpisah dari akurasi label. Batas waktu Juli 2025 juga memerlukan data kumulatif yang sesuai.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28.\n\nPenilaian: Tidak dapat diverifikasi\n\nData MapBiomas Koleksi 4.1 yang terhubung baru tersedia hingga 2024; data 2025 belum tersedia dalam seri lokal ini. Data yang tersedia belum cukup untuk menilai klaim pada wilayah dan periode tersebut.\n\nTemuan Data\nBukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.\n\nKonteks\nHasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.\n\nPeringatan editorial\nUntuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai luas lahan terbakar, luas lahan gambut terbakar di Jambi pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.\n\nSumber: MapBiomas Indonesia — Koleksi 4.1\nhttps://landy.mapbiomas.id/en/statistics\nUnduh: Tutupan dan transisi lahan Indonesia — Koleksi 4.1 (XLSX)\nhttps://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx",
+    "error_type": null,
+    "seconds": 19.12,
+    "source_items": [
+      {
+        "source": "MapBiomas Indonesia",
+        "title": "Tutupan dan transisi lahan — Koleksi 4.1",
+        "display": "MapBiomas Indonesia — Koleksi 4.1",
+        "url": "https://landy.mapbiomas.id/en/statistics",
+        "download_url": "https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx",
+        "provider": "mapbiomas",
+        "dataset_version": "4.1",
+        "source_record_id": "mapbiomas:landy:4.1:catalog:coverage",
+        "source_role": "coverage_metadata"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-02.json"
+  },
+  {
+    "id": 3,
+    "question": "Benarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29.",
+    "pejabat": "Hanif Faisol Nurofiq",
+    "tanggal_pernyataan": "2025-07-29",
+    "url_sumber": "https://jdih.sumselprov.go.id/informasi/berita/sukses-penanganan-karhutla-di-sumsel-herman-deru-dipuji-menteri-lingkungan-hidup",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak menyimpulkan penurunan atau keberhasilan tanpa pembanding. Isi kutipan yang ditampilkan cocok dengan halaman sumber yang diperiksa.",
+    "review_note": "Temuan terlalu banyak menjelaskan apa yang tidak disebut laporan. Kutipan KLHK dalam WALHI sebenarnya membahas karhutla 2015; tahun itu sebaiknya disebut. Daerah dan periode pembanding dalam klaim juga belum rinci.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29.\n\nPenilaian: Tidak dapat diverifikasi\n\nTemuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.\n\nTemuan Data Trend Asia\n- Laporan tidak menyebutkan adanya upaya menjaga tinggi muka air gambut sebagai faktor capaian penurunan kebakaran hutan dan lahan di Sumatera Selatan atau daerah lain. [1]\n\nTemuan Data WALHI\n- Konteks wilayah lebih luas: Cakupan Indonesia: KLHK menyatakan banyak faktor penyebab kebakaran hutan dan lahan, termasuk alih fungsi lahan gambut dan lemahnya penegakan hukum, tanpa menyebutkan capaian menjaga tinggi muka air gambut sebagai faktor pengurangan kebakaran. [2]\n\n[1] Sumber: Trend Asia — Asap untuk Rakyat, Untung Buat Segelintir — halaman PDF 6\nhttps://trendasia.org/asap-untuk-rakyat-untung-buat-segelintir/\nUnduh: Asap untuk Rakyat, Untung Buat Segelintir (PDF)\nhttps://trendasia.org/wp-content/uploads/2026/09/FA-FACTSHEET-KARHUTLA.pdf\n[2] Sumber: WALHI — Tinjauan Lingkungan Hidup 2025 — Melanjutkan Tersesat, atau Kembali ke Jalan yang Benar — halaman PDF 13\nhttps://www.walhi.or.id/melanjutkan-tersesat-atau-kembali-ke-jalan-yang-benar\nUnduh: Tinjauan Lingkungan Hidup 2025 — Melanjutkan Tersesat, atau Kembali ke Jalan yang Benar (PDF)\nhttps://www.walhi.or.id/uploads/2024-Rilis/TLH%202025%20rev.pdf",
+    "error_type": null,
+    "seconds": 75.46,
+    "source_items": [
+      {
+        "source": "Trend Asia",
+        "title": "Asap untuk Rakyat, Untung Buat Segelintir",
+        "url": "https://trendasia.org/asap-untuk-rakyat-untung-buat-segelintir/",
+        "download_url": "https://trendasia.org/wp-content/uploads/2026/09/FA-FACTSHEET-KARHUTLA.pdf",
+        "display": "Trend Asia — Asap untuk Rakyat, Untung Buat Segelintir",
+        "document_id": "74b8f2b30f0a4500b24c",
+        "pdf_pages": [
+          6
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 6,
+            "printed_page": "6",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": 2026,
+        "source_record_id": "ngo:74b8f2b30f0a4500b24c"
+      },
+      {
+        "source": "WALHI",
+        "title": "Tinjauan Lingkungan Hidup 2025 — Melanjutkan Tersesat, atau Kembali ke Jalan yang Benar",
+        "url": "https://www.walhi.or.id/melanjutkan-tersesat-atau-kembali-ke-jalan-yang-benar",
+        "download_url": "https://www.walhi.or.id/uploads/2024-Rilis/TLH%202025%20rev.pdf",
+        "display": "WALHI — Tinjauan Lingkungan Hidup 2025 — Melanjutkan Tersesat, atau Kembali ke Jalan yang Benar",
+        "document_id": "610a76e661168d7a3b72",
+        "pdf_pages": [
+          13
+        ],
+        "source_number": 2,
+        "page_locators": [
+          {
+            "pdf_page": 13,
+            "printed_page": "5",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": 2025,
+        "source_record_id": "ngo:610a76e661168d7a3b72"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-03.json"
+  },
+  {
+    "id": 4,
+    "question": "Benarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31.",
+    "pejabat": "Nyamin",
+    "tanggal_pernyataan": "2026-08-31",
+    "url_sumber": "https://opendata.jambiprov.go.id/publikasi/berita/118/gubernur-al-haris-tegaskan-penanganan-karhutla-jambi-harus-terpadu-tidak-boleh-ada-keraguan-bertindak118",
+    "route": "environment",
+    "review_status": "masalah_pemilihan_indikator",
+    "review_reason": "Label menahan kesimpulan, tetapi intent memilih kehilangan tutupan pohon akibat kebakaran untuk klaim seluruh luas karhutla. Ini ukuran berbeda.",
+    "review_note": "Rentang 1 Januari–29 Agustus juga direpresentasikan sebagai periode Januari dan Agustus dengan endpoint_difference=true. Belum menghasilkan angka salah karena 2026 tidak ditemukan; ini risiko pada pertanyaan dengan periode yang tersedia.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31.\n\nPenilaian: Tidak dapat diverifikasi\n\nData yang sesuai untuk Jambi, Kabupaten Sarolangun, Jambi pada Agustus 2026 belum ditemukan dalam pencarian ini. Data yang tersedia belum cukup untuk menguji klaim pada lingkup tersebut.\n\nTemuan Data\nBukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.\n\nKonteks\nHasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.\n\nPeringatan editorial\nUntuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai luas kebakaran hutan dan lahan, luas kebakaran hutan dan lahan di Sarolangun di Jambi, Kabupaten Sarolangun, Jambi pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.",
+    "error_type": null,
+    "seconds": 20.1,
+    "source_items": [],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-04.json"
+  },
+  {
+    "id": 5,
+    "question": "Benarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14.",
+    "pejabat": "Al Haris",
+    "tanggal_pernyataan": "2026-09-14",
+    "url_sumber": "https://opendata.jambiprov.go.id/publikasi/berita/132/gubernur-al-haris-ungkap-80-persen-karhutla-di-jambi-sengaja-dibakar132",
+    "route": "environment",
+    "review_status": "kesalahan_isi",
+    "review_reason": "Tabel memberi nama sebaran titik hotspot tetapi nilai 1.200 hektare. Halaman PDF 59 membedakan luas terbakar 1.200 hektare dari 871 titik hotspot.",
+    "review_note": "Narasi menyebut Pada September 2023, sementara sumber menyebut per bulan September 2023. Jangan mengubah kumulatif sampai September menjadi kejadian dalam bulan September. Label tidak dapat diverifikasi tetap wajar untuk klaim 80 persen.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14.\n\nPenilaian: Tidak dapat diverifikasi\n\nTemuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.\n\nTemuan Data WALHI\n- Pada September 2023, kebakaran hutan dan lahan di Jambi mencapai 1200 hektar dengan 871 titik hotspot, tersebar 348 di izin perusahaan dan 523 di luar izin perusahaan, tanpa keterangan persentase lahan sengaja dibakar. [1]\n\nAngka yang dilaporkan [1]\n\n| Temuan | Nilai |\n| --- | --- |\n| Sebaran titik hotspot kebakaran hutan dan lahan di Jambi September 2023 | 1200 hektar |\n\n[1] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 59, 62\nhttps://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera\nUnduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)\nhttps://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+    "error_type": null,
+    "seconds": 58.98,
+    "source_items": [
+      {
+        "source": "WALHI",
+        "title": "Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "url": "https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera",
+        "download_url": "https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+        "display": "WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "document_id": "170b7b2725d28ffd7a71",
+        "pdf_pages": [
+          59,
+          62
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 59,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": null,
+        "source_record_id": "ngo:170b7b2725d28ffd7a71"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-05.json"
+  },
+  {
+    "id": 6,
+    "question": "Benarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04.",
+    "pejabat": "Raja Juli Antoni",
+    "tanggal_pernyataan": "2025-12-04",
+    "url_sumber": "https://www.antaranews.com/berita/5286667/di-dpr-menhut-deforestasi-turun-di-3-provinsi-banjir-di-sumatera",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak memaksakan angka MapBiomas 2024 untuk menguji paparan sampai September 2025. Indikator awal adalah transisi hutan menjadi nonhutan, bukan kehilangan tutupan pohon GFW.",
+    "review_note": "Alasan belum menjelaskan secara spesifik ketidaksetaraan periode paparan pemerintah dan batas data September. Ketiadaan data lokal tidak membuktikan klaim salah. Sumber pemerintah untuk angka klaim belum diperiksa oleh mesin.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04.\n\nPenilaian: Tidak dapat diverifikasi\n\nData MapBiomas Koleksi 4.1 yang terhubung baru tersedia hingga 2024; data 2025 belum tersedia dalam seri lokal ini. Data yang tersedia belum cukup untuk menilai klaim pada wilayah dan periode tersebut.\n\nTemuan Data\nBukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.\n\nKonteks\nHasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.\n\nPeringatan editorial\nUntuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai deforestasi, luas tutupan hutan, kerusakan hutan di Aceh, Sumatera Utara, Sumatera Barat pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.\n\nSumber: MapBiomas Indonesia — Koleksi 4.1\nhttps://landy.mapbiomas.id/en/statistics\nUnduh: Tutupan dan transisi lahan Indonesia — Koleksi 4.1 (XLSX)\nhttps://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx",
+    "error_type": null,
+    "seconds": 23.73,
+    "source_items": [
+      {
+        "source": "MapBiomas Indonesia",
+        "title": "Tutupan dan transisi lahan — Koleksi 4.1",
+        "display": "MapBiomas Indonesia — Koleksi 4.1",
+        "url": "https://landy.mapbiomas.id/en/statistics",
+        "download_url": "https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx",
+        "provider": "mapbiomas",
+        "dataset_version": "4.1",
+        "source_record_id": "mapbiomas:landy:4.1:catalog:coverage",
+        "source_role": "coverage_metadata"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-06.json"
+  },
+  {
+    "id": 7,
+    "question": "Benarkah klaim berikut? Ada indikasi kayu gelondongan yang terseret banjir di Sumatera bagian utara berasal dari sisa pembukaan kebun sawit dan diduga memperparah dampak banjir. Asal kayu masih akan diperiksa. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-12-03.",
+    "pejabat": "Hanif Faisol Nurofiq",
+    "tanggal_pernyataan": "2025-12-03",
+    "url_sumber": "https://news.detik.com/berita/d-8241754/menteri-lh-duga-gelondongan-kayu-terbawa-banjir-sumatera-sisa-buka-kebun-sawit",
+    "route": "environment",
+    "review_status": "gangguan",
+    "review_reason": "Proses berhenti dengan ValidationError; tidak ada jawaban atau penilaian yang dihasilkan.",
+    "review_note": "Tidak dihitung sebagai data tidak tersedia. Catatan ini hanya menyimpan jenis exception; lokasi validasi dan akar penyebab belum didiagnosis. Tidak diulang atau diganti dengan percobaan berhasil.",
+    "engine_verdict": null,
+    "answer": "",
+    "error_type": "ValidationError",
+    "seconds": 67.54,
+    "source_items": [],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-07.json"
+  },
+  {
+    "id": 8,
+    "question": "Benarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01.",
+    "pejabat": "Teuku Faisal Fathani",
+    "tanggal_pernyataan": "2025-12-01",
+    "url_sumber": "https://news.detik.com/berita/d-8237996/bmkg-hujan-bulanan-turun-dalam-sehari-di-sumatera-terjadi-3-hari/amp",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak mengarang angka hujan; menyatakan belum cukup data.",
+    "review_note": "Jawaban terlalu singkat untuk membantu pengguna mengetahui bahwa data curah hujan harian dan normal pembanding diperlukan. Pemeriksaan teks laporan lokal tidak menemukan angka 411 mm untuk kejadian tersebut; pemeriksaan kata kunci bukan bukti ketiadaan menyeluruh.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01.\n\nPenilaian: Tidak dapat diverifikasi\n\nBelum cukup data untuk memberikan jawaban.",
+    "error_type": null,
+    "seconds": 27.2,
+    "source_items": [],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-08.json"
+  },
+  {
+    "id": 9,
+    "question": "Benarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10.",
+    "pejabat": "Ardhasena Sopaheluwakan",
+    "tanggal_pernyataan": "2026-02-10",
+    "url_sumber": "https://www.bmkg.go.id/berita/utama/bmkg-perubahan-iklim-nyata-siklon-senyar-pecahkan-rekor-curah-hujan-tertinggi-sejak-1991",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak memaksakan data tutupan hutan untuk perbandingan hujan dan normalnya.",
+    "review_note": "Belum cukup data; perlu catatan observasi dan normal hujan untuk Koto Tangah serta Singkil Utara. Ini bukan verifikasi bahwa klaim salah.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10.\n\nPenilaian: Tidak dapat diverifikasi\n\nBelum cukup data untuk memberikan jawaban.",
+    "error_type": null,
+    "seconds": 30.38,
+    "source_items": [],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-09.json"
+  },
+  {
+    "id": 10,
+    "question": "Benarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08.",
+    "pejabat": "Bobby Afif Nasution",
+    "tanggal_pernyataan": "2025-12-08",
+    "url_sumber": "https://sumut.antaranews.com/berita/648307/gubernur-sumut-kerugian-banjir-dan-longsor-capai-rp998-triliun",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak mengarang nilai kerugian; kutipan pencabutan 28 izin cocok dengan halaman PDF 7 yang dirujuk.",
+    "review_note": "Konteks pencabutan izin tidak menjawab angka kerugian. Teks sumber mengenai ketiadaan nilai sebaiknya dibatasi pada bagian yang diperiksa, bukan seluruh laporan.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08.\n\nPenilaian: Tidak dapat diverifikasi\n\nTemuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.\n\nTemuan Data WALHI\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Banjir bandang Aceh, Sumatera Utara, dan Sumatera Barat akhir November 2025 mendorong Presiden mencabut 28 izin perusahaan di tiga provinsi tersebut, namun laporan tidak menyebutkan estimasi kerugian finansial akibat bencana tersebut. [1]\n\n[1] Sumber: WALHI — Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi — halaman PDF 7\nhttps://www.walhi.or.id/jalankan-tap-mpr-ix-2001-tuntutan-dari-tapak-untuk-keadilan-antargenerasi\nUnduh: Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi (PDF)\nhttps://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Jalankan%20TAP%20MPR%20IX%202001_2026.pdf",
+    "error_type": null,
+    "seconds": 54.74,
+    "source_items": [
+      {
+        "source": "WALHI",
+        "title": "Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi",
+        "url": "https://www.walhi.or.id/jalankan-tap-mpr-ix-2001-tuntutan-dari-tapak-untuk-keadilan-antargenerasi",
+        "download_url": "https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Jalankan%20TAP%20MPR%20IX%202001_2026.pdf",
+        "display": "WALHI — Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi",
+        "document_id": "6351c3fc9740f1749fa0",
+        "pdf_pages": [
+          7
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 7,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": null,
+        "source_record_id": "ngo:6351c3fc9740f1749fa0"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-10.json"
+  },
+  {
+    "id": 11,
+    "question": "Benarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29.",
+    "pejabat": "Lana Saria",
+    "tanggal_pernyataan": "2025-11-29",
+    "url_sumber": "https://www.esdm.go.id/en/media-center/news-archives/cuaca-ekstrem-dan-kondisi-geografis-picu-bencana-di-wilayah-aceh-dan-sumatera",
+    "route": "environment",
+    "review_status": "terbatas_wajar",
+    "review_reason": "Tidak mengubah catatan banjir tahunan menjadi bukti sebab kejadian November 2025. Temuan umum cocok dengan halaman PDF 9.",
+    "review_note": "Tidak menemukan bukti faktor dominan dan kondisi geologi pada seluruh lokasi klaim. Konteks merupakan laporan lama dan lintas lokasi, bukan pembuktian kejadian tertentu.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29.\n\nPenilaian: Tidak dapat diverifikasi\n\nTemuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.\n\nTemuan Data WALHI\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Kabupaten Aceh Singkil, Kabupaten Gayo Lues, Kota Subulussalam, Kabupaten Aceh Tenggara: Kejadian banjir dan longsor setiap tahunnya terjadi di Kabupaten Aceh Tenggara, Aceh Selatan, Aceh Singkil, Gayo Lues, dan Kota Subulussalam yang masuk dalam DAS Singkil, yang merupakan langganan banjir. [1]\n\n[1] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 9\nhttps://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera\nUnduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)\nhttps://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+    "error_type": null,
+    "seconds": 55.67,
+    "source_items": [
+      {
+        "source": "WALHI",
+        "title": "Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "url": "https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera",
+        "download_url": "https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+        "display": "WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "document_id": "170b7b2725d28ffd7a71",
+        "pdf_pages": [
+          9
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 9,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": null,
+        "source_record_id": "ngo:170b7b2725d28ffd7a71"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-11.json"
+  },
+  {
+    "id": 12,
+    "question": "Benarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29.",
+    "pejabat": "Rio Firdianto",
+    "tanggal_pernyataan": "2025-11-29",
+    "url_sumber": "https://www.inharmonia.id/index.php/berita/berita/benarkah-pernyataan-jenderal-tni-tak-ada-penggundulan-hutan-di-sumatera-utara",
+    "route": "environment",
+    "review_status": "kesalahan_isi",
+    "review_reason": "Konteks wilayah menampilkan Kabupaten Batang untuk pembahasan Batang Toru. Halaman PDF 24 menyebut kawasan Batang Toru di Sumatera Utara, bukan Kabupaten Batang.",
+    "review_note": "Keterangan banjir pada 2026 ternyata tertulis demikian dalam laporan sumber halaman 6: jangan otomatis menyebutnya halusinasi mesin. Namun relevansinya dengan klaim November 2025 harus diperjelas. Penilaian menahan kesimpulan tidak menghapus kesalahan wilayah dalam isi.",
+    "engine_verdict": "Tidak dapat diverifikasi",
+    "answer": "Klaim\nBenarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29.\n\nPenilaian: Tidak dapat diverifikasi\n\nTemuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.\n\nTemuan Data WALHI\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Dalam satu dekade terakhir, deforestasi akibat tambang terjadi di kawasan hutan negara dan merambah ke hutan adat, hutan desa, kebun campuran, dan lahan pertanian rakyat di Sumatera bagian utara (Aceh, Sumatera Utara, dan Sumatera Barat), dengan lebih dari 1,4 juta hektare hutan hilang dalam periode 2016–2025, dan pertambangan menjadi salah satu pendorong utama deforestasi. [1]\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Sumatera: Banjir besar di Sumatra pada 2026 menyebabkan 1.208 jiwa meninggal dunia dan berdampak pada 3,3 juta orang, menjadi bukti nyata risiko sosial-ekologis dari model pengelolaan hutan yang mengutamakan pemberian izin dibanding perlindungan ekosistem dan hak rakyat. [2]\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Sumatera Utara, Kabupaten Batang: Di Sumatera Utara, khususnya kawasan Batang Toru, belum ada kebijakan khusus terkait perlindungan ekosistem esensial, dan laporan tidak menyebutkan penggundulan hutan secara eksplisit pada periode yang dimaksud. [3]\n- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Banjir bandang Aceh, Sumatera Utara, dan Sumatera Barat akhir November 2025 mendorong Presiden mencabut 28 izin perusahaan di tiga provinsi tersebut, memperkuat narasi bencana ekologis yang telah diarusutamakan WALHI sejak 2006 sebagai tanding atas bingkai bencana alam. [2]\n\n[1] Sumber: WALHI — Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan — halaman PDF 44, 63\nhttps://www.walhi.or.id/membayar-mahal-ambisi-pertumbuhan-dari-konflik-bencana-ekologis-hingga-krisis-lain\nUnduh: Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan (PDF)\nhttps://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/TLH%202026%20Membayar%20Mahal%20Ambisi%20Pertumbuhan_compressed.pdf\n[2] Sumber: WALHI — Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi — halaman PDF 6, 7\nhttps://www.walhi.or.id/jalankan-tap-mpr-ix-2001-tuntutan-dari-tapak-untuk-keadilan-antargenerasi\nUnduh: Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi (PDF)\nhttps://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Jalankan%20TAP%20MPR%20IX%202001_2026.pdf\n[3] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 24\nhttps://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera\nUnduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)\nhttps://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+    "error_type": null,
+    "seconds": 60.86,
+    "source_items": [
+      {
+        "source": "WALHI",
+        "title": "Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan",
+        "url": "https://www.walhi.or.id/membayar-mahal-ambisi-pertumbuhan-dari-konflik-bencana-ekologis-hingga-krisis-lain",
+        "download_url": "https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/TLH%202026%20Membayar%20Mahal%20Ambisi%20Pertumbuhan_compressed.pdf",
+        "display": "WALHI — Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan",
+        "document_id": "423fc98fca0d90006ea6",
+        "pdf_pages": [
+          44,
+          63
+        ],
+        "source_number": 1,
+        "page_locators": [
+          {
+            "pdf_page": 63,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": 2026,
+        "source_record_id": "ngo:423fc98fca0d90006ea6"
+      },
+      {
+        "source": "WALHI",
+        "title": "Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi",
+        "url": "https://www.walhi.or.id/jalankan-tap-mpr-ix-2001-tuntutan-dari-tapak-untuk-keadilan-antargenerasi",
+        "download_url": "https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Jalankan%20TAP%20MPR%20IX%202001_2026.pdf",
+        "display": "WALHI — Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi",
+        "document_id": "6351c3fc9740f1749fa0",
+        "pdf_pages": [
+          6,
+          7
+        ],
+        "source_number": 2,
+        "page_locators": [
+          {
+            "pdf_page": 6,
+            "printed_page": "",
+            "page_side": "full"
+          },
+          {
+            "pdf_page": 7,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": null,
+        "source_record_id": "ngo:6351c3fc9740f1749fa0"
+      },
+      {
+        "source": "WALHI",
+        "title": "Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "url": "https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera",
+        "download_url": "https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf",
+        "display": "WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera)",
+        "document_id": "170b7b2725d28ffd7a71",
+        "pdf_pages": [
+          24
+        ],
+        "source_number": 3,
+        "page_locators": [
+          {
+            "pdf_page": 24,
+            "printed_page": "",
+            "page_side": "full"
+          }
+        ],
+        "related_editions": [],
+        "publication_year": null,
+        "source_record_id": "ngo:170b7b2725d28ffd7a71"
+      }
+    ],
+    "raw_result_file": "docs/test-evidence/20261108/klaim-pejabat-sumatera-v1/results/case-12.json"
+  }
+]

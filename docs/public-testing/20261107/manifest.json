@@ -1,0 +1,14 @@
+{
+  "version": "public-test100-v1",
+  "date": "2026-11-07",
+  "count": 100,
+  "route_counts": {
+    "general": 40,
+    "environment": 60
+  },
+  "question_sha256": "f696c8cedb424f0f2dc16755099da5a39e975135e68b45df7f0394ed7d38ae66",
+  "evidence_directory": "docs/test-evidence/20261107/public-test100-v1",
+  "selection": "Historical accurate complete cases, unchanged questions; deliberately selected regression/public exercise set.",
+  "run": "One actual application-backend call per case; code unchanged; no selective reruns.",
+  "accuracy": "95 source-faithful including 1 partial; 5 problematic; source ambiguity and citation caveats recorded in report."
+}

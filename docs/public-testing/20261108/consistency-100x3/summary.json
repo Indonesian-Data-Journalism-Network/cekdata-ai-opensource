@@ -1,0 +1,119 @@
+{
+  "answers": 300,
+  "accurate": 289,
+  "problematic": 11,
+  "service_errors": 0,
+  "accurate_percent": 96.33,
+  "accurate_partial": 4,
+  "questions": 100,
+  "rounds": 3,
+  "groups": {
+    "bps": {
+      "answers": 120,
+      "accurate": 120,
+      "problematic": 0,
+      "service_errors": 0,
+      "accurate_percent": 100.0,
+      "accurate_partial": 0,
+      "all_three_accurate": 40
+    },
+    "gfw": {
+      "answers": 90,
+      "accurate": 90,
+      "problematic": 0,
+      "service_errors": 0,
+      "accurate_percent": 100.0,
+      "accurate_partial": 0,
+      "all_three_accurate": 30
+    },
+    "mapbiomas": {
+      "answers": 30,
+      "accurate": 30,
+      "problematic": 0,
+      "service_errors": 0,
+      "accurate_percent": 100.0,
+      "accurate_partial": 0,
+      "all_three_accurate": 10
+    },
+    "ngo": {
+      "answers": 30,
+      "accurate": 22,
+      "problematic": 8,
+      "service_errors": 0,
+      "accurate_percent": 73.33,
+      "accurate_partial": 1,
+      "all_three_accurate": 5
+    },
+    "gabungan": {
+      "answers": 30,
+      "accurate": 27,
+      "problematic": 3,
+      "service_errors": 0,
+      "accurate_percent": 90.0,
+      "accurate_partial": 3,
+      "all_three_accurate": 7
+    }
+  },
+  "round_results": {
+    "1": {
+      "answers": 100,
+      "accurate": 96,
+      "problematic": 4,
+      "service_errors": 0,
+      "accurate_percent": 96.0,
+      "accurate_partial": 1
+    },
+    "2": {
+      "answers": 100,
+      "accurate": 96,
+      "problematic": 4,
+      "service_errors": 0,
+      "accurate_percent": 96.0,
+      "accurate_partial": 2
+    },
+    "3": {
+      "answers": 100,
+      "accurate": 97,
+      "problematic": 3,
+      "service_errors": 0,
+      "accurate_percent": 97.0,
+      "accurate_partial": 1
+    }
+  },
+  "all_three_accurate": 92,
+  "mixed_accuracy": 7,
+  "no_accurate_runs": 1,
+  "verdict_stable": 100,
+  "numeric_stable": 100,
+  "sources_stable": 82,
+  "identical_answer": 73,
+  "varying_numeric_ids": [],
+  "varying_verdict_ids": [],
+  "not_always_accurate_ids": [
+    82,
+    83,
+    85,
+    88,
+    90,
+    92,
+    97,
+    98
+  ],
+  "scope": "Paket terkurasi dari pertanyaan yang pernah berhasil; bukan estimasi akurasi semua pertanyaan. Akurat berarti setia pada sumber/acuan yang diperiksa. Benar tetapi parsial diterima. Mesin yang sama dengan website, panggilan backend independen; bukan uji transport browser atau beban produksi.",
+  "claim_questions": 15,
+  "claim_verdict_stable": 15,
+  "structured_numeric_questions": 92,
+  "structured_numeric_stable": 92,
+  "data_only_questions": 80,
+  "data_only_all_three_accurate": 80,
+  "data_only_numeric_stable": 80,
+  "arithmetic_checks": 329,
+  "arithmetic_errors": 0,
+  "issue_types": {
+    "Klaim ketiadaan informasi keliru": 1,
+    "Wilayah/entitas tertukar": 3,
+    "Kategori, periode atau besaran tertukar": 3,
+    "Atribusi opini hilang": 3,
+    "Cakupan sampel digeneralisasi": 1
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "title": "Audit jawaban laporan NGO, gabungan NGO + GFW, dan klaim pejabat",
+  "audited_at": "2026-11-08T17:44:40.223558+07:00",
+  "benchmark": "online-mixed500x3-v2",
+  "questions": 58,
+  "attempts": 174,
+  "answers": 169,
+  "accepted": 137,
+  "incorrect": 32,
+  "service_failure": 5,
+  "accuracy_among_answers_percent": 81.07,
+  "accepted_over_attempts_percent": 78.74,
+  "status_counts": {
+    "service_failure": 5,
+    "accurate": 81,
+    "incorrect": 32,
+    "accurate_partial": 23,
+    "correct_limitation": 33
+  },
+  "groups": {
+    "ngo": {
+      "questions": 28,
+      "attempts": 84,
+      "answers": 83,
+      "accepted": 60,
+      "incorrect": 23,
+      "service_failure": 1,
+      "accuracy_among_answers_percent": 72.29,
+      "status_counts": {
+        "accurate": 51,
+        "incorrect": 23,
+        "correct_limitation": 3,
+        "service_failure": 1,
+        "accurate_partial": 6
+      }
+    },
+    "gabungan": {
+      "questions": 18,
+      "attempts": 54,
+      "answers": 54,
+      "accepted": 46,
+      "incorrect": 8,
+      "service_failure": 0,
+      "accuracy_among_answers_percent": 85.19,
+      "status_counts": {
+        "accurate": 29,
+        "accurate_partial": 17,
+        "incorrect": 8
+      }
+    },
+    "klaim_pejabat": {
+      "questions": 12,
+      "attempts": 36,
+      "answers": 32,
+      "accepted": 31,
+      "incorrect": 1,
+      "service_failure": 4,
+      "accuracy_among_answers_percent": 96.88,
+      "status_counts": {
+        "service_failure": 4,
+        "correct_limitation": 30,
+        "accurate": 1,
+        "incorrect": 1
+      }
+    }
+  },
+  "questions_accepted_all_3": 41,
+  "questions_with_at_least_one_error": 16,
+  "questions_with_service_failure": 3,
+  "primary_error_counts": {
+    "Makna angka atau indikator berubah": 6,
+    "Label tidak selaras dengan bukti": 6,
+    "Kepastian atau status melampaui sumber": 6,
+    "Cakupan wilayah, warga, atau kegiatan melebar": 5,
+    "Atribusi atau hubungan tidak terbukti": 8,
+    "Periode dan evaluasi program bergeser": 1
+  },
+  "context_validation": {
+    "blocks": 95,
+    "unique_source_records": 76,
+    "matched": 76,
+    "issues": 0
+  },
+  "methodology": [
+    "Penilaian manual atas jawaban tersimpan dari tiga putaran; tidak menjalankan ulang atau mengubah mesin.",
+    "Jawaban akurat tetapi kurang lengkap diterima; keterbatasan bukti yang dinyatakan tepat diterima.",
+    "Bukti terkait dapat diterima jika lokasi, periode, indikator dan batasnya jelas; tidak harus membuktikan klaim utama.",
+    "Satu kesalahan isi material membuat satu jawaban bermasalah meski bagian lain benar. Gangguan layanan dipisahkan.",
+    "Audit kesetiaan kepada laporan yang dirujuk, cakupan, angka, status dan label. Bukan verifikasi independen setiap fakta dunia nyata atau representativitas survei NGO.",
+    "Sumber diperiksa dari teks halaman PDF lokal; tidak menguji ulang akses semua tautan publik.",
+    "Angka GFW/MapBiomas pendamping dicocokkan dengan snapshot impor lokal; bukan unduhan API baru.",
+    "Angka ini khusus 58 soal; 500 soal bukan sampel acak penggunaan publik. Tiga pengulangan soal sama bukan 1.500 pertanyaan independen."
+  ],
+  "source_quality_notes": [
+    "64.141 communities memang tertulis pada Red Alert Auriga PDF 3. Satuan/populasi perlu konfirmasi; tidak dianggap kesalahan terjemahan AI.",
+    "WALHI memakai hingga/sekitar dua juta ha Merauke dan uraian proyeksi yang tidak seragam; kesesuaian dengan sumber tidak membuktikan luas aktual telah dibuka.",
+    "Teks 2,25 juta ha mangrove Bintuni berasal dari laporan, belum diverifikasi independen. Mengubah total luas menjadi luas rusak tetap kesalahan AI.",
+    "Sumber memuat inkonsistensi aritmetika: 153 juta ton sebagai 80% dari 170 juta ton; judul Cirebon 1.583 MW sementara rincian 660+924=1.584 MW. Perlu pemeriksaan penerbit."
+  ],
+  "overall_composite": {
+    "accepted": 1450,
+    "answered": 1489,
+    "incorrect": 39,
+    "service_failures": 11,
+    "percent": 97.38,
+    "scope_warning": "Gabungan pemeriksaan jawaban numerik utama dengan audit laporan ini. Pemeriksaan 1.320 jawaban numerik tidak meliputi seluruh narasi konteks tambahan. Jangan disebut audit menyeluruh semua kalimat mesin."
+  },
+  "input_hashes": {
+    "cases.json": "070e27408d72d7f22090705d0ef796e0c093b67b422825a57f3cfc631f34c009",
+    "report-audit/reviews.json": "2191501240894959b63f4644fd68175f066f9b16beef70da7ab6e1ff94fccdf6",
+    "report-audit/source-pages.json": "5abe579b6bdfce2e8067a18db464f3c0e505fbda7600a087f41718d38b92389b",
+    "report-audit/context-checks.json": "dff5da2e33d7389c01c4f49b08aaba96f6dd922b9c66271c2418735372c0bfdc"
+  }
+}

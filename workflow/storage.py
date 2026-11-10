@@ -75,7 +75,9 @@ class QdrantEvidenceRetriever:
                     # Normalize capitalization only, preserving requested geographic scope.
                     area = next((a for a in query.areas if a.casefold() == row.area.casefold()), row.area)
                     row = row.model_copy(update={'area': area})
-            rows.append(row)
+            from period_contract import matches
+            if matches(row, query.periods):
+                rows.append(row)
         return SearchBatch(records=rows, truncated=next_offset is not None)
 
 

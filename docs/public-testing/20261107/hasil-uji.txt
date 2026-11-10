@@ -1,0 +1,28 @@
+HASIL UJI ULANG 100 PERTANYAAN — 7 NOVEMBER 2026
+
+95 akurat (95%): 94 lengkap dan 1 parsial.
+5 kurang tepat (5%). Tidak ada gangguan layanan.
+
+Paket dipilih dari kasus yang pernah berhasil, bukan sampel acak untuk akurasi keseluruhan mesin.
+
+General — BPS: 40/40 akurat.
+Environment — GFW: 30/30 akurat.
+Environment — MapBiomas: 10/10 akurat.
+Environment — laporan NGO: 7/10 akurat.
+Environment — gabungan sumber: 8/10 akurat.
+
+PERLU PERBAIKAN
+083. Apa data yang tersedia tentang air bersih dan penghidupan warga terkait industri nikel di Pulau Obi?
+Status hasil pemeriksaan sampel diperkuat: sumber Trend Asia PDF 5 menyebut “terindikasi terkontaminasi”, tetapi jawaban menyatakan seluruh 12 jenis biota “terkontaminasi”.
+
+087. Jelaskan dampak proyek pangan di Merauke bagi warga setempat, disertai bukti yang ditemukan.
+Batas “hingga dua juta hektar” dalam WALHI PDF 19 berubah menjadi “sekitar dua juta hektar”, sehingga batas atas disajikan seperti perkiraan luas kejadian.
+
+088. Jelaskan dampak proyek gas LNG di Teluk Bintuni bagi warga setempat, disertai bukti yang ditemukan.
+Kalimat bahwa kerusakan merupakan pelanggaran undang-undang diambil dari judul berita dalam catatan kaki laporan (PDF 19), tanpa mempertahankan atribusi kepada orang yang menyatakan pendapat itu.
+
+093. Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.
+Sumber Trend Asia PDF 8 menyatakan “Kuat dugaan kami”, tetapi kesimpulan menulis industri nikel telah menyebabkan kemiskinan struktural. Status dugaan hilang.
+
+096. Apa dampak proyek pangan terhadap hak atas tanah masyarakat adat di Merauke? Tambahkan angka kehilangan tutupan pohon di Kabupaten Merauke, Papua pada 2024.
+Temuan historis Zanegi 4.000 ha, Rp300 juta, serta pelepasan 486.939 ha dan GFW benar. Namun batas “hingga dua juta hektar” kembali berubah menjadi “sekitar dua juta hektar”.

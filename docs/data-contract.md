@@ -6,7 +6,7 @@ Satu record harus mewakili satu observasi. Nilai nol bukan nilai hilang. Teks de
 
 Importer Pinecone membaca `metadata.value`, `year`, `area_name`, `unit`, `title`, `source`, `dataset_id`, `series_label`, dan kategori tambahan. `period` berisi nama bulan atau penjelasan periode. URL singular `source_url`/`download_url` dipertahankan. Metadata asli disimpan di `original_metadata`. Record yang tidak dapat dipetakan ditandai `usable=false`; tidak dibuatkan angka pengganti.
 
-File ekspor memerlukan manifest dengan dimensi dan checksum SHA-256 `records.jsonl`; eksportir yang disertakan menghasilkan format ini. Model pembuat embedding asli belum diverifikasi, sehingga vektor tidak digunakan untuk pencarian semantik.
+File ekspor memerlukan manifest dengan dimensi dan checksum SHA-256 `records.jsonl`; eksportir yang disertakan menghasilkan format ini. Jalur impor pilot tidak menggunakan vektor ekspor untuk pencarian semantik. [Adapter Pinecone langsung](pinecone-live.md) memiliki konfigurasi model, validasi dimensi, dan batas skema tersendiri.
 
 ## Syarat tautan sumber untuk impor data nyata berikutnya
 
@@ -62,3 +62,69 @@ anomali komponennya. CSV mencantumkan periode serta nilai asli, termasuk neraca 
 ## Canonical di MySQL
 
 Jika Pinecone hanya berisi metadata string dan `mysql_reference`, nilainya memang bisa berada di MySQL. Prototipe ini belum melakukan pengambilan canonical tersebut. Jangan menganggap angka tidak ada dalam sumber hanya karena tidak berada dalam metadata pencarian. Jangan mengubah vektor `values` menjadi nilai statistik. Dukungan MySQL perlu pengambilan record lengkap berdasarkan ID dan pemeriksaan versi sebelum dipakai sebagai bukti.
+
+
+## BPS: format observasi standar, 7 November 2026
+
+Snapshot BPS menggunakan `cekdata-statistical-observation-v2`. Kolom inti
+mengikuti bukti terstruktur GFW: `indicator_id`, `indicator`, `area`, `area_key`,
+`year`, `month`, `value`, `unit`, `source`, `source_url`, `source_record_id`,
+`population`, `definition`, `method`, `period_start`, dan `period_end`.
+Perbedaan metodologi/identitas sumber tetap dipertahankan; format sama bukan
+berarti observasi antarpenyedia otomatis sebanding.
+
+- Satu rekaman = satu indikator × kategori × wilayah × periode.
+- `temporal_basis=month`: `month` terisi, `quarter=null`.
+- `temporal_basis=quarter`: `quarter` 1–4, **`month=null`**. Triwulan II
+  mempunyai batas April–Juni; tidak disimpan sebagai angka April atau Juni.
+- `temporal_basis=annual`: kedua kolom tersebut null, batas Januari–Desember.
+- Batas tanggal menyatakan cakupan kalender periode, bukan tanggal survei
+  atau bukti bahwa angka adalah penjumlahan sepanjang periode. `aggregation_kind`
+  dibiarkan kosong jika jenis agregasinya tidak dijelaskan sumber.
+- `Semester 1 (Maret)` tetap menyimpan label asli di `period_label_raw` dan
+  dibaca sebagai observasi Maret. Label semester tanpa bulan eksplisit ditahan.
+- `unit` memakai bentuk konsisten: persen, ribu jiwa, miliar rupiah.
+  `unit_code`, `unit_scale`, `unit_source`, `unit_raw`, `unit_origin` menyimpan
+  identitas, skala, label sumber, serta asal satuan. **Nilai tidak dikalikan,
+  dibagi, atau dibulatkan ketika format diseragamkan.**
+- `area_code_system=BPS` membedakan kode BPS dari GADM. `geographic_level`
+  memakai adm0/adm1/adm2; `boundary_type` membedakan kabupaten dan kota sesuai
+  label sumbu sumber. Induk provinsi kabupaten diturunkan dari awalan kode BPS
+  dan dicocokkan dengan daftar provinsi pada tabel sumber, bukan kode GADM.
+- `category_id/category_label` mempertahankan kategori sumber. Perkotaan dan
+  perdesaan juga ditandai `population=urban/rural`; total dan sektor ekonomi
+  tetap dibedakan melalui kategori dan indikatornya masing-masing.
+- `original_row` adalah salinan persis rekaman SQLite yang telah dicocokkan
+  dengan respons mentah. `source_locator` mempertahankan semua ID dimensi BPS.
+- Catatan sementara ditetapkan hanya bila catatan sumber menyebut tahun
+  observasi terkait. Jika tidak disebutkan, statusnya
+  `published_status_unspecified`, bukan otomatis final.
+
+Migrasi membuat koleksi baru; ID rekaman dan indikator tetap stabil. Koleksi
+lama dipertahankan. Manifest aktif diperbarui setelah seluruh payload baru
+lulus pemeriksaan; katalog versi terkait ditunjuk oleh `catalog_file`.
+Keberhasilan migrasi tidak dengan sendirinya berarti benchmark jawaban lulus.
+Pengolahan intent dan uji jawaban dicatat terpisah di bawah.
+
+
+## Kontrak periode permintaan dan perhitungan
+
+`Intent.requested_periods` membawa daftar identitas periode lengkap:
+`year` disertai `month` atau `quarter` (tidak boleh keduanya). Pencarian
+meneruskan daftar yang sama sebagai `SearchQuery.periods`, termasuk saat
+mencari alternatif. Perbandingan Februari–Agustus tidak boleh difilter hanya
+ke bulan Agustus. Label bulan/triwulan eksplisit diperiksa dari pertanyaan
+asli dengan aturan bahasa umum, tanpa daftar khusus indikator atau lokasi.
+
+Penilaian mencocokkan frekuensi, tahun, dan bulan/triwulan secara bersamaan.
+Periode triwulan dan bulan akhir triwulan tidak saling menggantikan. Deret
+kontinu menyertakan periode di antaranya; bukti yang hilang dilaporkan, bukan
+diganti nol. Perhitungan menolak pasangan dengan ID atau identitas periode
+sama. Jalur tahunan tanpa periode sub-tahunan tetap memakai aturan tahunan
+sebelumnya.
+
+Satuan selisih persentase ditentukan setelah normalisasi satuan, sehingga
+`Persen`, `persen`, dan `%` menghasilkan selisih dalam poin persentase.
+Persentase perubahan relatif tetap dihitung terhadap nilai awal dan tidak
+terdefinisi ketika nilai awal nol. Catatan status sementara tahun observasi
+ditampilkan pada konteks bila tersedia dalam bukti.

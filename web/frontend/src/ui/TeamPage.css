@@ -1,0 +1,18 @@
+.team-page { box-sizing: border-box; width: 100%; max-width: 980px; margin: 0 auto; padding: 32px 40px 64px; color: #292522; }
+.team-back { background: none; border: none; padding: 10px 0; color: #635b55; cursor: pointer; font: inherit; font-size: 13px; }
+.team-back:hover { color: #aa285d; }
+.team-intro { margin: 30px 0 40px; }
+.team-eyebrow { color: #aa285d; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+.team-intro h1 { font-size: clamp(30px, 4vw, 42px); line-height: 1.2; margin: 12px 0 16px; letter-spacing: -1px; }
+.team-intro > p:last-child { color: #6d655f; font-size: 15px; line-height: 1.7; }
+.team-member { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 32px; padding: 28px 0; border-top: 1px solid #dfd8d2; }
+.team-member h2 { font-size: 18px; line-height: 1.5; margin: 0; }
+.team-member p { margin: 0; font-size: 14px; line-height: 1.85; }
+.team-sources { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 12px; }
+.team-sources a { color: #a3265a; font-size: 12px; text-underline-offset: 3px; }
+.team-back:focus-visible, .team-sources a:focus-visible { outline: 2px solid #a3265a; outline-offset: 4px; }
+@media(max-width: 640px) {
+  .team-page { padding: 20px 24px 40px; }
+  .team-intro { margin: 24px 0 30px; }
+  .team-member { grid-template-columns: 1fr; gap: 10px; padding: 24px 0; }
+}

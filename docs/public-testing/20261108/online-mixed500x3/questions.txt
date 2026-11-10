@@ -1,0 +1,999 @@
+001. [general] Benarkah jumlah penduduk miskin di Kota Tanjung Balai turun dari 2023 ke 2024?
+
+002. [general] Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?
+
+003. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Gorontalo dari 2022 sampai 2025.
+
+004. [general] Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?
+
+005. [environment] Sebutkan luas kehilangan tutupan pohon di Jawa Tengah pada 2023, dalam hektare.
+
+006. [general] Bagaimana tren indeks pembangunan manusia di Indonesia selama 2022–2024?
+
+007. [general] Bagaimana tren nilai tukar petani di Indonesia selama 2021–2023?
+
+008. [general] Berapa persentase penduduk miskin di Kabupaten Lahat pada 2023?
+
+009. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Mappi selama 2022–2024?
+
+010. [general] Berapa jumlah penduduk miskin di Kabupaten Ciamis pada 2023?
+
+011. [general] Benarkah persentase penduduk miskin di Kabupaten Bangkalan pada 2024 sebesar 19,66 persen?
+
+012. [general] Berapa persentase penduduk miskin di Kabupaten Halmahera Utara pada 2024?
+
+013. [general] Bagaimana tren tingkat pengangguran terbuka di Kalimantan Barat pada bulan Agustus setiap tahun selama 2021–2023?
+
+014. [environment] Bandingkan luas mangrove di Lampung tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+015. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Banyu Asin, Sumatera Selatan dari 2022 sampai 2025.
+
+016. [environment] Benarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08.
+
+017. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Buol selama 2023–2025?
+
+018. [general] Berapa jumlah penduduk miskin di Kabupaten Nabire pada 2023?
+
+019. [general] Berapa persentase penduduk miskin di Kabupaten Fakfak pada 2023?
+
+020. [environment] Bandingkan luas tutupan sawit di Sulawesi Tengah tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+021. [general] Benarkah persentase penduduk miskin di Kota Serang turun dari 2022 ke 2023?
+
+022. [general] Benarkah persentase penduduk miskin di Kabupaten Kepulauan Yapen pada 2024 sebesar 25,69 persen?
+
+023. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Buru, Maluku pada 2024, dalam hektare.
+
+024. [general] Berapa produksi padi di Indonesia pada 2023?
+
+025. [general] Berapa persentase penduduk miskin di Kota Denpasar pada 2025?
+
+026. [general] Bagaimana tren nilai tukar petani di Indonesia pada bulan Oktober setiap tahun selama 2022–2024?
+
+027. [general] Bandingkan persentase penduduk miskin di Kabupaten Kuantan Singingi pada 2023 dan 2024. Berapa perubahannya?
+
+028. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kutai Barat, Kalimantan Timur pada 2024, dalam hektare.
+
+029. [general] Berapa jumlah penduduk miskin di Kota Palu pada 2023?
+
+030. [environment] Apakah kehilangan tutupan pohon di Kabupaten Gorontalo Utara, Gorontalo lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+031. [general] Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Kediri atau Kabupaten Merauke?
+
+032. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Bolaang Mongondow Selatan, Sulawesi Utara pada 2024, dalam hektare.
+
+033. [general] Berapa jumlah penduduk miskin di Kabupaten Pidie Jaya pada 2023?
+
+034. [general] Bagaimana tren jumlah penduduk miskin di Kalimantan Utara pada bulan Maret setiap tahun selama 2022–2024?
+
+035. [general] Berapa tingkat pengangguran terbuka di Maluku pada Februari 2025?
+
+036. [general] Benarkah jumlah penduduk miskin di Kabupaten Bengkulu Tengah naik dari 2022 ke 2023?
+
+037. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Bangka Selatan, Bangka Belitung dari 2021 sampai 2025.
+
+038. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Murung Raya, Kalimantan Tengah lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+039. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara dari 2022 sampai 2025.
+
+040. [general] Berapa indeks keparahan kemiskinan di Indonesia pada September 2025?
+
+041. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Banyuwangi selama 2023–2025?
+
+042. [general] Berapa jumlah penduduk miskin di Kota Sabang pada 2024?
+
+043. [general] Berapa persentase penduduk miskin di Kabupaten Demak pada 2025?
+
+044. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Bolaang Mongondow, Sulawesi Utara pada 2020, dalam hektare.
+
+045. [general] Bandingkan jumlah penduduk miskin di Aceh pada Maret 2023 dan Maret 2024. Berapa perubahannya?
+
+046. [general] Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Mamberamo Raya atau Kabupaten Ogan Komering Ulu?
+
+047. [general] Berapa persentase rumah tangga dengan akses sanitasi layak di Indonesia pada 2023?
+
+048. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Jawa Timur atau Maluku Utara?
+
+049. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Kudus selama 2023–2025?
+
+050. [environment] Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+051. [environment] Sebutkan luas kehilangan tutupan pohon di Sulawesi Tengah pada 2023, dalam hektare.
+
+052. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Jawa Tengah atau Nusa Tenggara Barat? Tampilkan kedua angkanya dan selisihnya.
+
+053. [general] Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2025?
+
+054. [general] Benarkah persentase penduduk miskin di Kota Sabang pada 2025 sebesar 12,75 persen?
+
+055. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Buleleng, Bali dari 2022 sampai 2025.
+
+056. [general] Berapa persentase penduduk miskin di Gorontalo pada Maret 2026?
+
+057. [environment] Bandingkan luas tutupan hutan di Sulawesi Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+058. [general] Berapa nilai tukar petani di Indonesia pada September 2023?
+
+059. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Wajo, Sulawesi Selatan pada 2023, dalam hektare.
+
+060. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Jayawijaya, Papua dari 2022 sampai 2025.
+
+061. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Lampung Tengah, Lampung dari 2021 sampai 2025.
+
+062. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Lampung atau Sulawesi Tenggara? Tampilkan kedua angkanya dan selisihnya.
+
+063. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Kaimana, Papua Barat pada 2023, dalam hektare.
+
+064. [environment] Saya ingin mengetahui luas tutupan sawit di Maluku pada tahun 2024. Berapa hektare?
+
+065. [environment] Jelaskan dampak pertambangan nikel di Raja Ampat bagi warga setempat, disertai bukti yang ditemukan.
+
+066. [general] Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2024?
+
+067. [environment] Klaim: Kehilangan tutupan pohon di Maluku turun dari 2023 ke 2024. Apakah sesuai data?
+
+068. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Nusa Tenggara Timur dari 2020 sampai 2025.
+
+069. [environment] Apa data yang tersedia tentang hak atas tanah dan mata pencaharian warga terkait proyek pariwisata di Mandalika?
+
+070. [general] Bagaimana tren angka partisipasi murni jenjang SM/sederajat di Indonesia selama 2022–2024?
+
+071. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Jambi atau Maluku? Tampilkan kedua angkanya dan selisihnya.
+
+072. [environment] Benarkah luas tutupan sawit di Aceh naik dari 2022 ke 2023?
+
+073. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Belu selama 2022–2024?
+
+074. [environment] Jelaskan masalah perkebunan kayu di Ketapang dan tampilkan tren kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat untuk 2023–2025.
+
+075. [general] Benarkah jumlah penduduk miskin di Kabupaten Kepulauan Meranti turun dari 2022 ke 2023?
+
+076. [general] Berapa nilai tukar petani di Indonesia pada Oktober 2023?
+
+077. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Belitung Timur, Bangka Belitung dari 2020 sampai 2025.
+
+078. [general] Berapa tingkat pengangguran terbuka di Sulawesi Selatan pada Februari 2026?
+
+079. [environment] Sebutkan luas kehilangan tutupan pohon di Kota Lubuklinggau, Sumatera Selatan pada 2023, dalam hektare.
+
+080. [environment] Tampilkan kehilangan tutupan pohon di Pulau Sumatra untuk tahun 2025.
+
+081. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Jawa Timur atau Nusa Tenggara Timur? Tampilkan kedua angkanya dan selisihnya.
+
+082. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Kalimantan Selatan atau Papua Barat? Tampilkan kedua angkanya dan selisihnya.
+
+083. [general] Berapa persentase penduduk miskin di Kota Prabumulih pada 2024?
+
+084. [general] Berapa tingkat pengangguran terbuka di Papua Tengah pada Agustus 2025?
+
+085. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Maluku atau Riau?
+
+086. [general] Benarkah persentase penduduk miskin di Kabupaten Batu Bara pada 2024 sebesar 10,94 persen?
+
+087. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Rembang, Jawa Tengah dari 2020 sampai 2025.
+
+088. [environment] Saya ingin mengetahui luas tutupan hutan di Kalimantan Tengah pada tahun 2023. Berapa hektare?
+
+089. [general] Berapa tingkat partisipasi angkatan kerja di Kepulauan Riau pada Februari 2025?
+
+090. [general] Benarkah tingkat pengangguran terbuka di Dki Jakarta naik dari Agustus 2025 ke Agustus 2026?
+
+091. [general] Berapa persentase penduduk miskin di Nusa Tenggara Barat pada Maret 2025?
+
+092. [general] Benarkah persentase penduduk miskin di Kabupaten Rembang naik dari 2023 ke 2024?
+
+093. [environment] Sudah berapa hektare kehilangan tutupan pohon dalam hutan primer di Kalimantan Barat selama 2026 sampai bulan terakhir yang tersedia?
+
+094. [environment] Saya ingin mengetahui luas hutan rawa gambut di Papua Barat pada tahun 2023. Berapa hektare?
+
+095. [general] Berapa tingkat pengangguran terbuka di Papua Barat Daya pada Februari 2025?
+
+096. [general] Benarkah jumlah penduduk miskin di Kabupaten Lampung Barat pada 2024 sebesar 33,43 ribu jiwa?
+
+097. [environment] Bandingkan luas tutupan sawit di Kalimantan Tengah tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+098. [general] Berapa jumlah penduduk miskin di Kabupaten Banyumas pada 2024?
+
+099. [general] Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2025?
+
+100. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Simeulue, Aceh dari 2022 sampai 2025.
+
+101. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Maluku Utara atau Sumatera Barat? Tampilkan kedua angkanya dan selisihnya.
+
+102. [general] Berapa persentase penduduk miskin di Kabupaten Siau Tagulandang Biaro pada 2024?
+
+103. [environment] Apakah kehilangan tutupan pohon di Kabupaten Serang, Banten lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+104. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kalimantan Utara dari 2020 sampai 2025.
+
+105. [environment] Benarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31.
+
+106. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kepulauan Riau atau Papua Selatan?
+
+107. [general] Bandingkan persentase penduduk miskin di Kabupaten Pelalawan pada 2022 dan 2023. Berapa perubahannya?
+
+108. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Sijunjung, Sumatera Barat pada 2021, dalam hektare.
+
+109. [general] Berapa jumlah penduduk miskin di Kabupaten Pohuwato pada 2025?
+
+110. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kaur, Bengkulu pada 2021, dalam hektare.
+
+111. [environment] Benarkah cofiring biomassa di Jawa Timur hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+112. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Banjar, Kalimantan Selatan lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+113. [general] Benarkah persentase penduduk miskin di Maluku Utara turun dari Maret 2025 ke Maret 2026?
+
+114. [general] Benarkah jumlah penduduk miskin di Kabupaten Wakatobi turun dari 2023 ke 2024?
+
+115. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Jawa Barat atau Maluku Utara? Tampilkan kedua angkanya dan selisihnya.
+
+116. [general] Pada Agustus 2026, mana yang lebih tinggi tingkat pengangguran terbuka, Sulawesi Tengah atau Jawa Timur?
+
+117. [environment] Benarkah proyek Rempang Eco City di Pulau Rempang hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+118. [general] Berapa tingkat pengangguran terbuka di Maluku pada Agustus 2024?
+
+119. [environment] Berapa hektare kebun sawit yang terpetakan di Riau pada 2025?
+
+120. [general] Benarkah tingkat pengangguran terbuka di Nusa Tenggara Timur naik dari Agustus 2022 ke Agustus 2023?
+
+121. [general] Bandingkan persentase penduduk miskin di Gorontalo pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+122. [environment] Klaim: Kehilangan tutupan pohon di Kota Tanjungbalai, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?
+
+123. [general] Benarkah persentase penduduk miskin di Kabupaten Batang turun dari 2023 ke 2024?
+
+124. [general] Berapa tingkat pengangguran terbuka di Di Yogyakarta pada Agustus 2024?
+
+125. [general] Benarkah persentase penduduk miskin di Bali turun dari Maret 2025 ke Maret 2026?
+
+126. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Bengkayang selama 2023–2025?
+
+127. [general] Benarkah persentase penduduk miskin di Kabupaten Semarang turun dari 2023 ke 2024?
+
+128. [environment] Klaim: Kehilangan tutupan pohon di Kabupaten Mamuju, Sulawesi Barat turun dari 2023 ke 2024. Apakah sesuai data?
+
+129. [general] Berapa jumlah penduduk miskin di Kota Malang pada 2024?
+
+130. [general] Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kota Baru atau Kabupaten Madiun?
+
+131. [environment] Sebutkan luas kehilangan tutupan pohon di Yogyakarta pada 2023, dalam hektare.
+
+132. [environment] Saya ingin mengetahui luas tutupan hutan di Sulawesi Tengah pada tahun 2023. Berapa hektare?
+
+133. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Gianyar, Bali dari 2020 sampai 2025.
+
+134. [general] Bandingkan tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025 dan Februari 2026. Berapa perubahannya?
+
+135. [general] Berapa tingkat pengangguran terbuka di Sumatera Selatan pada Februari 2025?
+
+136. [general] Berapa persentase penduduk miskin di Gorontalo pada Maret 2023?
+
+137. [general] Bandingkan jumlah penduduk miskin di Kota Gunungsitoli pada 2024 dan 2025. Berapa perubahannya?
+
+138. [environment] Apakah kehilangan tutupan pohon di Kabupaten Tanjung Jabung B, Jambi lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+139. [general] Berapa jumlah penduduk miskin di Kabupaten Kubu Raya pada 2024?
+
+140. [general] Benarkah persentase penduduk miskin di Kabupaten Mamuju Utara pada 2024 sebesar 5,21 persen?
+
+141. [general] Bagaimana tren tingkat partisipasi angkatan kerja di Lampung pada bulan Februari setiap tahun selama 2024–2026?
+
+142. [environment] Apa data yang tersedia tentang tempat tinggal dan mata pencaharian warga terkait proyek Rempang Eco City di Pulau Rempang?
+
+143. [environment] Benarkah pembangunan pariwisata di Bali hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+144. [general] Berapa jumlah penduduk miskin di Kabupaten Gorontalo Utara pada 2023?
+
+145. [environment] Bagaimana perubahan luas mangrove di Papua Barat Daya setiap tahun dari 2020 sampai 2024?
+
+146. [environment] Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Jembrana, Bali untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+147. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Sabang, Aceh pada 2025, dalam hektare.
+
+148. [general] Berapa jumlah penduduk miskin di Kabupaten Maros pada 2024?
+
+149. [environment] Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Sulawesi untuk tahun 2025.
+
+150. [general] Berapa persentase penduduk miskin di Kabupaten Musi Rawas Utara pada 2024?
+
+151. [general] Berapa jumlah penduduk miskin di Jawa Timur pada Maret 2026?
+
+152. [general] Benarkah persentase penduduk miskin di Papua Tengah turun dari Maret 2025 ke Maret 2026?
+
+153. [general] Bagaimana tren nilai tukar petani di Indonesia pada bulan Februari setiap tahun selama 2022–2024?
+
+154. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Lombok Barat, Nusa Tenggara Barat pada 2021, dalam hektare.
+
+155. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Kayong Utara, Kalimantan Barat dari 2022 sampai 2025.
+
+156. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Teluk Wondama, Papua Barat pada 2020, dalam hektare.
+
+157. [general] Berapa jumlah penduduk miskin di Kabupaten Mamuju Tengah pada 2023?
+
+158. [environment] Benarkah klaim berikut? Ada indikasi kayu gelondongan yang terseret banjir di Sumatera bagian utara berasal dari sisa pembukaan kebun sawit dan diduga memperparah dampak banjir. Asal kayu masih akan diperiksa. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-12-03.
+
+159. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Bali atau Kalimantan Selatan? Tampilkan kedua angkanya dan selisihnya.
+
+160. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Tenggara dari 2021 sampai 2025.
+
+161. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Ogan Komering Ilir, Sumatera Selatan lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+162. [environment] Apakah kehilangan tutupan pohon di Kota Prabumulih, Sumatera Selatan lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+163. [general] Berapa jumlah penduduk miskin di Kabupaten Brebes pada 2024?
+
+164. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Papua pada 2024, dalam hektare.
+
+165. [general] Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pegunungan Arfak atau Kabupaten Aceh Tenggara?
+
+166. [general] Bandingkan angka partisipasi sekolah usia 13-15 tahun di Indonesia pada 2024 dan 2025. Berapa perubahannya?
+
+167. [environment] Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?
+
+168. [environment] Apa data yang tersedia tentang akses energi dan kehidupan warga terkait energi ekstraktif di Mentawai?
+
+169. [general] Berapa tingkat partisipasi angkatan kerja di Indonesia pada Agustus 2024?
+
+170. [general] Berapa nilai tukar petani di Indonesia pada Maret 2025?
+
+171. [environment] Benarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28.
+
+172. [general] Benarkah persentase penduduk miskin di Kota Prabumulih naik dari 2023 ke 2024?
+
+173. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kota Bengkulu, Bengkulu dari 2021 sampai 2025.
+
+174. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Lombok Timur selama 2023–2025?
+
+175. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau pada 2024, dalam hektare.
+
+176. [general] Bandingkan jumlah penduduk miskin di Nusa Tenggara Timur pada Maret 2024 dan Maret 2025. Berapa perubahannya?
+
+177. [general] Benarkah persentase penduduk miskin di Kabupaten Tulangbawang naik dari 2023 ke 2024?
+
+178. [general] Berapa jumlah penduduk miskin di Papua Tengah pada Maret 2024?
+
+179. [environment] Bagaimana perubahan luas tutupan sawit di Jawa setiap tahun dari 2020 sampai 2024?
+
+180. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Papua Barat pada 2025, dalam hektare.
+
+181. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Bandung, Jawa Barat dari 2022 sampai 2025.
+
+182. [general] Bandingkan persentase penduduk miskin di Kalimantan Tengah pada Maret 2024 dan Maret 2025. Berapa perubahannya?
+
+183. [general] Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2026?
+
+184. [environment] Klaim: Kehilangan tutupan pohon akibat kebakaran di Kabupaten Tasikmalaya, Jawa Barat naik dari 2023 ke 2024. Apakah sesuai data?
+
+185. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Brebes, Jawa Tengah pada 2025, dalam hektare.
+
+186. [general] Bagaimana tren tingkat partisipasi angkatan kerja di Maluku Utara pada bulan Februari setiap tahun selama 2023–2025?
+
+187. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbuka, Sulawesi Utara atau Jawa Barat?
+
+188. [environment] Benarkah pembangunan PLTU di Jambi hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+189. [general] Berapa tingkat partisipasi angkatan kerja di Papua pada Agustus 2025?
+
+190. [environment] Saya ingin mengetahui luas mangrove di Papua Selatan pada tahun 2024. Berapa hektare?
+
+191. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Enrekang, Sulawesi Selatan pada 2024, dalam hektare.
+
+192. [general] Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2023?
+
+193. [environment] Saya ingin mengetahui luas tutupan sawit di Kalimantan Barat pada tahun 2024. Berapa hektare?
+
+194. [environment] Sebutkan luas kehilangan tutupan pohon di Banten pada 2023, dalam hektare.
+
+195. [general] Berapa persentase penduduk miskin di Kepulauan Riau pada Maret 2025?
+
+196. [environment] Benarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29.
+
+197. [general] Benarkah persentase penduduk miskin di Kabupaten Gorontalo naik dari 2023 ke 2024?
+
+198. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kepulauan Bangka Belitung atau Papua Pegunungan?
+
+199. [environment] Apakah kehilangan tutupan pohon di Kabupaten Maluku Tengah, Maluku lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+200. [general] Benarkah jumlah penduduk miskin di Kabupaten Buton Selatan turun dari 2022 ke 2023?
+
+201. [general] Pada Maret 2025, mana yang lebih tinggi persentase penduduk miskin, Kalimantan Selatan atau Kalimantan Barat?
+
+202. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Mandailing Natal, Sumatera Utara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+203. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Pasaman, Sumatera Barat lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+204. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Gorontalo, Gorontalo lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+205. [general] Berapa produksi kelapa sawit Indonesia pada 2024?
+
+206. [environment] Jelaskan dampak pembangunan pariwisata di Bali bagi warga setempat, disertai bukti yang ditemukan.
+
+207. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Ciamis selama 2022–2024?
+
+208. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Keerom selama 2021–2023?
+
+209. [general] Benarkah tingkat partisipasi angkatan kerja di Kalimantan Tengah turun dari Februari 2022 ke Februari 2023?
+
+210. [general] Berapa luas areal perkebunan kelapa sawit di Indonesia pada 2024?
+
+211. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Banten dari 2020 sampai 2025.
+
+212. [general] Pada Februari 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Bali atau Papua Tengah?
+
+213. [environment] Apa dampak proyek panas bumi terhadap sumber air dan lahan pertanian di Muara Laboh, Solok Selatan? Tambahkan angka kehilangan tutupan pohon di Kabupaten Solok Selatan, Sumatera Barat pada 2024.
+
+214. [environment] Apa dampak industri nikel terhadap lingkungan dan ruang hidup warga di Halmahera Tengah? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Tengah, Maluku Utara pada 2024.
+
+215. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Indragiri Hulu, Riau pada 2021, dalam hektare.
+
+216. [general] Berapa persentase penduduk miskin di Kabupaten Banggai Kepulauan pada 2023?
+
+217. [environment] Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Seram untuk tahun 2025.
+
+218. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Tapanuli Selatan, Sumatera Utara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+219. [environment] Berapa rata-rata per tahun kehilangan tutupan pohon dalam hutan primer di Kota Bau-Bau, Sulawesi Tenggara untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+220. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Penajam Paser Utara, Kalimantan Timur pada 2025, dalam hektare.
+
+221. [general] Bandingkan nilai tukar petani di Indonesia pada Maret 2022 dan Maret 2023. Berapa perubahannya?
+
+222. [environment] Apa data yang tersedia tentang pesisir dan penghidupan nelayan terkait proyek gas LNG di Teluk Bintuni?
+
+223. [general] Berapa indeks perilaku antikorupsi Indonesia pada 2024?
+
+224. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Bangka Belitung pada 2022, dalam hektare.
+
+225. [general] Berapa jumlah penduduk miskin di Kabupaten Kayong Utara pada 2023?
+
+226. [general] Berapa persentase penduduk miskin di Kabupaten Tanah Bumbu pada 2023?
+
+227. [general] Bagaimana tren persentase penduduk miskin di Kota Kupang selama 2023–2025?
+
+228. [general] Benarkah persentase penduduk miskin di Papua Barat turun dari Maret 2025 ke Maret 2026?
+
+229. [general] Berapa jumlah penduduk miskin di Kabupaten Kepulauan Talaud pada 2025?
+
+230. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Konawe Utara, Sulawesi Tenggara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+231. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kalimantan Timur dari 2022 sampai 2025.
+
+232. [environment] Klaim: Kehilangan tutupan pohon di Jakarta Raya turun dari 2023 ke 2024. Apakah sesuai data?
+
+233. [environment] Jelaskan masalah pembangunan PLTU di Jambi dan tampilkan tren kehilangan tutupan pohon di Jambi untuk 2023–2025.
+
+234. [general] Pada Agustus 2024, mana yang lebih tinggi tingkat pengangguran terbuka, Dki Jakarta atau Sumatera Selatan?
+
+235. [environment] Jelaskan masalah pertambangan nikel di Raja Ampat dan tampilkan tren kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat untuk 2023–2025.
+
+236. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Garut selama 2023–2025?
+
+237. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Karawang, Jawa Barat pada 2021, dalam hektare.
+
+238. [general] Bandingkan tingkat pengangguran terbuka di Kalimantan Timur pada Agustus 2025 dan Agustus 2026. Berapa perubahannya?
+
+239. [general] Berapa persentase penduduk miskin di Kabupaten Mamasa pada 2025?
+
+240. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Jakarta Raya dari 2020 sampai 2025.
+
+241. [general] Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Barito Selatan atau Kabupaten Tanjung Jabung Timur?
+
+242. [general] Benarkah tingkat pengangguran terbuka di Lampung turun dari Agustus 2023 ke Agustus 2024?
+
+243. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kalimantan Barat dari 2022 sampai 2025.
+
+244. [environment] Bagaimana perubahan luas tutupan hutan di Papua Tengah setiap tahun dari 2020 sampai 2024?
+
+245. [environment] Apa data yang tersedia tentang lahan dan mata pencaharian warga terkait kawasan industri di Takalar?
+
+246. [environment] Benarkah luas hutan rawa gambut di Riau turun dari 2022 ke 2023?
+
+247. [general] Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pekalongan atau Kabupaten Ponorogo?
+
+248. [general] Bandingkan jumlah penduduk miskin di Kota Prabumulih pada 2023 dan 2024. Berapa perubahannya?
+
+249. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Mamberamo Tengah, Papua dari 2021 sampai 2025.
+
+250. [environment] Apa dampak pertambangan nikel terhadap hutan dan kehidupan nelayan di Raja Ampat? Tambahkan angka kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat pada 2024.
+
+251. [environment] Klaim: Kehilangan tutupan pohon di Kabupaten Sukabumi, Jawa Barat naik dari 2024 ke 2025. Apakah sesuai data?
+
+252. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Bengkulu pada 2024, dalam hektare.
+
+253. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Sulawesi Selatan pada 2022, dalam hektare.
+
+254. [environment] Saya ingin mengetahui luas hutan rawa gambut di Kalimantan Timur pada tahun 2023. Berapa hektare?
+
+255. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Langkat, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?
+
+256. [environment] Benarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20.
+
+257. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Ogan Ilir selama 2022–2024?
+
+258. [general] Benarkah persentase penduduk miskin di Kabupaten Indragiri Hulu turun dari 2023 ke 2024?
+
+259. [environment] Bagaimana perubahan luas hutan rawa gambut di Papua Pegunungan setiap tahun dari 2020 sampai 2024?
+
+260. [general] Benarkah persentase penduduk miskin di Nusa Tenggara Timur turun dari Maret 2025 ke Maret 2026?
+
+261. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kalimantan Selatan dari 2020 sampai 2025.
+
+262. [environment] Apa dampak kawasan industri nikel terhadap lahan dan kehidupan warga di Pomalaa? Tambahkan angka kehilangan tutupan pohon di Kabupaten Kolaka, Sulawesi Tenggara pada 2024.
+
+263. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Parigi Moutong, Sulawesi Tengah dari 2021 sampai 2025.
+
+264. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Mamberamo Raya, Papua pada 2023, dalam hektare.
+
+265. [general] Benarkah persentase penduduk miskin di Kota Tanjung Pinang pada 2024 sebesar 7,86 persen?
+
+266. [general] Bandingkan persentase penduduk miskin di Kabupaten Jayawijaya pada 2023 dan 2024. Berapa perubahannya?
+
+267. [general] Benarkah persentase penduduk miskin di Kabupaten Gianyar pada 2025 sebesar 3,71 persen?
+
+268. [environment] Saya ingin mengetahui luas mangrove di Kalimantan Selatan pada tahun 2024. Berapa hektare?
+
+269. [general] Benarkah tingkat partisipasi angkatan kerja di Bali pada Agustus 2025 sebesar 78,31 persen?
+
+270. [environment] Jelaskan dampak industri nikel di Halmahera Tengah bagi warga setempat, disertai bukti yang ditemukan.
+
+271. [general] Benarkah persentase penduduk miskin di Kabupaten Majalengka turun dari 2023 ke 2024?
+
+272. [general] Bandingkan persentase penduduk miskin di Kabupaten Luwu pada 2022 dan 2023. Berapa perubahannya?
+
+273. [general] Benarkah persentase penduduk miskin di Kota Bukittinggi turun dari 2023 ke 2024?
+
+274. [environment] Benarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01.
+
+275. [environment] Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Bengkalis, Riau untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+276. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Lombok Utara selama 2021–2023?
+
+277. [general] Bandingkan persentase penduduk miskin di Jambi pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+278. [environment] Benarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29.
+
+279. [general] Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Jayapura atau Kota Batu?
+
+280. [general] Berapa persentase penduduk miskin di Kabupaten Subang pada 2025?
+
+281. [general] Benarkah jumlah penduduk miskin di Kabupaten Magetan turun dari 2024 ke 2025?
+
+282. [general] Berapa angka partisipasi sekolah anak usia 7–12 tahun di Indonesia pada 2025?
+
+283. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Melawi selama 2023–2025?
+
+284. [general] Benarkah tingkat partisipasi angkatan kerja di Jawa Tengah naik dari Februari 2022 ke Februari 2023?
+
+285. [environment] Benarkah perkebunan sawit di Riau hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+286. [general] Bandingkan persentase penduduk miskin di Aceh pada Maret 2023 dan Maret 2024. Berapa perubahannya?
+
+287. [environment] Apakah kehilangan tutupan pohon di Kabupaten Purbalingga, Jawa Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+288. [general] Bandingkan persentase penduduk miskin di Jawa Tengah pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+289. [environment] Apakah kehilangan tutupan pohon di Kabupaten Luwu, Sulawesi Selatan lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+290. [general] Bandingkan jumlah penduduk miskin di Kabupaten Banjarnegara pada 2022 dan 2023. Berapa perubahannya?
+
+291. [environment] Apakah kehilangan tutupan pohon di Kabupaten Nduga, Papua lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+292. [environment] Sebutkan luas kehilangan tutupan pohon di Sumatera Barat pada 2020, dalam hektare.
+
+293. [general] Benarkah tingkat pengangguran terbuka di Kepulauan Bangka Belitung pada Agustus 2024 sebesar 5,63 persen?
+
+294. [general] Berapa indeks perilaku antikorupsi di Indonesia pada 2023?
+
+295. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Sulawesi Selatan dari 2022 sampai 2025.
+
+296. [general] Berapa jumlah penduduk miskin di Kota Mataram pada 2024?
+
+297. [environment] Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.
+
+298. [general] Berapa persentase penduduk miskin di Sulawesi Barat pada Maret 2026?
+
+299. [environment] Sebutkan luas kehilangan tutupan pohon di Kota Manado, Sulawesi Utara pada 2020, dalam hektare.
+
+300. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Papua dari 2021 sampai 2025.
+
+301. [general] Bagaimana tren jumlah penduduk miskin di Kota Pariaman selama 2023–2025?
+
+302. [general] Berapa persentase penduduk miskin di Sumatera Selatan pada Maret 2026?
+
+303. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Kalimantan Utara atau Sulawesi Selatan? Tampilkan kedua angkanya dan selisihnya.
+
+304. [general] Bandingkan indeks pembangunan manusia di Indonesia pada 2023 dan 2024. Berapa perubahannya?
+
+305. [general] Berapa persentase penduduk miskin di Kabupaten Muna pada 2025?
+
+306. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Siak, Riau dari 2020 sampai 2025.
+
+307. [environment] Bandingkan luas hutan rawa gambut di Kalimantan Utara tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+308. [environment] Saya ingin mengetahui luas hutan rawa gambut di Lampung pada tahun 2023. Berapa hektare?
+
+309. [general] Berapa jumlah penduduk miskin di Kota Bukittinggi pada 2023?
+
+310. [general] Pada Februari 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Jawa Tengah atau Sulawesi Tengah?
+
+311. [environment] Apa data yang tersedia tentang akses tanah dan penghidupan petani terkait perkebunan tebu di Pundenrejo, Pati?
+
+312. [environment] Benarkah perkebunan kayu di Ketapang hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+313. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Jawa Barat naik dari 2023 ke 2024. Apakah sesuai data?
+
+314. [general] Bandingkan persentase penduduk miskin di Kalimantan Selatan pada September 2024 dan September 2025. Berapa perubahannya?
+
+315. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Bengkulu dari 2021 sampai 2025.
+
+316. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare.
+
+317. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Katingan, Kalimantan Tengah dari 2020 sampai 2025.
+
+318. [general] Benarkah tingkat partisipasi angkatan kerja di Dki Jakarta naik dari Februari 2022 ke Februari 2023?
+
+319. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Bulungan, Kalimantan Utara lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+320. [general] Benarkah jumlah penduduk miskin di Kota Langsa pada 2024 sebesar 19,37 ribu jiwa?
+
+321. [environment] Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Kepulauan Riau atau Sulawesi Tengah? Tampilkan kedua angkanya dan selisihnya.
+
+322. [environment] Jelaskan dampak perkebunan kayu di Ketapang bagi warga setempat, disertai bukti yang ditemukan.
+
+323. [general] Berapa tingkat pengangguran terbuka di Gorontalo pada Februari 2024?
+
+324. [general] Berapa tingkat pengangguran terbuka di Papua Pegunungan pada Agustus 2026?
+
+325. [general] Benarkah jumlah penduduk miskin di Kabupaten Wajo turun dari 2024 ke 2025?
+
+326. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Kuningan selama 2021–2023?
+
+327. [environment] Sebutkan luas kehilangan tutupan pohon di Maluku pada 2020, dalam hektare.
+
+328. [environment] Benarkah proyek gas LNG di Teluk Bintuni hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+329. [general] Berapa tingkat partisipasi angkatan kerja di Papua Selatan pada Februari 2026?
+
+330. [environment] Sudah berapa hektare kehilangan tutupan pohon akibat kebakaran di Kalimantan Tengah selama 2026 sampai bulan terakhir yang tersedia?
+
+331. [environment] Benarkah proyek panas bumi di Muara Laboh, Solok Selatan hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+332. [general] Bagaimana tren tingkat partisipasi angkatan kerja di Sumatera Barat pada bulan Februari setiap tahun selama 2024–2026?
+
+333. [general] Bagaimana tren jumlah penduduk miskin di Banten pada bulan Maret setiap tahun selama 2024–2026?
+
+334. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Labuhanbatu Selatan, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?
+
+335. [general] Bandingkan persentase penduduk miskin di Aceh pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+336. [general] Benarkah persentase penduduk miskin di Kabupaten Lombok Barat naik dari 2022 ke 2023?
+
+337. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Kebumen, Jawa Tengah pada 2020, dalam hektare.
+
+338. [environment] Jelaskan dampak kawasan industri nikel di Pomalaa bagi warga setempat, disertai bukti yang ditemukan.
+
+339. [general] Berapa luas areal perkebunan tebu di Indonesia pada 2024?
+
+340. [general] Bagaimana tren angka partisipasi murni jenjang SMP/sederajat di Indonesia selama 2022–2024?
+
+341. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Maluku Utara dari 2021 sampai 2025.
+
+342. [general] Bandingkan persentase penduduk miskin di Kabupaten Dogiyai pada 2022 dan 2023. Berapa perubahannya?
+
+343. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Lampung atau Papua Tengah?
+
+344. [general] Berapa persentase penduduk miskin di Kalimantan Utara pada Maret 2025?
+
+345. [general] Benarkah jumlah penduduk miskin di Kabupaten Pegunungan Bintang pada 2024 sebesar 23,87 ribu jiwa?
+
+346. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Kalimantan Barat naik dari 2024 ke 2025. Apakah sesuai data?
+
+347. [general] Pada Maret 2024, mana yang lebih tinggi jumlah penduduk miskin, Nusa Tenggara Timur atau Maluku?
+
+348. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Kebumen selama 2023–2025?
+
+349. [general] Berapa jumlah penduduk miskin di Kabupaten Jayawijaya pada 2025?
+
+350. [general] Bandingkan tingkat partisipasi angkatan kerja di Sumatera Selatan pada Agustus 2023 dan Agustus 2024. Berapa perubahannya?
+
+351. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Jembrana selama 2022–2024?
+
+352. [environment] Sudah berapa hektare kehilangan tutupan pohon di Kalimantan Selatan selama 2026 sampai bulan terakhir yang tersedia?
+
+353. [general] Bagaimana tren tingkat partisipasi angkatan kerja di Sulawesi Tengah pada bulan Februari setiap tahun selama 2023–2025?
+
+354. [general] Berapa persentase penduduk miskin di Kabupaten Lahat pada 2024?
+
+355. [general] Bandingkan nilai tukar petani di Indonesia pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+356. [general] Pada Maret 2026, mana yang lebih tinggi persentase penduduk miskin, Kalimantan Utara atau Sulawesi Tenggara?
+
+357. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Sumbawa, Nusa Tenggara Barat pada 2022, dalam hektare.
+
+358. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Sleman selama 2023–2025?
+
+359. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Sikka selama 2023–2025?
+
+360. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Wajo selama 2021–2023?
+
+361. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Sungai Penuh, Jambi pada 2022, dalam hektare.
+
+362. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Nias, Sumatera Utara pada 2022, dalam hektare.
+
+363. [general] Bandingkan jumlah penduduk miskin di Sulawesi Selatan pada Maret 2022 dan Maret 2023. Berapa perubahannya?
+
+364. [general] Berapa tingkat partisipasi angkatan kerja di Sumatera Barat pada Februari 2025?
+
+365. [general] Berapa tingkat partisipasi angkatan kerja di Maluku Utara pada Februari 2026?
+
+366. [general] Bandingkan jumlah penduduk miskin di Banten pada September 2024 dan September 2025. Berapa perubahannya?
+
+367. [environment] Klaim: Kehilangan tutupan pohon akibat kebakaran di Jawa Timur naik dari 2023 ke 2024. Apakah sesuai data?
+
+368. [environment] Klaim: Kehilangan tutupan pohon di Banten turun dari 2024 ke 2025. Apakah sesuai data?
+
+369. [general] Berapa persentase penduduk miskin di Kabupaten Pesisir Barat pada 2024?
+
+370. [general] Bandingkan persentase penduduk miskin di Bengkulu pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+371. [environment] Berapa hektare kebun sawit yang terpetakan di Papua Selatan pada 2025?
+
+372. [general] Berapa tingkat pengangguran terbuka di Jawa Timur pada Februari 2026?
+
+373. [general] Berapa jumlah penduduk miskin di Kabupaten Sukoharjo pada 2023?
+
+374. [environment] Apa data yang tersedia tentang hutan dan kehidupan masyarakat terkait perkebunan sawit di Riau?
+
+375. [environment] Benarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04.
+
+376. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Bangka, Bangka Belitung lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+377. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Halmahera Utara, Maluku Utara pada 2020, dalam hektare.
+
+378. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Nganjuk, Jawa Timur pada 2020, dalam hektare.
+
+379. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Jombang, Jawa Timur pada 2024, dalam hektare.
+
+380. [general] Bandingkan jumlah penduduk miskin di Indonesia pada Maret 2023 dan Maret 2024. Berapa perubahannya?
+
+381. [general] Bandingkan jumlah penduduk miskin di Kabupaten Wonogiri pada 2024 dan 2025. Berapa perubahannya?
+
+382. [environment] Jelaskan masalah proyek pangan di Merauke dan tampilkan tren kehilangan tutupan pohon di Kabupaten Merauke, Papua untuk 2023–2025.
+
+383. [general] Berapa produksi kopi di Indonesia pada 2024?
+
+384. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Tambrauw, Papua Barat dari 2021 sampai 2025.
+
+385. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Yogyakarta dari 2020 sampai 2025.
+
+386. [environment] Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Lombok untuk 2023 sampai 2025.
+
+387. [general] Bagaimana tren persentase penduduk miskin di Kota Pekanbaru selama 2023–2025?
+
+388. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Lombok Tengah, Nusa Tenggara Barat dari 2022 sampai 2025.
+
+389. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kalimantan Tengah pada 2021, dalam hektare.
+
+390. [general] Berapa tingkat pengangguran terbuka di Kalimantan Timur pada Februari 2026?
+
+391. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Sulawesi Barat pada 2021, dalam hektare.
+
+392. [environment] Sudah berapa hektare kehilangan tutupan pohon dalam hutan primer di Papua Pegunungan selama 2026 sampai bulan terakhir yang tersedia?
+
+393. [environment] Apakah kehilangan tutupan pohon di Kota Semarang, Jawa Tengah lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+394. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Empat Lawang, Sumatera Selatan pada 2022, dalam hektare.
+
+395. [general] Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Sumba Timur atau Kabupaten Bengkayang?
+
+396. [environment] Jelaskan dampak proyek panas bumi di Muara Laboh, Solok Selatan bagi warga setempat, disertai bukti yang ditemukan.
+
+397. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Pekanbaru, Riau pada 2025, dalam hektare.
+
+398. [general] Benarkah persentase penduduk miskin di Papua Pegunungan turun dari Maret 2025 ke Maret 2026?
+
+399. [general] Berapa tingkat pengangguran terbuka di Kalimantan Tengah pada Februari 2025?
+
+400. [environment] Apa dampak perkebunan kayu terhadap hutan dan hak masyarakat adat di Ketapang? Tambahkan angka kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat pada 2024.
+
+401. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Tapin, Kalimantan Selatan naik dari 2024 ke 2025. Apakah sesuai data?
+
+402. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Kudus, Jawa Tengah pada 2023, dalam hektare.
+
+403. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Cilacap selama 2023–2025?
+
+404. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Donggala, Sulawesi Tengah pada 2021, dalam hektare.
+
+405. [general] Berapa tingkat partisipasi angkatan kerja di Di Yogyakarta pada Februari 2024?
+
+406. [general] Bandingkan jumlah penduduk miskin di Maluku pada Maret 2023 dan Maret 2024. Berapa perubahannya?
+
+407. [environment] Benarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14.
+
+408. [general] Berapa tingkat pengangguran terbuka di Sumatera Barat pada Februari 2024?
+
+409. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Pegunungan Bintang, Papua pada 2020, dalam hektare.
+
+410. [general] Bandingkan persentase penduduk miskin di Kabupaten Seruyan pada 2022 dan 2023. Berapa perubahannya?
+
+411. [general] Benarkah persentase penduduk miskin di Kabupaten Bangka Selatan turun dari 2024 ke 2025?
+
+412. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Bandung Barat, Jawa Barat dari 2022 sampai 2025.
+
+413. [general] Berapa jumlah penduduk miskin di Kabupaten Raja Ampat pada 2025?
+
+414. [general] Bagaimana tren persentase penduduk miskin di Nusa Tenggara Timur pada bulan Maret setiap tahun selama 2022–2024?
+
+415. [general] Berapa tingkat pengangguran terbuka di Riau pada Februari 2025?
+
+416. [environment] Jelaskan masalah proyek Rempang Eco City di Pulau Rempang dan tampilkan tren kehilangan tutupan pohon di Kota Batam, Kepulauan Riau untuk 2023–2025.
+
+417. [general] Berapa persentase penduduk miskin di Kabupaten Rote Ndao pada 2023?
+
+418. [environment] Apa data yang tersedia tentang lahan dan kehidupan warga terkait kawasan industri nikel di Pomalaa?
+
+419. [general] Bagaimana tren tingkat partisipasi angkatan kerja di Indonesia pada bulan Februari setiap tahun selama 2023–2025?
+
+420. [environment] Jelaskan masalah kawasan industri di Takalar dan tampilkan tren kehilangan tutupan pohon di Kabupaten Takalar, Sulawesi Selatan untuk 2023–2025.
+
+421. [environment] Jelaskan masalah industri nikel di Pulau Obi dan tampilkan tren kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara untuk 2023–2025.
+
+422. [general] Benarkah jumlah penduduk miskin di Kota Palangka Raya naik dari 2022 ke 2023?
+
+423. [general] Pada Agustus 2025, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Sumatera Selatan atau Kalimantan Barat?
+
+424. [general] Berapa persentase penduduk miskin di Kabupaten Bangka pada 2023?
+
+425. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon di Nusa Tenggara Barat dari 2022 sampai 2025.
+
+426. [general] Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Mamuju atau Kabupaten Sumbawa?
+
+427. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Banyuwangi, Jawa Timur pada 2025, dalam hektare.
+
+428. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Maluku dari 2020 sampai 2025.
+
+429. [environment] Apa data yang tersedia tentang hak atas tanah masyarakat adat terkait proyek pangan di Merauke?
+
+430. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Kendal selama 2021–2023?
+
+431. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Tulangbawang selama 2022–2024?
+
+432. [environment] Klaim: Kehilangan tutupan pohon akibat kebakaran di Kota Pariaman, Sumatera Barat naik dari 2024 ke 2025. Apakah sesuai data?
+
+433. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Kediri, Jawa Timur lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+434. [general] Benarkah persentase penduduk miskin di Papua Barat Daya naik dari Maret 2025 ke Maret 2026?
+
+435. [environment] Apakah kehilangan tutupan pohon di Kabupaten Tojo Una-Una, Sulawesi Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+436. [environment] Saya ingin mengetahui luas tutupan sawit di Jambi pada tahun 2024. Berapa hektare?
+
+437. [environment] Jelaskan dampak perkebunan tebu di Pundenrejo, Pati bagi warga setempat, disertai bukti yang ditemukan.
+
+438. [environment] Klaim: Kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau naik dari 2023 ke 2024. Apakah sesuai data?
+
+439. [general] Berapa jumlah penduduk miskin di Riau pada Maret 2023?
+
+440. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Waropen, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+441. [general] Berapa tingkat partisipasi angkatan kerja di Jawa Timur pada Februari 2025?
+
+442. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kota Payakumbuh, Sumatera Barat pada 2021, dalam hektare.
+
+443. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Bangka Belitung naik dari 2023 ke 2024. Apakah sesuai data?
+
+444. [general] Bagaimana tren nilai tukar petani di Indonesia selama 2022–2024?
+
+445. [environment] Sebutkan luas kehilangan tutupan pohon di Kalimantan Utara pada 2023, dalam hektare.
+
+446. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Jayapura, Papua pada 2022, dalam hektare.
+
+447. [general] Berapa tingkat partisipasi angkatan kerja di Banten pada Februari 2026?
+
+448. [environment] Klaim: Kehilangan tutupan pohon di Kabupaten Bangka Barat, Bangka Belitung turun dari 2024 ke 2025. Apakah sesuai data?
+
+449. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Konawe, Sulawesi Tenggara pada 2021, dalam hektare.
+
+450. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Maluku Barat Daya, Maluku dari 2020 sampai 2025.
+
+451. [general] Bagaimana tren persentase penduduk miskin di Kabupaten Boyolali selama 2021–2023?
+
+452. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Malang selama 2023–2025?
+
+453. [environment] Benarkah proyek pangan di Merauke hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+454. [environment] Apakah kehilangan tutupan pohon di Kota Singkawang, Kalimantan Barat lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+455. [general] Berapa persentase penduduk miskin di Aceh pada Maret 2026?
+
+456. [environment] Klaim: Kehilangan tutupan pohon dalam hutan primer di Tana Tidung, Kalimantan Utara naik dari 2023 ke 2024. Apakah sesuai data?
+
+457. [environment] Apakah kehilangan tutupan pohon di Kabupaten Bengkulu Utara, Bengkulu lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+458. [environment] Jelaskan masalah industri nikel di Halmahera Tengah dan tampilkan tren kehilangan tutupan pohon di Kabupaten Halmahera Tengah, Maluku Utara untuk 2023–2025.
+
+459. [environment] Apakah kehilangan tutupan pohon di Kabupaten Sidoarjo, Jawa Timur lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+460. [environment] Benarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10.
+
+461. [environment] Apa data yang tersedia tentang hutan dan kehidupan nelayan terkait pertambangan nikel di Raja Ampat?
+
+462. [environment] Tampilkan kehilangan tutupan pohon di Pulau Jawa untuk 2023 sampai 2025.
+
+463. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Fakfak, Papua Barat pada 2024, dalam hektare.
+
+464. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Aceh Barat Daya, Aceh lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+465. [general] Berapa persentase penduduk miskin di Kabupaten Aceh Jaya pada 2025?
+
+466. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Labuhanbatu Utara, Sumatera Utara pada 2025, dalam hektare.
+
+467. [general] Berapa tingkat partisipasi angkatan kerja di Papua Barat pada Agustus 2025?
+
+468. [environment] Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Ogan Komering Ulu Selatan, Sumatera Selatan lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+469. [general] Bandingkan persentase penduduk miskin di Kabupaten Karanganyar pada 2023 dan 2024. Berapa perubahannya?
+
+470. [general] Bandingkan jumlah penduduk miskin di Kabupaten Tapin pada 2022 dan 2023. Berapa perubahannya?
+
+471. [general] Berapa persentase penduduk miskin di Jawa Tengah pada Maret 2025?
+
+472. [general] Berapa tingkat partisipasi angkatan kerja di Kalimantan Timur pada Februari 2026?
+
+473. [general] Berapa persentase penduduk miskin di Papua Selatan pada Maret 2025?
+
+474. [environment] Apakah kehilangan tutupan pohon di Kabupaten Gunung Mas, Kalimantan Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+475. [general] Berapa jumlah penduduk miskin di Kepulauan Riau pada September 2025?
+
+476. [environment] Klaim: Kehilangan tutupan pohon akibat kebakaran di Maluku Utara naik dari 2024 ke 2025. Apakah sesuai data?
+
+477. [environment] Benarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29.
+
+478. [environment] Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Gunung Kidul, Yogyakarta lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+479. [environment] Sebutkan luas kehilangan tutupan pohon di Kabupaten Belitung, Bangka Belitung pada 2020, dalam hektare.
+
+480. [general] Berapa persentase penduduk miskin di Kabupaten Mappi pada 2025?
+
+481. [environment] Apa dampak pembangunan PLTU terhadap lingkungan dan penghidupan warga di Cirebon? Tambahkan angka kehilangan tutupan pohon di Kabupaten Cirebon, Jawa Barat pada 2024.
+
+482. [general] Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Garut atau Kabupaten Gayo Lues?
+
+483. [environment] Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kota Sibolga, Sumatera Utara dari 2021 sampai 2025.
+
+484. [general] Bagaimana tren jumlah penduduk miskin di Kabupaten Konawe Kepulauan selama 2022–2024?
+
+485. [environment] Apa dampak perkebunan tebu terhadap akses tanah dan penghidupan petani di Pundenrejo, Pati? Tambahkan angka kehilangan tutupan pohon di Kabupaten Pati, Jawa Tengah pada 2024.
+
+486. [general] Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kalimantan Tengah atau Papua?
+
+487. [environment] Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Sumedang, Jawa Barat pada 2025, dalam hektare.
+
+488. [general] Berapa jumlah penduduk miskin di Kalimantan Barat pada Maret 2024?
+
+489. [environment] Jelaskan dampak proyek Rempang Eco City di Pulau Rempang bagi warga setempat, disertai bukti yang ditemukan.
+
+490. [environment] Jelaskan masalah proyek gas LNG di Teluk Bintuni dan tampilkan tren kehilangan tutupan pohon di Kabupaten Teluk Bintuni, Papua Barat untuk 2023–2025.
+
+491. [general] Bandingkan persentase penduduk miskin di Kabupaten Klungkung pada 2023 dan 2024. Berapa perubahannya?
+
+492. [environment] Jelaskan dampak pembangunan PLTU di Jambi bagi warga setempat, disertai bukti yang ditemukan.
+
+493. [general] Berapa persentase penduduk miskin di Kota Pariaman pada 2023?
+
+494. [general] Berapa persentase penduduk miskin di Lampung pada Maret 2026?
+
+495. [environment] Sebutkan luas kehilangan tutupan pohon di Nusa Tenggara Timur pada 2023, dalam hektare.
+
+496. [environment] Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Sikka, Nusa Tenggara Timur pada 2024, dalam hektare.
+
+497. [environment] Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Indramayu, Jawa Barat untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+498. [environment] Sudah berapa hektare kehilangan tutupan pohon di Papua Barat Daya selama 2026 sampai bulan terakhir yang tersedia?
+
+499. [environment] Apa dampak perkebunan sawit terhadap hutan dan kehidupan masyarakat di Riau? Tambahkan angka kehilangan tutupan pohon di Riau pada 2024.
+
+500. [general] Bagaimana tren persentase penduduk miskin di Kota Medan selama 2023–2025?

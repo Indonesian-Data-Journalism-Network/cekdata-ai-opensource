@@ -3935,8 +3935,8 @@
     "group": "mapbiomas",
     "kind": "klaim_arah",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "hectare and ha are equivalent. Source shows decline 1,001,713.685484316 to 999,109.8215575557 ha, difference -2,603.8639267603 ha. Expected Benar; actual Tidak dapat diverifikasi due to fictitious unit mismatch. Question did not specify a conflicting unit.",
+    "status": "akurat",
+    "reason": "Nilai 2022 dan 2023 serta selisih -2.603,86 ha sesuai referensi; label Benar kini selaras dengan penurunan.",
     "partial_accepted": false
   },
   {
@@ -4025,8 +4025,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Universal no-loss claim receives TDV despite directly relevant reports of actual local harms and self-reported loss of income/production. Evidence supports rejection of the categorical no-harm claim; not proof of all individual outcomes.",
+    "status": "akurat",
+    "reason": "Label Salah kini didukung kerugian aktual lokal pada laporan Satya Bumi. Angka layanan dasar dan keterangan Buton Tengah sesuai halaman sumber; kelengkapan ringkasan bukan syarat kelulusan.",
     "partial_accepted": false
   },
   {
@@ -4035,8 +4035,8 @@
     "group": "ngo",
     "kind": "laporan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Source PDF p3 calls 64,141 community exposure a potential impact. Final summary changes it to an actual effect on welfare/livelihoods; extraneous activist finding does not answer the request. Forest/reef areas remain correctly called threats.",
+    "status": "akurat",
+    "reason": "Temuan Auriga kini mempertahankan status berpotensi untuk ancaman hutan/karang dan masyarakat. Kerusakan aktual dipisahkan sebagai temuan WALHI; GFW tidak digunakan sebagai bukti penyebab. Kehidupan nelayan masih kurang rinci.",
     "partial_accepted": false
   },
   {
@@ -4055,8 +4055,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Raja Ampat claim answered with an Obi report finding; locally relevant Raja Ampat harms in same source not supplied. GFW cannot replace missing social evidence.",
+    "status": "akurat",
+    "reason": "Bukti yang digunakan kini mencakup kerusakan lokal Raja Ampat pada WALHI dan ancaman ruang adat pada Auriga, bukan memindahkan kasus Obi. Label Salah didukung kerusakan lokal; alasan terlalu menonjolkan pencabutan izin dan temuan aktivis kurang relevan.",
     "partial_accepted": false
   },
   {
@@ -4085,8 +4085,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Direct reported local harms, displacement and livelihood disruption contradict universal no-harm claim, but label remains TDV without explaining why those counterexamples do not apply.",
+    "status": "akurat",
+    "reason": "Label Salah kini sesuai temuan pencemaran dan kerugian penghidupan lokal Pulau Obi. Rencana pembuangan 6 juta ton tetap disebut dibatalkan, risiko kesehatan tidak diubah menjadi kejadian pasti.",
     "partial_accepted": false
   },
   {
@@ -4116,7 +4116,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Masih hanya memilih potensi risiko dan mengeluarkan Tidak dapat diverifikasi. Laporan Pomalaa tersedia dengan bukti kerugian aktual warga (penggusuran kebun, dampak kesehatan/lingkungan responden), relevan untuk membantah klaim universal tanpa kerugian.",
+    "reason": "Masih hanya mengambil ancaman umum Pomalaa dan memberi Tidak dapat diverifikasi. Bukti kerugian aktual lokal yang dicatat audit lama belum digunakan; label tidak otomatis salah terhadap satu kutipan ini, tetapi pencarian belum memenuhi klaim.",
     "partial_accepted": false
   },
   {
@@ -4136,7 +4136,7 @@
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Reported-numbers table labels number of permits but places 155,051 hectares as its value. Narrative distinguishes 65 permits from area; table materially conflates dimensions.",
+    "reason": "Kesalahan tabel izin/hektare lama hilang, tetapi jawaban baru mengaitkan rencana 25 juta ton tailing per tahun pada Hua Pioneer saja. Kutipan sumber menyebut rencana empat perusahaan IMIP; angka kelompok dipersempit menjadi satu perusahaan.",
     "partial_accepted": false
   },
   {
@@ -4166,7 +4166,7 @@
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Jawaban revisi masih menempatkan Kabupaten Halmahera Tengah dalam cakupan Maluku, meski isi menyebut Maluku Utara. Ini kesalahan wilayah, bukan sekadar kurang lengkap.",
+    "reason": "Masih muncul cakupan Kabupaten Halmahera Tengah, Maluku walaupun isi sumber menyebut Maluku Utara. Jawaban terutama rantai pasok dan banjir kompleks industri, bukan dampak warga yang diminta.",
     "partial_accepted": false
   },
   {
@@ -4176,7 +4176,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Bukti tentang rantai pasok Tesla dan kehilangan hutan tidak menjawab klaim tanpa kerugian bagi warga. Bukti banjir dan kesehatan lokal PDF14 tidak digunakan; label Tidak dapat diverifikasi masih akibat seleksi yang tidak memadai.",
+    "reason": "Label sudah berubah menjadi Salah, tetapi penanda cakupan masih menambahkan Maluku pada bukti Maluku Utara. Bukti dampak warga masih kalah oleh angka lingkungan dan rantai pasok.",
     "partial_accepted": false
   },
   {
@@ -4205,8 +4205,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Partially true label unsupported: local 76.6 ha displacement is a counterexample to categorical no harm; no evidence of true benefit component supplied. Internal F4 identifier leaks into explanation.",
+    "status": "akurat",
+    "reason": "Label Salah didukung penggusuran aktual 76,6 ha di Kualan Hilir, Ketapang; cakupan angka sesuai sumber dan tidak lagi memakai label Sebagian benar atau ID temuan internal.",
     "partial_accepted": false
   },
   {
@@ -4225,8 +4225,8 @@
     "group": "ngo",
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Invented scope Kabupaten Baru displayed beside Merauke; source discusses new rice fields, not that administrative entity. Otherwise findings largely faithful to attributed reports.",
+    "status": "akurat",
+    "reason": "Kabupaten Baru tidak lagi muncul. Temuan Merauke, angka 480 ribu ha dan analisis dampak mengikuti kutipan WALHI; emisi dan lonjakan 2025 masih ditandai perkiraan/proyeksi. Penilaian ini kesetiaan pada sumber, bukan validasi lapangan realisasi luasan.",
     "partial_accepted": false
   },
   {
@@ -4235,8 +4235,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Universal no-harm claim left TDV despite listed actual indigenous-rights violations; invented Kabupaten Baru also appears in scope.",
+    "status": "akurat",
+    "reason": "Label Salah didukung perampasan wilayah adat dan perubahan pangan lokal dalam kutipan WALHI. Tidak lagi menambahkan Kabupaten Baru; temuan dan angka 480 ribu ha dapat ditelusuri.",
     "partial_accepted": false
   },
   {
@@ -4246,7 +4246,7 @@
     "kind": "laporan_data",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Selects methodology paragraph then asserts report has no quantitative or qualitative resident data, unsupported from a single passage. Available Rempang studies include 347 households, 82 respondents, livelihoods and displacement.",
+    "reason": "Sudah memuat rencana 7.572 ha dan 45,89% pulau, tetapi tabel memberi label luas lahan dengan nilai persen tanpa pembagi. Sebagian besar temuan masih metode penelitian, bukan data tempat tinggal/penghidupan.",
     "partial_accepted": false
   },
   {
@@ -4256,7 +4256,7 @@
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Source p27: 347 households still remain, 80% of relocation refusers. Narrative retains this, but table labels 80% as households rejecting relocation, dropping denominator and remaining-households qualifier. Other numbers and cited local events match.",
+    "reason": "Narasi menjaga 347 rumah tangga yang masih bertahan sebagai 80% dari penolak relokasi, tetapi tabel masih menulis rumah tangga yang menolak relokasi = 80%. Pembagi dan status masih bertahan hilang, mengubah arti angka.",
     "partial_accepted": false
   },
   {
@@ -4266,7 +4266,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Forced land seizure, gas exposure and actual resident harms in response are direct counterexamples to no harm for all; generic TDV rationale does not address these.",
+    "reason": "Label Salah lebih tepat, tetapi alasan baru menyatakan kerugian bagi seluruh warga tanpa bukti universal. Sumber dapat mencaplok 17.000 ha berubah menjadi telah dicaplok, dan satuan per bulan hilang dari tabel Rp109 juta.",
     "partial_accepted": false
   },
   {
@@ -4295,8 +4295,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Explanation admits harms and no evidence for benefits but labels no-harm universal claim partly true. Label lacks any supported true component.",
+    "status": "akurat",
+    "reason": "Label Salah didukung intimidasi, kerusakan dan tekanan psikologis warga Pundenrejo sesuai sumber; dugaan keterlibatan perusahaan tetap ditandai dugaan.",
     "partial_accepted": false
   },
   {
@@ -4356,7 +4356,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Bukti penggusuran dan kehilangan akses penghidupan dalam laporan Tangguh LNG PDF16 terlewat. Nama BP Berau Ltd juga memunculkan konteks Kabupaten Berau, padahal ini nama perusahaan, bukan lokasi kejadian. Label Tidak dapat diverifikasi belum memakai bukti langsung yang tersedia.",
+    "reason": "Nama BP Berau tidak lagi menjadi wilayah, tetapi jawaban memakai judul rujukan/ancaman mangrove dan tidak memakai bukti penggusuran serta hilangnya akses penghidupan pada laporan Tangguh LNG PDF16. Label tetap Tidak dapat diverifikasi.",
     "partial_accepted": false
   },
   {
@@ -4395,9 +4395,9 @@
     "group": "ngo",
     "kind": "laporan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Rasio elektrifikasi sudah muncul, tetapi potensi bioenergi 923,1 MW untuk Sumatera Barat dapat terbaca sebagai potensi Mentawai. Kesalahan cakupan angka tetap menggugurkan akurasi jawaban.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Ancaman sekitar 30 ribu ha Mentawai sesuai sumber dan tetap sebagai ancaman; angka potensi Sumatera Barat tidak lagi dipindahkan ke Mentawai. Bagian akses listrik belum dijawab, diterima parsial sesuai kriteria pengguna.",
+    "partial_accepted": true
   },
   {
     "id": 441,
@@ -4406,7 +4406,7 @@
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Temuan utama penahanan akibat konflik adat tidak dibuktikan berkaitan dengan energi ekstraktif; sisanya rekomendasi normatif. Pembangkit yang gagal beroperasi dan data akses energi dalam laporan yang tersedia justru tidak digunakan. Label konteks lintas kegiatan tidak menjadikan jawaban ini memenuhi pertanyaan.",
+    "reason": "Rekomendasi agar penyediaan listrik tidak ekstraktif/eksploitatif diubah menjadi temuan bahwa saat ini demikian. Konflik adat yang tak ditautkan dengan energi masih mendominasi; bukti PLTBm mangkrak tidak dipakai.",
     "partial_accepted": false
   },
   {
@@ -4415,9 +4415,9 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Risiko HTI dipertahankan sebagai prediksi dengan benar, namun jawaban dipenuhi konflik adat yang tidak ditautkan ke kegiatan energi. Bukti kegagalan operasi PLTBm dan riwayat akses listrik yang langsung relevan tidak dipakai. Label Tidak dapat diverifikasi sendiri tidak otomatis keliru, tetapi cakupan pembuktiannya belum memadai.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Kini memuat kegagalan operasi PLTBm Mentawai dari WALHI, bukan hanya konflik adat. Temuan risiko tetap berstatus potensi dan konteks kegiatan lain diberi label. Tidak dapat diverifikasi masih dapat diterima untuk klaim luas manfaat/kerugian seluruh warga; kegagalan layanan saja tidak mengukur seluruh kerugian warga. Alasan label masih terlalu umum.",
+    "partial_accepted": true
   },
   {
     "id": 443,
@@ -4425,9 +4425,9 @@
     "group": "ngo",
     "kind": "laporan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Tidak mengembalikan data, padahal laporan PLTU Jambi untuk Siapa tersedia: pasokan/kebutuhan listrik PDF6 dan10 serta dampak warga PLTU Samaran PDF16–17.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Tidak lagi kosong: sistem listrik Jambi dan kebutuhan air 36.000 m³ khusus MT Jambi 1 serta risiko sungai sesuai sumber. Kebutuhan/pasokan MW belum disajikan dan banyak konteks kurang relevan, tetapi tidak dipakai sebagai bukti dampak PLTU lokal.",
+    "partial_accepted": true
   },
   {
     "id": 444,
@@ -4435,9 +4435,9 @@
     "group": "ngo",
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Menjawab titik panas pada konsesi perkebunan/kehutanan, bukan dampak pembangunan PLTU. Bukti warga PLTU Samaran dalam laporan khusus Jambi PDF16–17 tersedia.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Kini memuat ancaman air PLTU MT Jambi 1 yang tepat terhadap kutipan dan tetap berupa ancaman. Kebakaran/transportasi ditandai lintas kegiatan; bukti dampak aktual Samaran belum lengkap.",
+    "partial_accepted": true
   },
   {
     "id": 445,
@@ -4446,7 +4446,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Kata batu bara pada transportasi komoditas salah menjadi Kabupaten Batu Bara. Kebutuhan air 36.000 m3 di sumber PDF18 secara khusus berasal dari AMDAL PLTU MT Jambi1, tetapi jawaban mengaitkannya dengan Jambi1–2. Dampak aktual PLTU Samaran juga tidak dipakai untuk klaim umum seluruh PLTU Jambi.",
+    "reason": "Tidak lagi memunculkan Kabupaten Batu Bara atau salah cakupan kebutuhan air, tetapi hanya menjawab pengangkutan komoditas batubara. Bukti dampak warga PLTU Samaran yang relevan belum dipilih.",
     "partial_accepted": false
   },
   {
@@ -4465,8 +4465,8 @@
     "group": "ngo",
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Source p49 says all products exported specifically for PT Kaliandra Merah Nusantara; answer expands all-product export to wood-pellet industry across East Java. Other local impacts traceable.",
+    "status": "akurat",
+    "reason": "Tidak lagi menggeneralisasi ekspor satu perusahaan menjadi seluruh industri Jawa Timur. Kerugian HTE, kelangkaan serbuk bagi industri kecil dan dampak Paiton sesuai kutipan Trend Asia; konteks Banten ditandai terpisah.",
     "partial_accepted": false
   },
   {
@@ -4475,8 +4475,8 @@
     "group": "ngo",
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Universal no-harm claim left unverifiable despite answer reporting HTE harms and abandoned land; conclusion repeats rationale.",
+    "status": "akurat",
+    "reason": "Label Salah kini memakai kerugian petani/masyarakat Jawa Timur yang dinyatakan langsung sumber, dengan konteks Jawa dan Banten terpisah; tidak lagi menolak menilai meski bukti kerugian tersedia.",
     "partial_accepted": false
   },
   {
@@ -4486,7 +4486,7 @@
     "kind": "laporan_data",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "National 10 Bali Baru tourism program incorrectly localized to Bali and phantom Kabupaten Baru; gas project evidence substituted for tourism development impacts.",
+    "reason": "10 Bali Baru masih dilokalkan menjadi dampak bagi masyarakat di Bali. Penanda Kota Padang juga muncul dari padang rumput. Tabel 64% menyatukan emisi dan konsumsi listrik, padahal persen itu hanya emisi.",
     "partial_accepted": false
   },
   {
@@ -4496,7 +4496,7 @@
     "kind": "laporan_dampak",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "National 10 Bali Baru tourism program incorrectly localized to Bali and phantom Kabupaten Baru; gas project evidence substituted for tourism development impacts.",
+    "reason": "Data emisi pariwisata Bali relevan, tetapi 10 Bali Baru tetap dinyatakan proyek yang berdampak pada masyarakat Bali; temuan energi fosil mendominasi pembahasan pariwisata.",
     "partial_accepted": false
   },
   {
@@ -4506,7 +4506,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "National 10 Bali Baru tourism program incorrectly localized to Bali and phantom Kabupaten Baru; gas project evidence substituted for tourism development impacts.",
+    "reason": "Masih menyebut proyek nasional 10 Bali Baru sebagai proyek di Bali dan mengambil bukti pembangkit gas untuk klaim pariwisata.",
     "partial_accepted": false
   },
   {
@@ -4566,7 +4566,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Bukti penurunan tangkapan nelayan sudah dipilih, tetapi label tetap Tidak dapat diverifikasi dengan alasan umum. Sumber yang sama secara jelas mengaitkan kerugian penghidupan dengan proyek Cirebon; jawaban tidak menggunakan bukti itu untuk menilai klaim universal tanpa kerugian.",
+    "reason": "Jawaban baru kosong (Belum cukup data), padahal audit arsip mencatat petisi WALHI Cirebon dengan bukti penurunan tangkapan nelayan yang relevan. Tidak dapat diverifikasi kali ini tidak didukung proses pembuktian yang memadai.",
     "partial_accepted": false
   },
   {
@@ -4576,7 +4576,7 @@
     "kind": "laporan_data",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Temuan sumber menyatakan kehilangan hutan 2023 lebih luas dari rata-rata lima tahun; kesimpulan mengubahnya menjadi tertinggi dalam lima tahun. Ini tidak mengikuti bukti teks yang dikutip. Pertanyaan kehidupan masyarakat juga belum terjawab walau korpus regional memiliki konflik/penghidupan lokal.",
+    "reason": "Kesalahan tertinggi lima tahun hilang, tetapi angka penyelesaian nasional 867.313,22 ha dan 507.009,58 ha ditempelkan pada paragraf 453 korporasi Riau tanpa pemisahan cakupan. Status inventarisasi, penyelesaian dan legalisasi masih tercampur.",
     "partial_accepted": false
   },
   {
@@ -4596,7 +4596,7 @@
     "kind": "klaim_statemen",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Universal no-harm claim left unverifiable despite own WALHI findings of pollution, fires and agrarian conflict; no need to prove every resident benefited to reject no-harm.",
+    "reason": "Label Salah kini didukung bukti konflik/pencemaran, tetapi alasan mengubah 12 perusahaan illegal logging menjadi perusahaan sawit dan menyatakan sebagian besar deforestasi disebabkan sawit tanpa proporsi pada kutipan. ID F1/F2/F3 juga bocor ke jawaban.",
     "partial_accepted": false
   },
   {
@@ -4675,9 +4675,9 @@
     "group": "gabungan",
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Temuan FPIC dan ekspansi lahan sudah muncul, tetapi kesimpulan mengubah ekspansi/izin kawasan hutan menjadi tren deforestasi signifikan tanpa seri kehilangan hutan. Bukan hanya tren GFW yang belum ditampilkan.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Kesimpulan kini memakai angka ekspansi 2.098,14 ha dan deforestasi 274,9 ha yang memang dicatat laporan, tanpa menciptakan tren dari izin saja. Tren GFW Kolaka 2023–2025 masih tidak ditampilkan; diterima parsial sesuai kriteria.",
+    "partial_accepted": true
   },
   {
     "id": 469,
@@ -4705,9 +4705,9 @@
     "group": "gabungan",
     "kind": "gabungan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Angka GFW dan kutipan kehilangan tutupan pohon tepat, tetapi kesimpulan menyatakan kontribusi signifikan terhadap ruang hidup warga tanpa bukti dampak warga dalam jawaban. Angka lingkungan saja belum membuktikan bagian tersebut.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Angka Halmahera Tengah 2024 tepat 848,99 ha; analisis laporan dicatat sebagai cakupan Indonesia dan tidak diubah menjadi bukti dampak warga lokal. Rincian lokal masih kurang, tetapi kesimpulan tidak lagi melampaui bukti.",
+    "partial_accepted": true
   },
   {
     "id": 472,
@@ -4796,7 +4796,7 @@
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Jawaban kosong melewatkan dua bagian sekaligus: konflik lahan petani Pundenrejo dalam laporan yang tersedia serta angka/tren GFW Kabupaten Pati2023–2025.",
+    "reason": "Temuan konflik Pundenrejo sudah muncul, tetapi mesin menyatakan data kuantitatif tren Pati 2023–2025 tidak tersedia, padahal seri ada dalam arsip. Ini melebihi sekadar tidak menampilkan bagian pertanyaan. Kutipan OCR juga tercampur kolom dan judul rujukan dijadikan temuan.",
     "partial_accepted": false
   },
   {
@@ -4805,9 +4805,9 @@
     "group": "gabungan",
     "kind": "gabungan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Jawaban kosong meski bukti air/pertanian Muara Laboh ada dalam WALHI PDF4–5 dan angka GFW Solok Selatan2024 tersedia. Pertanyaan431 berhasil memakai sumber yang sama pada sesi ini.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Bukti air, konversi sawah dan gagal panen Muara Laboh kini muncul sesuai petisi WALHI. Angka GFW Solok Selatan 2024 belum ditampilkan; diterima sebagai parsial, tanpa menyatakan data tersebut tidak ada.",
+    "partial_accepted": true
   },
   {
     "id": 482,
@@ -4825,9 +4825,9 @@
     "group": "gabungan",
     "kind": "gabungan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Pesisir/mangrove dan angka GFW2024 sudah dibahas, tetapi penghidupan nelayan diganti dengan peluang kerja umum/migrasi. Bukti hilangnya akses nelayan dan perubahan mata pencaharian pada PDF16 tidak digunakan meski halaman itu dirujuk. Label cakupan Indonesia berasal dari asal migran, bukan cakupan dampak proyek.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Angka GFW Bintuni 2024 sesuai arsip; temuan mangrove dan ancaman masyarakat mengikuti sumber Trend Asia. Peluang kerja migran tidak lagi menggantikan penghidupan nelayan. Bagian penghidupan nelayan masih kurang lengkap; angka laporan dinilai sesuai kutipan, bukan verifikasi lapangan.",
+    "partial_accepted": true
   },
   {
     "id": 484,
@@ -4876,7 +4876,7 @@
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "Report response omits explicitly requested GFW district figures/annual trend altogether despite available source series. Source p6 says 493kha is kawasan hutan with 78% natural cover, but answer calls 493kha natural forest cover.",
+    "reason": "Angka hutan alam 444 ribu ha kini sesuai sumber, tetapi potensi bioenergi 923,1 MW Sumatera Barat masih dipindahkan menjadi potensi Mentawai. Tren GFW juga belum muncul.",
     "partial_accepted": false
   },
   {
@@ -4915,9 +4915,9 @@
     "group": "gabungan",
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Phantom Kabupaten Baru added to East Java context; requested GFW 2023–2025 trend omitted.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Kabupaten Baru tidak lagi muncul. Temuan HTE, woodpellet dan Paiton sesuai kutipan; tidak menyatakan seluruh produk seluruh industri diekspor. Tren GFW Jawa Timur 2023–2025 belum disajikan, diterima parsial.",
+    "partial_accepted": true
   },
   {
     "id": 493,
@@ -4926,7 +4926,7 @@
     "kind": "gabungan_data",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "10 Bali Baru national program wrongly localized to Bali with phantom Kabupaten Baru; requested GFW figures omitted. 494 additionally asserts GFW unavailable despite archived series.",
+    "reason": "10 Bali Baru tetap dinyatakan proyek di Bali. Bukti gas dan kelapa sawit dipakai sebagai pengganti konteks pariwisata; angka GFW Bali 2024 juga belum muncul.",
     "partial_accepted": false
   },
   {
@@ -4936,7 +4936,7 @@
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "10 Bali Baru national program wrongly localized to Bali with phantom Kabupaten Baru; requested GFW figures omitted. 494 additionally asserts GFW unavailable despite archived series.",
+    "reason": "10 Bali Baru tetap dilokalkan ke Bali. Tabel mengaitkan angka 64% dengan emisi sekaligus konsumsi listrik padahal hanya persentase emisi; tren GFW masih terlewat.",
     "partial_accepted": false
   },
   {
@@ -4965,9 +4965,9 @@
     "group": "gabungan",
     "kind": "gabungan_data",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "Jawaban hanya memberi risiko biomassa tingkat Indonesia, bukan dampak PLTU pada warga Cirebon. Angka GFW Kabupaten Cirebon2024 juga hilang. Petisi lokal Cirebon tersedia.",
-    "partial_accepted": false
+    "status": "akurat",
+    "reason": "Angka GFW Kabupaten Cirebon 2024 kini muncul dan tepat 23,07 ha. Temuan laporan menyebut kasus Cirebon dengan sumber, namun dampak lingkungan/penghidupan belum dijawab; diterima parsial.",
+    "partial_accepted": true
   },
   {
     "id": 498,
@@ -4986,7 +4986,7 @@
     "kind": "gabungan_data",
     "original_status": "bermasalah",
     "status": "bermasalah",
-    "reason": "453 entities/778,521.44ha are listed in settlement process, not proof most already legalized. Source p34 separates nationwide stages and few approved Riau entities; table labels whole area as legalized. GFW and other forest/palm figures correct.",
+    "reason": "Masih menyatakan sebagian besar 453 korporasi/778.521,44 ha Riau telah dilegalkan, padahal sumber hanya inventarisasi dan memisahkan tahapan/status nasional serta sejumlah entitas Riau. Angka GFW tepat, tetapi kesimpulan legalisasi tetap melampaui bukti.",
     "partial_accepted": false
   },
   {
@@ -4995,8 +4995,8 @@
     "group": "gabungan",
     "kind": "gabungan_tren",
     "original_status": "bermasalah",
-    "status": "bermasalah",
-    "reason": "453 entities/778,521.44ha are listed in settlement process, not proof most already legalized. Source p34 separates nationwide stages and few approved Riau entities; table labels whole area as legalized. GFW and other forest/palm figures correct.",
+    "status": "akurat",
+    "reason": "Kesalahan legalisasi tidak muncul. Temuan WALHI tetap menyebut lebih luas dari rata-rata, bukan tertinggi. Tabel GFW Riau 2023–2025, total 312.126,36 ha dan tren turun sesuai arsip.",
     "partial_accepted": false
   }
 ]

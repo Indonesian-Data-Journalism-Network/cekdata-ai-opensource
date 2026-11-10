@@ -1,5 +1,6 @@
 {
-  "source_summary_sha256": "9dd9d907803f659567c0005f6dd685f2cdc7a2646c1fb4649a77206d771e62b2",
-  "source_assessments_sha256": "9bb4054a67de49377cdbfcf25f0ff786b0a4a91df2219accbb7702980971ab22",
+  "source_summary_sha256": "c4faa724fd4c67039ccd0a90fcbdb75d88af62933a79e2dd3d997635ab01f494",
+  "source_assessments_sha256": "287fede16504bcfa8b0543fd15831dcd187654dd77b702fbbd813e1e8a039c0d",
+  "latest_retest_assessments_sha256": "f4732fb29572399552897dd30d9001305487850f5185f4bcd47356c8460186c5",
   "published_scope": "Aggregate results and synthetic benchmark questions with review reasons; raw response/evidence packets excluded."
 }

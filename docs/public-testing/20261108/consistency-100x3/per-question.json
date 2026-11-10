@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Aceh Jaya pada 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 2,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kota Denpasar pada 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 3,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 4,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Sulawesi Tenggara pada Maret 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 5,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Jawa Timur pada Maret 2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 6,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 7,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Jambi pada Februari 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 8,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penyelesaian tindak pidana di Indonesia pada 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 9,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks keparahan kemiskinan di Indonesia pada Maret 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 10,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase rumah tangga dengan akses air minum layak di Indonesia pada 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 11,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Bangka pada 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 12,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Maluku Tengah pada 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 13,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Bengkulu pada Maret 2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 14,
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Banten pada Februari 2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 15,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren umur harapan hidup saat lahir di Indonesia selama 2021–2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 16,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Sulawesi Selatan pada bulan Maret setiap tahun selama 2024–2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 17,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat pengangguran terbuka di Kalimantan Barat pada bulan Agustus setiap tahun selama 2021–2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 18,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penyelesaian tindak pidana di Indonesia selama 2021–2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 19,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren indeks keparahan kemiskinan di Indonesia pada bulan Maret setiap tahun selama 2023–2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 20,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Garut selama 2023–2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 21,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Lampung pada bulan Februari setiap tahun selama 2024–2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 22,
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Malang selama 2023–2025?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 23,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase rumah tangga dengan akses air minum layak di Indonesia pada 2022 dan 2023. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 24,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Aceh pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 25,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 26,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Nusa Tenggara Timur pada Maret 2024 dan Maret 2025. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 27,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan indeks keparahan kemiskinan di Indonesia pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 28,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Wajo pada 2023 dan 2024. Berapa perubahannya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 29,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pati atau Kabupaten Indragiri Hilir?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 30,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Agustus 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Sulawesi Utara atau Kalimantan Tengah?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 31,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada September 2025, mana yang lebih tinggi persentase penduduk miskin, Maluku atau Papua Tengah?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 32,
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Maret 2025, mana yang lebih tinggi jumlah penduduk miskin, Papua Selatan atau Kalimantan Utara?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 33,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat pengangguran terbuka di Sulawesi Tenggara naik dari Agustus 2022 ke Agustus 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 34,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Maluku Utara turun dari Maret 2025 ke Maret 2026?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 35,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kota Serang turun dari 2022 ke 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 36,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Sijunjung naik dari 2022 ke 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 37,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Bali pada Agustus 2025 sebesar 78,31 persen?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 38,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah jumlah penduduk miskin di Aceh pada September 2025 sebesar 703,33 ribu jiwa?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 39,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Lampung Utara pada 2025 sebesar 98,99 ribu jiwa?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 2,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 40,
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kota Tanjung Pinang pada 2024 sebesar 7,86 persen?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 41,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 42,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Jawa Barat pada 2022, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 43,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kota Lhokseumawe, Aceh pada 2025, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 44,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau pada 2024, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 45,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Halmahera Tengah, Maluku Utara pada 2022, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 46,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Jakarta Raya pada 2020, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 47,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kutai Barat, Kalimantan Timur pada 2024, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 48,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Nusa Tenggara Barat pada 2022, dalam hektare.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 49,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Simeulue, Aceh dari 2022 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 50,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Sumatera Barat dari 2020 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 51,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Barat dari 2021 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 52,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Katingan, Kalimantan Tengah dari 2020 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 53,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Kayong Utara, Kalimantan Barat dari 2022 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 54,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Tenggara dari 2021 sampai 2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 55,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Sidoarjo, Jawa Timur lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 56,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Biak Numfor, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 57,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Kuantan Singingi, Riau lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 58,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Alor, Nusa Tenggara Timur lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 59,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Sigi, Sulawesi Tengah lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 60,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Mukomuko, Bengkulu lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 61,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Bali naik dari 2024 ke 2025. Apakah sesuai data?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 62,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Kabupaten Deiyai, Papua turun dari 2024 ke 2025. Apakah sesuai data?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 63,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Langkat, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 64,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Aceh turun dari 2023 ke 2024. Apakah sesuai data?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 65,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bengkulu atau Kalimantan Utara? Tampilkan kedua angkanya dan selisihnya.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 66,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bangka Belitung atau Kalimantan Tengah? Tampilkan kedua angkanya dan selisihnya.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 67,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Kalimantan Barat atau Papua? Tampilkan kedua angkanya dan selisihnya.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 68,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 69,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon dalam hutan primer di Kabupaten Batang Hari, Jambi untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 70,
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Kuningan, Jawa Barat untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 71,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan sawit di Aceh pada tahun 2024. Berapa hektare?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 72,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas hutan rawa gambut di Riau pada tahun 2023. Berapa hektare?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 73,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan hutan di Kalimantan Tengah pada tahun 2023. Berapa hektare?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 74,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas mangrove di Papua Selatan pada tahun 2024. Berapa hektare?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 75,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 76,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan hutan di Kalimantan setiap tahun dari 2020 sampai 2024?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 77,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan hutan di Indonesia setiap tahun dari 2020 sampai 2024?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 78,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas tutupan sawit di Sumatera Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 79,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas tutupan hutan di Sulawesi Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 80,
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "klaim_arah",
+    "question": "Benarkah luas tutupan hutan di Sumatera Utara turun dari 2022 ke 2023?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 1,
+    "finding_variants": 1,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan.",
+      "Angka, indikator, wilayah, periode, satuan, dan kesimpulan sesuai acuan."
+    ]
+  },
+  {
+    "id": 81,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang pendapatan dan mata pencaharian warga terkait pertambangan nikel di Pulau Kabaena?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Angka 38,2% sesuai Satya Bumi PDF 46; penghidupan Bajau dan kesimpulan ekonomi/jejaring politik sesuai PDF 16 dan 51.",
+      "38,2% dan dampak ekonomi/ekologi cocok dengan Satya Bumi PDF 46/51. Poin tambahan tentang Bajau dari percobaan pertama tidak muncul; inti data tetap tepat.",
+      "38,2% tetap tepat; dampak jaringan tambang dan risiko kriminalisasi sesuai Satya Bumi PDF 51. Pilihan temuan tambahan berubah tanpa mengubah data inti."
+    ]
+  },
+  {
+    "id": 82,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hutan dan kehidupan nelayan terkait pertambangan nikel di Raja Ampat?",
+    "accurate_runs": 2,
+    "statuses": [
+      "bermasalah",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 1,
+    "reasons": [
+      "Kesimpulan menyatakan informasi dampak terhadap nelayan belum tersedia, padahal halaman Auriga yang dikutip menyebut nelayan Kawei melaporkan ikan dan lumba-lumba menjauh akibat kebisingan/getaran. Temuan lain dan angka GFW benar.",
+      "Temuan WALHI tentang pesisir/air dan pencabutan empat IUP sesuai PDF 101/154; GFW sesuai acuan. Rincian penghidupan nelayan belum lengkap tetapi tidak lagi diklaim tidak ada dalam seluruh laporan.",
+      "Ancaman komunitas, penghidupan dan budaya sesuai Auriga PDF 9 dan tetap disebut mengancam; WALHI pesisir/air dan angka GFW tepat."
+    ]
+  },
+  {
+    "id": 83,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang air bersih dan penghidupan warga terkait industri nikel di Pulau Obi?",
+    "accurate_runs": 1,
+    "statuses": [
+      "bermasalah",
+      "akurat",
+      "bermasalah"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Temuan WALHI mengaitkan kekhawatiran warga atas keamanan hasil laut dengan Pulau Obi. Pada PDF 17 kekhawatiran itu berada dalam paragraf Desa Baliara, Kabaena; paragraf Obi dimulai sesudahnya. Lokasi dua temuan tercampur.",
+      "Angka 9.184,23 ha dan 49% sesuai NCKL PDF 8. Klaim 12 jenis biota terkontaminasi didukung ringkasan eksekutif Trend Asia PDF 3, meskipun PDF 5 yang dikutip memakai kualifikasi terindikasi. Temuan WALHI sesuai sumber.",
+      "Kembali terjadi pemindahan lokasi dari WALHI PDF 17: kerugian budidaya rumput laut/ikan dan penurunan tangkapan di Baliara, Kabaena ditulis sebagai dampak di Pulau Obi."
+    ]
+  },
+  {
+    "id": 84,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang keselamatan dan kondisi pekerja terkait industri nikel di Morowali?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "APD, layanan klinik, korban ITSS, transportasi dan sistem kerja sesuai Trend Asia PDF 4–5; angka konteks GFW lolos acuan.",
+      "Temuan kondisi kerja sama secara substantif dengan percobaan pertama dan didukung Trend Asia PDF 4–5. Tambahan beban lembur ada pada sumber. Konteks GFW tepat.",
+      "APD, klinik, transportasi dan sistem kerja sesuai Trend Asia PDF 4–5. Tambahan penilaian hilirisasi pada Morowali memang ada dalam pengantar laporan Rempang PDF 9; angka GFW tepat."
+    ]
+  },
+  {
+    "id": 85,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hutan dan hak masyarakat adat terkait perkebunan kayu di Ketapang?",
+    "accurate_runs": 2,
+    "statuses": [
+      "bermasalah",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Temuan menyatakan lebih dari 64% konsesi sebagai habitat orangutan dan lahan gambut pada 2016. Tabel Satya Bumi PDF 12 memisahkan hutan 2016 (63,5%), habitat orangutan 2017 (64,4%), dan gambut (59,9%); kategori dan tahun tergabung keliru.",
+      "Hutan yang dilindungi adat, konflik hingga 2024, dan kasus dua warga sesuai Satya Bumi PDF 14/16/28. Tidak ada lagi penggabungan kategori 64% seperti pada percobaan pertama.",
+      "Poin hutan/hukum adat dan konflik 2024 sesuai Satya Bumi PDF 14/16; kasus dua warga sesuai PDF 28. Kesalahan 64% pada putaran pertama tidak terulang."
+    ]
+  },
+  {
+    "id": 86,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang sumber air dan lahan pertanian terkait proyek panas bumi di Muara Laboh, Solok Selatan?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Konflik air 2021, perubahan sawah, gagal panen, dan risiko pada jarak 250–500 m sesuai WALHI PDF 4–5/15 dan petisi AZEC PDF 7.",
+      "Isi yang sama dengan percobaan pertama: konflik air, alih fungsi sawah, gagal panen dan risiko jarak sesuai WALHI; variasi urutan dan redaksi tidak mengubah makna.",
+      "Temuan air, sawah, gagal panen dan risiko jarak sama secara substantif dengan sumber WALHI yang sudah diperiksa; hanya pilihan poin awal/urutan berubah."
+    ]
+  },
+  {
+    "id": 87,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak proyek pangan di Merauke bagi warga setempat, disertai bukti yang ditemukan.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 3,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "480 ribu ha dan pengamanan militer sesuai Pandangan Politik WALHI PDF 3. Kalimat hingga dua juta dan sekitar dua juta masing-masing ada pada TLH PDF 19 dan 154; jawaban mempertahankan keduanya.",
+      "480 ribu ha dan militer sesuai sumber WALHI; sekitar dua juta ada pada TLH PDF 154. Rencana 1,5 juta ha sesuai dokumen Bahaya Rencana PDF 5 dan tetap ditulis sebagai rencana.",
+      "480 ribu ha dan militer sesuai WALHI; jaminan keamanan investasi sesuai Satya Bumi PDF 19. Rumusan sekitar dua juta ha didukung TLH PDF 154 meskipun halaman yang dicantumkan hanya 19."
+    ]
+  },
+  {
+    "id": 88,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak proyek gas LNG di Teluk Bintuni bagi warga setempat, disertai bukti yang ditemukan.",
+    "accurate_runs": 0,
+    "statuses": [
+      "bermasalah",
+      "bermasalah",
+      "bermasalah"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 3,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Kesimpulan menyebut pelanggaran undang-undang sebagai fakta laporan. Dasarnya judul rujukan berita di catatan kaki PDF 19 yang mengatribusikan pendapat itu kepada Haris Pertama; atribusi hilang.",
+      "Kesalahan atribusi yang sama dengan percobaan pertama: opini pelanggaran undang-undang dalam judul catatan kaki dijadikan fakta laporan tanpa menyebut pengucapnya.",
+      "Kesalahan atribusi pelanggaran hukum dari judul rujukan di catatan kaki kembali muncul, sama dengan putaran pertama dan kedua."
+    ]
+  },
+  {
+    "id": 89,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah pertambangan nikel di Pulau Kabaena hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Label Salah terhadap klaim universal didukung kerusakan lokal; 73%, 40%, dan indikator layanan/ekonomi cocok dengan Satya Bumi PDF 8, 6, dan 42.",
+      "Label Salah tetap tepat. Kerusakan lokal dan indikator layanan dasar 25,7%, 46,7%, 62% sesuai Satya Bumi PDF 8/6. Bukti cukup untuk menolak klaim tanpa kerugian.",
+      "Label Salah tetap didukung kerusakan lingkungan/ruang hidup; data layanan dasar cocok dengan Satya Bumi PDF 6 dan kegiatan tanpa perbaikan lingkungan ada di PDF 14."
+    ]
+  },
+  {
+    "id": 90,
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah perkebunan tebu di Pundenrejo, Pati hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "accurate_runs": 2,
+    "statuses": [
+      "akurat",
+      "bermasalah",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Label Salah didukung serangan/intimidasi Pundenrejo dan kehilangan penghidupan dalam Satya Bumi PDF 32 serta Trend Asia PDF 15.",
+      "Label Salah didukung bukti kerugian, tetapi alasan menyatakan bukti mencakup seluruh populasi warga terdampak. Trend Asia PDF 15 menyebut riset 92 responden; cakupan sampel diperluas menjadi seluruh populasi.",
+      "Label Salah didukung kerugian psikologis yang tercantum pada Trend Asia PDF 15; alasan tidak lagi mengklaim seluruh populasi tercakup seperti putaran kedua."
+    ]
+  },
+  {
+    "id": 91,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak pertambangan nikel terhadap pendapatan dan mata pencaharian warga di Pulau Kabaena? Tambahkan angka kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "38,2%, konsesi 73%/40%, dampak ekonomi Kabaena dan Baliara sesuai Satya Bumi/WALHI. Angka Bombana 2024 tepat dan tidak dianggap sebagai angka Pulau Kabaena.",
+      "Inti 38,2%, dampak ekonomi Kabaena/Baliara dan GFW Bombana tetap benar. Tambahan penggusuran/lahan tak subur ada pada Satya Bumi PDF 8.",
+      "38,2%, dampak Kabaena/Baliara dan angka GFW Bombana tetap sesuai sumber. Perbedaan dari putaran pertama hanya jumlah temuan tambahan dan redaksi."
+    ]
+  },
+  {
+    "id": 92,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah pertambangan nikel di Raja Ampat dan tampilkan tren kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat untuk 2023–2025.",
+    "accurate_runs": 2,
+    "statuses": [
+      "akurat",
+      "bermasalah",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Temuan Auriga tentang kerusakan karang dan percepatan ekspansi tiga kali didukung PDF 3; WALHI PDF 154 mendukung dampak pesisir/air. Seri GFW 2023–2025 dan arah turun sesuai acuan.",
+      "Temuan menulis luas lahan tambang meningkat tiga kali. Auriga PDF 3 menyebut laju ekspansi tiga kali laju lima tahun sebelumnya, bukan luas total menjadi tiga kali. Kesimpulan juga menempelkan masalah tambang ilegal/lubang tak direklamasi lintas provinsi dari WALHI PDF 154 ke Raja Ampat.",
+      "Temuan pesisir sesuai WALHI; peretasan Iqbal Damanik sesuai Satya Bumi PDF 34; ancaman sedimentasi pada habitat laut sesuai Auriga PDF 6. Data GFW tepat."
+    ]
+  },
+  {
+    "id": 93,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Temuan kerusakan laut dan penghidupan sesuai Trend Asia PDF 5; 49% sesuai NCKL PDF 8; 26.100 ha sesuai WALHI Santa Marta PDF 11. Data GFW Halmahera Selatan sesuai acuan.",
+      "49%, 26.100 ha, dampak laut/air dan GFW sesuai sumber yang sama dengan percobaan pertama. Temuan 12 biota didukung ringkasan Trend Asia PDF 3.",
+      "49%, 26.100 ha, pencemaran dan risiko kesehatan didukung laporan yang diperiksa. GFW Halmahera Selatan tepat."
+    ]
+  },
+  {
+    "id": 94,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah industri nikel di Morowali dan tampilkan tren kehilangan tutupan pohon di Kabupaten Morowali, Sulawesi Tengah untuk 2023–2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 3,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 0,
+    "reasons": [
+      "Temuan IMIP sesuai Trend Asia PDF 4; 15 IUP dan penghentian sementara November 2013 sesuai Auriga PDF 13. Tren GFW yang diminta belum ditampilkan; dihitung akurat parsial.",
+      "Temuan IMIP sesuai Trend Asia; 65 IUP dan 155.051 ha sesuai WALHI PDF 24. Bagian tren GFW tetap tidak diberikan; diterima akurat parsial.",
+      "65 IUP/155.051 ha dan banjir sebagai analisis WALHI sesuai PDF 24; temuan kerja/lingkungan sesuai Trend Asia/Auriga. Tren GFW tetap tidak muncul; diterima akurat parsial."
+    ]
+  },
+  {
+    "id": 95,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah perkebunan kayu di Ketapang dan tampilkan tren kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat untuk 2023–2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "76,6 ha Kualan Hilir pada 2019–2023 dan dampaknya sesuai Satya Bumi PDF 15. Seri, total dan penurunan tahunan GFW Ketapang sesuai acuan.",
+      "Temuan beralih dari konflik lahan warga ke pembukaan hutan lintas Ketapang–Kayong Utara, tetapi sesuai Satya Bumi PDF 6 dan cakupan lintas kabupaten dinyatakan. GFW Ketapang tepat.",
+      "76,6 ha pada 2019–2023, konflik dan GFW Ketapang sama secara substantif dengan putaran pertama dan sesuai sumber."
+    ]
+  },
+  {
+    "id": 96,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak proyek pangan terhadap hak atas tanah masyarakat adat di Merauke? Tambahkan angka kehilangan tutupan pohon di Kabupaten Merauke, Papua pada 2024.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Kasus Zanegi 2010, enam marga dan 4.000 ha sesuai Satya Bumi PDF 54. Rumusan sekitar dua juta ha ada dalam WALHI PDF 154 yang dikutip; angka GFW Merauke benar.",
+      "486.939 ha sesuai WALHI PDF 128; 4.000 ha/2010/Rp300 juta sesuai Satya Bumi PDF 54; dampak MIFEE sesuai WALHI PDF 8. GFW benar.",
+      "486.939 ha, kasus 4.000 ha/2010/Rp300 juta, dan angka GFW sesuai sumber yang telah diperiksa. Rumusan sekitar dua juta ha didukung TLH PDF 154."
+    ]
+  },
+  {
+    "id": 97,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak proyek Rempang Eco City terhadap tempat tinggal dan mata pencaharian warga di Pulau Rempang? Tambahkan angka kehilangan tutupan pohon di Kota Batam, Kepulauan Riau pada 2024.",
+    "accurate_runs": 2,
+    "statuses": [
+      "akurat",
+      "bermasalah",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Estimasi pendapatan rengkam, konsesi 7.572 ha/45,89%, target investasi/pekerjaan dan penggusuran sesuai halaman Trend Asia. Angka Batam 2024 tepat.",
+      "Temuan dan kesimpulan menyebut konsesi 17.000 ha termasuk HPL BP Batam. Trend Asia PDF 33 menyebut 17.000 ha kawasan hutan ditambah 600 ha HPL, dengan rumusan dapat mencaplok, bukan konsesi total 17.000 ha yang sudah diperoleh.",
+      "Estimasi rengkam, rencana/konsesi 7.572 ha/45,89%, target investasi dan kerugian lokal didukung Trend Asia. GFW Batam tetap 206,61 ha."
+    ]
+  },
+  {
+    "id": 98,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah proyek gas LNG di Teluk Bintuni dan tampilkan tren kehilangan tutupan pohon di Kabupaten Teluk Bintuni, Papua Barat untuk 2023–2025.",
+    "accurate_runs": 2,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "bermasalah"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 3,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "Sulfianto dan konteks advokasinya sesuai Satya Bumi PDF 21; 3.500 ha, konteks LNG/CCUS, serta 2,25 juta ha mengikuti Trend Asia. GFW Teluk Bintuni sesuai acuan.",
+      "Temuan mangrove, LNG/CCUS dan data GFW tetap sesuai sumber. Poin Sulfianto tidak dipakai; perubahan pilihan temuan tidak mengubah angka utama.",
+      "Label cakupan dan kesimpulan menambahkan Kabupaten Batu Bara. Pada WALHI PDF 163, batu bara adalah komoditas dalam agenda gasifikasi di Sumatera Selatan/Kalimantan Timur, bukan nama kabupaten. Entitas wilayah salah dikenali."
+    ]
+  },
+  {
+    "id": 99,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak proyek pariwisata terhadap hak atas tanah dan mata pencaharian warga di Mandalika? Tambahkan angka kehilangan tutupan pohon di Kabupaten Lombok Tengah, Nusa Tenggara Barat pada 2024.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 1,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "1.500 petani, lebih dari 45 ribu keluarga nelayan lintas dua kabupaten, serta 400 keluarga pembudidaya cocok dengan WALHI PDF 32; kehilangan akses sesuai Satya Bumi. Angka GFW tepat.",
+      "Kehilangan akses masyarakat adat sesuai Satya Bumi PDF 16; 45 ribu/400 keluarga lintas wilayah sesuai WALHI PDF 32. Angka GFW tetap tepat.",
+      "1.500 petani di Pujut dan hilangnya akses/penghidupan sesuai WALHI/Satya Bumi; angka GFW sama dan tepat. Perubahan urutan penerbit tidak mengubah makna."
+    ]
+  },
+  {
+    "id": 100,
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah perkebunan sawit di Riau dan tampilkan tren kehilangan tutupan pohon di Riau untuk 2023–2025.",
+    "accurate_runs": 3,
+    "statuses": [
+      "akurat",
+      "akurat",
+      "akurat"
+    ],
+    "numeric_variants": 1,
+    "verdict_variants": 1,
+    "source_variants": 2,
+    "answer_variants": 3,
+    "finding_variants": 3,
+    "complete_runs": 3,
+    "reasons": [
+      "1.377.884 ha hutan tersisa dan 20.698 ha kehilangan 2023 sesuai WALHI PDF 30; isu perkebunan sesuai PDF 31/35. Angka, total dan tren GFW sesuai acuan, indikator tidak dicampur.",
+      "Angka Riau dan GFW tetap tepat. Tambahan IPK bagi 12 perusahaan pada 2004–2005 sesuai WALHI Monokulturisasi PDF 9; masalah penegakan hukum didukung sumber.",
+      "Angka Riau, 12 perusahaan 2004–2005, serta analisis kebijakan/penegakan hukum sesuai WALHI PDF 30–31/35 dan Monokulturisasi PDF 9. Seri GFW tetap tepat."
+    ]
+  }
+]

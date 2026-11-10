@@ -1,0 +1,593 @@
+<!doctype html><html lang="id"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Uji data terkait — Cek Data AI</title><style>body{font:16px/1.6 system-ui;max-width:1050px;margin:40px auto;padding:0 24px;color:#252525}details{border:1px solid #ddd;padding:16px;margin:12px 0;border-radius:10px}summary{cursor:pointer;font-weight:600}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 system-ui}li{margin:8px 0}</style><h1>Uji data terkait — 8 November 2026</h1><p>22 respons berhasil dihasilkan. Enam regresi angka menghasilkan nilai yang sama dengan hasil sebelumnya. Pemeriksaan ulang data terkait pada 22 respons tidak mengubah bukti utama atau label.</p><p>12 klaim pejabat + 10 pertanyaan regresi melalui runner Environment yang sama dengan server. Setelah penyempurnaan pemilihan periode, konteks 22 respons diperiksa ulang ke Qdrant tanpa memanggil model atau mengubah bukti utama/label. Satu ImportError saat modul diperbarui telah diuji ulang dengan proses baru dan berhasil. Ini uji fitur/regresi, bukan pengukuran akurasi keseluruhan atau benchmark 500 baru.</p><p>6 dari 12 klaim mendapat tabel tambahan baru. Klaim tetap berlabel Tidak dapat diverifikasi karena tabel pendamping bukan bukti langsung bagi seluruh klaim.</p><p>481 tes workflow, 60 tes frontend, 19 tes adapter, dan 4 tes gateway lulus. Build lokal dan publik berhasil.</p><h2>Masalah yang masih terlihat</h2><ul><li>Label tabel 49 persen terlalu umum; seharusnya menyebut proporsi luas Pulau Obi yang dikuasai perusahaan, bukan degradasi lingkungan.</li><li>Kata batu bara masih terbaca sebagai nama Kabupaten Batu Bara pada konteks NGO. Perlu penanganan homonim istilah umum dan nama wilayah.</li><li>Angka kehilangan tutupan pohon tersedia sebagai data terkait, tetapi permintaan pembacaan tren belum dijawab lengkap.</li></ul><p>Tidak mengubah rekap benchmark terdahulu dan tidak menyatakan semua jawaban NGO akurat.</p><h2>Jawaban yang diperiksa</h2><details><summary>1. Benarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 1</p><pre>Klaim
+Benarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20.
+
+Penilaian: Tidak dapat diverifikasi
+
+Laporan dari Satya Bumi yang diperiksa tidak menyediakan data atau persentase terkait penyebab kebakaran hutan dan lahan di Riau, khususnya tidak menyebutkan bahwa hampir 99 persen kasus disebabkan oleh aktivitas manusia. Oleh karena itu, klaim tersebut tidak dapat diverifikasi berdasarkan temuan yang tersedia.
+
+Temuan Data Satya Bumi
+- Laporan Satya Bumi mencatat adanya gugatan perdata terkait kebakaran hutan di daerah Rokan Hilir, Riau, namun tidak menyebutkan persentase penyebab kebakaran hutan dan lahan yang disebabkan oleh aktivitas manusia. [1]
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Riau | 2021 | 3.648,56 | ha |
+| Riau | 2022 | 3.343,56 | ha |
+| Riau | 2023 | 3.299,64 | ha |
+| Riau | 2024 | 3.823,85 | ha |
+| Riau | 2025 | 4.670,72 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon akibat kebakaran berbeda dari seluruh luas karhutla, jumlah titik panas, dan penyebab kebakaran.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/24/
+
+[1] Sumber: Satya Bumi — Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1 — halaman PDF 32
+https://satyabumi.org/en/laporan-ehrd-indonesia-semester1-2024/
+Unduh: Laporan Pemantauan Pembela HAM Lingkungan Hidup 2024 Semester 1 (PDF)
+https://satyabumi.org/wp-content/uploads/2024/09/LAPORAN-PEMANTAUAN-SITUASI-PEMBELA-HAM-LINGKUNGAN-HIDUP-INDONESIA-SEMESTER-I-Tahun-2024_FINAL_OK.pdf</pre></details><details><summary>2. Benarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 1</p><pre>Klaim
+Benarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28.
+
+Penilaian: Tidak dapat diverifikasi
+
+Data MapBiomas Koleksi 4.1 yang terhubung baru tersedia hingga 2024; data 2025 belum tersedia dalam seri lokal ini. Data yang tersedia belum cukup untuk menilai klaim pada wilayah dan periode tersebut.
+
+Temuan Data
+Bukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.
+
+Konteks
+Hasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.
+
+Peringatan editorial
+Untuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai luas lahan terbakar, luas lahan gambut terbakar di Jambi pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Jambi | 2020 | 14.331,97 | ha |
+| Jambi | 2021 | 1.921,78 | ha |
+| Jambi | 2022 | 1.004,85 | ha |
+| Jambi | 2023 | 899,55 | ha |
+| Jambi | 2024 | 1.359,57 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon akibat kebakaran berbeda dari seluruh luas karhutla, jumlah titik panas, dan penyebab kebakaran.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/8/
+
+Sumber: MapBiomas Indonesia — Koleksi 4.1
+https://landy.mapbiomas.id/en/statistics
+Unduh: Tutupan dan transisi lahan Indonesia — Koleksi 4.1 (XLSX)
+https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx</pre></details><details><summary>3. Benarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 1</p><pre>Klaim
+Benarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29.
+
+Penilaian: Tidak dapat diverifikasi
+
+Temuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.
+
+Temuan Data WALHI
+- Kebijakan dan upaya restorasi gambut di Sumatera Selatan selama lebih dari 6 tahun tidak menunjukkan perubahan signifikan, dan kebakaran hutan dan lahan tetap terjadi setiap musim kemarau. [1]
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Sumatera Selatan | 2021 | 4.604,86 | ha |
+| Sumatera Selatan | 2022 | 3.892,74 | ha |
+| Sumatera Selatan | 2023 | 3.348,47 | ha |
+| Sumatera Selatan | 2024 | 7.229,22 | ha |
+| Sumatera Selatan | 2025 | 4.902,59 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon akibat kebakaran berbeda dari seluruh luas karhutla, jumlah titik panas, dan penyebab kebakaran.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/31/
+
+[1] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 73, 79
+https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera
+Unduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)
+https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf</pre></details><details><summary>4. Benarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 1</p><pre>Klaim
+Benarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31.
+
+Penilaian: Tidak dapat diverifikasi
+
+Data yang sesuai untuk Jambi, Kabupaten Sarolangun, Jambi pada Agustus 2026 belum ditemukan dalam pencarian ini. Data yang tersedia belum cukup untuk menguji klaim pada lingkup tersebut.
+
+Temuan Data
+Bukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.
+
+Konteks
+Hasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.
+
+Peringatan editorial
+Untuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai luas kebakaran hutan dan lahan di Jambi, Kabupaten Sarolangun, Jambi pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Jambi | 2021 | 1.921,78 | ha |
+| Jambi | 2022 | 1.004,85 | ha |
+| Jambi | 2023 | 899,55 | ha |
+| Jambi | 2024 | 1.359,57 | ha |
+| Jambi | 2025 | 1.135,20 | ha |
+| Kabupaten Sarolangun, Jambi | 2021 | 37,67 | ha |
+| Kabupaten Sarolangun, Jambi | 2022 | 53,43 | ha |
+| Kabupaten Sarolangun, Jambi | 2023 | 82,26 | ha |
+| Kabupaten Sarolangun, Jambi | 2024 | 176,81 | ha |
+| Kabupaten Sarolangun, Jambi | 2025 | 88,72 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon akibat kebakaran berbeda dari seluruh luas karhutla, jumlah titik panas, dan penyebab kebakaran.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/8/
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/8/7/</pre></details><details><summary>5. Benarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 1</p><pre>Klaim
+Benarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14.
+
+Penilaian: Tidak dapat diverifikasi
+
+Temuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.
+
+Temuan Data WALHI
+- Pada September 2023, kebakaran hutan dan lahan di Jambi mencapai 1200 hektar dengan 871 titik hotspot, tersebar 348 di izin perusahaan dan 523 di luar izin perusahaan, tanpa informasi persentase lahan sengaja dibakar. [1]
+- Laporan WALHI Jambi menyatakan bahwa kebakaran hutan dan lahan di Jambi pada 2026 tidak dapat dipahami hanya dari tingkat perusahaan pemegang izin atau kejadian kebakaran di lapangan, melainkan terkait dengan struktur penguasaan lahan, jaringan korporasi, dan tata kelola sumber daya alam. [2]
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon akibat kebakaran tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Jambi | 2021 | 1.921,78 | ha |
+| Jambi | 2022 | 1.004,85 | ha |
+| Jambi | 2023 | 899,55 | ha |
+| Jambi | 2024 | 1.359,57 | ha |
+| Jambi | 2025 | 1.135,20 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon akibat kebakaran berbeda dari seluruh luas karhutla, jumlah titik panas, dan penyebab kebakaran.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/8/
+
+[1] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 59, 62
+https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera
+Unduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)
+https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf
+[2] Sumber: WALHI — Kajian Peta Aktor: Siapa di Balik Api? — halaman PDF 35
+https://www.walhi.or.id/kajian-peta-aktor-siapa-di-balik-api
+Unduh: Kajian Peta Aktor: Siapa di Balik Api? (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/%28English%20Version%29%20Actor%20Mapping%20Forest%20and%20Land%20Fires%202026%20-%20Eksekutif%20Nasional%20WALHI%20%28CA%29.pdf</pre></details><details><summary>6. Benarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 2</p><pre>Klaim
+Benarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04.
+
+Penilaian: Tidak dapat diverifikasi
+
+Data MapBiomas Koleksi 4.1 yang terhubung baru tersedia hingga 2024; data 2025 belum tersedia dalam seri lokal ini. Data yang tersedia belum cukup untuk menilai klaim pada wilayah dan periode tersebut.
+
+Temuan Data
+Bukti langsung untuk menjawab pertanyaan ini belum ditemukan dalam data Cek Data AI yang diperiksa.
+
+Konteks
+Hasil pencarian ini tidak berarti sumber aslinya tidak memiliki data tersebut.
+
+Peringatan editorial
+Untuk menilai klaim ini, periksa data untuk lingkup dan periode klaim mengenai deforestasi, luas tutupan pohon, kerusakan hutan di Aceh, Sumatera Utara, Sumatera Barat pada tabel atau publikasi lembaga penerbit statistik terkait. Kepada pihak yang mengklaim, tanyakan periode acuan dan dasar perhitungan yang digunakan.
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Aceh | 2023 | 38.983,48 | ha |
+| Aceh | 2024 | 46.070,64 | ha |
+| Sumatera Barat | 2023 | 35.179,51 | ha |
+| Sumatera Barat | 2024 | 32.209,32 | ha |
+| Sumatera Utara | 2023 | 65.334,92 | ha |
+| Sumatera Utara | 2024 | 64.259,72 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon tidak otomatis berarti deforestasi permanen dan tidak membuktikan penyebabnya.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/1/
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/30/
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/32/
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Luas transisi hutan menjadi nonhutan tahunan (tahun akhir transisi) menurut provinsi, pulau dan nasional.
+
+Luas transisi hutan menjadi nonhutan tahunan (tahun akhir transisi) menurut provinsi, pulau dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Aceh | 2023 | 25.710,25 | ha |
+| Aceh | 2024 | 8.856,62 | ha |
+| Sumatera Barat | 2023 | 10.259,19 | ha |
+| Sumatera Barat | 2024 | 9.621,26 | ha |
+| Sumatera Utara | 2023 | 10.135,49 | ha |
+| Sumatera Utara | 2024 | 10.686,14 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim.
+
+Sumber: MapBiomas Indonesia — versi 4.1
+https://landy.mapbiomas.id/en/statistics
+Unduh: Transisi lahan — MapBiomas Koleksi 4.1
+https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx
+
+Sumber: MapBiomas Indonesia — Koleksi 4.1
+https://landy.mapbiomas.id/en/statistics
+Unduh: Tutupan dan transisi lahan Indonesia — Koleksi 4.1 (XLSX)
+https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx</pre></details><details><summary>7. Benarkah klaim berikut? Ada indikasi kayu gelondongan yang terseret banjir di Sumatera bagian utara berasal dari sisa pembukaan kebun sawit dan diduga memperparah dampak banjir. Asal kayu masih akan diperiksa. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-12-03. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Ada indikasi kayu gelondongan yang terseret banjir di Sumatera bagian utara berasal dari sisa pembukaan kebun sawit dan diduga memperparah dampak banjir. Asal kayu masih akan diperiksa. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-12-03.
+
+Penilaian: Tidak dapat diverifikasi
+
+Belum cukup data untuk memberikan jawaban.</pre></details><details><summary>8. Benarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01.
+
+Penilaian: Tidak dapat diverifikasi
+
+Belum cukup data untuk memberikan jawaban.</pre></details><details><summary>9. Benarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10.
+
+Penilaian: Tidak dapat diverifikasi
+
+Belum cukup data untuk memberikan jawaban.</pre></details><details><summary>10. Benarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08.
+
+Penilaian: Tidak dapat diverifikasi
+
+Temuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.
+
+Temuan Data WALHI
+- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Bukti dari laporan WALHI menyebutkan dampak Siklon Senyar yang melanda Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menyebabkan lebih dari 1.100 korban jiwa, hilang, dan kerusakan fasilitas, namun tidak mencantumkan nilai kerugian dalam rupiah. [1]
+- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Banjir bandang terjadi di Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 yang mendorong pencabutan 28 izin perusahaan di tiga provinsi tersebut, namun tidak disebutkan nilai kerugian secara spesifik. [2]
+
+[1] Sumber: WALHI — Brief Tujuh Catatan WALHI terhadap Draft RUU Pengelolaan Perubahan Iklim versi Pemerintah — halaman PDF 3
+https://www.walhi.or.id/brief-tujuh-catatan-walhi-terhadap-draft-ruu-pengelolaan-perubahan-iklim-versi-pemerintah
+Unduh: Brief Tujuh Catatan WALHI terhadap Draft RUU Pengelolaan Perubahan Iklim versi Pemerintah (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Draft%20RUU%20PPI.pdf
+[2] Sumber: WALHI — Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi — halaman PDF 7
+https://www.walhi.or.id/jalankan-tap-mpr-ix-2001-tuntutan-dari-tapak-untuk-keadilan-antargenerasi
+Unduh: Jalankan TAP MPR IX/2001: Tuntutan Dari Tapak untuk Keadilan Antargenerasi (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Jalankan%20TAP%20MPR%20IX%202001_2026.pdf</pre></details><details><summary>11. Benarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29.
+
+Penilaian: Tidak dapat diverifikasi
+
+Temuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.
+
+Temuan Data WALHI
+- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Kabupaten Aceh Singkil, Kabupaten Gayo Lues, Kota Subulussalam, Kabupaten Aceh Tenggara: Kerusakan DAS di Aceh, akibat konversi lahan dan pertambangan, menyebabkan banjir dan longsor setiap tahun di Aceh Tenggara, Aceh Selatan, Aceh Singkil, Gayo Lues, dan Kota Subulussalam. [1]
+
+[1] Sumber: WALHI — Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) — halaman PDF 9
+https://www.walhi.or.id/dari-krisis-politik-ke-krisis-ekologis-catatan-akhir-tahun-region-sumatera
+Unduh: Dari Krisis Politik ke Krisis Ekologis (Catatan Akhir Tahun Region Sumatera) (PDF)
+https://www.walhi.or.id/uploads/buku/Revisi%202_CATAHU%20WALHI%20REGION%20SUMATERA_compressed.pdf</pre></details><details><summary>12. Benarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29. — Tidak dapat diverifikasi</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Benarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29.
+
+Penilaian: Tidak dapat diverifikasi
+
+Temuan yang tersedia belum cukup untuk menilai seluruh klaim; hasil dan pembanding yang disebutkan belum terbukti dari data yang ditemukan.
+
+Temuan Data WALHI
+- Konteks lintas kegiatan: Konteks wilayah lebih luas: Cakupan Aceh, Sumatera Utara, Sumatera Barat: Siklon Senyar yang melanda Aceh, Sumatera Utara, dan Sumatera Barat pada akhir November 2025 menyebabkan lebih dari 1.100 korban menurut data BNPB. [1]
+
+Temuan Data Global Forest Watch
+GFW mencatat kehilangan tutupan pohon di Sumatera Utara pada 2025 sebesar 75.405,70 ha.
+
+Kehilangan tutupan pohon — Sumatera Utara
+
+| Tahun | Kehilangan (ha) |
+| --- | --- |
+| 2025 | 75.405,70 |
+
+Konteks
+Kehilangan tutupan pohon tidak selalu berarti deforestasi permanen; data ini tidak membuktikan penyebabnya.
+
+[1] Sumber: WALHI — Brief Tujuh Catatan WALHI terhadap Draft RUU Pengelolaan Perubahan Iklim versi Pemerintah — halaman PDF 3
+https://www.walhi.or.id/brief-tujuh-catatan-walhi-terhadap-draft-ruu-pengelolaan-perubahan-iklim-versi-pemerintah
+Unduh: Brief Tujuh Catatan WALHI terhadap Draft RUU Pengelolaan Perubahan Iklim versi Pemerintah (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Brief%20Draft%20RUU%20PPI.pdf
+Sumber: Kehilangan tutupan pohon — GFW v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/32/</pre></details><details><summary>141. Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare. — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Kehilangan tutupan pohon akibat kebakaran tahunan di Kabupaten Pinrang, Sulawesi Selatan pada 2024 sebesar 2,00 ha.
+
+Temuan Data
+Kehilangan tutupan pohon akibat kebakaran tahunan
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Kabupaten Pinrang, Sulawesi Selatan | 2024 | 2,00 |
+
+Konteks
+Angka ini mengukur kehilangan tutupan pohon yang dikaitkan dengan kebakaran, bukan seluruh luas lahan yang terbakar.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: Kehilangan tutupan pohon akibat kebakaran — GFW v20260424 — Global Forest Watch / UMD GLAD
+Link sumber: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Dataset dasar dan metode: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Unduh data: https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm2_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss_from_fires__ha%29+AS+fire_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+26+AND+adm2+%3D+17+AND+umd_tree_cover_loss__year+%3D+2024+GROUP+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+LIMIT+2001</pre></details><details><summary>146. Sebutkan luas kehilangan tutupan pohon di Jakarta Raya pada 2020, dalam hektare. — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Kehilangan tutupan pohon tahunan di Jakarta Raya pada 2020 sebesar 0,46 ha.
+
+Temuan Data
+Kehilangan tutupan pohon tahunan
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Jakarta Raya | 2020 | 0,46 |
+
+Konteks
+Kehilangan tutupan pohon tidak otomatis berarti deforestasi permanen atau luas hutan yang tersisa.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: Kehilangan tutupan pohon — GFW v20260424 — Global Forest Watch / UMD GLAD
+Link sumber: https://www.globalforestwatch.org/dashboards/country/IDN/7/
+Dataset dasar dan metode: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Unduh data: https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+7+AND+umd_tree_cover_loss__year+%3D+2020+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001</pre></details><details><summary>151. Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Barat dari 2021 sampai 2025. — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Kehilangan tutupan pohon dalam hutan primer tropis basah tahun acuan tahunan di Sulawesi Barat: turun pada 2021–2022, kemudian naik pada 2022–2023, kemudian turun pada 2023–2024, kemudian naik pada 2024–2025.
+
+Temuan Data
+Kehilangan tutupan pohon dalam hutan primer tropis basah tahun acuan tahunan
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Sulawesi Barat | 2021 | 3.590,76 |
+| Sulawesi Barat | 2022 | 2.883,78 |
+| Sulawesi Barat | 2023 | 4.147,53 |
+| Sulawesi Barat | 2024 | 3.858,74 |
+| Sulawesi Barat | 2025 | 5.145,09 |
+
+Konteks
+Sulawesi Barat: nilai 2025 lebih tinggi daripada 2021. Rangkaian ini memuat kenaikan dan penurunan.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: Kehilangan tutupan pohon dalam hutan primer tropis basah tahun acuan 2001 — GFW v20260424 — Global Forest Watch / UMD GLAD
+Link sumber: https://www.globalforestwatch.org/dashboards/country/IDN/25/
+Dataset dasar dan metode: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Unduh data:
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+primary_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2002+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+is__umd_regional_primary_forest_2001+%3D+true+AND+adm1+%3D+25+AND+umd_tree_cover_loss__year+%3D+2021+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+primary_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2002+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+is__umd_regional_primary_forest_2001+%3D+true+AND+adm1+%3D+25+AND+umd_tree_cover_loss__year+%3D+2022+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+primary_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2002+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+is__umd_regional_primary_forest_2001+%3D+true+AND+adm1+%3D+25+AND+umd_tree_cover_loss__year+%3D+2023+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+primary_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2002+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+is__umd_regional_primary_forest_2001+%3D+true+AND+adm1+%3D+25+AND+umd_tree_cover_loss__year+%3D+2024+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss__ha%29+AS+primary_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2002+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+is__umd_regional_primary_forest_2001+%3D+true+AND+adm1+%3D+25+AND+umd_tree_cover_loss__year+%3D+2025+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001</pre></details><details><summary>156. Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Biak Numfor, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya? — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Selisih dari 2023 ke 2024 di Kabupaten Biak Numfor, Papua adalah 7,31 ha (naik), dari 11,31 ha menjadi 18,61 ha.
+
+Temuan Data
+Kehilangan tutupan pohon akibat kebakaran tahunan
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Kabupaten Biak Numfor, Papua | 2023 | 11,31 |
+| Kabupaten Biak Numfor, Papua | 2024 | 18,61 |
+
+| Perhitungan | Nilai |
+| --- | ---: |
+| Perubahan 2023–2024 | 7,31 ha |
+
+Konteks
+Perubahan dihitung dari nilai akhir dikurangi nilai awal pada indikator dan wilayah yang sama.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: Kehilangan tutupan pohon akibat kebakaran — GFW v20260424 — Global Forest Watch / UMD GLAD
+Link sumber: https://www.globalforestwatch.org/dashboards/country/IDN/23/2/
+Dataset dasar dan metode: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Unduh data:
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm2_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss_from_fires__ha%29+AS+fire_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+23+AND+adm2+%3D+2+AND+umd_tree_cover_loss__year+%3D+2023+GROUP+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm2_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss_from_fires__ha%29+AS+fire_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+23+AND+adm2+%3D+2+AND+umd_tree_cover_loss__year+%3D+2024+GROUP+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+adm2%2C+umd_tree_cover_loss__year+LIMIT+2001</pre></details><details><summary>161. Klaim: Kehilangan tutupan pohon akibat kebakaran di Bali naik dari 2024 ke 2025. Apakah sesuai data? — Benar</summary><p>Tabel data terkait baru: 0</p><pre>Klaim
+Klaim: Kehilangan tutupan pohon akibat kebakaran di Bali naik dari 2024 ke 2025. Apakah sesuai data?
+
+Penilaian: Benar
+
+Data mendukung klaim tersebut. Kehilangan tutupan pohon akibat kebakaran tahunan di Bali meningkat dari 1,22 ha pada 2024 menjadi 8,68 ha pada 2025, dengan perubahan sebesar 7,46 ha.
+
+Temuan Data
+Kehilangan tutupan pohon akibat kebakaran tahunan
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Bali | 2024 | 1,22 |
+| Bali | 2025 | 8,68 |
+
+| Perhitungan | Nilai |
+| --- | ---: |
+| Perubahan 2024–2025 | 7,46 ha |
+
+Konteks
+Perubahan dihitung dari nilai akhir dikurangi nilai awal pada indikator dan wilayah yang sama.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: Kehilangan tutupan pohon akibat kebakaran — GFW v20260424 — Global Forest Watch / UMD GLAD
+Link sumber: https://www.globalforestwatch.org/dashboards/country/IDN/2/
+Dataset dasar dan metode: https://storage.googleapis.com/earthenginepartners-hansen/GFC-2025-v1.13/download.html
+Unduh data:
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss_from_fires__ha%29+AS+fire_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+2+AND+umd_tree_cover_loss__year+%3D+2024+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001
+* https://data-api.globalforestwatch.org/dataset/gadm__tcl__adm1_change/v20260424/download/json?sql=SELECT+iso%2C+adm1%2C+umd_tree_cover_loss__year%2C+SUM%28umd_tree_cover_loss_from_fires__ha%29+AS+fire_loss_ha+FROM+data+WHERE+iso+%3D+%27IDN%27+AND+umd_tree_cover_density_2000__threshold+%3D+30+AND+umd_tree_cover_loss__year+%3E%3D+2001+AND+umd_tree_cover_loss__year+%3C%3D+2025+AND+adm1+%3D+2+AND+umd_tree_cover_loss__year+%3D+2025+GROUP+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+ORDER+BY+iso%2C+adm1%2C+umd_tree_cover_loss__year+LIMIT+2001</pre></details><details><summary>171. Saya ingin mengetahui luas tutupan sawit di Aceh pada tahun 2024. Berapa hektare? — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Luas tutupan sawit di Aceh pada 2024 sebesar 628.696,59 ha.
+
+Temuan Data
+Luas tutupan sawit
+
+| Wilayah | Periode | Nilai (ha) |
+| --- | --- | --- |
+| Aceh | 2024 | 628.696,59 |
+
+Konteks
+Angka menunjukkan tutupan sawit yang dipetakan dari citra, bukan luas izin konsesi atau sensus seluruh petani sawit.
+
+Angka tampilan dibulatkan; perhitungan dan penilaian memakai nilai asli. Nilai kecil tetap ditampilkan sebagai bukan nol.
+
+Sumber: MapBiomas Indonesia — Koleksi 4.1
+https://landy.mapbiomas.id/en/statistics
+Unduh: Tutupan dan transisi lahan Indonesia — Koleksi 4.1 (XLSX)
+https://landy.mapbiomas.id/storage/files/statistics_lulc_indonesia_col4-1%20%281%29%20%281%29.xlsx</pre></details><details><summary>181. Apa data yang tersedia tentang pendapatan dan mata pencaharian warga terkait pertambangan nikel di Pulau Kabaena? — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Temuan Data Satya Bumi
+- Sekitar 38,2 persen rumah tangga melaporkan penurunan pendapatan terkait dampak pertambangan nikel di Pulau Kabaena. [1]
+- Pertambangan nikel di Pulau Kabaena menyebabkan penderitaan ekonomi bagi masyarakat, dengan kerusakan ekologis yang terus terjadi dan konflik antara perusahaan tambang dan masyarakat yang semakin meningkat. [2]
+
+Angka yang dilaporkan [1]
+
+| Temuan | Nilai |
+| --- | --- |
+| Rumah tangga yang melaporkan penurunan pendapatan terkait pertambangan nikel di Pulau Kabaena | Sekitar 38,2 persen |
+
+Kesimpulan
+Laporan Satya Bumi: sekitar 38,2% rumah tangga melaporkan penurunan pendapatan terkait dampak pertambangan nikel di Pulau Kabaena.
+
+[1] Sumber: Satya Bumi — LAPORAN – Pulau Kabaena dalam Angka: Dinamika Sosial, Ekonomi dan Lingkungan Masyarakat dalam Pusaran Pertambangan Nikel — halaman PDF 10, 32, 46
+https://satyabumi.org/en/laporan-riset-ekonomi-sosial-kabaena/
+Unduh: LAPORAN – Pulau Kabaena dalam Angka: Dinamika Sosial, Ekonomi dan Lingkungan Masyarakat dalam Pusaran Pertambangan Nikel (PDF)
+https://satyabumi.org/wp-content/uploads/2026/05/Kabaena-Dalam-Angka_.pdf
+[2] Sumber: Satya Bumi — REPORT - Kabaena Volume 2: Tracing the Doorway to Damage from the Network of Politically Exposed Persons — halaman PDF 3, 23, 51
+https://satyabumi.org/en/laporan-kabaena-jilid-2-menelusuri-pintu-awal-kerusakan-dari-jejaring-politically-exposed-persons/
+Unduh: REPORT - Kabaena Volume 2: Tracing the Doorway to Damage from the Network of Politically Exposed Persons (PDF)
+https://satyabumi.org/wp-content/uploads/2025/06/Laporan-Kabaena-Jilid-2-Web.pdf</pre></details><details><summary>183. Apa data yang tersedia tentang air bersih dan penghidupan warga terkait industri nikel di Pulau Obi? — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Temuan Data Trend Asia
+- Meningkatnya degradasi lingkungan dan perampasan tanah di Pulau Obi, dengan 49 persen luas pulau telah dimiliki oleh perusahaan pertambangan, memperburuk kondisi sosial dan ekonomi warga sekitar tambang nikel. [1]
+- Industri nikel di Pulau Obi menyebabkan kerusakan ekosistem laut yang mengancam keberlangsungan hidup nelayan, memaksa mereka melaut lebih jauh dengan biaya lebih tinggi atau beralih profesi menjadi buruh pabrik dengan upah minimum. [3]
+
+Angka yang dilaporkan [1]
+
+| Temuan | Nilai |
+| --- | --- |
+| Degradasi lingkungan dan perampasan tanah di Pulau Obi terkait industri nikel | 49 persen |
+
+Temuan Data WALHI
+- Operasi tambang dan smelter nikel Harita di Pulau Obi menyebabkan pencemaran air laut dan air tawar, kerusakan ekosistem pesisir dan mangrove, serta penurunan populasi ikan dan hasil laut; perairan Kawasi berubah warna menjadi keruh kecokelatan bercampur lumpur sejak smelter beroperasi penuh. [2]
+- Perairan sekitar Pulau Obi telah terkontaminasi logam berat akibat aktivitas penambangan dan pengolahan bijih nikel, sehingga masyarakat di Pulau Obi dan pulau-pulau kecil di sekitarnya memiliki risiko tinggi mengalami gangguan kesehatan akibat pencemaran air dan ikan yang terkontaminasi. [2]
+
+Kesimpulan
+Laporan Trend Asia menyebut bahwa 49% luas Pulau Obi telah dikuasai oleh perusahaan pertambangan nikel, khususnya Harita Group, yang menyebabkan perampasan tanah dan degradasi lingkungan yang memperburuk kondisi sosial dan ekonomi warga sekitar tambang. WALHI melaporkan bahwa operasi tambang dan smelter nikel di Pulau Obi mencemari air laut dan air tawar, merusak ekosistem pesisir dan mangrove, serta menurunkan populasi ikan dan hasil laut, dengan perairan Kawasi berubah warna menjadi keruh kecokelatan sejak smelter beroperasi penuh. Selain itu, Trend Asia menyatakan bahwa kerusakan ekosistem laut akibat limbah nikel mengancam penghidupan nelayan, memaksa mereka melaut lebih jauh dengan biaya lebih tinggi atau beralih profesi menjadi buruh pabrik dengan upah minimum. WALHI juga melaporkan bahwa perairan sekitar Pulau Obi terkontaminasi logam berat akibat aktivitas pertambangan dan pengolahan nikel, sehingga masyarakat memiliki risiko tinggi mengalami gangguan kesehatan akibat pencemaran air dan ikan yang terkontaminasi, namun status risiko ini belum merupakan kejadian yang terbukti.
+
+[1] Sumber: Trend Asia — $NCKL: Pertanyaan Tentang Nilai — halaman PDF 8, 9
+https://trendasia.org/nckl-pertanyaan-tentang-nilai/
+Unduh: $NCKL: Pertanyaan Tentang Nilai (PDF)
+https://trendasia.org/wp-content/uploads/2023/04/PRINT-Factsheet-Harita-group-IPO-17042023.pdf
+[2] Sumber: WALHI — Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan — halaman PDF 103, 104, 105
+https://www.walhi.or.id/membayar-mahal-ambisi-pertumbuhan-dari-konflik-bencana-ekologis-hingga-krisis-lain
+Unduh: Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/TLH%202026%20Membayar%20Mahal%20Ambisi%20Pertumbuhan_compressed.pdf
+[3] Sumber: Trend Asia — Bagaimana Dukungan IFC untuk Batubara Captive di Kawasan Industri Nikel Menghancurkan Pulau Obi? — halaman PDF 4, 5
+https://trendasia.org/bagaimana-dukungan-ifc-untuk-batubara-captive-di-kawasan-industri-nikel-menghancurkan-pulau-obi/
+Unduh: Bagaimana Dukungan IFC untuk Batubara Captive di Kawasan Industri Nikel Menghancurkan Pulau Obi? (PDF)
+https://trendasia.org/wp-content/uploads/2023/11/bahasa-indonesia-ifc-in-obi-.pdf</pre></details><details><summary>191. Apa dampak pertambangan nikel terhadap pendapatan dan mata pencaharian warga di Pulau Kabaena? Tambahkan angka kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024. — Pertanyaan data</summary><p>Tabel data terkait baru: 0</p><pre>Temuan Data Satya Bumi
+- Sekitar 38,2 persen rumah tangga di Pulau Kabaena melaporkan penurunan pendapatan terkait dampak pertambangan nikel. [1]
+- Pertambangan nikel di Pulau Kabaena menyebabkan penderitaan ekonomi bagi masyarakat dan kerusakan ekologis yang terus terjadi. [2]
+- Konflik antara perusahaan pertambangan nikel dan masyarakat di Pulau Kabaena semakin meningkat namun belum mendapat perhatian dari pemerintah dan media. [2]
+
+Angka yang dilaporkan [1]
+
+| Temuan | Nilai |
+| --- | --- |
+| Rumah tangga yang melaporkan penurunan pendapatan di Pulau Kabaena | Sekitar 38,2 persen |
+
+Temuan Data WALHI
+- Konteks wilayah lebih luas: Cakupan Kabaena Barat, Baliara, Kecamatan Kabaena: Aktivitas pertambangan nikel di Kecamatan Kabaena Barat, Kabupaten Bombana, Sulawesi Tenggara, berdampak signifikan pada kehidupan masyarakat pesisir Desa Baliara yang bergantung pada perikanan dan budidaya rumput laut. [3]
+
+Temuan Data Global Forest Watch
+GFW mencatat kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024 sebesar 1.229,52 ha.
+
+Kehilangan tutupan pohon — Kabupaten Bombana, Sulawesi Tenggara
+
+| Tahun | Kehilangan (ha) |
+| --- | --- |
+| 2024 | 1.229,52 |
+
+Kesimpulan
+Laporan Satya Bumi: sekitar 38,2% rumah tangga di Pulau Kabaena melaporkan penurunan pendapatan terkait dampak pertambangan nikel. Laporan WALHI: Konteks wilayah lebih luas: Cakupan Kabaena Barat, Baliara, Kecamatan Kabaena: Aktivitas pertambangan nikel di Kecamatan Kabaena Barat, Kabupaten Bombana, Sulawesi Tenggara, berdampak signifikan pada kehidupan masyarakat pesisir Desa Baliara yang bergantung pada perikanan dan budidaya rumput laut. GFW mencatat kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024 sebesar 1.229,52 ha. Kehilangan tutupan pohon tidak selalu berarti deforestasi permanen; data ini tidak membuktikan penyebabnya.
+
+Konteks
+Kehilangan tutupan pohon tidak selalu berarti deforestasi permanen; data ini tidak membuktikan penyebabnya.
+
+[1] Sumber: Satya Bumi — LAPORAN – Pulau Kabaena dalam Angka: Dinamika Sosial, Ekonomi dan Lingkungan Masyarakat dalam Pusaran Pertambangan Nikel — halaman PDF 10, 32, 46
+https://satyabumi.org/en/laporan-riset-ekonomi-sosial-kabaena/
+Unduh: LAPORAN – Pulau Kabaena dalam Angka: Dinamika Sosial, Ekonomi dan Lingkungan Masyarakat dalam Pusaran Pertambangan Nikel (PDF)
+https://satyabumi.org/wp-content/uploads/2026/05/Kabaena-Dalam-Angka_.pdf
+[2] Sumber: Satya Bumi — REPORT - Kabaena Volume 2: Tracing the Doorway to Damage from the Network of Politically Exposed Persons — halaman PDF 3, 23, 51
+https://satyabumi.org/en/laporan-kabaena-jilid-2-menelusuri-pintu-awal-kerusakan-dari-jejaring-politically-exposed-persons/
+Unduh: REPORT - Kabaena Volume 2: Tracing the Doorway to Damage from the Network of Politically Exposed Persons (PDF)
+https://satyabumi.org/wp-content/uploads/2025/06/Laporan-Kabaena-Jilid-2-Web.pdf
+[3] Sumber: WALHI — Policy Brief 100 GW PLTS dan Ilusi Kemandirian Energi Solusi Palsu bagi Transisi Energi Nasional — halaman PDF 17
+https://www.walhi.or.id/policy-brief-100-gw-plts-dan-ilusi-kemandirian-energi-solusi-palsu-bagi-transisi-energi-nasional
+Unduh: Policy Brief 100 GW PLTS dan Ilusi Kemandirian Energi Solusi Palsu bagi Transisi Energi Nasional (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Policy%20Brief%20Energi_100%20GW%20PLTS%20dan%20Ilusi%20Kemandirian%20Energi.pdf
+Sumber: Kehilangan tutupan pohon — GFW v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/28/2/</pre></details><details><summary>194. Jelaskan masalah industri nikel di Morowali dan tampilkan tren kehilangan tutupan pohon di Kabupaten Morowali, Sulawesi Tengah untuk 2023–2025. — Pertanyaan data</summary><p>Tabel data terkait baru: 1</p><pre>Temuan Data WALHI
+- Di Kabupaten Morowali, Sulawesi Tengah, setidaknya 65 izin usaha pertambangan (IUP) nikel yang sudah berstatus operasi produksi dengan total area konsesi mencapai 155.051 hektar. [1]
+- Konteks wilayah lebih luas: Cakupan Kabupaten Batu Bara, Kabupaten Morowali: Asap polusi dari aktivitas puluhan pembakaran tungku smelter nikel yang menggunakan batu bara di Indonesia Morowali Industrial Park (IMIP) berlangsung 24 jam, mencemari udara bersih yang dihirup ratusan ribu penduduk (termasuk buruh pabrik) yang memadati Bahadopi, Morowali, Sulawesi Tengah. [4]
+
+Angka yang dilaporkan [1]
+
+| Temuan | Nilai |
+| --- | --- |
+| Jumlah izin usaha pertambangan nikel berstatus operasi produksi dan luas konsesi di Kabupaten Morowali | 155.051 hektar |
+
+Temuan Data Auriga Nusantara
+- Penambangan nikel terbuka di Morowali menyebabkan degradasi hutan yang tidak terhindarkan, erosi, banjir bandang di hilir, dan pencemaran lingkungan, sehingga pemerintah Morowali menyimpulkan bahwa penambangan nikel bertanggung jawab atas pencemaran lingkungan. [2]
+
+Temuan Data Trend Asia
+- Karut-marut perburuhan di sentra industri nikel terbesar di Sulawesi Tengah, Indonesia Morowali Industrial Park (IMIP), berakar dari sistem ketenagakerjaan yang tidak manusiawi, termasuk perekrutan tidak transparan, fleksibilitas mutasi buruh, instabilitas kontrak kerja, dan beban kerja tinggi yang memaksa lembur agar menerima upah layak. [3]
+- IMIP berperan sebagai penyalur tenaga kerja untuk sekitar 40 perusahaan di kawasan tersebut, memicu fleksibilitas mutasi buruh yang dilakukan secara sporadis tanpa dokumentasi dan persetujuan, menyebabkan instabilitas kontrak kerja dan dampak psikososial pada buruh. [3]
+
+Kesimpulan
+Laporan WALHI: Di Kabupaten Morowali, Sulawesi Tengah, setidaknya 65 izin usaha pertambangan (IUP) nikel yang sudah berstatus operasi produksi dengan total area konsesi mencapai 155.051 hektar. Laporan Auriga Nusantara: Penambangan nikel terbuka di Morowali menyebabkan degradasi hutan yang tidak terhindarkan, erosi, banjir bandang di hilir, dan pencemaran lingkungan, sehingga pemerintah Morowali menyimpulkan bahwa penambangan nikel bertanggung jawab atas pencemaran lingkungan. Laporan Trend Asia: Karut-marut perburuhan di sentra industri nikel terbesar di Sulawesi Tengah, Indonesia Morowali Industrial Park (IMIP), berakar dari sistem ketenagakerjaan yang tidak manusiawi, termasuk perekrutan tidak transparan, fleksibilitas mutasi buruh, instabilitas kontrak kerja, dan beban kerja tinggi yang memaksa lembur agar menerima upah layak.
+
+Temuan Data Terkait
+Data pendamping yang tersedia: Kehilangan tutupan pohon tahunan menurut kabupaten/kota, provinsi dan nasional.
+
+Kehilangan tutupan pohon tahunan menurut kabupaten/kota, provinsi dan nasional
+
+| Wilayah | Tahun | Nilai | Satuan |
+| --- | --- | --- | --- |
+| Kabupaten Morowali, Sulawesi Tengah | 2023 | 10.060,78 | ha |
+| Kabupaten Morowali, Sulawesi Tengah | 2024 | 8.117,30 | ha |
+| Kabupaten Morowali, Sulawesi Tengah | 2025 | 9.133,60 | ha |
+
+Konteks
+Data berikut adalah konteks pada wilayah dan tahun yang tercantum; bukan pengganti angka atau periode yang diminta dan tidak menentukan penilaian klaim. Kehilangan tutupan pohon tidak otomatis berarti deforestasi permanen dan tidak membuktikan penyebabnya.
+
+Sumber: Global Forest Watch / UMD GLAD — versi v20260424
+https://www.globalforestwatch.org/dashboards/country/IDN/27/5/
+
+[1] Sumber: WALHI — Melegalkan Krisis Iklim — halaman PDF 24
+https://www.walhi.or.id/melegalkan-krisis-iklim
+Unduh: Melegalkan Krisis Iklim (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/Transisi%20Energi%20Palsu_Bahasa.pdf
+[2] Sumber: Auriga Nusantara — The Natural Resources Management in Central Sulawesi: The Experience of Nickel-Based Industry in Morowali (2020) — halaman PDF 13
+https://auriga.or.id/resources/report
+Unduh: The Natural Resources Management in Central Sulawesi: The Experience of Nickel-Based Industry in Morowali (2020) (PDF)
+https://auriga.or.id/report/download/en/report/83/ariantosangadjiphd_naturalresourcesgovernanceincentralsulawesi_experiencesofnickel_basedindustriesinmorowali_en.pdf?lang=id
+[3] Sumber: Trend Asia — Sengkarut Perburuhan Nikel di Indonesia Morowali Industrial Park (IMIP) — halaman PDF 4, 12
+https://trendasia.org/sengkarut-perburuhan-nikel-di-indonesia-morowali-industrial-park-imip/
+Unduh: Sengkarut Perburuhan Nikel di Indonesia Morowali Industrial Park (IMIP) (PDF)
+https://trendasia.org/wp-content/uploads/2024/09/Sengkarut-Perburuhan-IMIP.pdf
+[4] Sumber: WALHI — Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan — halaman PDF 62
+https://www.walhi.or.id/membayar-mahal-ambisi-pertumbuhan-dari-konflik-bencana-ekologis-hingga-krisis-lain
+Unduh: Tinjauan Lingkungan Hidup 2026 — Membayar Mahal Ambisi Pertumbuhan (PDF)
+https://www.walhi.or.id/uploads/WALHI%202025-2029/Dokumen/TLH%202026%20Membayar%20Mahal%20Ambisi%20Pertumbuhan_compressed.pdf</pre></details></html>

@@ -210,7 +210,7 @@ def search(question,queries,config,*,exclude_pages=()):
     must=[models.FieldCondition(key='provider',match=models.MatchAny(any=providers))] if providers else []
     base=models.Filter(must=must) if must else None
     geographic=models.Filter(must=must,should=[models.FieldCondition(key=key,match=models.MatchAny(any=places)) for key in ('location_names','context_location_names')]) if places else None
-    narrative=re.split(r'[?]',question,maxsplit=1)[0]
+    narrative=question
     narrative=re.sub(r'\b(?:bagaimana|apakah|benarkah|terhadap|di|dan hutan)\b',' ',narrative,flags=re.I)
     narrative=neutral_search_text(narrative)
     from ngo_question_parts import aspect_queries

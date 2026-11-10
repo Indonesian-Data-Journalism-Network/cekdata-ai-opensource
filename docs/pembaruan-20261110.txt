@@ -1,0 +1,44 @@
+PEMBARUAN CEK DATA AI — 10 NOVEMBER 2026
+
+Paket kode ini menyatukan perubahan lokal setelah commit e4d1ffe:
+- General mengakses Pinecone dan BPS lokal Qdrant melalui kontrak pertanyaan
+  yang sama, dengan pemilihan seri, wilayah, periode, dimensi dan satuan.
+- Penambahan pembacaan satuan dari bukti sumber tanpa mengganti metadata yang
+  sudah tersedia; penyaringan periode dan penanganan bukti terkait.
+- Jalur laporan NGO mempertahankan seluruh bagian pertanyaan dan pemahaman
+  awal ketika mencari, memilih, dan membaca bukti.
+- Alat pengambilan/normalisasi/impor BPS dan formulir koneksi lokal BPS/Pinecone.
+- Beranda dengan formulir akun, contoh pertanyaan teruji, percobaan publik
+  terbatas pada katalog pertanyaan, halaman tim, dan logo pendukung.
+- Rekap pengujian publik, audit NGO, serta PDF benchmark 500 soal x 3 putaran.
+
+KODE DAN DATA BERBEDA
+Kode tidak memuat API key, konfigurasi koneksi privat, database akun, koleksi
+Qdrant, arsip unduhan, atau hasil chat pengguna. Server lain harus menyiapkan
+data dan koneksinya sendiri. Mengambil commit ini tidak otomatis membuat isi
+data server lain sama dengan komputer pengembangan.
+
+General membaca konfigurasi Pinecone bila tersedia serta manifest BPS Qdrant
+lokal bila tersedia. Pemilihan tabel dan seri berlaku pada keduanya; data
+tumpang tindih tidak boleh dijumlahkan hanya karena berada di dua penyimpanan.
+Bagian historis docs/bps-local.md yang menyebut publik masih memakai Pinecone
+mencatat keadaan saat impor awal, bukan keadaan adapter General pada paket ini.
+
+VALIDASI SEBELUM PUSH
+628 tes otomatis lulus:
+- workflow: 481
+- server web: 20
+- frontend: 60
+- alat BPS: 49
+- koneksi Pinecone: 14
+- gateway Netlify: 4
+Build lokal dan build publik berhasil. Tes ini tidak menjalankan ulang
+benchmark model nyata dan bukan ukuran akurasi jawaban pengguna.
+Pemeriksaan kredensial mencakup kandidat berkas publik dan lampiran PDF.
+
+PEKERJAAN YANG BELUM DITERAPKAN
+Pemisahan Konteks/Kesimpulan NGO dan pencegahan komentar keraguan tanpa dasar
+masih dicatat dalam catatan-perbaikan-jawaban-ngo-20261109.txt. Tidak ada
+perubahan aturan tersebut dalam paket sinkronisasi ini.
+Benchmark 500 x 3 adalah hasil historis dengan batas audit dalam laporannya;
+bukan jaminan akurasi seluruh kalimat atau kondisi server lain.

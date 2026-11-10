@@ -45,13 +45,16 @@ def source_filter(question):
  return [p for p,names in aliases.items() if any(n in q for n in names)]
 
 
-def fallback_requested(question,intent):
+def fallback_requested(question,intent,catalog=()):
  """Unknown numeric concepts may still be documented in the report corpus.
 
  This is a general fallback, independent of topic/place keywords. Explicitly
  requested statistical providers keep their own missing-data behavior.
  """
  if getattr(intent,'needs_reports',False):return True
+ if len(getattr(intent,'requested_measures',[]))>1 and intent.indicator_ids and catalog:
+  from request_contract import uncovered_measures
+  if uncovered_measures(intent,catalog):return True
  if intent.indicator_ids or intent.clarification:return False
  return not bool(re.search(r'\bgfw\b|global (?:forest|nature) watch|\bmap\s*biomas\b',question,re.I))
 
@@ -65,9 +68,9 @@ def search(question,queries=None,config=None,*,exclude_pages=()):
   return importlib.reload(ngo_retrieval).search(question,queries,cfg,exclude_pages=exclude_pages)
  providers=source_filter(question)
  filt=models.Filter(must=[models.FieldCondition(key='provider',match=models.MatchAny(any=providers))]) if providers else None
- # Separate the narrative part from a subsequent request for statistics; the
- # latter can dominate the embedding and hide a relevant local report.
- narrative=re.split(r'[?]',question,maxsplit=1)[0]
+ # Build a normalized companion query from the full request. Never discard
+ # later questions before retrieving evidence for their requested measurements.
+ narrative=question
  narrative=re.sub(r'\b(?:bagaimana|apakah|benarkah|terhadap|di|dan hutan)\b',' ',narrative,flags=re.I)
  narrative=' '.join(re.findall(r'[\w]+',narrative,flags=re.UNICODE))
  m=model(); by_page={}; all_queries=list(dict.fromkeys([question,narrative]+(queries or [])))[:4]
@@ -694,7 +697,7 @@ def render(answer,evidence,question,gfw_context=None):
  importlib.reload(presentation)
  return {'answer':presentation.render_answer(parsed),'parsed':parsed,'kind':answer.kind,'reference_date':date.today().isoformat()}
 
-async def answer_question(llm,question,reference,gfw_context=None,*,catalog=None,retriever=None):
+async def answer_question(llm,question,reference,gfw_context=None,*,catalog=None,retriever=None,request_intent=None):
  # Keep document contents and user questions out of application logs and disk.
  import importlib,ngo_source_facts,ngo_method_context,ngo_metadata,ngo_geography_policy,ngo_evidence_status
  importlib.reload(ngo_evidence_status)
@@ -705,15 +708,22 @@ async def answer_question(llm,question,reference,gfw_context=None,*,catalog=None
  import ngo_question_parts,ngo_evidence_selection
  importlib.reload(ngo_question_parts)
  importlib.reload(ngo_evidence_selection)
+ if request_intent is not None:
+  from request_contract import ContractLLM
+  llm=ContractLLM(llm,request_intent)
  explicit_claim=bool(re.search(r'\b(?:benarkah|apakah benar|apakah betul|klaim)\b',question,re.I))
  plan=await llm.astructured_predict(SearchPlan,PLAN,question=json.dumps(question,ensure_ascii=False))
+ if request_intent is not None:
+  # The search planner proposes queries, not a second interpretation/verdict.
+  plan.kind='claim' if request_intent.kind=='claim' else 'question'
  evidence=await asyncio.to_thread(search,question,plan.queries)
  import ngo_editions
  evidence=await asyncio.to_thread(ngo_editions.collapse_retrieved_editions,evidence,active())
  if catalog is not None and retriever is not None:
   import importlib, ngo_gfw_context
   importlib.reload(ngo_gfw_context)
-  gfw_context=await ngo_gfw_context.retrieve(question,catalog,reference,retriever,evidence)
+  gfw_context=await ngo_gfw_context.retrieve(question,catalog,reference,retriever,evidence,
+                                          request_intent=request_intent)
  if not evidence:
   logging.getLogger('cekdata.local').warning('NGO search: no evidence')
   out=DocumentAnswer(kind='claim' if explicit_claim or plan.kind=='claim' else 'question',
@@ -727,7 +737,7 @@ async def answer_question(llm,question,reference,gfw_context=None,*,catalog=None
    importlib.reload(ngo_combined)
    async def recover(missing,current):
     from ngo_question_parts import SEARCH_TERMS
-    base=question.split('?',1)[0]
+    base=question
     queries=[base+' '+SEARCH_TERMS[k] for k in sorted(missing)][:2]
     if not queries:queries=[base+' dampak warga bukti temuan']
     used={(p['sha256'],p['pdf_page'],p['page_side']) for p in current}
@@ -813,7 +823,7 @@ async def answer_question(llm,question,reference,gfw_context=None,*,catalog=None
     from ngo_combined import REPORT_REVIEW
     async def check_finding(f):
      cited=[item for item in cited_public if item['evidence_id']==f.evidence_id and item['support_quote']==f.support_quote]
-     check=await llm.astructured_predict(EvidenceReview,REPORT_REVIEW,topic=json.dumps(question.split('?',1)[0],ensure_ascii=False),
+     check=await llm.astructured_predict(EvidenceReview,REPORT_REVIEW,topic=json.dumps(question,ensure_ascii=False),
       answer=json.dumps({'temuan':f.text,'measure':f.measure},ensure_ascii=False),evidence=json.dumps(cited,ensure_ascii=False))
      return f if check.supported else None
     kept=[f for f in await asyncio.gather(*(check_finding(f) for f in out.findings)) if f is not None]

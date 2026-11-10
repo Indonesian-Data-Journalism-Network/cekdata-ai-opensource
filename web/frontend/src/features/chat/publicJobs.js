@@ -7,8 +7,10 @@ export function pause(ms, signal) {
     signal?.addEventListener('abort',abort,{once:true});
   });
 }
-export async function askPublic({question,sources,signal,onProgress}, {request=requestJson,wait=pause}={}) {
-  let job=await request('/jobs',{method:'POST',body:{question,sources},signal});
+export async function askPublic({question,sources,demoId,signal,onProgress}, {request=requestJson,wait=pause}={}) {
+  const base=demoId === undefined ? '/jobs' : '/demo/jobs';
+  const body=demoId === undefined ? {question,sources} : {question_id:demoId};
+  let job=await request(base,{method:'POST',body,signal});
   if(!job?.job_id || !/^[\w-]{20,64}$/.test(job.job_id))throw new Error('Respons proses tidak dapat dibaca.');
   const id=job.job_id;
   while(true){
@@ -18,6 +20,6 @@ export async function askPublic({question,sources,signal,onProgress}, {request=r
     if(!['queued','running'].includes(job.status))throw new Error('Status proses tidak dapat dibaca.');
     onProgress?.(job.status==='queued'?`Menunggu antrean${job.position?` · posisi ${job.position}`:''}…`:'Sedang memeriksa data…');
     await wait(1500,signal);
-    job=await request('/jobs/'+encodeURIComponent(id),{signal});
+    job=await request(base+'/'+encodeURIComponent(id),{signal});
   }
 }

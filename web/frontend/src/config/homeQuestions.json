@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Aceh Jaya pada 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 2,
+    "question": "Berapa persentase penduduk miskin di Kota Denpasar pada 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 3,
+    "question": "Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2026?",
+    "source": "bps"
+  },
+  {
+    "id": 4,
+    "question": "Berapa persentase penduduk miskin di Sulawesi Tenggara pada Maret 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 5,
+    "question": "Berapa jumlah penduduk miskin di Jawa Timur pada Maret 2026?",
+    "source": "bps"
+  },
+  {
+    "id": 6,
+    "question": "Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 7,
+    "question": "Berapa tingkat pengangguran terbuka di Jambi pada Februari 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 8,
+    "question": "Berapa persentase penyelesaian tindak pidana di Indonesia pada 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 9,
+    "question": "Berapa indeks keparahan kemiskinan di Indonesia pada Maret 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 10,
+    "question": "Berapa persentase rumah tangga dengan akses air minum layak di Indonesia pada 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 11,
+    "question": "Berapa persentase penduduk miskin di Kabupaten Bangka pada 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 12,
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Maluku Tengah pada 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 13,
+    "question": "Berapa persentase penduduk miskin di Bengkulu pada Maret 2025?",
+    "source": "bps"
+  },
+  {
+    "id": 14,
+    "question": "Berapa tingkat partisipasi angkatan kerja di Banten pada Februari 2026?",
+    "source": "bps"
+  },
+  {
+    "id": 15,
+    "question": "Bagaimana tren umur harapan hidup saat lahir di Indonesia selama 2021–2023?",
+    "source": "bps"
+  },
+  {
+    "id": 16,
+    "question": "Bagaimana tren jumlah penduduk miskin di Sulawesi Selatan pada bulan Maret setiap tahun selama 2024–2026?",
+    "source": "bps"
+  },
+  {
+    "id": 17,
+    "question": "Bagaimana tren tingkat pengangguran terbuka di Kalimantan Barat pada bulan Agustus setiap tahun selama 2021–2023?",
+    "source": "bps"
+  },
+  {
+    "id": 18,
+    "question": "Bagaimana tren persentase penyelesaian tindak pidana di Indonesia selama 2021–2023?",
+    "source": "bps"
+  },
+  {
+    "id": 19,
+    "question": "Bagaimana tren indeks keparahan kemiskinan di Indonesia pada bulan Maret setiap tahun selama 2023–2025?",
+    "source": "bps"
+  },
+  {
+    "id": 20,
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Garut selama 2023–2025?",
+    "source": "bps"
+  },
+  {
+    "id": 21,
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Lampung pada bulan Februari setiap tahun selama 2024–2026?",
+    "source": "bps"
+  },
+  {
+    "id": 22,
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Malang selama 2023–2025?",
+    "source": "bps"
+  },
+  {
+    "id": 23,
+    "question": "Bandingkan persentase rumah tangga dengan akses air minum layak di Indonesia pada 2022 dan 2023. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 24,
+    "question": "Bandingkan persentase penduduk miskin di Aceh pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 25,
+    "question": "Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 26,
+    "question": "Bandingkan jumlah penduduk miskin di Nusa Tenggara Timur pada Maret 2024 dan Maret 2025. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 27,
+    "question": "Bandingkan indeks keparahan kemiskinan di Indonesia pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 28,
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Wajo pada 2023 dan 2024. Berapa perubahannya?",
+    "source": "bps"
+  },
+  {
+    "id": 29,
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pati atau Kabupaten Indragiri Hilir?",
+    "source": "bps"
+  },
+  {
+    "id": 30,
+    "question": "Pada Agustus 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Sulawesi Utara atau Kalimantan Tengah?",
+    "source": "bps"
+  },
+  {
+    "id": 31,
+    "question": "Pada September 2025, mana yang lebih tinggi persentase penduduk miskin, Maluku atau Papua Tengah?",
+    "source": "bps"
+  },
+  {
+    "id": 32,
+    "question": "Pada Maret 2025, mana yang lebih tinggi jumlah penduduk miskin, Papua Selatan atau Kalimantan Utara?",
+    "source": "bps"
+  },
+  {
+    "id": 33,
+    "question": "Benarkah tingkat pengangguran terbuka di Sulawesi Tenggara naik dari Agustus 2022 ke Agustus 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 34,
+    "question": "Benarkah persentase penduduk miskin di Maluku Utara turun dari Maret 2025 ke Maret 2026?",
+    "source": "bps"
+  },
+  {
+    "id": 35,
+    "question": "Benarkah persentase penduduk miskin di Kota Serang turun dari 2022 ke 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 36,
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Sijunjung naik dari 2022 ke 2023?",
+    "source": "bps"
+  },
+  {
+    "id": 37,
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Bali pada Agustus 2025 sebesar 78,31 persen?",
+    "source": "bps"
+  },
+  {
+    "id": 38,
+    "question": "Benarkah jumlah penduduk miskin di Aceh pada September 2025 sebesar 703,33 ribu jiwa?",
+    "source": "bps"
+  },
+  {
+    "id": 39,
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Lampung Utara pada 2025 sebesar 98,99 ribu jiwa?",
+    "source": "bps"
+  },
+  {
+    "id": 40,
+    "question": "Benarkah persentase penduduk miskin di Kota Tanjung Pinang pada 2024 sebesar 7,86 persen?",
+    "source": "bps"
+  },
+  {
+    "id": 41,
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 42,
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Jawa Barat pada 2022, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 43,
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kota Lhokseumawe, Aceh pada 2025, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 44,
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau pada 2024, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 45,
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Halmahera Tengah, Maluku Utara pada 2022, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 46,
+    "question": "Sebutkan luas kehilangan tutupan pohon di Jakarta Raya pada 2020, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 47,
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kutai Barat, Kalimantan Timur pada 2024, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 48,
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Nusa Tenggara Barat pada 2022, dalam hektare.",
+    "source": "environment"
+  },
+  {
+    "id": 49,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Simeulue, Aceh dari 2022 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 50,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Sumatera Barat dari 2020 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 51,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Barat dari 2021 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 52,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Katingan, Kalimantan Tengah dari 2020 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 53,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Kayong Utara, Kalimantan Barat dari 2022 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 54,
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Tenggara dari 2021 sampai 2025.",
+    "source": "environment"
+  },
+  {
+    "id": 55,
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Sidoarjo, Jawa Timur lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 56,
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Biak Numfor, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 57,
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Kuantan Singingi, Riau lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 58,
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Alor, Nusa Tenggara Timur lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 59,
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Sigi, Sulawesi Tengah lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 60,
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Mukomuko, Bengkulu lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "source": "environment"
+  },
+  {
+    "id": 61,
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Bali naik dari 2024 ke 2025. Apakah sesuai data?",
+    "source": "environment"
+  },
+  {
+    "id": 62,
+    "question": "Klaim: Kehilangan tutupan pohon di Kabupaten Deiyai, Papua turun dari 2024 ke 2025. Apakah sesuai data?",
+    "source": "environment"
+  },
+  {
+    "id": 63,
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Langkat, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "source": "environment"
+  },
+  {
+    "id": 64,
+    "question": "Klaim: Kehilangan tutupan pohon di Aceh turun dari 2023 ke 2024. Apakah sesuai data?",
+    "source": "environment"
+  },
+  {
+    "id": 65,
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bengkulu atau Kalimantan Utara? Tampilkan kedua angkanya dan selisihnya.",
+    "source": "environment"
+  },
+  {
+    "id": 66,
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bangka Belitung atau Kalimantan Tengah? Tampilkan kedua angkanya dan selisihnya.",
+    "source": "environment"
+  },
+  {
+    "id": 67,
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Kalimantan Barat atau Papua? Tampilkan kedua angkanya dan selisihnya.",
+    "source": "environment"
+  },
+  {
+    "id": 68,
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "source": "environment"
+  },
+  {
+    "id": 69,
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon dalam hutan primer di Kabupaten Batang Hari, Jambi untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "source": "environment"
+  },
+  {
+    "id": 70,
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Kuningan, Jawa Barat untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "source": "environment"
+  },
+  {
+    "id": 71,
+    "question": "Saya ingin mengetahui luas tutupan sawit di Aceh pada tahun 2024. Berapa hektare?",
+    "source": "environment"
+  },
+  {
+    "id": 72,
+    "question": "Saya ingin mengetahui luas hutan rawa gambut di Riau pada tahun 2023. Berapa hektare?",
+    "source": "environment"
+  },
+  {
+    "id": 73,
+    "question": "Saya ingin mengetahui luas tutupan hutan di Kalimantan Tengah pada tahun 2023. Berapa hektare?",
+    "source": "environment"
+  },
+  {
+    "id": 74,
+    "question": "Saya ingin mengetahui luas mangrove di Papua Selatan pada tahun 2024. Berapa hektare?",
+    "source": "environment"
+  },
+  {
+    "id": 75,
+    "question": "Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?",
+    "source": "environment"
+  },
+  {
+    "id": 76,
+    "question": "Bagaimana perubahan luas tutupan hutan di Kalimantan setiap tahun dari 2020 sampai 2024?",
+    "source": "environment"
+  },
+  {
+    "id": 77,
+    "question": "Bagaimana perubahan luas tutupan hutan di Indonesia setiap tahun dari 2020 sampai 2024?",
+    "source": "environment"
+  },
+  {
+    "id": 78,
+    "question": "Bandingkan luas tutupan sawit di Sumatera Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "source": "environment"
+  },
+  {
+    "id": 79,
+    "question": "Bandingkan luas tutupan hutan di Sulawesi Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "source": "environment"
+  },
+  {
+    "id": 80,
+    "question": "Benarkah luas tutupan hutan di Sumatera Utara turun dari 2022 ke 2023?",
+    "source": "environment"
+  },
+  {
+    "id": 81,
+    "question": "Apa data yang tersedia tentang pendapatan dan mata pencaharian warga terkait pertambangan nikel di Pulau Kabaena?",
+    "source": "environment"
+  },
+  {
+    "id": 82,
+    "question": "Apa data yang tersedia tentang hutan dan kehidupan nelayan terkait pertambangan nikel di Raja Ampat?",
+    "source": "environment"
+  },
+  {
+    "id": 83,
+    "question": "Apa data yang tersedia tentang air bersih dan penghidupan warga terkait industri nikel di Pulau Obi?",
+    "source": "environment"
+  },
+  {
+    "id": 84,
+    "question": "Apa data yang tersedia tentang keselamatan dan kondisi pekerja terkait industri nikel di Morowali?",
+    "source": "environment"
+  },
+  {
+    "id": 85,
+    "question": "Apa data yang tersedia tentang hutan dan hak masyarakat adat terkait perkebunan kayu di Ketapang?",
+    "source": "environment"
+  },
+  {
+    "id": 86,
+    "question": "Apa data yang tersedia tentang sumber air dan lahan pertanian terkait proyek panas bumi di Muara Laboh, Solok Selatan?",
+    "source": "environment"
+  },
+  {
+    "id": 87,
+    "question": "Jelaskan dampak proyek pangan di Merauke bagi warga setempat, disertai bukti yang ditemukan.",
+    "source": "environment"
+  },
+  {
+    "id": 88,
+    "question": "Jelaskan dampak proyek gas LNG di Teluk Bintuni bagi warga setempat, disertai bukti yang ditemukan.",
+    "source": "environment"
+  },
+  {
+    "id": 89,
+    "question": "Benarkah pertambangan nikel di Pulau Kabaena hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "source": "environment"
+  },
+  {
+    "id": 90,
+    "question": "Benarkah perkebunan tebu di Pundenrejo, Pati hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "source": "environment"
+  },
+  {
+    "id": 91,
+    "question": "Apa dampak pertambangan nikel terhadap pendapatan dan mata pencaharian warga di Pulau Kabaena? Tambahkan angka kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024.",
+    "source": "environment"
+  },
+  {
+    "id": 92,
+    "question": "Jelaskan masalah pertambangan nikel di Raja Ampat dan tampilkan tren kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat untuk 2023–2025.",
+    "source": "environment"
+  },
+  {
+    "id": 93,
+    "question": "Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.",
+    "source": "environment"
+  },
+  {
+    "id": 94,
+    "question": "Jelaskan masalah industri nikel di Morowali dan tampilkan tren kehilangan tutupan pohon di Kabupaten Morowali, Sulawesi Tengah untuk 2023–2025.",
+    "source": "environment"
+  },
+  {
+    "id": 95,
+    "question": "Jelaskan masalah perkebunan kayu di Ketapang dan tampilkan tren kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat untuk 2023–2025.",
+    "source": "environment"
+  },
+  {
+    "id": 96,
+    "question": "Apa dampak proyek pangan terhadap hak atas tanah masyarakat adat di Merauke? Tambahkan angka kehilangan tutupan pohon di Kabupaten Merauke, Papua pada 2024.",
+    "source": "environment"
+  },
+  {
+    "id": 97,
+    "question": "Apa dampak proyek Rempang Eco City terhadap tempat tinggal dan mata pencaharian warga di Pulau Rempang? Tambahkan angka kehilangan tutupan pohon di Kota Batam, Kepulauan Riau pada 2024.",
+    "source": "environment"
+  },
+  {
+    "id": 98,
+    "question": "Jelaskan masalah proyek gas LNG di Teluk Bintuni dan tampilkan tren kehilangan tutupan pohon di Kabupaten Teluk Bintuni, Papua Barat untuk 2023–2025.",
+    "source": "environment"
+  },
+  {
+    "id": 99,
+    "question": "Apa dampak proyek pariwisata terhadap hak atas tanah dan mata pencaharian warga di Mandalika? Tambahkan angka kehilangan tutupan pohon di Kabupaten Lombok Tengah, Nusa Tenggara Barat pada 2024.",
+    "source": "environment"
+  },
+  {
+    "id": 100,
+    "question": "Jelaskan masalah perkebunan sawit di Riau dan tampilkan tren kehilangan tutupan pohon di Riau untuk 2023–2025.",
+    "source": "environment"
+  }
+]

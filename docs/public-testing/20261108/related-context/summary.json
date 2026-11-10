@@ -1,0 +1,29 @@
+{
+  "tested": 22,
+  "responses": 22,
+  "numeric_regressions_equal_to_baseline": 6,
+  "optional_context_preserved_primary_and_verdict": 22,
+  "official_claims": 12,
+  "old_questions": 10,
+  "official_claims_with_new_related_series": 6,
+  "workflow_unit_tests_passed": 481,
+  "frontend_tests_passed": 60,
+  "adapter_tests_passed": 19,
+  "gateway_tests_passed": 4,
+  "remaining_observations": [
+    {
+      "case": 183,
+      "issue": "Label tabel 49 persen terlalu umum; seharusnya menyebut proporsi luas Pulau Obi yang dikuasai perusahaan, bukan degradasi lingkungan."
+    },
+    {
+      "case": 194,
+      "issue": "Kata batu bara masih terbaca sebagai nama Kabupaten Batu Bara pada konteks NGO. Perlu penanganan homonim istilah umum dan nama wilayah."
+    },
+    {
+      "case": 194,
+      "issue": "Angka kehilangan tutupan pohon tersedia sebagai data terkait, tetapi permintaan pembacaan tren belum dijawab lengkap."
+    }
+  ],
+  "production_deploy": "6aeff4ce3c70f1594ff90fb2",
+  "method": "12 klaim pejabat + 10 pertanyaan regresi melalui runner Environment yang sama dengan server. Setelah penyempurnaan pemilihan periode, konteks 22 respons diperiksa ulang ke Qdrant tanpa memanggil model atau mengubah bukti utama/label. Satu ImportError saat modul diperbarui telah diuji ulang dengan proses baru dan berhasil. Ini uji fitur/regresi, bukan pengukuran akurasi keseluruhan atau benchmark 500 baru."
+}

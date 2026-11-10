@@ -13,7 +13,7 @@ Pertanyaan/klaim → AI memahami maksud → pemilihan katalog indikator → penc
 - Temuan beberapa periode disajikan dalam tabel, dengan perhitungan dan kesimpulan tren/perbandingan.
 - Klaim dengan data tidak cukup mendapat konteks yang tersedia dan batas penilaiannya.
 - Tautan sumber berasal dari metadata, tidak dibuat oleh model.
-- Angka terstruktur dicari melalui katalog, pemilihan indikator, dan filter Qdrant. Laporan NGO memakai pencarian embedding multilingual lokal, pemeriksaan kutipan/halaman, dan seleksi bukti.
+- Angka terstruktur dicari melalui katalog dan pemilihan indikator: Qdrant untuk data lokal, atau [Pinecone langsung untuk General](docs/pinecone-live.md) bila koneksinya aktif. Laporan NGO memakai pencarian embedding multilingual lokal, pemeriksaan kutipan/halaman, dan seleksi bukti.
 
 ## Pembaruan 7 November 2026
 
@@ -167,13 +167,23 @@ memeriksa ulang jaringan, bukan memakai laporan pemeriksaan sebelumnya.
 
 ## Pengujian
 
+Pembaruan mesin dan antarmuka per 10 November 2026 dijelaskan dalam
+[catatan versi](docs/pembaruan-20261110.txt). General mendukung Pinecone dan
+BPS lokal di Qdrant; lihat [BPS lokal](docs/bps-local.md),
+[Pinecone](docs/pinecone-live.md), dan [kontrak pertanyaan](docs/request-contract.md).
+Koleksi Qdrant, arsip sumber, kredensial, dan akun pengguna tidak ikut dalam Git.
+Mengambil kode terbaru tidak otomatis menyalin data atau konfigurasi server.
+
 ```sh
 PYTHONPATH=workflow python -m unittest discover -s workflow/tests -v
 PYTHONPATH=workflow:web python -m unittest discover -s web -p 'test_*.py' -v
 PYTHONPATH=tools/pinecone python -m unittest discover -s tools/pinecone -p 'test_*.py' -v
+PYTHONPATH=workflow:. python -m unittest discover -s tools/bps -p 'test_*.py' -v
+node --test netlify/tests/*.test.mjs
 cd web/frontend
 npm test
 npm run build
+npm run build:public
 ```
 
 Pengujian otomatis memakai respons AI simulasi dan Qdrant dalam memori; tidak membutuhkan API key dan tidak mengukur akurasi model langsung. Sebagian kasus regresi menggunakan angka contoh dari pengujian pilot. Keberhasilan tes tidak membuktikan kebenaran data sumber atau akurasi seluruh database.

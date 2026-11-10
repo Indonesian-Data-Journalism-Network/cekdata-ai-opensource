@@ -1,0 +1,4526 @@
+[
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kota Tanjung Balai turun dari 2023 ke 2024?",
+    "original_id": 440,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 1
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?",
+    "original_id": 366,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 2
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Gorontalo dari 2022 sampai 2025.",
+    "original_id": 126,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 3
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?",
+    "original_id": 12,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 4
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Jawa Tengah pada 2023, dalam hektare.",
+    "original_id": 10,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 5
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren indeks pembangunan manusia di Indonesia selama 2022–2024?",
+    "original_id": 315,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 6
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren nilai tukar petani di Indonesia selama 2021–2023?",
+    "original_id": 317,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 7
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Lahat pada 2023?",
+    "original_id": 122,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 8
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Mappi selama 2022–2024?",
+    "original_id": 287,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 9
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Ciamis pada 2023?",
+    "original_id": 105,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 10
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Bangkalan pada 2024 sebesar 19,66 persen?",
+    "original_id": 488,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 11
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Halmahera Utara pada 2024?",
+    "original_id": 155,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 12
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat pengangguran terbuka di Kalimantan Barat pada bulan Agustus setiap tahun selama 2021–2023?",
+    "original_id": 292,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 13
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas mangrove di Lampung tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "original_id": 383,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 14
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Banyu Asin, Sumatera Selatan dari 2022 sampai 2025.",
+    "original_id": 189,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 15
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Kerugian banjir, banjir bandang, dan longsor di 18 kabupaten/kota Sumatera Utara diperkirakan lebih dari Rp9,98 triliun. Pernyataan disampaikan oleh Bobby Afif Nasution, Gubernur Sumatera Utara, pada 2025-12-08.",
+    "original_id": 10,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://sumut.antaranews.com/berita/648307/gubernur-sumut-kerugian-banjir-dan-longsor-capai-rp998-triliun",
+    "statement_date": "2025-12-08",
+    "id": 16
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Buol selama 2023–2025?",
+    "original_id": 284,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 17
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Nabire pada 2023?",
+    "original_id": 113,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 18
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Fakfak pada 2023?",
+    "original_id": 138,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 19
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas tutupan sawit di Sulawesi Tengah tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "original_id": 389,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 20
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kota Serang turun dari 2022 ke 2023?",
+    "original_id": 461,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 21
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Kepulauan Yapen pada 2024 sebesar 25,69 persen?",
+    "original_id": 480,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 22
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Buru, Maluku pada 2024, dalam hektare.",
+    "original_id": 95,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 23
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa produksi padi di Indonesia pada 2023?",
+    "original_id": 211,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 24
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kota Denpasar pada 2025?",
+    "original_id": 106,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 25
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren nilai tukar petani di Indonesia pada bulan Oktober setiap tahun selama 2022–2024?",
+    "original_id": 320,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 26
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Kuantan Singingi pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 336,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 27
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kutai Barat, Kalimantan Timur pada 2024, dalam hektare.",
+    "original_id": 101,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 28
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kota Palu pada 2023?",
+    "original_id": 133,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 29
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Gorontalo Utara, Gorontalo lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 207,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 30
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Kediri atau Kabupaten Merauke?",
+    "original_id": 393,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 31
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Bolaang Mongondow Selatan, Sulawesi Utara pada 2024, dalam hektare.",
+    "original_id": 47,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 32
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Pidie Jaya pada 2023?",
+    "original_id": 168,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 33
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kalimantan Utara pada bulan Maret setiap tahun selama 2022–2024?",
+    "original_id": 307,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 34
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Maluku pada Februari 2025?",
+    "original_id": 20,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 35
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Bengkulu Tengah naik dari 2022 ke 2023?",
+    "original_id": 437,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 36
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Bangka Selatan, Bangka Belitung dari 2021 sampai 2025.",
+    "original_id": 173,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 37
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Murung Raya, Kalimantan Tengah lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 235,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 38
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara dari 2022 sampai 2025.",
+    "original_id": 192,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 39
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks keparahan kemiskinan di Indonesia pada September 2025?",
+    "original_id": 231,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 40
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Banyuwangi selama 2023–2025?",
+    "original_id": 53,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 41
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kota Sabang pada 2024?",
+    "original_id": 125,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 42
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Demak pada 2025?",
+    "original_id": 134,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 43
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Bolaang Mongondow, Sulawesi Utara pada 2020, dalam hektare.",
+    "original_id": 55,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 44
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Aceh pada Maret 2023 dan Maret 2024. Berapa perubahannya?",
+    "original_id": 368,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 45
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Mamberamo Raya atau Kabupaten Ogan Komering Ulu?",
+    "original_id": 386,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 46
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase rumah tangga dengan akses sanitasi layak di Indonesia pada 2023?",
+    "original_id": 237,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 47
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Jawa Timur atau Maluku Utara?",
+    "original_id": 76,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 48
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Kudus selama 2023–2025?",
+    "original_id": 288,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 49
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "original_id": 325,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 50
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Sulawesi Tengah pada 2023, dalam hektare.",
+    "original_id": 28,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 51
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Jawa Tengah atau Nusa Tenggara Barat? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 310,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 52
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2025?",
+    "original_id": 213,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 53
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kota Sabang pada 2025 sebesar 12,75 persen?",
+    "original_id": 482,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 54
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Buleleng, Bali dari 2022 sampai 2025.",
+    "original_id": 168,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 55
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Gorontalo pada Maret 2026?",
+    "original_id": 7,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 56
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas tutupan hutan di Sulawesi Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "original_id": 390,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 57
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa nilai tukar petani di Indonesia pada September 2023?",
+    "original_id": 226,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 58
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Wajo, Sulawesi Selatan pada 2023, dalam hektare.",
+    "original_id": 112,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 59
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Jayawijaya, Papua dari 2022 sampai 2025.",
+    "original_id": 159,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 60
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Lampung Tengah, Lampung dari 2021 sampai 2025.",
+    "original_id": 158,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 61
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Lampung atau Sulawesi Tenggara? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 318,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 62
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Kaimana, Papua Barat pada 2023, dalam hektare.",
+    "original_id": 88,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 63
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan sawit di Maluku pada tahun 2024. Berapa hektare?",
+    "original_id": 367,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 64
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak pertambangan nikel di Raja Ampat bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 405,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 65
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2024?",
+    "original_id": 239,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 66
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Maluku turun dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 279,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 67
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Nusa Tenggara Timur dari 2020 sampai 2025.",
+    "original_id": 142,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 68
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hak atas tanah dan mata pencaharian warga terkait proyek pariwisata di Mandalika?",
+    "original_id": 452,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 69
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren angka partisipasi murni jenjang SM/sederajat di Indonesia selama 2022–2024?",
+    "original_id": 323,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 70
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Jambi atau Maluku? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 308,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 71
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "klaim_arah",
+    "question": "Benarkah luas tutupan sawit di Aceh naik dari 2022 ke 2023?",
+    "original_id": 391,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 72
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Belu selama 2022–2024?",
+    "original_id": 285,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 73
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah perkebunan kayu di Ketapang dan tampilkan tren kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat untuk 2023–2025.",
+    "original_id": 474,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 74
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Kepulauan Meranti turun dari 2022 ke 2023?",
+    "original_id": 445,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 75
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa nilai tukar petani di Indonesia pada Oktober 2023?",
+    "original_id": 220,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 76
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Belitung Timur, Bangka Belitung dari 2020 sampai 2025.",
+    "original_id": 178,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 77
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Sulawesi Selatan pada Februari 2026?",
+    "original_id": 187,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 78
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kota Lubuklinggau, Sumatera Selatan pada 2023, dalam hektare.",
+    "original_id": 64,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 79
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "cakupan_pulau",
+    "question": "Tampilkan kehilangan tutupan pohon di Pulau Sumatra untuk tahun 2025.",
+    "original_id": 341,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 80
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Jawa Timur atau Nusa Tenggara Timur? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 311,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 81
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Kalimantan Selatan atau Papua Barat? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 313,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 82
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kota Prabumulih pada 2024?",
+    "original_id": 175,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 83
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Papua Tengah pada Agustus 2025?",
+    "original_id": 203,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 84
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Maluku atau Riau?",
+    "original_id": 85,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 85
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Batu Bara pada 2024 sebesar 10,94 persen?",
+    "original_id": 479,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 86
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Rembang, Jawa Tengah dari 2020 sampai 2025.",
+    "original_id": 166,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 87
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan hutan di Kalimantan Tengah pada tahun 2023. Berapa hektare?",
+    "original_id": 360,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 88
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Kepulauan Riau pada Februari 2025?",
+    "original_id": 18,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 89
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat pengangguran terbuka di Dki Jakarta naik dari Agustus 2025 ke Agustus 2026?",
+    "original_id": 472,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 90
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Nusa Tenggara Barat pada Maret 2025?",
+    "original_id": 22,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 91
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Rembang naik dari 2023 ke 2024?",
+    "original_id": 466,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 92
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "periode_belum_tersedia",
+    "question": "Sudah berapa hektare kehilangan tutupan pohon dalam hutan primer di Kalimantan Barat selama 2026 sampai bulan terakhir yang tersedia?",
+    "original_id": 336,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 93
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas hutan rawa gambut di Papua Barat pada tahun 2023. Berapa hektare?",
+    "original_id": 370,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 94
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Papua Barat Daya pada Februari 2025?",
+    "original_id": 26,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 95
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Lampung Barat pada 2024 sebesar 33,43 ribu jiwa?",
+    "original_id": 484,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 96
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas tutupan sawit di Kalimantan Tengah tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "original_id": 385,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 97
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Banyumas pada 2024?",
+    "original_id": 164,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 98
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2025?",
+    "original_id": 44,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 99
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Simeulue, Aceh dari 2022 sampai 2025.",
+    "original_id": 195,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 100
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Maluku Utara atau Sumatera Barat? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 320,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 101
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Siau Tagulandang Biaro pada 2024?",
+    "original_id": 144,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 102
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Serang, Banten lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 233,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 103
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kalimantan Utara dari 2020 sampai 2025.",
+    "original_id": 136,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 104
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Luas kebakaran hutan dan lahan di Jambi pada 1 Januari sampai 29 Agustus 2026 mencapai 1.776,56 hektare. Sarolangun merupakan kabupaten dengan luas terbakar terbesar, yaitu 473,64 hektare. Pernyataan disampaikan oleh Nyamin, Danrem 042/Garuda Putih, pada 2026-08-31.",
+    "original_id": 4,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://opendata.jambiprov.go.id/publikasi/berita/118/gubernur-al-haris-tegaskan-penanganan-karhutla-jambi-harus-terpadu-tidak-boleh-ada-keraguan-bertindak118",
+    "statement_date": "2026-08-31",
+    "id": 105
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kepulauan Riau atau Papua Selatan?",
+    "original_id": 83,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 106
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Pelalawan pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 351,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 107
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Sijunjung, Sumatera Barat pada 2021, dalam hektare.",
+    "original_id": 44,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 108
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Pohuwato pada 2025?",
+    "original_id": 112,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 109
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kaur, Bengkulu pada 2021, dalam hektare.",
+    "original_id": 38,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 110
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah cofiring biomassa di Jawa Timur hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 448,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 111
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Banjar, Kalimantan Selatan lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 220,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 112
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Maluku Utara turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 91,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 113
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Wakatobi turun dari 2023 ke 2024?",
+    "original_id": 438,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 114
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Jawa Barat atau Maluku Utara? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 309,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 115
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Agustus 2026, mana yang lebih tinggi tingkat pengangguran terbuka, Sulawesi Tengah atau Jawa Timur?",
+    "original_id": 414,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 116
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah proyek Rempang Eco City di Pulau Rempang hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 427,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 117
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Maluku pada Agustus 2024?",
+    "original_id": 204,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 118
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "cakupan_belum_tersedia",
+    "question": "Berapa hektare kebun sawit yang terpetakan di Riau pada 2025?",
+    "original_id": 397,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 119
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat pengangguran terbuka di Nusa Tenggara Timur naik dari Agustus 2022 ke Agustus 2023?",
+    "original_id": 467,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 120
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Gorontalo pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 72,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 121
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Kota Tanjungbalai, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 299,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 122
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Batang turun dari 2023 ke 2024?",
+    "original_id": 463,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 123
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Di Yogyakarta pada Agustus 2024?",
+    "original_id": 198,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 124
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Bali turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 442,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 125
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Bengkayang selama 2023–2025?",
+    "original_id": 256,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 126
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Semarang turun dari 2023 ke 2024?",
+    "original_id": 452,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 127
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Kabupaten Mamuju, Sulawesi Barat turun dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 285,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 128
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kota Malang pada 2024?",
+    "original_id": 135,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 129
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kota Baru atau Kabupaten Madiun?",
+    "original_id": 404,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 130
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Yogyakarta pada 2023, dalam hektare.",
+    "original_id": 34,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 131
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan hutan di Sulawesi Tengah pada tahun 2023. Berapa hektare?",
+    "original_id": 364,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 132
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Gianyar, Bali dari 2020 sampai 2025.",
+    "original_id": 175,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 133
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025 dan Februari 2026. Berapa perubahannya?",
+    "original_id": 369,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 134
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Sumatera Selatan pada Februari 2025?",
+    "original_id": 192,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 135
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Gorontalo pada Maret 2023?",
+    "original_id": 201,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 136
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Kota Gunungsitoli pada 2024 dan 2025. Berapa perubahannya?",
+    "original_id": 345,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 137
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Tanjung Jabung B, Jambi lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 249,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 138
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Kubu Raya pada 2024?",
+    "original_id": 169,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 139
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Mamuju Utara pada 2024 sebesar 5,21 persen?",
+    "original_id": 490,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 140
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Lampung pada bulan Februari setiap tahun selama 2024–2026?",
+    "original_id": 300,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 141
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang tempat tinggal dan mata pencaharian warga terkait proyek Rempang Eco City di Pulau Rempang?",
+    "original_id": 425,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 142
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah pembangunan pariwisata di Bali hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 451,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 143
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Gorontalo Utara pada 2023?",
+    "original_id": 145,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 144
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas mangrove di Papua Barat Daya setiap tahun dari 2020 sampai 2024?",
+    "original_id": 377,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 145
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Jembrana, Bali untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "original_id": 327,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 146
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Sabang, Aceh pada 2025, dalam hektare.",
+    "original_id": 108,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 147
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Maros pada 2024?",
+    "original_id": 147,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 148
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "cakupan_pulau",
+    "question": "Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Sulawesi untuk tahun 2025.",
+    "original_id": 343,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 149
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Musi Rawas Utara pada 2024?",
+    "original_id": 142,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 150
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Jawa Timur pada Maret 2026?",
+    "original_id": 209,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 151
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Papua Tengah turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 99,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 152
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren nilai tukar petani di Indonesia pada bulan Februari setiap tahun selama 2022–2024?",
+    "original_id": 311,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 153
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Lombok Barat, Nusa Tenggara Barat pada 2021, dalam hektare.",
+    "original_id": 56,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 154
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Kayong Utara, Kalimantan Barat dari 2022 sampai 2025.",
+    "original_id": 171,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 155
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Teluk Wondama, Papua Barat pada 2020, dalam hektare.",
+    "original_id": 91,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 156
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Mamuju Tengah pada 2023?",
+    "original_id": 163,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 157
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Ada indikasi kayu gelondongan yang terseret banjir di Sumatera bagian utara berasal dari sisa pembukaan kebun sawit dan diduga memperparah dampak banjir. Asal kayu masih akan diperiksa. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-12-03.",
+    "original_id": 7,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://news.detik.com/berita/d-8241754/menteri-lh-duga-gelondongan-kayu-terbawa-banjir-sumatera-sisa-buka-kebun-sawit",
+    "statement_date": "2025-12-03",
+    "id": 158
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Bali atau Kalimantan Selatan? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 302,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 159
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Tenggara dari 2021 sampai 2025.",
+    "original_id": 149,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 160
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Ogan Komering Ilir, Sumatera Selatan lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 208,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 161
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kota Prabumulih, Sumatera Selatan lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 227,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 162
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Brebes pada 2024?",
+    "original_id": 137,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 163
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Papua pada 2024, dalam hektare.",
+    "original_id": 23,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 164
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pegunungan Arfak atau Kabupaten Aceh Tenggara?",
+    "original_id": 400,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 165
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan angka partisipasi sekolah usia 13-15 tahun di Indonesia pada 2024 dan 2025. Berapa perubahannya?",
+    "original_id": 377,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 166
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?",
+    "original_id": 371,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 167
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang akses energi dan kehidupan warga terkait energi ekstraktif di Mentawai?",
+    "original_id": 440,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 168
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Indonesia pada Agustus 2024?",
+    "original_id": 238,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 169
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa nilai tukar petani di Indonesia pada Maret 2025?",
+    "original_id": 234,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 170
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Sampai 28 Juli 2025, luas lahan terbakar di Jambi mencapai 417 hektare, termasuk 210 hektare lahan gambut. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2025-07-28.",
+    "original_id": 2,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://opendata.jambiprov.go.id/publikasi/berita/54/417-hektare-terbakar-gubernur-al-haris-serukan-aksi-cepat-tanggulangi-karhutla-jambi54",
+    "statement_date": "2025-07-28",
+    "id": 171
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kota Prabumulih naik dari 2023 ke 2024?",
+    "original_id": 427,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 172
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kota Bengkulu, Bengkulu dari 2021 sampai 2025.",
+    "original_id": 194,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 173
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Lombok Timur selama 2023–2025?",
+    "original_id": 58,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 174
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau pada 2024, dalam hektare.",
+    "original_id": 17,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 175
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Nusa Tenggara Timur pada Maret 2024 dan Maret 2025. Berapa perubahannya?",
+    "original_id": 360,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 176
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Tulangbawang naik dari 2023 ke 2024?",
+    "original_id": 433,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 177
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Papua Tengah pada Maret 2024?",
+    "original_id": 208,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 178
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan sawit di Jawa setiap tahun dari 2020 sampai 2024?",
+    "original_id": 374,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 179
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Papua Barat pada 2025, dalam hektare.",
+    "original_id": 24,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 180
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Bandung, Jawa Barat dari 2022 sampai 2025.",
+    "original_id": 177,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 181
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kalimantan Tengah pada Maret 2024 dan Maret 2025. Berapa perubahannya?",
+    "original_id": 375,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 182
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2026?",
+    "original_id": 225,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 183
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Kabupaten Tasikmalaya, Jawa Barat naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 283,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 184
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Brebes, Jawa Tengah pada 2025, dalam hektare.",
+    "original_id": 48,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 185
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Maluku Utara pada bulan Februari setiap tahun selama 2023–2025?",
+    "original_id": 301,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 186
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbuka, Sulawesi Utara atau Jawa Barat?",
+    "original_id": 408,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 187
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah pembangunan PLTU di Jambi hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 445,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 188
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Papua pada Agustus 2025?",
+    "original_id": 196,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 189
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas mangrove di Papua Selatan pada tahun 2024. Berapa hektare?",
+    "original_id": 369,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 190
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Enrekang, Sulawesi Selatan pada 2024, dalam hektare.",
+    "original_id": 35,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 191
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa rata-rata lama sekolah penduduk usia 15 tahun ke atas di Indonesia pada 2023?",
+    "original_id": 242,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 192
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan sawit di Kalimantan Barat pada tahun 2024. Berapa hektare?",
+    "original_id": 359,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 193
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Banten pada 2023, dalam hektare.",
+    "original_id": 4,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 194
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kepulauan Riau pada Maret 2025?",
+    "original_id": 210,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 195
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Bencana banjir dan longsor di Humbang Hasundutan, Agam, Mandailing Natal, Gayo Lues, dan Aceh Tenggara dipicu hujan tinggi hingga ekstrem sebagai faktor dominan; lereng curam serta batuan lapuk yang mudah tererosi memperbesar kerentanan. Pernyataan disampaikan oleh Lana Saria, Plt. Kepala Badan Geologi Kementerian ESDM, pada 2025-11-29.",
+    "original_id": 11,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://www.esdm.go.id/en/media-center/news-archives/cuaca-ekstrem-dan-kondisi-geografis-picu-bencana-di-wilayah-aceh-dan-sumatera",
+    "statement_date": "2025-11-29",
+    "id": 196
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Gorontalo naik dari 2023 ke 2024?",
+    "original_id": 471,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 197
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kepulauan Bangka Belitung atau Papua Pegunungan?",
+    "original_id": 82,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 198
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Maluku Tengah, Maluku lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 225,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 199
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Buton Selatan turun dari 2022 ke 2023?",
+    "original_id": 453,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 200
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Maret 2025, mana yang lebih tinggi persentase penduduk miskin, Kalimantan Selatan atau Kalimantan Barat?",
+    "original_id": 413,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 201
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Mandailing Natal, Sumatera Utara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 242,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 202
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Pasaman, Sumatera Barat lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 238,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 203
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Gorontalo, Gorontalo lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 212,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 204
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa produksi kelapa sawit Indonesia pada 2024?",
+    "original_id": 47,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 205
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak pembangunan pariwisata di Bali bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 450,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 206
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Ciamis selama 2022–2024?",
+    "original_id": 262,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 207
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Keerom selama 2021–2023?",
+    "original_id": 286,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 208
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Kalimantan Tengah turun dari Februari 2022 ke Februari 2023?",
+    "original_id": 459,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 209
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa luas areal perkebunan kelapa sawit di Indonesia pada 2024?",
+    "original_id": 46,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 210
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Banten dari 2020 sampai 2025.",
+    "original_id": 124,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 211
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Bali atau Papua Tengah?",
+    "original_id": 415,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 212
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak proyek panas bumi terhadap sumber air dan lahan pertanian di Muara Laboh, Solok Selatan? Tambahkan angka kehilangan tutupan pohon di Kabupaten Solok Selatan, Sumatera Barat pada 2024.",
+    "original_id": 481,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 213
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak industri nikel terhadap lingkungan dan ruang hidup warga di Halmahera Tengah? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Tengah, Maluku Utara pada 2024.",
+    "original_id": 471,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 214
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Indragiri Hulu, Riau pada 2021, dalam hektare.",
+    "original_id": 98,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 215
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Banggai Kepulauan pada 2023?",
+    "original_id": 124,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 216
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "cakupan_pulau",
+    "question": "Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Seram untuk tahun 2025.",
+    "original_id": 349,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 217
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Tapanuli Selatan, Sumatera Utara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 260,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 218
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon dalam hutan primer di Kota Bau-Bau, Sulawesi Tenggara untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "original_id": 326,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 219
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Penajam Paser Utara, Kalimantan Timur pada 2025, dalam hektare.",
+    "original_id": 96,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 220
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan nilai tukar petani di Indonesia pada Maret 2022 dan Maret 2023. Berapa perubahannya?",
+    "original_id": 381,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 221
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang pesisir dan penghidupan nelayan terkait proyek gas LNG di Teluk Bintuni?",
+    "original_id": 434,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 222
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks perilaku antikorupsi Indonesia pada 2024?",
+    "original_id": 50,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 223
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Bangka Belitung pada 2022, dalam hektare.",
+    "original_id": 3,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 224
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Kayong Utara pada 2023?",
+    "original_id": 166,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 225
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Tanah Bumbu pada 2023?",
+    "original_id": 123,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 226
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kota Kupang selama 2023–2025?",
+    "original_id": 59,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 227
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Papua Barat turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 95,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 228
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Kepulauan Talaud pada 2025?",
+    "original_id": 165,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 229
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Konawe Utara, Sulawesi Tenggara lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 224,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 230
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kalimantan Timur dari 2022 sampai 2025.",
+    "original_id": 135,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 231
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Jakarta Raya turun dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 267,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 232
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah pembangunan PLTU di Jambi dan tampilkan tren kehilangan tutupan pohon di Jambi untuk 2023–2025.",
+    "original_id": 490,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 233
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Agustus 2024, mana yang lebih tinggi tingkat pengangguran terbuka, Dki Jakarta atau Sumatera Selatan?",
+    "original_id": 418,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 234
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah pertambangan nikel di Raja Ampat dan tampilkan tren kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat untuk 2023–2025.",
+    "original_id": 464,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 235
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Garut selama 2023–2025?",
+    "original_id": 55,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 236
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Karawang, Jawa Barat pada 2021, dalam hektare.",
+    "original_id": 62,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 237
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan tingkat pengangguran terbuka di Kalimantan Timur pada Agustus 2025 dan Agustus 2026. Berapa perubahannya?",
+    "original_id": 365,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 238
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Mamasa pada 2025?",
+    "original_id": 148,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 239
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Jakarta Raya dari 2020 sampai 2025.",
+    "original_id": 127,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 240
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Barito Selatan atau Kabupaten Tanjung Jabung Timur?",
+    "original_id": 392,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 241
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat pengangguran terbuka di Lampung turun dari Agustus 2023 ke Agustus 2024?",
+    "original_id": 447,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 242
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kalimantan Barat dari 2022 sampai 2025.",
+    "original_id": 132,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 243
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas tutupan hutan di Papua Tengah setiap tahun dari 2020 sampai 2024?",
+    "original_id": 376,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 244
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang lahan dan mata pencaharian warga terkait kawasan industri di Takalar?",
+    "original_id": 437,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 245
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "klaim_arah",
+    "question": "Benarkah luas hutan rawa gambut di Riau turun dari 2022 ke 2023?",
+    "original_id": 394,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 246
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pekalongan atau Kabupaten Ponorogo?",
+    "original_id": 398,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 247
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Kota Prabumulih pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 342,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 248
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Mamberamo Tengah, Papua dari 2021 sampai 2025.",
+    "original_id": 176,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 249
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak pertambangan nikel terhadap hutan dan kehidupan nelayan di Raja Ampat? Tambahkan angka kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat pada 2024.",
+    "original_id": 463,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 250
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Kabupaten Sukabumi, Jawa Barat naik dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 290,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 251
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Bengkulu pada 2024, dalam hektare.",
+    "original_id": 5,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 252
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Sulawesi Selatan pada 2022, dalam hektare.",
+    "original_id": 27,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 253
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas hutan rawa gambut di Kalimantan Timur pada tahun 2023. Berapa hektare?",
+    "original_id": 362,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 254
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Langkat, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 287,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 255
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Hampir 99 persen kasus kebakaran hutan dan lahan di Riau disebabkan aktivitas manusia, baik disengaja maupun tidak disengaja. Pernyataan disampaikan oleh M. Edy Afrizal, Kepala BPBD Riau, pada 2025-07-20.",
+    "original_id": 1,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://riau.suara.com/amp/read/2025/07/20/214040/bantu-pemadaman-karhutla-riau-heli-water-bombing-otw-dari-palembang",
+    "statement_date": "2025-07-20",
+    "id": 256
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Ogan Ilir selama 2022–2024?",
+    "original_id": 269,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 257
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Indragiri Hulu turun dari 2023 ke 2024?",
+    "original_id": 450,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 258
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "tren",
+    "question": "Bagaimana perubahan luas hutan rawa gambut di Papua Pegunungan setiap tahun dari 2020 sampai 2024?",
+    "original_id": 378,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 259
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Nusa Tenggara Timur turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 93,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 260
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kalimantan Selatan dari 2020 sampai 2025.",
+    "original_id": 133,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 261
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak kawasan industri nikel terhadap lahan dan kehidupan warga di Pomalaa? Tambahkan angka kehilangan tutupan pohon di Kabupaten Kolaka, Sulawesi Tenggara pada 2024.",
+    "original_id": 467,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 262
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Parigi Moutong, Sulawesi Tengah dari 2021 sampai 2025.",
+    "original_id": 182,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 263
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Mamberamo Raya, Papua pada 2023, dalam hektare.",
+    "original_id": 94,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 264
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kota Tanjung Pinang pada 2024 sebesar 7,86 persen?",
+    "original_id": 500,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 265
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Jayawijaya pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 350,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 266
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Gianyar pada 2025 sebesar 3,71 persen?",
+    "original_id": 485,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 267
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas mangrove di Kalimantan Selatan pada tahun 2024. Berapa hektare?",
+    "original_id": 361,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 268
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Bali pada Agustus 2025 sebesar 78,31 persen?",
+    "original_id": 491,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 269
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak industri nikel di Halmahera Tengah bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 417,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 270
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Majalengka turun dari 2023 ke 2024?",
+    "original_id": 432,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 271
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Luwu pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 355,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 272
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kota Bukittinggi turun dari 2023 ke 2024?",
+    "original_id": 475,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 273
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Pada kejadian hujan ekstrem 25–27 November 2025, curah hujan tertinggi di Kabupaten Bireuen, Aceh, mencapai 411 mm per hari, melebihi hujan bulanan di sana. Pernyataan disampaikan oleh Teuku Faisal Fathani, Kepala BMKG, pada 2025-12-01.",
+    "original_id": 8,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://news.detik.com/berita/d-8237996/bmkg-hujan-bulanan-turun-dalam-sehari-di-sumatera-terjadi-3-hari/amp",
+    "statement_date": "2025-12-01",
+    "id": 274
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Bengkalis, Riau untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "original_id": 330,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 275
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Lombok Utara selama 2021–2023?",
+    "original_id": 282,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 276
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Jambi pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 73,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 277
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Setelah meninjau lokasi bencana di Sumatera Utara menggunakan helikopter, saya tidak menemukan penggundulan hutan. Banjir dan longsor tersebut berkaitan dengan hujan tinggi berhari-hari. Pernyataan disampaikan oleh Rio Firdianto, Pangdam I/Bukit Barisan, pada 2025-11-29.",
+    "original_id": 12,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://www.inharmonia.id/index.php/berita/berita/benarkah-pernyataan-jenderal-tni-tak-ada-penggundulan-hutan-di-sumatera-utara",
+    "statement_date": "2025-11-29",
+    "id": 278
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Jayapura atau Kota Batu?",
+    "original_id": 401,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 279
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Subang pada 2025?",
+    "original_id": 159,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 280
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Magetan turun dari 2024 ke 2025?",
+    "original_id": 469,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 281
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa angka partisipasi sekolah anak usia 7–12 tahun di Indonesia pada 2025?",
+    "original_id": 45,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 282
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Melawi selama 2023–2025?",
+    "original_id": 278,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 283
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Jawa Tengah naik dari Februari 2022 ke Februari 2023?",
+    "original_id": 457,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 284
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah perkebunan sawit di Riau hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 460,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 285
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Aceh pada Maret 2023 dan Maret 2024. Berapa perubahannya?",
+    "original_id": 361,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 286
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Purbalingga, Jawa Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 222,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 287
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Jawa Tengah pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 75,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 288
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Luwu, Sulawesi Selatan lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 255,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 289
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Kabupaten Banjarnegara pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 349,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 290
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Nduga, Papua lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 243,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 291
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Sumatera Barat pada 2020, dalam hektare.",
+    "original_id": 31,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 292
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah tingkat pengangguran terbuka di Kepulauan Bangka Belitung pada Agustus 2024 sebesar 5,63 persen?",
+    "original_id": 487,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 293
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa indeks perilaku antikorupsi di Indonesia pada 2023?",
+    "original_id": 244,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 294
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Sulawesi Selatan dari 2022 sampai 2025.",
+    "original_id": 147,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 295
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kota Mataram pada 2024?",
+    "original_id": 129,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 296
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.",
+    "original_id": 465,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 297
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Sulawesi Barat pada Maret 2026?",
+    "original_id": 31,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 298
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kota Manado, Sulawesi Utara pada 2020, dalam hektare.",
+    "original_id": 103,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 299
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Papua dari 2021 sampai 2025.",
+    "original_id": 143,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 300
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kota Pariaman selama 2023–2025?",
+    "original_id": 259,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 301
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Sumatera Selatan pada Maret 2026?",
+    "original_id": 37,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 302
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Kalimantan Utara atau Sulawesi Selatan? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 316,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 303
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan indeks pembangunan manusia di Indonesia pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 378,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 304
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Muna pada 2025?",
+    "original_id": 154,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 305
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Siak, Riau dari 2020 sampai 2025.",
+    "original_id": 193,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 306
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "perbandingan_tahun",
+    "question": "Bandingkan luas hutan rawa gambut di Kalimantan Utara tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?",
+    "original_id": 388,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 307
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas hutan rawa gambut di Lampung pada tahun 2023. Berapa hektare?",
+    "original_id": 358,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 308
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kota Bukittinggi pada 2023?",
+    "original_id": 115,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 309
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Jawa Tengah atau Sulawesi Tengah?",
+    "original_id": 419,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 310
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang akses tanah dan penghidupan petani terkait perkebunan tebu di Pundenrejo, Pati?",
+    "original_id": 428,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 311
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah perkebunan kayu di Ketapang hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 421,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 312
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Jawa Barat naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 269,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 313
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kalimantan Selatan pada September 2024 dan September 2025. Berapa perubahannya?",
+    "original_id": 359,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 314
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Bengkulu dari 2021 sampai 2025.",
+    "original_id": 125,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 315
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare.",
+    "original_id": 65,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 316
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Katingan, Kalimantan Tengah dari 2020 sampai 2025.",
+    "original_id": 199,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 317
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah tingkat partisipasi angkatan kerja di Dki Jakarta naik dari Februari 2022 ke Februari 2023?",
+    "original_id": 444,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 318
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Bulungan, Kalimantan Utara lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 211,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 319
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah jumlah penduduk miskin di Kota Langsa pada 2024 sebesar 19,37 ribu jiwa?",
+    "original_id": 489,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 320
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_wilayah",
+    "question": "Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Kepulauan Riau atau Sulawesi Tengah? Tampilkan kedua angkanya dan selisihnya.",
+    "original_id": 317,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 321
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak perkebunan kayu di Ketapang bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 420,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 322
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Gorontalo pada Februari 2024?",
+    "original_id": 207,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 323
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Papua Pegunungan pada Agustus 2026?",
+    "original_id": 186,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 324
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Wajo turun dari 2024 ke 2025?",
+    "original_id": 465,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 325
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Kuningan selama 2021–2023?",
+    "original_id": 272,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 326
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Maluku pada 2020, dalam hektare.",
+    "original_id": 19,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 327
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah proyek gas LNG di Teluk Bintuni hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 436,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 328
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Papua Selatan pada Februari 2026?",
+    "original_id": 191,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 329
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "periode_belum_tersedia",
+    "question": "Sudah berapa hektare kehilangan tutupan pohon akibat kebakaran di Kalimantan Tengah selama 2026 sampai bulan terakhir yang tersedia?",
+    "original_id": 338,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 330
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah proyek panas bumi di Muara Laboh, Solok Selatan hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 433,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 331
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Sumatera Barat pada bulan Februari setiap tahun selama 2024–2026?",
+    "original_id": 302,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 332
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Banten pada bulan Maret setiap tahun selama 2024–2026?",
+    "original_id": 304,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 333
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Labuhanbatu Selatan, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 293,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 334
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Aceh pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 66,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 335
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Lombok Barat naik dari 2022 ke 2023?",
+    "original_id": 454,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 336
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Kebumen, Jawa Tengah pada 2020, dalam hektare.",
+    "original_id": 61,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 337
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak kawasan industri nikel di Pomalaa bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 411,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 338
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa luas areal perkebunan tebu di Indonesia pada 2024?",
+    "original_id": 250,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 339
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren angka partisipasi murni jenjang SMP/sederajat di Indonesia selama 2022–2024?",
+    "original_id": 324,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 340
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Maluku Utara dari 2021 sampai 2025.",
+    "original_id": 140,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 341
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Dogiyai pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 334,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 342
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Lampung atau Papua Tengah?",
+    "original_id": 84,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 343
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kalimantan Utara pada Maret 2025?",
+    "original_id": 16,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 344
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim angka",
+    "question": "Benarkah jumlah penduduk miskin di Kabupaten Pegunungan Bintang pada 2024 sebesar 23,87 ribu jiwa?",
+    "original_id": 478,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 345
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kalimantan Barat naik dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 272,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 346
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Maret 2024, mana yang lebih tinggi jumlah penduduk miskin, Nusa Tenggara Timur atau Maluku?",
+    "original_id": 425,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 347
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Kebumen selama 2023–2025?",
+    "original_id": 252,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 348
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Jayawijaya pada 2025?",
+    "original_id": 136,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 349
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan tingkat partisipasi angkatan kerja di Sumatera Selatan pada Agustus 2023 dan Agustus 2024. Berapa perubahannya?",
+    "original_id": 364,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 350
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Jembrana selama 2022–2024?",
+    "original_id": 260,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 351
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "periode_belum_tersedia",
+    "question": "Sudah berapa hektare kehilangan tutupan pohon di Kalimantan Selatan selama 2026 sampai bulan terakhir yang tersedia?",
+    "original_id": 337,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 352
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Sulawesi Tengah pada bulan Februari setiap tahun selama 2023–2025?",
+    "original_id": 296,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 353
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Lahat pada 2024?",
+    "original_id": 172,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 354
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan nilai tukar petani di Indonesia pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 379,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 355
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Maret 2026, mana yang lebih tinggi persentase penduduk miskin, Kalimantan Utara atau Sulawesi Tenggara?",
+    "original_id": 421,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 356
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Sumbawa, Nusa Tenggara Barat pada 2022, dalam hektare.",
+    "original_id": 99,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 357
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Sleman selama 2023–2025?",
+    "original_id": 56,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 358
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Sikka selama 2023–2025?",
+    "original_id": 60,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 359
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Wajo selama 2021–2023?",
+    "original_id": 258,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 360
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Sungai Penuh, Jambi pada 2022, dalam hektare.",
+    "original_id": 51,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 361
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Nias, Sumatera Utara pada 2022, dalam hektare.",
+    "original_id": 69,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 362
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Sulawesi Selatan pada Maret 2022 dan Maret 2023. Berapa perubahannya?",
+    "original_id": 363,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 363
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Sumatera Barat pada Februari 2025?",
+    "original_id": 36,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 364
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Maluku Utara pada Februari 2026?",
+    "original_id": 21,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 365
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Banten pada September 2024 dan September 2025. Berapa perubahannya?",
+    "original_id": 357,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 366
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Jawa Timur naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 271,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 367
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Banten turun dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 264,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 368
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Pesisir Barat pada 2024?",
+    "original_id": 103,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 369
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Bengkulu pada Maret 2025 dan Maret 2026. Berapa perubahannya?",
+    "original_id": 69,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 370
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "cakupan_belum_tersedia",
+    "question": "Berapa hektare kebun sawit yang terpetakan di Papua Selatan pada 2025?",
+    "original_id": 396,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 371
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Jawa Timur pada Februari 2026?",
+    "original_id": 11,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 372
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Sukoharjo pada 2023?",
+    "original_id": 160,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 373
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hutan dan kehidupan masyarakat terkait perkebunan sawit di Riau?",
+    "original_id": 458,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 374
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Deforestasi di tiga provinsi terdampak banjir menurun: Aceh dari 11.228 menjadi 10.100 hektare, Sumatera Utara dari 7.141 menjadi 6.142 hektare, dan Sumatera Barat dari 6.634 menjadi 5.705 hektare. Paparan membandingkan periode 2023–2024 dengan periode 2024 sampai September 2025; data terbaru belum mencakup akhir 2025. Pernyataan disampaikan oleh Raja Juli Antoni, Menteri Kehutanan, pada 2025-12-04.",
+    "original_id": 6,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://www.antaranews.com/berita/5286667/di-dpr-menhut-deforestasi-turun-di-3-provinsi-banjir-di-sumatera",
+    "statement_date": "2025-12-04",
+    "id": 375
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Bangka, Bangka Belitung lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 236,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 376
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Halmahera Utara, Maluku Utara pada 2020, dalam hektare.",
+    "original_id": 43,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 377
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Nganjuk, Jawa Timur pada 2020, dalam hektare.",
+    "original_id": 97,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 378
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Jombang, Jawa Timur pada 2024, dalam hektare.",
+    "original_id": 83,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 379
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Indonesia pada Maret 2023 dan Maret 2024. Berapa perubahannya?",
+    "original_id": 382,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 380
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Kabupaten Wonogiri pada 2024 dan 2025. Berapa perubahannya?",
+    "original_id": 332,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 381
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah proyek pangan di Merauke dan tampilkan tren kehilangan tutupan pohon di Kabupaten Merauke, Papua untuk 2023–2025.",
+    "original_id": 476,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 382
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa produksi kopi di Indonesia pada 2024?",
+    "original_id": 249,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 383
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Tambrauw, Papua Barat dari 2021 sampai 2025.",
+    "original_id": 170,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 384
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Yogyakarta dari 2020 sampai 2025.",
+    "original_id": 154,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 385
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "cakupan_pulau",
+    "question": "Tampilkan kehilangan tutupan pohon dalam hutan primer di Pulau Lombok untuk 2023 sampai 2025.",
+    "original_id": 346,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 386
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kota Pekanbaru selama 2023–2025?",
+    "original_id": 62,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 387
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Lombok Tengah, Nusa Tenggara Barat dari 2022 sampai 2025.",
+    "original_id": 174,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 388
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kalimantan Tengah pada 2021, dalam hektare.",
+    "original_id": 14,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 389
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Kalimantan Timur pada Februari 2026?",
+    "original_id": 202,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 390
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Sulawesi Barat pada 2021, dalam hektare.",
+    "original_id": 26,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 391
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "periode_belum_tersedia",
+    "question": "Sudah berapa hektare kehilangan tutupan pohon dalam hutan primer di Papua Pegunungan selama 2026 sampai bulan terakhir yang tersedia?",
+    "original_id": 333,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 392
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kota Semarang, Jawa Tengah lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 218,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 393
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Empat Lawang, Sumatera Selatan pada 2022, dalam hektare.",
+    "original_id": 75,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 394
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Sumba Timur atau Kabupaten Bengkayang?",
+    "original_id": 396,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 395
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak proyek panas bumi di Muara Laboh, Solok Selatan bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 432,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 396
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Pekanbaru, Riau pada 2025, dalam hektare.",
+    "original_id": 84,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 397
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Papua Pegunungan turun dari Maret 2025 ke Maret 2026?",
+    "original_id": 97,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 398
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Kalimantan Tengah pada Februari 2025?",
+    "original_id": 14,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 399
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak perkebunan kayu terhadap hutan dan hak masyarakat adat di Ketapang? Tambahkan angka kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat pada 2024.",
+    "original_id": 473,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 400
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Tapin, Kalimantan Selatan naik dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 296,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 401
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Kudus, Jawa Tengah pada 2023, dalam hektare.",
+    "original_id": 82,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 402
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Cilacap selama 2023–2025?",
+    "original_id": 254,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 403
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Donggala, Sulawesi Tengah pada 2021, dalam hektare.",
+    "original_id": 68,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 404
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Di Yogyakarta pada Februari 2024?",
+    "original_id": 183,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 405
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Maluku pada Maret 2023 dan Maret 2024. Berapa perubahannya?",
+    "original_id": 367,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 406
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Sebanyak 80 persen lahan yang terbakar di Jambi sengaja dibakar. Pernyataan disampaikan oleh Al Haris, Gubernur Jambi, pada 2026-09-14.",
+    "original_id": 5,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://opendata.jambiprov.go.id/publikasi/berita/132/gubernur-al-haris-ungkap-80-persen-karhutla-di-jambi-sengaja-dibakar132",
+    "statement_date": "2026-09-14",
+    "id": 407
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Sumatera Barat pada Februari 2024?",
+    "original_id": 200,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 408
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Pegunungan Bintang, Papua pada 2020, dalam hektare.",
+    "original_id": 115,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 409
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Seruyan pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 341,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 410
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Kabupaten Bangka Selatan turun dari 2024 ke 2025?",
+    "original_id": 446,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 411
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Bandung Barat, Jawa Barat dari 2022 sampai 2025.",
+    "original_id": 186,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 412
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kabupaten Raja Ampat pada 2025?",
+    "original_id": 102,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 413
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Nusa Tenggara Timur pada bulan Maret setiap tahun selama 2022–2024?",
+    "original_id": 291,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 414
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat pengangguran terbuka di Riau pada Februari 2025?",
+    "original_id": 189,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 415
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah proyek Rempang Eco City di Pulau Rempang dan tampilkan tren kehilangan tutupan pohon di Kota Batam, Kepulauan Riau untuk 2023–2025.",
+    "original_id": 478,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 416
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Rote Ndao pada 2023?",
+    "original_id": 150,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 417
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang lahan dan kehidupan warga terkait kawasan industri nikel di Pomalaa?",
+    "original_id": 410,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 418
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren tingkat partisipasi angkatan kerja di Indonesia pada bulan Februari setiap tahun selama 2023–2025?",
+    "original_id": 316,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 419
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah kawasan industri di Takalar dan tampilkan tren kehilangan tutupan pohon di Kabupaten Takalar, Sulawesi Selatan untuk 2023–2025.",
+    "original_id": 486,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 420
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah industri nikel di Pulau Obi dan tampilkan tren kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara untuk 2023–2025.",
+    "original_id": 466,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 421
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah jumlah penduduk miskin di Kota Palangka Raya naik dari 2022 ke 2023?",
+    "original_id": 443,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 422
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Agustus 2025, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Sumatera Selatan atau Kalimantan Barat?",
+    "original_id": 423,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 423
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Bangka pada 2023?",
+    "original_id": 177,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 424
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon di Nusa Tenggara Barat dari 2022 sampai 2025.",
+    "original_id": 141,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 425
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Mamuju atau Kabupaten Sumbawa?",
+    "original_id": 405,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 426
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Banyuwangi, Jawa Timur pada 2025, dalam hektare.",
+    "original_id": 66,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 427
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Maluku dari 2020 sampai 2025.",
+    "original_id": 139,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 428
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hak atas tanah masyarakat adat terkait proyek pangan di Merauke?",
+    "original_id": 422,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 429
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Kendal selama 2021–2023?",
+    "original_id": 265,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 430
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Tulangbawang selama 2022–2024?",
+    "original_id": 267,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 431
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Kota Pariaman, Sumatera Barat naik dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 286,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 432
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Kediri, Jawa Timur lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 241,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 433
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Klaim naik/turun",
+    "question": "Benarkah persentase penduduk miskin di Papua Barat Daya naik dari Maret 2025 ke Maret 2026?",
+    "original_id": 96,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 434
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Tojo Una-Una, Sulawesi Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 210,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 435
+  },
+  {
+    "route": "environment",
+    "group": "mapbiomas",
+    "kind": "data",
+    "question": "Saya ingin mengetahui luas tutupan sawit di Jambi pada tahun 2024. Berapa hektare?",
+    "original_id": 355,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 436
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak perkebunan tebu di Pundenrejo, Pati bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 429,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 437
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 277,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 438
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Riau pada Maret 2023?",
+    "original_id": 181,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 439
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Waropen, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 229,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 440
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Jawa Timur pada Februari 2025?",
+    "original_id": 195,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 441
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kota Payakumbuh, Sumatera Barat pada 2021, dalam hektare.",
+    "original_id": 104,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 442
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Bangka Belitung naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 263,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 443
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren nilai tukar petani di Indonesia selama 2022–2024?",
+    "original_id": 314,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 444
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kalimantan Utara pada 2023, dalam hektare.",
+    "original_id": 16,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 445
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kota Jayapura, Papua pada 2022, dalam hektare.",
+    "original_id": 93,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 446
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Banten pada Februari 2026?",
+    "original_id": 3,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 447
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon di Kabupaten Bangka Barat, Bangka Belitung turun dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 294,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 448
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Konawe, Sulawesi Tenggara pada 2021, dalam hektare.",
+    "original_id": 80,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 449
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Maluku Barat Daya, Maluku dari 2020 sampai 2025.",
+    "original_id": 163,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 450
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kabupaten Boyolali selama 2021–2023?",
+    "original_id": 268,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 451
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Malang selama 2023–2025?",
+    "original_id": 276,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 452
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "klaim_statemen",
+    "question": "Benarkah proyek pangan di Merauke hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?",
+    "original_id": 424,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 453
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kota Singkawang, Kalimantan Barat lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 258,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 454
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Aceh pada Maret 2026?",
+    "original_id": 1,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 455
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon dalam hutan primer di Tana Tidung, Kalimantan Utara naik dari 2023 ke 2024. Apakah sesuai data?",
+    "original_id": 281,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 456
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Bengkulu Utara, Bengkulu lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 219,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 457
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah industri nikel di Halmahera Tengah dan tampilkan tren kehilangan tutupan pohon di Kabupaten Halmahera Tengah, Maluku Utara untuk 2023–2025.",
+    "original_id": 472,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 458
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Sidoarjo, Jawa Timur lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 240,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 459
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Saat bencana akhir November 2025, curah hujan di Koto Tangah, Sumatera Barat, sekitar tiga kali normal November, sedangkan di Singkil Utara, Aceh, sekitar dua kali normal. Pernyataan disampaikan oleh Ardhasena Sopaheluwakan, Deputi Bidang Klimatologi BMKG, pada 2026-02-10.",
+    "original_id": 9,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://www.bmkg.go.id/berita/utama/bmkg-perubahan-iklim-nyata-siklon-senyar-pecahkan-rekor-curah-hujan-tertinggi-sejak-1991",
+    "statement_date": "2026-02-10",
+    "id": 460
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_data",
+    "question": "Apa data yang tersedia tentang hutan dan kehidupan nelayan terkait pertambangan nikel di Raja Ampat?",
+    "original_id": 404,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 461
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "cakupan_pulau",
+    "question": "Tampilkan kehilangan tutupan pohon di Pulau Jawa untuk 2023 sampai 2025.",
+    "original_id": 344,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 462
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Fakfak, Papua Barat pada 2024, dalam hektare.",
+    "original_id": 77,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 463
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Aceh Barat Daya, Aceh lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 253,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 464
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Aceh Jaya pada 2025?",
+    "original_id": 128,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 465
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Labuhanbatu Utara, Sumatera Utara pada 2025, dalam hektare.",
+    "original_id": 78,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 466
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Papua Barat pada Agustus 2025?",
+    "original_id": 185,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 467
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Ogan Komering Ulu Selatan, Sumatera Selatan lebih besar pada 2025 atau 2024? Berapa selisih luasnya?",
+    "original_id": 254,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 468
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Karanganyar pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 326,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 469
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan jumlah penduduk miskin di Kabupaten Tapin pada 2022 dan 2023. Berapa perubahannya?",
+    "original_id": 328,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 470
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Jawa Tengah pada Maret 2025?",
+    "original_id": 10,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 471
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa tingkat partisipasi angkatan kerja di Kalimantan Timur pada Februari 2026?",
+    "original_id": 15,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 472
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Papua Selatan pada Maret 2025?",
+    "original_id": 28,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 473
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon di Kabupaten Gunung Mas, Kalimantan Tengah lebih besar pada 2023 atau 2022? Berapa selisih luasnya?",
+    "original_id": 201,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 474
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kepulauan Riau pada September 2025?",
+    "original_id": 197,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 475
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "klaim_arah",
+    "question": "Klaim: Kehilangan tutupan pohon akibat kebakaran di Maluku Utara naik dari 2024 ke 2025. Apakah sesuai data?",
+    "original_id": 280,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 476
+  },
+  {
+    "route": "environment",
+    "group": "klaim_pejabat",
+    "kind": "klaim_pejabat",
+    "question": "Benarkah klaim berikut? Kasus kebakaran hutan dan lahan di Sumatera Selatan menurun signifikan dibandingkan daerah lain. Capaian ini merupakan hasil upaya bersama menjaga tinggi muka air gambut. Pernyataan disampaikan oleh Hanif Faisol Nurofiq, Menteri Lingkungan Hidup, pada 2025-07-29.",
+    "original_id": 3,
+    "original_file": "docs/test-evidence/20261108/related-context-v2/questions.json",
+    "statement_source": "https://jdih.sumselprov.go.id/informasi/berita/sukses-penanganan-karhutla-di-sumsel-herman-deru-dipuji-menteri-lingkungan-hidup",
+    "statement_date": "2025-07-29",
+    "id": 477
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "perbandingan_tahun",
+    "question": "Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Gunung Kidul, Yogyakarta lebih besar pada 2024 atau 2023? Berapa selisih luasnya?",
+    "original_id": 259,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 478
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Kabupaten Belitung, Bangka Belitung pada 2020, dalam hektare.",
+    "original_id": 49,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 479
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kabupaten Mappi pada 2025?",
+    "original_id": 127,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 480
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak pembangunan PLTU terhadap lingkungan dan penghidupan warga di Cirebon? Tambahkan angka kehilangan tutupan pohon di Kabupaten Cirebon, Jawa Barat pada 2024.",
+    "original_id": 497,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 481
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada 2025, mana yang lebih tinggi persentase penduduk miskin, Kabupaten Garut atau Kabupaten Gayo Lues?",
+    "original_id": 397,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 482
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "tren",
+    "question": "Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kota Sibolga, Sumatera Utara dari 2021 sampai 2025.",
+    "original_id": 200,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 483
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren jumlah penduduk miskin di Kabupaten Konawe Kepulauan selama 2022–2024?",
+    "original_id": 270,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 484
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak perkebunan tebu terhadap akses tanah dan penghidupan petani di Pundenrejo, Pati? Tambahkan angka kehilangan tutupan pohon di Kabupaten Pati, Jawa Tengah pada 2024.",
+    "original_id": 479,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 485
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan wilayah",
+    "question": "Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Kalimantan Tengah atau Papua?",
+    "original_id": 79,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 486
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Sumedang, Jawa Barat pada 2025, dalam hektare.",
+    "original_id": 120,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 487
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa jumlah penduduk miskin di Kalimantan Barat pada Maret 2024?",
+    "original_id": 199,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 488
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak proyek Rempang Eco City di Pulau Rempang bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 426,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 489
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_tren",
+    "question": "Jelaskan masalah proyek gas LNG di Teluk Bintuni dan tampilkan tren kehilangan tutupan pohon di Kabupaten Teluk Bintuni, Papua Barat untuk 2023–2025.",
+    "original_id": 484,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 490
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Perbandingan tahun",
+    "question": "Bandingkan persentase penduduk miskin di Kabupaten Klungkung pada 2023 dan 2024. Berapa perubahannya?",
+    "original_id": 348,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 491
+  },
+  {
+    "route": "environment",
+    "group": "ngo",
+    "kind": "laporan_dampak",
+    "question": "Jelaskan dampak pembangunan PLTU di Jambi bagi warga setempat, disertai bukti yang ditemukan.",
+    "original_id": 444,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 492
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Kota Pariaman pada 2023?",
+    "original_id": 180,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 493
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Permintaan angka",
+    "question": "Berapa persentase penduduk miskin di Lampung pada Maret 2026?",
+    "original_id": 19,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 494
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon di Nusa Tenggara Timur pada 2023, dalam hektare.",
+    "original_id": 22,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 495
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "data",
+    "question": "Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Sikka, Nusa Tenggara Timur pada 2024, dalam hektare.",
+    "original_id": 71,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 496
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "rata_rata",
+    "question": "Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Indramayu, Jawa Barat untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.",
+    "original_id": 328,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 497
+  },
+  {
+    "route": "environment",
+    "group": "gfw",
+    "kind": "periode_belum_tersedia",
+    "question": "Sudah berapa hektare kehilangan tutupan pohon di Papua Barat Daya selama 2026 sampai bulan terakhir yang tersedia?",
+    "original_id": 334,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 498
+  },
+  {
+    "route": "environment",
+    "group": "gabungan",
+    "kind": "gabungan_data",
+    "question": "Apa dampak perkebunan sawit terhadap hutan dan kehidupan masyarakat di Riau? Tambahkan angka kehilangan tutupan pohon di Riau pada 2024.",
+    "original_id": 499,
+    "original_file": "docs/test-evidence/20261106/benchmark500-v1/plan.json",
+    "id": 499
+  },
+  {
+    "route": "general",
+    "group": "bps",
+    "kind": "Tren",
+    "question": "Bagaimana tren persentase penduduk miskin di Kota Medan selama 2023–2025?",
+    "original_id": 54,
+    "original_file": "docs/test-evidence/20261107/general-bps-500-v1/cases.json",
+    "id": 500
+  }
+]

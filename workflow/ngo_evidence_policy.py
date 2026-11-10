@@ -321,6 +321,30 @@ def outcome_matches(question, finding):
     return True
 
 
+def statistical_comparison_supported(question, proof):
+    """Ongoing events are not a counterexample to a falling statistical series.
+
+    Retain qualitative observations as context. A requested numeric trend or
+    comparison needs a quantitative comparison in the original source prose.
+    This does not constrain ordinary questions about lived experience.
+    """
+    statistical = re.search(r'\b(?:kasus|luas|jumlah|persentase|tren|tingkat|angka)\b', question, re.I)
+    comparison = re.search(r'naik|turun|meningkat|menurun|bertambah|berkurang|lebih|dibanding', question, re.I)
+    if not (statistical and comparison):return True
+    from ngo_source_facts import quantities
+    measured = quantities(proof)
+    comparative_prose = re.search(r'naik|turun|meningkat|menurun|bertambah|berkurang|dibanding|lebih|increase|decrease|declin|compared', proof, re.I)
+    anchors = re.search(r'\bdari\b.+\b(?:menjadi|ke)\b|dibanding|compared|from.+to', proof, re.I)
+    if not measured or not comparative_prose:return False
+    years = set(re.findall(r'\b(?:19|20)\d{2}\b', proof))
+    if not anchors and len(years)<2:return False
+    # An explicit requested observation year cannot be supplied by a different
+    # historical event. Ignore the attribution date after the actual claim.
+    claim = re.split(r'Pernyataan disampaikan', question, flags=re.I)[0]
+    requested_years = set(re.findall(r'\b(?:19|20)\d{2}\b', claim))
+    return not requested_years or requested_years <= years
+
+
 def evidence_rows(findings, support_for):
     from ngo_metadata import spans
     rows=[]
@@ -489,6 +513,8 @@ async def check_fits(llm, question, findings, support_for):
         if activity_note:item.activity='general_context'
         finding.measure_validated=item.measure_supported and item.geography!='broader_context'
         if not outcome_matches(question,finding):item.relation='context_only'
+        if not statistical_comparison_supported(question,finding.validated_source_text):
+            item.relation='context_only'
         if item.geography=='broader_context':finding.text='Konteks wilayah lebih luas: '+finding.text
         if item.activity=='general_context':
             item.relation='context_only'

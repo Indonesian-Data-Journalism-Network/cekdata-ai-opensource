@@ -1,0 +1,26 @@
+{
+  "question_count": 12,
+  "rounds": 1,
+  "completed_answers": 11,
+  "service_errors": 1,
+  "verdict_counts": {
+    "Tidak dapat diverifikasi": 11
+  },
+  "claims_conclusively_verified": 0,
+  "review_counts": {
+    "terbatas_wajar": 7,
+    "masalah_pemilihan_indikator": 2,
+    "kesalahan_isi": 2,
+    "gangguan": 1
+  },
+  "review_percent": {
+    "terbatas_wajar": 58.33,
+    "masalah_pemilihan_indikator": 16.67,
+    "kesalahan_isi": 16.67,
+    "gangguan": 8.33
+  },
+  "scope": "Pengujian backend Environment yang sama dengan website, bukan uji UI atau transport Netlify. Klaim tidak disertai artikel sumber dan tidak ada ingest baru. Satu kali tiap klaim. Kode mesin tidak diubah.",
+  "rubric": "Terbatas wajar berarti penahanan kesimpulan sesuai bukti yang diperiksa, bukan pembuktian kebenaran klaim atau bukti bahwa data tidak ada di mana pun. Jawaban parsial tidak otomatis salah. Pemilihan indikator yang keliru, kesalahan isi, dan gangguan dipisahkan.",
+  "accuracy_note": "Tidak dilaporkan sebagai tingkat akurasi faktual terhadap 12 klaim: tidak ada klaim yang diverifikasi tuntas dengan bukti memadai.",
+  "code_changed": []
+}

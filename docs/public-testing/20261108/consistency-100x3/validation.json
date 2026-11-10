@@ -1,0 +1,13 @@
+{
+  "answers": 300,
+  "unique_questions": 100,
+  "manual_NGO_reviews": 60,
+  "structured_display_checks": 240,
+  "arithmetic_checks": 329,
+  "arithmetic_errors": 0,
+  "unchanged_code": true,
+  "unchanged_data_manifests": true,
+  "report_answer_panels": 300,
+  "local_links_valid": true,
+  "secret_check_passed": true
+}

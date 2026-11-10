@@ -19,6 +19,11 @@ from pydantic_core import PydanticUndefined
 from copy import deepcopy
 import importlib
 import presentation
+import geography
+# Both adapters reload this module while preserving authenticated sessions.
+# Refresh the geographic dependency too before NGO scope checks import it.
+importlib.reload(geography)
+from unit_reading import convert_unit, explicit_value_claim, explicit_change_claim
 # The local server reloads this workflow per request while retaining key sessions.
 render_answer = importlib.reload(presentation).render_answer
 
@@ -30,6 +35,7 @@ class Evidence(BaseModel):
     area: str
     year: int = Field(ge=1900, le=2200)
     month: int | None = Field(default=None, ge=1, le=12)
+    quarter: int | None = Field(default=None, ge=1, le=4)
     period_text: str = ""
     temporal_basis: str = 'annual'
     aggregation_kind: str = ''
@@ -54,6 +60,8 @@ class Evidence(BaseModel):
     duplicate_source_record_ids: list[str] = Field(default_factory=list)
     synthetic: bool = False
     source_note: str = ''
+    data_status: str = ''
+    data_status_note: str = ''
     provider: str = ''
     dataset_version: str = ''
     source_sha256: str = ''
@@ -69,7 +77,7 @@ class Evidence(BaseModel):
 
     @property
     def period(self):
-        return (self.year, self.month or 0)
+        return (self.year, self.quarter * 3 if self.temporal_basis == 'quarter' and self.quarter else self.month or 0)
 
     @property
     def concept(self):
@@ -102,6 +110,25 @@ class Predicate(BaseModel):
         return value
 
 
+class RequestedMeasure(BaseModel):
+    concept: str = Field(max_length=240, description='Exact measurement requested, not the broad topic or publication title.')
+    dimension: Literal['percentage', 'count', 'currency', 'area', 'index', 'mass', 'unspecified'] = 'unspecified'
+    excluded_measures: list[str] = Field(default_factory=list, max_length=6,
+        description='Nearby measurements that cannot answer this request; use concise indicator names, not sentences.')
+
+
+class ObservationPeriod(BaseModel):
+    year: int = Field(ge=1900, le=2200)
+    month: int | None = Field(default=None, ge=1, le=12)
+    quarter: int | None = Field(default=None, ge=1, le=4)
+
+    @model_validator(mode='after')
+    def distinct_frequency(self):
+        if self.month is not None and self.quarter is not None:
+            raise ValueError('Periode tidak boleh sekaligus bulanan dan triwulanan.')
+        return self
+
+
 class Intent(BaseModel):
     """Complete interpretation of the original user input, before data retrieval."""
     kind: Literal["lookup", "comparison", "trend", "explanation", "claim"] = Field(description='claim for assertions including incomplete statements; lookup only for requests for a value')
@@ -112,6 +139,8 @@ class Intent(BaseModel):
     temporal: Literal["latest", "explicit", "this_year"] = "latest"
     year: int | None = None
     month: int | None = Field(default=None, ge=1, le=12)
+    requested_periods: list[ObservationPeriod] = Field(default_factory=list, max_length=1201,
+        description='Exact observation periods requested, chronological. For a month comparison include BOTH months and their years. For quarters use quarter 1–4, month null. Annual March series repeats month 3 for each year. Never substitute a quarter with its first/last month.')
     baseline_year: int | None = None
     requested_years: list[int] = Field(default_factory=list, max_length=101,
         description='Exact non-range list of observation years explicitly requested; never fill unrequested intermediate years.')
@@ -131,6 +160,9 @@ class Intent(BaseModel):
     change_years: list[int] = Field(default_factory=list, max_length=2)
     statement_date: date | None = None
     assumptions: list[str] = Field(default_factory=list, max_length=3)
+    requested_measures: list[RequestedMeasure] = Field(default_factory=list, max_length=8)
+    question_parts: list[str] = Field(default_factory=list, max_length=8,
+        description='All requested tasks, preserving their respective locations, periods, populations and claim qualifiers.')
 
     @model_validator(mode='before')
     @classmethod
@@ -150,6 +182,7 @@ class SearchQuery(BaseModel):
     population: str = "total"
     years: list[int] = Field(default_factory=list, max_length=101)
     month: int | None = None
+    periods: list[ObservationPeriod] = Field(default_factory=list, max_length=1201)
     rationale: str = ""
 
 
@@ -230,7 +263,33 @@ def number(value: str):
 
 def canonical_unit(unit: str) -> str:
     # A count prefix changes wording, not magnitude. Do not strip scale words.
-    return re.sub(r'^jumlah\s+', '', unit.strip().casefold())
+    normalized = re.sub(r'^jumlah\s+', '', unit.strip().casefold())
+    return {'%': 'persen', 'percent': 'persen', 'percentage': 'persen',
+            'percentage point': 'poin persentase', 'percentage points': 'poin persentase'}.get(normalized, normalized)
+
+
+def threshold_in_unit(predicate, unit):
+    if canonical_unit(unit) == canonical_unit(predicate.unit):
+        return Decimal(predicate.threshold)
+    return convert_unit(predicate.threshold, predicate.unit, unit)
+
+
+def direction_only_claim(question, predicate):
+    """A sign test has no percentage magnitude to convert.
+
+    Keep numerical, compound and qualified magnitude claims on the normal
+    unit-checking path, even if a model incorrectly turned their threshold to 0.
+    """
+    if (predicate.metric != 'change' or predicate.operator not in {'gt', 'lt'}
+            or Decimal(predicate.threshold) != 0):
+        return False
+    q = re.sub(r'\b(?:19|20)\d{2}\b', '', question.casefold())
+    if re.search(r'\d|%|\b(?:persen|percent|poin|sebesar|sebanyak|lipat|kali|'
+                 r'separuh|setengah|seperempat|satu|dua|tiga|empat|lima|enam|tujuh|'
+                 r'delapan|sembilan|sepuluh|nol|dan|atau)\b', q):
+        return False
+    return bool(re.search(r'\b(?:naik|turun|meningkat|menurun|bertambah|berkurang|'
+                          r'lebih tinggi|lebih rendah|lebih besar|lebih kecil)\b', q))
 
 
 def absence_count_claim(question: str) -> bool:
@@ -327,12 +386,33 @@ def guard_claim_kind(intent: Intent, question: str):
         intent.causal = True
     if not re.search(r'\b(?:karena|berkat|akibat|disebabkan|menyebabkan|pengaruh|dampak|berhasil|keberhasilan|gagal|kegagalan)\b', causal_text):
         intent.causal = False
+    literal = explicit_value_claim(question)
+    if (intent.kind == 'claim' and not intent.causal and literal
+            and (intent.predicate is None or (intent.predicate.metric == 'value'
+                 and intent.predicate.operator == 'eq' and not intent.predicate.negated))):
+        # Bind both number and unit to the user's explicit literal. A generic
+        # model dimension such as "count" must not replace "ribu jiwa".
+        intent.predicate = Predicate(metric='value', operator='eq',
+                                     threshold=literal[0], unit=literal[1])
+    change_literal = explicit_change_claim(question)
+    if intent.kind == 'claim' and not intent.causal and change_literal:
+        intent.predicate = Predicate(metric='change', operator='eq',
+                                     threshold=change_literal[0], unit=change_literal[1])
+        intent.relative_change = canonical_unit(change_literal[1]) == 'persen'
     if intent.kind == 'claim' and intent.predicate is None and not intent.causal:
-        value = re.search(r'\b(?:ada|sebanyak|sebesar|berjumlah|jumlahnya)\s+(nol|\d+(?:[.,]\d+)?)\b', q)
+        value = re.search(r'\b(?:ada|sebanyak|sebesar|berjumlah|jumlahnya)\s+(nol|\d+(?:[.,]\d+)*)\b', q)
         change = re.search(r'\b(naik|turun)\s+(\d+(?:[.,]\d+)?)\s+(orang|unit|keluarga|persen|poin persentase)\b', q)
-        if value and not re.search(r'\b(?:juta|miliar|triliun|ribu|dan|atau|tidak|bukan)\b', q):
+        # Preserve an explicitly written unit when constructing a missing
+        # predicate. Otherwise the selector fills it with the table unit and
+        # silently changes e.g. 12,220 people into 12,220 thousand people.
+        stated_unit = re.match(r'\s+((?:(?:ribu|juta|miliar|triliun)\s+)?'
+                              r'(?:rumah tangga|poin persentase|jiwa|orang|rupiah|rp|ton|hektar|ha|kasus|keluarga|unit|persen|tahun|indeks))\b',
+                              q[value.end():]) if value else None
+        if (value and not re.search(r'\b(?:dan|atau|tidak|bukan)\b', q)
+                and (stated_unit or not re.search(r'\b(?:juta|miliar|triliun|ribu)\b', q))):
             raw = value[1].replace('nol','0').replace('.','').replace(',','.')
-            intent.predicate = Predicate(metric='value',operator='eq',threshold=raw,unit='')
+            intent.predicate = Predicate(metric='value',operator='eq',threshold=raw,
+                                         unit=stated_unit[1] if stated_unit else '')
         elif change and not re.search(r'\b(?:juta|miliar|triliun|ribu|dan|atau|tidak|bukan)\b', q):
             raw = change[2].replace('.','').replace(',','.')
             if change[1] == 'turun': raw = '-' + raw
@@ -435,6 +515,9 @@ def guard_temporal_scope(intent: Intent, question: str):
         intent.baseline_year = None
 
 
+    from period_contract import normalize
+    normalize(intent, question)
+
 def observation_period(record: Evidence) -> str:
     if record.temporal_basis != 'annual' and record.period_text:
         return record.period_text
@@ -495,6 +578,18 @@ def explain_evidence_gap(state: RequestState, out: Assessment) -> str:
                   if i.predicate and i.predicate.metric == 'change'
                   else 'Data yang tersedia belum cukup untuk menguji klaim pada lingkup tersebut.')
         return available + missing + effect
+    if i.requested_periods and any(g in out.gaps for g in ('comparable_baseline_missing','trend_incomplete')):
+        from period_contract import key as period_key, label as period_name
+        expected = {period_key(p):p for p in i.requested_periods}
+        missing = []
+        for ind in i.indicator_ids:
+            for area in i.areas:
+                present = {period_key(r) for r in out.primary if r.indicator_id==ind and r.area==area}
+                missing.extend(period_name(p) for k,p in expected.items() if k not in present)
+        if missing:
+            return ('Data pembanding untuk ' + ', '.join(dict.fromkeys(missing)) +
+                    ' belum ditemukan pada lingkup yang sama. Perubahan belum dapat disimpulkan; periode tanpa data tidak dianggap nol.')
+        return 'Perubahan membutuhkan dua periode pengamatan berbeda; satu observasi tidak dapat menjadi pembanding bagi dirinya sendiri.'
     if 'comparable_baseline_missing' in out.gaps:
         targets = {}
         for r in out.primary:
@@ -549,7 +644,10 @@ def assess(state: RequestState) -> Assessment:
             return i.temporal != 'this_year' and (not explicit_years or bool(re.search(r'\bversi\b',state.question,re.I)))
         return True
     exact = [r for r in exact if temporal_match(r)]
-    if i.month is not None:
+    from period_contract import matches as period_matches, key as period_key
+    if i.requested_periods:
+        exact = [r for r in exact if period_matches(r, i.requested_periods)]
+    elif i.month is not None:
         exact = [r for r in exact if r.month == i.month]
     target_year = state.reference_date.year if i.temporal == 'this_year' else i.year
     # One conceptual series spans annual dataset IDs. Unit/method differences
@@ -562,7 +660,9 @@ def assess(state: RequestState) -> Assessment:
     series_request = i.requires_series or i.continuous or (i.kind == 'trend' and not (i.endpoint_difference or i.relative_change))
     targets = []
     for group in grouped.values():
-        if series_request:
+        if i.requested_periods:
+            eligible = group
+        elif series_request:
             # A requested series remains evidence even when its final year is
             # missing. The last available point anchors retrieval, not a new end date.
             end = target_year or max(r.year for r in group)
@@ -572,8 +672,13 @@ def assess(state: RequestState) -> Assessment:
             eligible = [r for r in group if target_year is None or r.year == target_year]
         if eligible:
             latest = max(r.period for r in eligible)
-            targets.extend(r for r in eligible if r.period == latest)
+            targets.extend(r for r in eligible if r.period == latest or
+                           (i.requested_periods and i.kind == 'lookup'))
     out.primary = list(targets)
+    if i.kind == 'lookup' and i.requested_periods:
+        required = {period_key(p) for p in i.requested_periods}
+        if any(required - {period_key(r) for r in group} for group in grouped.values()):
+            out.gaps.append('requested_scope_missing')
     expected = {(ind, area) for ind in i.indicator_ids for area in i.areas}
     covered = {(r.indicator_id, r.area) for r in targets}
     if expected - covered:
@@ -599,7 +704,18 @@ def assess(state: RequestState) -> Assessment:
                 continue
             processed.add(family(target))
             group = grouped[family(target)]
-            if series_request:
+            if i.requested_periods:
+                points = group
+                out.primary.extend(points)
+                required_keys = [period_key(p) for p in i.requested_periods]
+                available_keys = {period_key(r) for r in points}
+                if set(required_keys) - available_keys:
+                    out.gaps.append('trend_incomplete' if series_request else 'comparable_baseline_missing')
+                if len({k[0] for k in required_keys}) > 1:
+                    out.gaps.append('incompatible_definitions')
+                    continue
+                pairs = list(zip(required_keys, required_keys[1:])) if series_request else [(required_keys[0],required_keys[-1])]
+            elif series_request:
                 end_year = target_year or target.year
                 start = i.baseline_year or end_year - i.trend_years + 1
                 required = set(i.requested_years) if i.requested_years else set(range(start, end_year + 1))
@@ -620,8 +736,8 @@ def assess(state: RequestState) -> Assessment:
                 out.primary.extend(points)
                 pairs = [(baseline_year, target.year)]
             for before, after in pairs:
-                previous = [r for r in points if r.year == before]
-                following = [r for r in points if r.year == after]
+                previous = [r for r in points if (period_key(r) if i.requested_periods else r.year) == before]
+                following = [r for r in points if (period_key(r) if i.requested_periods else r.year) == after]
                 if not previous or not following:
                     out.gaps.append('comparable_baseline_missing')
                     continue
@@ -629,6 +745,9 @@ def assess(state: RequestState) -> Assessment:
                     out.gaps.append('source_conflict')
                     continue
                 baseline, end = previous[0], following[0]
+                if baseline.id == end.id or period_key(baseline) == period_key(end):
+                    out.gaps.append('comparable_baseline_missing')
+                    continue
                 # Missing metadata alone is not proof of incompatibility.
                 if (canonical_unit(baseline.unit) != canonical_unit(end.unit) or
                     (baseline.definition and end.definition and baseline.definition != end.definition) or
@@ -636,11 +755,11 @@ def assess(state: RequestState) -> Assessment:
                     out.gaps.append('incompatible_definitions')
                     continue
                 delta = Decimal(end.value) - Decimal(baseline.value)
-                unit = 'poin persentase' if end.unit in {'persen', '%'} else end.unit
-                edge_kind = 'endpoint' if series_request and after-before>1 else 'time'
+                unit = 'poin persentase' if canonical_unit(end.unit) == 'persen' else end.unit
+                edge_kind = 'endpoint' if not i.requested_periods and series_request and after-before>1 else 'time'
                 out.calculations.append(Calculation(kind=edge_kind,id=f'{baseline.id}__{end.id}',
                     baseline_id=baseline.id, target_id=end.id, value=str(delta), unit=unit))
-                if i.relative_change and (not series_request or (before,after)==(start,end_year)):
+                if i.relative_change and (i.requested_periods or not series_request or (before,after)==(start,end_year)):
                     if Decimal(baseline.value) <= 0:
                         out.gaps.append('relative_baseline_invalid')
                     else:
@@ -679,7 +798,7 @@ def assess(state: RequestState) -> Assessment:
                 and left.source == right.source and canonical_unit(left.unit) == canonical_unit(right.unit)
                 and (not left.definition or not right.definition or left.definition == right.definition)
                 and (not left.method or not right.method or left.method == right.method)):
-            unit = 'poin persentase' if left.unit in {'persen','%'} else left.unit
+            unit = 'poin persentase' if canonical_unit(left.unit) == 'persen' else left.unit
             out.calculations.append(Calculation(kind='scope',id=f'{left.id}__{right.id}',
                 baseline_id=left.id,target_id=right.id,
                 value=str(Decimal(right.value)-Decimal(left.value)),unit=unit))
@@ -705,10 +824,17 @@ def assess(state: RequestState) -> Assessment:
             claim_calculations=[c for c in out.calculations if c.kind in kinds]
         values = ([(c.value, c.unit) for c in claim_calculations] if p.metric == 'change'
                   else [(r.value, r.unit) for r in targets])
-        if i.continuous and p.metric == 'change' and values and all(canonical_unit(u) == canonical_unit(p.unit) for _, u in values):
+        # Comparing a percentage series' direction requires the sign of its
+        # difference, not treating a relative percentage as a percentage point.
+        # Work on a copy: retain the original interpreted predicate in the trace.
+        if (values and canonical_unit(p.unit) == 'persen'
+                and all(canonical_unit(u) == 'poin persentase' for _, u in values)
+                and direction_only_claim(state.question, p)):
+            p = p.model_copy(update={'unit': 'poin persentase'})
+        if i.continuous and p.metric == 'change' and values and all(threshold_in_unit(p, u) is not None for _, u in values):
             checks = []
-            for v, _ in values:
-                a, b = Decimal(v), Decimal(p.threshold)
+            for v, u in values:
+                a, b = Decimal(v), threshold_in_unit(p, u)
                 checks.append({'eq': a == b, 'ne': a != b, 'gt': a > b, 'ge': a >= b, 'lt': a < b, 'le': a <= b}[p.operator])
             supported = all(checks)
             if p.negated:
@@ -724,13 +850,13 @@ def assess(state: RequestState) -> Assessment:
         elif len(values) != 1:
             out.reason = ('Belum dapat ditentukan satu nilai yang sesuai dengan lingkup klaim. '
                           'Indikator, wilayah, atau sumber yang menjadi acuan perlu diperjelas.')
-        elif canonical_unit(values[0][1]) != canonical_unit(p.unit):
+        elif threshold_in_unit(p, values[0][1]) is None:
             out.reason = (f'Klaim menggunakan satuan {p.unit}, sedangkan data yang ditemukan '
                           f'menggunakan {values[0][1]}. '
                           'Nilainya belum dapat dibandingkan langsung tanpa penyamaan satuan yang tepat.')
         else:
             value, unit = values[0]
-            a, b = Decimal(value), Decimal(p.threshold)
+            a, b = Decimal(value), threshold_in_unit(p, unit)
             supported = {'eq': a == b, 'ne': a != b, 'gt': a > b,
                          'ge': a >= b, 'lt': a < b, 'le': a <= b}[p.operator]
             if p.negated:
@@ -742,7 +868,7 @@ def assess(state: RequestState) -> Assessment:
             relationship = {'eq': 'sebesar', 'ne': 'bukan sebesar', 'gt': 'lebih dari',
                             'ge': 'setidaknya', 'lt': 'kurang dari', 'le': 'tidak lebih dari'}[operator]
             subject = 'perubahan' if p.metric == 'change' else 'nilai'
-            out.reason = (f'Klaim menyebut {subject} {relationship} {quantity(p.threshold,unit)}, '
+            out.reason = (f'Klaim menyebut {subject} {relationship} {quantity(p.threshold,p.unit)}, '
                           f'sedangkan data menunjukkan {quantity(value,unit)}. '
                           f'Data {"mendukung" if supported else "bertentangan dengan"} klaim tersebut.')
             from answer_format import rounded
@@ -899,7 +1025,7 @@ def trend_conclusion(state: RequestState) -> str:
         return 'Tren belum dapat disimpulkan karena pemeriksaan belum mencakup seluruh hasil pencarian.'
     groups = {}
     for r in out.primary:
-        groups.setdefault((r.indicator_id, r.area, r.population, r.source, r.month), []).append(r)
+        groups.setdefault((r.indicator_id, r.area, r.population, r.source, None if state.intent.requested_periods else r.month), []).append(r)
     lines = []
     for records in groups.values():
         periods = sorted({r.period for r in records})
@@ -980,7 +1106,7 @@ def render(state: RequestState, analysis: Analysis) -> dict:
             direction = 'naik' if Decimal(c.value) > 0 else 'turun' if Decimal(c.value) < 0 else 'tetap'
             absolute = abs(Decimal(after.value)-Decimal(before.value))
             direct_answer = (f'Dari {period_label(before)} ke {period_label(after)}, {readable_indicator(after)} di {after.area} '
-                f'{direction} sebesar {quantity(str(absolute),after.unit)}, atau {number(amount)} persen.')
+                f'{direction} sebesar {quantity(str(absolute),'poin persentase' if canonical_unit(after.unit)=='persen' else after.unit)}, atau {number(amount)} persen.')
         elif requested_difference and state.intent.endpoint_difference and len(out.calculations) == 1:
             c = out.calculations[0]
             before, after = by_id[c.baseline_id], by_id[c.target_id]
@@ -1046,7 +1172,10 @@ def render(state: RequestState, analysis: Analysis) -> dict:
             omit.add('trend_incomplete')
             if state.intent.kind != 'trend' and len({r.period for r in out.primary}) > 1:
                 context.append('Pencarian memakai rentang bawaan beberapa tahun terakhir; data yang ditemukan belum mencakup seluruh rentang tersebut.')
-        if 'trend_incomplete' in out.gaps and state.intent.temporal != 'latest':
+        if 'trend_incomplete' in out.gaps and state.intent.requested_periods:
+            context.append(explain_evidence_gap(state,out))
+            omit.add('trend_incomplete')
+        if 'trend_incomplete' in out.gaps and state.intent.temporal != 'latest' and not state.intent.requested_periods:
             groups = {}
             for r in out.primary:
                 groups.setdefault((r.indicator_id,r.area,r.source,r.month),[]).append(r)
@@ -1063,6 +1192,11 @@ def render(state: RequestState, analysis: Analysis) -> dict:
                 omit.add('trend_incomplete')
         context.extend(explain_evidence_gap(state,out) if g=='relative_baseline_invalid' and set(out.gaps)=={g}
                        else GAP_TEXT[g] for g in out.gaps if g not in omit)
+    for record in out.primary:
+        if record.data_status == 'provisional' and record.data_status_note:
+            note = f'{record.source}: data {record.year} berstatus {record.data_status_note.lower()}.'
+            if note not in context:
+                context.append(note)
     conclusion = direct_answer
     summary = editorial_text(analysis.summary, state)
     if state.intent.kind == 'comparison' and not requested_difference and re.search(r'\b(?:selisih|beda sebesar|perbedaan sebesar)\b', summary, re.I):
@@ -1231,17 +1365,22 @@ class CekDataWorkflow(Workflow):
             importlib.reload(ngo_answer)
             if ngo_answer.active():
                 documents = ngo_answer
-            if documents and documents.requested(question):
-                result = await ngo_answer.answer_question(self.ai.llm, question, reference,
-                                                         catalog=self.catalog, retriever=self.retriever)
-                return StopEvent(result=result)
         try:
             intent = await self.ai.understand(question, reference, self.catalog)
         except ModelOutputError:
             return StopEvent(result=model_output_failure())
-        if documents and documents.fallback_requested(question, intent):
+        guard_claim_kind(intent, question)
+        guard_temporal_scope(intent, question)
+        if documents and (documents.requested(question) or documents.fallback_requested(question, intent, self.catalog)):
+            request_intent = getattr(self.ai, 'request_intent', None) or intent
+            request_intent = request_intent.model_copy(deep=True)
+            guard_claim_kind(request_intent, question)
+            guard_temporal_scope(request_intent, question)
             result = await documents.answer_question(self.ai.llm, question, reference,
-                                                     catalog=self.catalog, retriever=self.retriever)
+                catalog=self.catalog, retriever=self.retriever, request_intent=request_intent)
+            import related_evidence
+            result = await importlib.reload(related_evidence).attach(result, question, request_intent,
+                self.catalog, reference, self.retriever)
             return StopEvent(result=result)
         guard_claim_kind(intent, question)
         guard_temporal_scope(intent, question)
@@ -1262,9 +1401,12 @@ class CekDataWorkflow(Workflow):
                 years = intent.requested_years or list(range(intent.baseline_year or intent.year - intent.trend_years + 1, intent.year + 1))
             elif intent.relative_change or intent.baseline_year or (intent.predicate and intent.predicate.metric == 'change') or intent.kind == 'explanation':
                 years.append(intent.baseline_year or intent.year - 1)
+        if intent.requested_periods:
+            years = sorted({p.year for p in intent.requested_periods})
         return SearchEvent(state=state, queries=[SearchQuery(text=intent.reformulated or question,
             indicator_ids=intent.indicator_ids, areas=intent.areas, sources=intent.sources,
-            population=intent.population, years=years, month=intent.month)])
+            population=intent.population, years=years,
+            month=None if intent.requested_periods else intent.month, periods=intent.requested_periods)])
 
     @step
     async def retrieve(self, ev: SearchEvent) -> AssessEvent:
@@ -1300,12 +1442,17 @@ class CekDataWorkflow(Workflow):
         if state.intent.indicator_ids:
             queries.append(SearchQuery(text=state.question, indicator_ids=state.intent.indicator_ids,
                 areas=state.intent.areas, sources=state.intent.sources, population=state.intent.population,
-                month=state.intent.month, rationale='Cari periode tersedia untuk indikator yang sama.'))
+                month=None if state.intent.requested_periods else state.intent.month,
+                periods=state.intent.requested_periods, rationale='Cari periode tersedia untuk indikator yang sama.'))
         for q in proposal.queries:
             if not q.rationale or not q.indicator_ids or not set(q.indicator_ids) <= allowed_ids:
                 continue
             # Preserve explicit source and geographic scope in this first prototype.
             q.areas, q.sources, q.population = state.intent.areas, state.intent.sources, state.intent.population
+            if state.intent.requested_periods:
+                q.periods = state.intent.requested_periods
+                q.month = None
+                q.years = sorted({p.year for p in q.periods})
             if q.model_dump() not in [item.model_dump() for item in queries]:
                 queries.append(q)
         state.trace.append({'stage': 'alternatives', 'count': min(3, len(queries))})
@@ -1324,7 +1471,11 @@ class CekDataWorkflow(Workflow):
         if analysis.needs_more_evidence and state.rounds == 0:
             return AlternativeEvent(state=state)
         from environment_data import explain_unavailable
-        return StopEvent(result=explain_unavailable(render(state, analysis), state, self.catalog))
+        result = explain_unavailable(render(state, analysis), state, self.catalog)
+        import related_evidence
+        result = await importlib.reload(related_evidence).attach(result, state.question, state.intent,
+            self.catalog, state.reference_date, self.retriever)
+        return StopEvent(result=result)
 
 
 INTENT_PROMPT = PromptTemplate('''Kamu adalah intent AI Cek Data AI, pemeriksa data dari berbagai sumber.
@@ -1347,6 +1498,22 @@ Lokasi tetap disebut meskipun tanpa kata di: 'Lulusan SD Lasem lebih dari 700' -
 Jangan mengganti lokasi yang tertulis dengan Indonesia. sources hanya nama lembaga,
 bukan judul publikasi/metode survei: Long Form SP2020 merupakan publikasi/survei BPS.
 Tulis indikator natural di indicator_terms dan padanan pencarian di search_terms.
+Isi requested_measures untuk SETIAP ukuran angka yang diminta: concept menyebut
+ukuran spesifik, dimension menyebut satuannya secara konseptual. Persentase atau
+proporsi memakai percentage; jumlah orang/unit count; nilai uang atau ambang
+pengeluaran currency; luas area; indeks index; berat mass. Jangan menyamakan
+ukuran berbeda hanya karena berada dalam topik atau tabel yang sama. Isi
+excluded_measures dengan indikator berdekatan yang tidak menjawab ukuran itu.
+Contoh kemiskinan umum: persentase penduduk miskin (percentage), bukan garis
+kemiskinan, jumlah penduduk miskin, kedalaman atau keparahan kemiskinan. Catat
+asumsi singkat jika pengguna tidak menyebut ukuran secara spesifik. Jika meminta
+garis kemiskinan, concept tetap garis kemiskinan dan dimension currency.
+Untuk survei laporan, pertahankan siapa respondennya dan apa yang mereka laporkan;
+persentase responden bukan ukuran objektif seluruh populasi. Pertanyaan kualitatif
+tidak wajib memiliki requested_measures. question_parts memuat SEMUA bagian
+pertanyaan beserta wilayah/periode masing-masing; jangan berhenti pada tanda tanya
+pertama. Acuan ini diteruskan ke pencarian, seleksi bukti, dan jawaban; jangan
+mengubahnya agar cocok dengan data yang kebetulan ditemukan.
 Contoh: pernikahan -> jumlah pernikahan, nikah; lapangan kerja bertambah -> jumlah penduduk
 bekerja; kemiskinan umum -> persentase penduduk miskin, bukan garis kemiskinan.
 Nama program bukan indikator: cari hasil yang diklaim berubah, pertahankan causal=true.
@@ -1359,6 +1526,11 @@ Pertahankan negasi, angka, satuan, arah, kelompok, dan cakupan proposisi asli da
 Tanpa katalog, indicator_ids kosong; tugasmu tidak memilih ID yang belum diberikan.
 
 Tanpa tahun: temporal=latest, year=null. Tahun eksplisit: explicit dan year=tahun akhir.
+Untuk periode bulanan/triwulanan eksplisit, isi requested_periods sebagai daftar
+periode lengkap. Februari ke Agustus pada satu tahun memerlukan DUA entri,
+bukan hanya month=8. Triwulan II memakai quarter=2 dan month=null.
+Pertahankan setiap tahun dan bulan/triwulan pada perbandingan lintas tahun.
+Jangan mengubah kuartal menjadi bulan awal atau akhir. Urutkan kronologis.
 Rentang tren 2015 sampai 2017: baseline_year=2015, year=2017, trend_years=3, requires_series=true.
 Pertanyaan persentase kenaikan/penurunan: relative_change=true, kind=comparison, requires_series=false.
 PENTING: membandingkan angka 2024 dan 2025 berbeda dari membandingkan kenaikan/perubahan

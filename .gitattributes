@@ -1,2 +1,4 @@
 # Empty TSV columns legitimately end with tabs.
 workflow/reference/*.tsv whitespace=-blank-at-eol
+# PDFs contain cross-reference offsets and embedded streams; preserve their bytes.
+*.pdf binary

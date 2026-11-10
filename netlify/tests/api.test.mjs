@@ -23,3 +23,11 @@ test('missing config, network errors and redirects fail closed',async()=>{
   const h=makeGateway({getEnv:k=>env[k],fetchImpl:async()=>{if(!result)throw Error(env.CEKDATA_GATEWAY_SECRET);return result;}});const r=await h(request());assert.equal(r.status,status);assert.doesNotMatch(await r.text(),/test-secret/);
  }
 });
+test('trial routes forward guest cookie without opening other anonymous routes',async()=>{
+ const seen=[];const handle=makeGateway({getEnv:k=>env[k],fetchImpl:async(url,init)=>{seen.push({url,init});return Response.json({ok:true});}});
+ const id='guest-job-123456789012345';
+ assert.equal((await handle(request('/api/demo/jobs','POST'))).status,200);
+ assert.equal((await handle(request('/api/demo/jobs/'+id,'GET',{headers:{cookie:'cekdata_demo_session=fixture'}}))).status,200);
+ assert.equal(seen[1].init.headers.cookie,'cekdata_demo_session=fixture');
+ assert.equal((await handle(request('/api/demo/admin','POST'))).status,404);
+});

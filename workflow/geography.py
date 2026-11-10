@@ -11,6 +11,15 @@ REFERENCE=Path(__file__).resolve().parent/'reference/geography.json'
 def normalize(text):
     return re.sub(r'[^\w]+',' ',text.casefold()).strip()
 
+def embedded_place_alias(text, alias, aliases):
+    """A known short name cannot absorb an unindexed compound proper name."""
+    for match in re.finditer(r'\b[A-Z][\w-]+(?:[ \t]+[A-Z][\w-]+){1,5}', text):
+        name = normalize(match[0])
+        name = re.sub(r'^(?:kabupaten|kota|provinsi|kecamatan|desa|kelurahan|pulau|sungai|das)\s+', '', name)
+        if name.startswith(alias + ' ') and name not in aliases:
+            return True
+    return False
+
 @lru_cache(maxsize=4)
 def _read(path,mtime):
     return json.loads(Path(path).read_text())
@@ -75,6 +84,7 @@ class Geography:
     def resolve(self,question):
         q=normalize(question);mentions=[]
         for m in self.pattern.finditer(q):
+            if embedded_place_alias(question, m[0], self.aliases):continue
             candidates=set(self.aliases[m[0]])
             # Explicit unsupported lower levels must not become their homonymous province.
             prefix=q[:m.start()].rstrip().split(' ')

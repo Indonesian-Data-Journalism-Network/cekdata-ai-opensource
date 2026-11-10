@@ -1,0 +1,23 @@
+{
+  "status": "collection_complete_pending_accuracy_review",
+  "started_at": "2026-11-08T11:55:50.913883+07:00",
+  "planned": 1500,
+  "completed": 1481,
+  "failed": 19,
+  "rounds": {
+    "1": {
+      "completed": 494,
+      "failed": 6
+    },
+    "2": {
+      "completed": 494,
+      "failed": 6
+    },
+    "3": {
+      "completed": 493,
+      "failed": 7
+    }
+  },
+  "updated_at": "2026-11-08T17:14:07.687651+07:00",
+  "resumed_at": "2026-11-08T12:09:43.555226+07:00"
+}

@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ChatPage, Header, HomePage, AboutPage } from './App.jsx';
 import HomeFooter from './ui/HomeFooter.jsx';
+import TeamPage from './ui/TeamPage.jsx';
 import WorkspaceDialog from './features/chat/WorkspaceDialog.jsx';
 import { requestJson } from './services/httpClient.js';
 
@@ -14,6 +15,7 @@ export default function LocalApp() {
   const [error, setError] = useState('');
   const [recordCount, setRecordCount] = useState(null);
   const [userName, setUserName] = useState('Pengguna lokal');
+  const [homeQuestion, setHomeQuestion] = useState(null);
   useEffect(() => {
     const controller = new AbortController();
     requestJson('/local/session', { signal: controller.signal }).then(data => {
@@ -56,8 +58,9 @@ export default function LocalApp() {
     setConfigured(false); setSettings(true); setKey('');
     setError('Sesi API key berakhir. Masukkan kembali key untuk melanjutkan.');
   }
-  const publicPage = page === 'home' || page === 'home-about';
-  function startChat() {
+  const publicPage = ['home', 'home-about', 'home-team'].includes(page);
+  function startChat(question) {
+    if (question?.question) setHomeQuestion(question);
     setError('');
     if (configured) setPage('chat');
     else setSettings(true);
@@ -65,23 +68,25 @@ export default function LocalApp() {
   function publicNavigate(destination) {
     if (destination === 'home') setPage('home');
     else if (destination === 'about') setPage('home-about');
+    else if (destination === 'team') setPage('home-team');
     else startChat();
   }
   return <div className={publicPage ? 'local-workspace local-home' : 'chat-app-shell local-workspace'}>
     {publicPage && <>
-      <Header page={page === 'home-about' ? 'about' : 'home'} setPage={publicNavigate} isLoggedIn={false} isAdmin={false} />
-      {page === 'home-about' ? <>
+      <Header hideAbout page={page === 'home-about' ? 'about' : 'home'} setPage={publicNavigate} isLoggedIn={false} isAdmin={false} />
+      {page === 'home-team' ? <TeamPage onBack={() => setPage('home')} /> : page === 'home-about' ? <>
         <div className="local-home-back"><button className="workspace-button" onClick={() => setPage('home')}>Kembali ke Home</button></div>
         <AboutPage />
       </> : <HomePage localMode onStart={startChat} />}
     </>}
     <div className="chat-app-content" hidden={publicPage}>
-    <ChatPage localMode ready={configured && !busy} navigation={{
+    <ChatPage localMode ready={configured && !busy}
+      initialQuestion={homeQuestion} onInitialQuestionConsumed={() => setHomeQuestion(null)} navigation={{
       page, onNavigate: setPage, userName, recordCount, configured, sessionBusy: busy,
       onSettings: () => setSettings(true), onSignOut: disconnect, onSessionExpired: sessionExpired,
     }} />
     </div>
-    {publicPage && <HomeFooter />}
+    {publicPage && <HomeFooter onNavigate={publicNavigate} />}
     <WorkspaceDialog open={settings} onClose={closeSettings} title="Pengaturan API key" busy={busy}>
       <p className="workspace-session-status">{configured ? 'Sesi aktif' : 'Hubungkan sesi untuk mulai bertanya'}</p>
       <form onSubmit={connect}>

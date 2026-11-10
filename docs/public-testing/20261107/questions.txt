@@ -1,0 +1,304 @@
+100 PERTANYAAN UJI PUBLIK CEK DATA AI
+Versi 1 — 7 November 2026
+Pilih General atau Environment sesuai label. Gunakan chat baru untuk setiap pertanyaan.
+Daftar berasal dari kasus yang pernah dinilai akurat. Hasil uji ulang disimpan terpisah.
+
+001. [General / bps / Permintaan angka]
+Berapa jumlah penduduk miskin di Kabupaten Aceh Jaya pada 2023?
+
+002. [General / bps / Permintaan angka]
+Berapa persentase penduduk miskin di Kota Denpasar pada 2025?
+
+003. [General / bps / Permintaan angka]
+Berapa indeks kedalaman kemiskinan di Indonesia pada Maret 2026?
+
+004. [General / bps / Permintaan angka]
+Berapa persentase penduduk miskin di Sulawesi Tenggara pada Maret 2025?
+
+005. [General / bps / Permintaan angka]
+Berapa jumlah penduduk miskin di Jawa Timur pada Maret 2026?
+
+006. [General / bps / Permintaan angka]
+Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?
+
+007. [General / bps / Permintaan angka]
+Berapa tingkat pengangguran terbuka di Jambi pada Februari 2025?
+
+008. [General / bps / Permintaan angka]
+Berapa persentase penyelesaian tindak pidana di Indonesia pada 2023?
+
+009. [General / bps / Permintaan angka]
+Berapa indeks keparahan kemiskinan di Indonesia pada Maret 2023?
+
+010. [General / bps / Permintaan angka]
+Berapa persentase rumah tangga dengan akses air minum layak di Indonesia pada 2025?
+
+011. [General / bps / Permintaan angka]
+Berapa persentase penduduk miskin di Kabupaten Bangka pada 2023?
+
+012. [General / bps / Permintaan angka]
+Berapa jumlah penduduk miskin di Kabupaten Maluku Tengah pada 2023?
+
+013. [General / bps / Permintaan angka]
+Berapa persentase penduduk miskin di Bengkulu pada Maret 2025?
+
+014. [General / bps / Permintaan angka]
+Berapa tingkat partisipasi angkatan kerja di Banten pada Februari 2026?
+
+015. [General / bps / Tren]
+Bagaimana tren umur harapan hidup saat lahir di Indonesia selama 2021–2023?
+
+016. [General / bps / Tren]
+Bagaimana tren jumlah penduduk miskin di Sulawesi Selatan pada bulan Maret setiap tahun selama 2024–2026?
+
+017. [General / bps / Tren]
+Bagaimana tren tingkat pengangguran terbuka di Kalimantan Barat pada bulan Agustus setiap tahun selama 2021–2023?
+
+018. [General / bps / Tren]
+Bagaimana tren persentase penyelesaian tindak pidana di Indonesia selama 2021–2023?
+
+019. [General / bps / Tren]
+Bagaimana tren indeks keparahan kemiskinan di Indonesia pada bulan Maret setiap tahun selama 2023–2025?
+
+020. [General / bps / Tren]
+Bagaimana tren persentase penduduk miskin di Kabupaten Garut selama 2023–2025?
+
+021. [General / bps / Tren]
+Bagaimana tren tingkat partisipasi angkatan kerja di Lampung pada bulan Februari setiap tahun selama 2024–2026?
+
+022. [General / bps / Tren]
+Bagaimana tren jumlah penduduk miskin di Kabupaten Malang selama 2023–2025?
+
+023. [General / bps / Perbandingan tahun]
+Bandingkan persentase rumah tangga dengan akses air minum layak di Indonesia pada 2022 dan 2023. Berapa perubahannya?
+
+024. [General / bps / Perbandingan tahun]
+Bandingkan persentase penduduk miskin di Aceh pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+025. [General / bps / Perbandingan tahun]
+Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?
+
+026. [General / bps / Perbandingan tahun]
+Bandingkan jumlah penduduk miskin di Nusa Tenggara Timur pada Maret 2024 dan Maret 2025. Berapa perubahannya?
+
+027. [General / bps / Perbandingan tahun]
+Bandingkan indeks keparahan kemiskinan di Indonesia pada Maret 2025 dan Maret 2026. Berapa perubahannya?
+
+028. [General / bps / Perbandingan tahun]
+Bandingkan persentase penduduk miskin di Kabupaten Wajo pada 2023 dan 2024. Berapa perubahannya?
+
+029. [General / bps / Perbandingan wilayah]
+Pada 2024, mana yang lebih tinggi jumlah penduduk miskin, Kabupaten Pati atau Kabupaten Indragiri Hilir?
+
+030. [General / bps / Perbandingan wilayah]
+Pada Agustus 2024, mana yang lebih tinggi tingkat partisipasi angkatan kerja, Sulawesi Utara atau Kalimantan Tengah?
+
+031. [General / bps / Perbandingan wilayah]
+Pada September 2025, mana yang lebih tinggi persentase penduduk miskin, Maluku atau Papua Tengah?
+
+032. [General / bps / Perbandingan wilayah]
+Pada Maret 2025, mana yang lebih tinggi jumlah penduduk miskin, Papua Selatan atau Kalimantan Utara?
+
+033. [General / bps / Klaim naik/turun]
+Benarkah tingkat pengangguran terbuka di Sulawesi Tenggara naik dari Agustus 2022 ke Agustus 2023?
+
+034. [General / bps / Klaim naik/turun]
+Benarkah persentase penduduk miskin di Maluku Utara turun dari Maret 2025 ke Maret 2026?
+
+035. [General / bps / Klaim naik/turun]
+Benarkah persentase penduduk miskin di Kota Serang turun dari 2022 ke 2023?
+
+036. [General / bps / Klaim naik/turun]
+Benarkah jumlah penduduk miskin di Kabupaten Sijunjung naik dari 2022 ke 2023?
+
+037. [General / bps / Klaim angka]
+Benarkah tingkat partisipasi angkatan kerja di Bali pada Agustus 2025 sebesar 78,31 persen?
+
+038. [General / bps / Klaim angka]
+Benarkah jumlah penduduk miskin di Aceh pada September 2025 sebesar 703,33 ribu jiwa?
+
+039. [General / bps / Klaim angka]
+Benarkah jumlah penduduk miskin di Kabupaten Lampung Utara pada 2025 sebesar 98,99 ribu jiwa?
+
+040. [General / bps / Klaim angka]
+Benarkah persentase penduduk miskin di Kota Tanjung Pinang pada 2024 sebesar 7,86 persen?
+
+041. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Pinrang, Sulawesi Selatan pada 2024, dalam hektare.
+
+042. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Jawa Barat pada 2022, dalam hektare.
+
+043. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon di Kota Lhokseumawe, Aceh pada 2025, dalam hektare.
+
+044. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kepulauan Riau pada 2024, dalam hektare.
+
+045. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Kabupaten Halmahera Tengah, Maluku Utara pada 2022, dalam hektare.
+
+046. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon di Jakarta Raya pada 2020, dalam hektare.
+
+047. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Kutai Barat, Kalimantan Timur pada 2024, dalam hektare.
+
+048. [Environment / gfw / data]
+Sebutkan luas kehilangan tutupan pohon dalam hutan primer di Nusa Tenggara Barat pada 2022, dalam hektare.
+
+049. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Simeulue, Aceh dari 2022 sampai 2025.
+
+050. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Sumatera Barat dari 2020 sampai 2025.
+
+051. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Barat dari 2021 sampai 2025.
+
+052. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon akibat kebakaran di Kabupaten Katingan, Kalimantan Tengah dari 2020 sampai 2025.
+
+053. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon di Kabupaten Kayong Utara, Kalimantan Barat dari 2022 sampai 2025.
+
+054. [Environment / gfw / tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Sulawesi Tenggara dari 2021 sampai 2025.
+
+055. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon di Kabupaten Sidoarjo, Jawa Timur lebih besar pada 2023 atau 2022? Berapa selisih luasnya?
+
+056. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Biak Numfor, Papua lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+057. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Kuantan Singingi, Riau lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+058. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon di Kabupaten Alor, Nusa Tenggara Timur lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+059. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon akibat kebakaran di Kabupaten Sigi, Sulawesi Tengah lebih besar pada 2024 atau 2023? Berapa selisih luasnya?
+
+060. [Environment / gfw / perbandingan_tahun]
+Apakah kehilangan tutupan pohon dalam hutan primer di Kabupaten Mukomuko, Bengkulu lebih besar pada 2025 atau 2024? Berapa selisih luasnya?
+
+061. [Environment / gfw / klaim_arah]
+Klaim: Kehilangan tutupan pohon akibat kebakaran di Bali naik dari 2024 ke 2025. Apakah sesuai data?
+
+062. [Environment / gfw / klaim_arah]
+Klaim: Kehilangan tutupan pohon di Kabupaten Deiyai, Papua turun dari 2024 ke 2025. Apakah sesuai data?
+
+063. [Environment / gfw / klaim_arah]
+Klaim: Kehilangan tutupan pohon dalam hutan primer di Kabupaten Langkat, Sumatera Utara naik dari 2023 ke 2024. Apakah sesuai data?
+
+064. [Environment / gfw / klaim_arah]
+Klaim: Kehilangan tutupan pohon di Aceh turun dari 2023 ke 2024. Apakah sesuai data?
+
+065. [Environment / gfw / perbandingan_wilayah]
+Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bengkulu atau Kalimantan Utara? Tampilkan kedua angkanya dan selisihnya.
+
+066. [Environment / gfw / perbandingan_wilayah]
+Mana yang kehilangan tutupan pohonnya lebih luas pada 2025, Bangka Belitung atau Kalimantan Tengah? Tampilkan kedua angkanya dan selisihnya.
+
+067. [Environment / gfw / perbandingan_wilayah]
+Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Kalimantan Barat atau Papua? Tampilkan kedua angkanya dan selisihnya.
+
+068. [Environment / gfw / rata_rata]
+Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+069. [Environment / gfw / rata_rata]
+Berapa rata-rata per tahun kehilangan tutupan pohon dalam hutan primer di Kabupaten Batang Hari, Jambi untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+070. [Environment / gfw / rata_rata]
+Berapa rata-rata per tahun kehilangan tutupan pohon di Kabupaten Kuningan, Jawa Barat untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+
+071. [Environment / mapbiomas / data]
+Saya ingin mengetahui luas tutupan sawit di Aceh pada tahun 2024. Berapa hektare?
+
+072. [Environment / mapbiomas / data]
+Saya ingin mengetahui luas hutan rawa gambut di Riau pada tahun 2023. Berapa hektare?
+
+073. [Environment / mapbiomas / data]
+Saya ingin mengetahui luas tutupan hutan di Kalimantan Tengah pada tahun 2023. Berapa hektare?
+
+074. [Environment / mapbiomas / data]
+Saya ingin mengetahui luas mangrove di Papua Selatan pada tahun 2024. Berapa hektare?
+
+075. [Environment / mapbiomas / tren]
+Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?
+
+076. [Environment / mapbiomas / tren]
+Bagaimana perubahan luas tutupan hutan di Kalimantan setiap tahun dari 2020 sampai 2024?
+
+077. [Environment / mapbiomas / tren]
+Bagaimana perubahan luas tutupan hutan di Indonesia setiap tahun dari 2020 sampai 2024?
+
+078. [Environment / mapbiomas / perbandingan_tahun]
+Bandingkan luas tutupan sawit di Sumatera Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+079. [Environment / mapbiomas / perbandingan_tahun]
+Bandingkan luas tutupan hutan di Sulawesi Selatan tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+
+080. [Environment / mapbiomas / klaim_arah]
+Benarkah luas tutupan hutan di Sumatera Utara turun dari 2022 ke 2023?
+
+081. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang pendapatan dan mata pencaharian warga terkait pertambangan nikel di Pulau Kabaena?
+
+082. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang hutan dan kehidupan nelayan terkait pertambangan nikel di Raja Ampat?
+
+083. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang air bersih dan penghidupan warga terkait industri nikel di Pulau Obi?
+
+084. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang keselamatan dan kondisi pekerja terkait industri nikel di Morowali?
+
+085. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang hutan dan hak masyarakat adat terkait perkebunan kayu di Ketapang?
+
+086. [Environment / ngo / laporan_data]
+Apa data yang tersedia tentang sumber air dan lahan pertanian terkait proyek panas bumi di Muara Laboh, Solok Selatan?
+
+087. [Environment / ngo / laporan_dampak]
+Jelaskan dampak proyek pangan di Merauke bagi warga setempat, disertai bukti yang ditemukan.
+
+088. [Environment / ngo / laporan_dampak]
+Jelaskan dampak proyek gas LNG di Teluk Bintuni bagi warga setempat, disertai bukti yang ditemukan.
+
+089. [Environment / ngo / klaim_statemen]
+Benarkah pertambangan nikel di Pulau Kabaena hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+090. [Environment / ngo / klaim_statemen]
+Benarkah perkebunan tebu di Pundenrejo, Pati hanya membawa keuntungan bagi seluruh warga tanpa menimbulkan kerugian?
+
+091. [Environment / gabungan / gabungan_data]
+Apa dampak pertambangan nikel terhadap pendapatan dan mata pencaharian warga di Pulau Kabaena? Tambahkan angka kehilangan tutupan pohon di Kabupaten Bombana, Sulawesi Tenggara pada 2024.
+
+092. [Environment / gabungan / gabungan_tren]
+Jelaskan masalah pertambangan nikel di Raja Ampat dan tampilkan tren kehilangan tutupan pohon di Kabupaten Raja Ampat, Papua Barat untuk 2023–2025.
+
+093. [Environment / gabungan / gabungan_data]
+Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.
+
+094. [Environment / gabungan / gabungan_tren]
+Jelaskan masalah industri nikel di Morowali dan tampilkan tren kehilangan tutupan pohon di Kabupaten Morowali, Sulawesi Tengah untuk 2023–2025.
+
+095. [Environment / gabungan / gabungan_tren]
+Jelaskan masalah perkebunan kayu di Ketapang dan tampilkan tren kehilangan tutupan pohon di Kabupaten Ketapang, Kalimantan Barat untuk 2023–2025.
+
+096. [Environment / gabungan / gabungan_data]
+Apa dampak proyek pangan terhadap hak atas tanah masyarakat adat di Merauke? Tambahkan angka kehilangan tutupan pohon di Kabupaten Merauke, Papua pada 2024.
+
+097. [Environment / gabungan / gabungan_data]
+Apa dampak proyek Rempang Eco City terhadap tempat tinggal dan mata pencaharian warga di Pulau Rempang? Tambahkan angka kehilangan tutupan pohon di Kota Batam, Kepulauan Riau pada 2024.
+
+098. [Environment / gabungan / gabungan_tren]
+Jelaskan masalah proyek gas LNG di Teluk Bintuni dan tampilkan tren kehilangan tutupan pohon di Kabupaten Teluk Bintuni, Papua Barat untuk 2023–2025.
+
+099. [Environment / gabungan / gabungan_data]
+Apa dampak proyek pariwisata terhadap hak atas tanah dan mata pencaharian warga di Mandalika? Tambahkan angka kehilangan tutupan pohon di Kabupaten Lombok Tengah, Nusa Tenggara Barat pada 2024.
+
+100. [Environment / gabungan / gabungan_tren]
+Jelaskan masalah perkebunan sawit di Riau dan tampilkan tren kehilangan tutupan pohon di Riau untuk 2023–2025.

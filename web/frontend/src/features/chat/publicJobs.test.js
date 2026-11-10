@@ -15,3 +15,13 @@ test('aborted polling does not resubmit',async()=>{
  await assert.rejects(askPublic({question:'Berapa?',signal:controller.signal},{request:async()=>{calls++;return {job_id:id,status:'queued'};},wait:async()=>{controller.abort();}}),{name:'AbortError'});assert.equal(calls,2);
  await assert.rejects(pause(100,controller.signal),{name:'AbortError'});
 });
+
+test('homepage trial sends only catalog ID and polls the guest endpoint', async()=>{
+ const calls=[];
+ const replies=[{job_id:id,status:'queued'},{job_id:id,status:'completed',result:{answer:'Trial answer'}}];
+ const result=await askPublic({demoId:41,question:'ignored',sources:['ignored']},{wait:async()=>{},request:async(...args)=>{calls.push(args);return replies.shift();}});
+ assert.equal(result.answer,'Trial answer');
+ assert.equal(calls[0][0],'/demo/jobs');
+ assert.deepEqual(calls[0][1].body,{question_id:41});
+ assert.equal(calls[1][0],'/demo/jobs/'+id);
+});

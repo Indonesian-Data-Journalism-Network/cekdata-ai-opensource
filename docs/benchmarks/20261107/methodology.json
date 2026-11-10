@@ -1,13 +1,14 @@
 {
   "rules": [
-    "Jawaban parsial dihitung akurat bila menjawab sekurangnya satu bagian relevan dengan fakta yang tepat dan tanpa kesalahan substantif dalam bagian lain.",
-    "Kesalahan angka, satuan, wilayah, indikator, status risiko/realisasi, sebab-akibat, atau label klaim tetap bermasalah.",
-    "Jawaban kosong/gagal memilih bukti tidak dihitung akurat hanya karena tidak mengarang angka.",
-    "Ketidaktersediaan periode/cakupan yang dijelaskan tepat tetap kategori terbatas; tidak dicampur dengan kesalahan fakta. Kategori terbatas untuk klaim Takalar #439 juga dipertahankan karena bukti hasil/pembanding belum cukup.",
-    "Gangguan layanan dicatat terpisah. Pada #420 dan #433, uji terakhir gagal layanan; tidak diganti diam-diam dengan jawaban lama.",
-    "31 pertanyaan memiliki hasil uji ulang; enam di antaranya juga memiliki jawaban pengembangan yang lebih baru. Sisa 469 memakai arsip awal. Tiap ID dihitung sekali; memilih versi terakhir, bukan jawaban terbaik.",
-    "16 jawaban diterima sebagai parsial menurut kriteria baru. Termasuk #127 yang semula terbatas. Catatan kelengkapan tetap disimpan.",
-    "Penilaian ini berasal dari satu audit internal. Persentase bukan estimasi akurasi semua pertanyaan pengguna, dan belum membuktikan semua jawaban lolos pada kode terbaru."
+    "Setiap ID dihitung sekali dan memakai hasil terbaru, bukan jawaban terbaik dari beberapa percobaan.",
+    "43 jawaban baru menggantikan 43 jawaban bermasalah sebelumnya; 457 ID lain dipertahankan. Pertanyaan dan tanggal acuan 6 November 2026 tetap sama.",
+    "22 dari 43 kasus kini dinilai akurat, termasuk 10 jawaban parsial; 21 tetap bermasalah. Tidak ada gangguan layanan pada putaran 43 ini.",
+    "Total akurat berubah dari 428/500 (85,6%) menjadi 450/500 (90,0%); bermasalah dari 43 menjadi 21. Terbatas 26 dan gangguan layanan 3 tetap dari hasil sebelumnya.",
+    "Total 26 jawaban akurat diterima sebagai parsial. Ketidaklengkapan saja tidak menggugurkan; angka, satuan, wilayah, indikator, status bukti, sebab-akibat, atau label keliru tetap menggugurkan.",
+    "Jawaban kosong ketika bukti relevan tersedia tetap bermasalah. Keterbatasan cakupan/periode yang tepat tetap kategori terbatas. Gangguan layanan tidak disamakan dengan ketiadaan data.",
+    "Putaran 43 memakai runner Environment backend dengan layanan model dan data nyata, bukan pengujian antarmuka browser. Satu jawaban pertama dinilai per pertanyaan dan kode tidak diubah selama putaran.",
+    "Semua 12 jawaban putaran terbaru yang menampilkan tabel GFW cocok dengan arsip angka; ini tidak otomatis meluluskan narasi NGO atau kesimpulannya.",
+    "Rekap berjalan dari jawaban terakhir yang tersimpan untuk 500 ID unik, gabungan beberapa putaran dan versi mesin. Sebanyak 43 kasus bermasalah diuji ulang pada putaran terbaru; 457 jawaban lain tidak diuji ulang pada versi ini. Ini bukan pengujian ulang 500 pertanyaan sekaligus atau ukuran pasti akurasi mesin saat ini. Jawaban parsial yang faktanya tepat diterima akurat; kesalahan substantif tetap bermasalah. Penilaian membandingkan jawaban dengan bukti arsip, bukan verifikasi lapangan independen semua klaim penerbit."
   ],
   "partial_ids": [
     127,
@@ -16,39 +17,231 @@
     428,
     437,
     438,
+    440,
+    442,
+    443,
+    444,
     463,
+    468,
+    471,
     473,
     479,
+    481,
     482,
+    483,
     485,
     486,
     487,
     489,
     491,
+    492,
+    497,
     498
   ],
-  "latest_answer_regrades": [
+  "latest_retested_ids": [
+    394,
+    403,
+    404,
+    406,
+    409,
+    412,
+    414,
+    417,
+    418,
+    421,
+    423,
+    424,
+    425,
+    426,
+    427,
+    430,
+    436,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    447,
+    448,
+    449,
+    450,
+    451,
+    457,
+    458,
+    460,
+    468,
+    471,
+    480,
+    481,
+    483,
+    488,
+    492,
+    493,
+    494,
+    497,
+    499,
+    500
+  ],
+  "previous_retested_ids": [
+    405,
+    412,
     415,
+    417,
+    418,
+    419,
+    420,
+    431,
     432,
+    433,
+    436,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
     454,
-    456
+    456,
+    457,
+    458,
+    468,
+    471,
+    473,
+    475,
+    480,
+    481,
+    482,
+    483,
+    497,
+    498
   ],
   "remaining_substantive_errors": {
-    "417": [
-      "wilayah",
-      "Jawaban revisi masih menempatkan Kabupaten Halmahera Tengah dalam cakupan Maluku, meski isi menyebut Maluku Utara. Ini kesalahan wilayah, bukan sekadar kurang lengkap."
-    ],
-    "440": [
-      "cakupan_angka",
-      "Rasio elektrifikasi sudah muncul, tetapi potensi bioenergi 923,1 MW untuk Sumatera Barat dapat terbaca sebagai potensi Mentawai. Kesalahan cakupan angka tetap menggugurkan akurasi jawaban."
-    ],
-    "468": [
-      "kesimpulan_melampaui_bukti",
-      "Temuan FPIC dan ekspansi lahan sudah muncul, tetapi kesimpulan mengubah ekspansi/izin kawasan hutan menjadi tren deforestasi signifikan tanpa seri kehilangan hutan. Bukan hanya tren GFW yang belum ditampilkan."
-    ],
-    "471": [
-      "kesimpulan_melampaui_bukti",
-      "Angka GFW dan kutipan kehilangan tutupan pohon tepat, tetapi kesimpulan menyatakan kontribusi signifikan terhadap ruang hidup warga tanpa bukti dampak warga dalam jawaban. Angka lingkungan saja belum membuktikan bagian tersebut."
-    ]
+    "412": {
+      "issues": [
+        "pemilihan_bukti"
+      ],
+      "reason": "Masih hanya mengambil ancaman umum Pomalaa dan memberi Tidak dapat diverifikasi. Bukti kerugian aktual lokal yang dicatat audit lama belum digunakan; label tidak otomatis salah terhadap satu kutipan ini, tetapi pencarian belum memenuhi klaim."
+    },
+    "414": {
+      "issues": [
+        "cakupan_angka"
+      ],
+      "reason": "Kesalahan tabel izin/hektare lama hilang, tetapi jawaban baru mengaitkan rencana 25 juta ton tailing per tahun pada Hua Pioneer saja. Kutipan sumber menyebut rencana empat perusahaan IMIP; angka kelompok dipersempit menjadi satu perusahaan."
+    },
+    "417": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "Masih muncul cakupan Kabupaten Halmahera Tengah, Maluku walaupun isi sumber menyebut Maluku Utara. Jawaban terutama rantai pasok dan banjir kompleks industri, bukan dampak warga yang diminta."
+    },
+    "418": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "Label sudah berubah menjadi Salah, tetapi penanda cakupan masih menambahkan Maluku pada bukti Maluku Utara. Bukti dampak warga masih kalah oleh angka lingkungan dan rantai pasok."
+    },
+    "425": {
+      "issues": [
+        "cakupan_angka"
+      ],
+      "reason": "Sudah memuat rencana 7.572 ha dan 45,89% pulau, tetapi tabel memberi label luas lahan dengan nilai persen tanpa pembagi. Sebagian besar temuan masih metode penelitian, bukan data tempat tinggal/penghidupan."
+    },
+    "426": {
+      "issues": [
+        "cakupan_angka"
+      ],
+      "reason": "Narasi menjaga 347 rumah tangga yang masih bertahan sebagai 80% dari penolak relokasi, tetapi tabel masih menulis rumah tangga yang menolak relokasi = 80%. Pembagi dan status masih bertahan hilang, mengubah arti angka."
+    },
+    "427": {
+      "issues": [
+        "kesimpulan_melampaui_bukti"
+      ],
+      "reason": "Label Salah lebih tepat, tetapi alasan baru menyatakan kerugian bagi seluruh warga tanpa bukti universal. Sumber dapat mencaplok 17.000 ha berubah menjadi telah dicaplok, dan satuan per bulan hilang dari tabel Rp109 juta."
+    },
+    "436": {
+      "issues": [
+        "pemilihan_bukti"
+      ],
+      "reason": "Nama BP Berau tidak lagi menjadi wilayah, tetapi jawaban memakai judul rujukan/ancaman mangrove dan tidak memakai bukti penggusuran serta hilangnya akses penghidupan pada laporan Tangguh LNG PDF16. Label tetap Tidak dapat diverifikasi."
+    },
+    "441": {
+      "issues": [
+        "kesimpulan_melampaui_bukti"
+      ],
+      "reason": "Rekomendasi agar penyediaan listrik tidak ekstraktif/eksploitatif diubah menjadi temuan bahwa saat ini demikian. Konflik adat yang tak ditautkan dengan energi masih mendominasi; bukti PLTBm mangkrak tidak dipakai."
+    },
+    "445": {
+      "issues": [
+        "pemilihan_bukti"
+      ],
+      "reason": "Tidak lagi memunculkan Kabupaten Batu Bara atau salah cakupan kebutuhan air, tetapi hanya menjawab pengangkutan komoditas batubara. Bukti dampak warga PLTU Samaran yang relevan belum dipilih."
+    },
+    "449": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "10 Bali Baru masih dilokalkan menjadi dampak bagi masyarakat di Bali. Penanda Kota Padang juga muncul dari padang rumput. Tabel 64% menyatukan emisi dan konsumsi listrik, padahal persen itu hanya emisi."
+    },
+    "450": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "Data emisi pariwisata Bali relevan, tetapi 10 Bali Baru tetap dinyatakan proyek yang berdampak pada masyarakat Bali; temuan energi fosil mendominasi pembahasan pariwisata."
+    },
+    "451": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "Masih menyebut proyek nasional 10 Bali Baru sebagai proyek di Bali dan mengambil bukti pembangkit gas untuk klaim pariwisata."
+    },
+    "457": {
+      "issues": [
+        "pemilihan_bukti"
+      ],
+      "reason": "Jawaban baru kosong (Belum cukup data), padahal audit arsip mencatat petisi WALHI Cirebon dengan bukti penurunan tangkapan nelayan yang relevan. Tidak dapat diverifikasi kali ini tidak didukung proses pembuktian yang memadai."
+    },
+    "458": {
+      "issues": [
+        "cakupan_angka"
+      ],
+      "reason": "Kesalahan tertinggi lima tahun hilang, tetapi angka penyelesaian nasional 867.313,22 ha dan 507.009,58 ha ditempelkan pada paragraf 453 korporasi Riau tanpa pemisahan cakupan. Status inventarisasi, penyelesaian dan legalisasi masih tercampur."
+    },
+    "460": {
+      "issues": [
+        "kesimpulan_melampaui_bukti"
+      ],
+      "reason": "Label Salah kini didukung bukti konflik/pencemaran, tetapi alasan mengubah 12 perusahaan illegal logging menjadi perusahaan sawit dan menyatakan sebagian besar deforestasi disebabkan sawit tanpa proporsi pada kutipan. ID F1/F2/F3 juga bocor ke jawaban."
+    },
+    "480": {
+      "issues": [
+        "cakupan_jawaban"
+      ],
+      "reason": "Temuan konflik Pundenrejo sudah muncul, tetapi mesin menyatakan data kuantitatif tren Pati 2023–2025 tidak tersedia, padahal seri ada dalam arsip. Ini melebihi sekadar tidak menampilkan bagian pertanyaan. Kutipan OCR juga tercampur kolom dan judul rujukan dijadikan temuan."
+    },
+    "488": {
+      "issues": [
+        "cakupan_angka"
+      ],
+      "reason": "Angka hutan alam 444 ribu ha kini sesuai sumber, tetapi potensi bioenergi 923,1 MW Sumatera Barat masih dipindahkan menjadi potensi Mentawai. Tren GFW juga belum muncul."
+    },
+    "493": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "10 Bali Baru tetap dinyatakan proyek di Bali. Bukti gas dan kelapa sawit dipakai sebagai pengganti konteks pariwisata; angka GFW Bali 2024 juga belum muncul."
+    },
+    "494": {
+      "issues": [
+        "wilayah"
+      ],
+      "reason": "10 Bali Baru tetap dilokalkan ke Bali. Tabel mengaitkan angka 64% dengan emisi sekaligus konsumsi listrik padahal hanya persentase emisi; tren GFW masih terlewat."
+    },
+    "499": {
+      "issues": [
+        "status_bukti"
+      ],
+      "reason": "Masih menyatakan sebagian besar 453 korporasi/778.521,44 ha Riau telah dilegalkan, padahal sumber hanya inventarisasi dan memisahkan tahapan/status nasional serta sejumlah entitas Riau. Angka GFW tepat, tetapi kesimpulan legalisasi tetap melampaui bukti."
+    }
   }
 }

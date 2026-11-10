@@ -1,0 +1,26 @@
+CATATAN PERBAIKAN BERIKUTNYA — 9 NOVEMBER 2026
+Status: disepakati untuk dicatat; belum diimplementasikan.
+
+Contoh masalah: jawaban jumlah lubang tambang Kalimantan Timur/Samarinda
+menambahkan komentar bahwa angka belum divalidasi secara eksplisit sebagai
+ukuran pasti. Bagian sumber angka yang diperiksa tidak memuat komentar itu.
+
+Perilaku yang diinginkan:
+- Sampaikan temuan data langsung, lengkap dengan sumber dan halaman.
+- Jangan menambah keraguan, penilaian mutu, atau kepastian data tanpa dasar
+  bukti. Komentar yang tidak berdasar dihapus, bukan dipindah ke Konteks.
+- Konteks hanya untuk keterangan konkret yang membantu membaca data,
+  misalnya periode belum diketahui, batas wilayah, atau cakupan pengukuran.
+- Kesimpulan tidak wajib jika hanya mengulang satu temuan sederhana.
+- Peringatan editorial tidak otomatis muncul pada permintaan informasi.
+  Gunakan jika kebutuhan klaim dan bukti memang memerlukannya.
+
+Titik pemeriksaan kode:
+- workflow/ngo_answer.py SUMMARY: instruksi memasukkan keterbatasan ke kesimpulan.
+- workflow/ngo_combined.py: summary.context dikosongkan pada penyusunan akhir.
+- workflow/ngo_answer.py render: lead dan context digabung ke kesimpulan,
+  sedangkan konteks_penting dikosongkan.
+- Editorial masih diteruskan dari model; aturan pertanyaan informasi biasa
+  belum ditegakkan secara tegas di alur kode.
+
+Tidak ada perubahan kode, prompt, data sumber, atau deployment dalam pencatatan ini.

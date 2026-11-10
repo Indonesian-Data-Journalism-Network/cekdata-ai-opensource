@@ -2,6 +2,9 @@ import React, { useEffect, useMemo, useState, useRef, useLayoutEffect } from "re
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Search, Link2, ThumbsUp, ThumbsDown, CircleHelp, LogIn, MessageSquare, Send, Info, Copy, Check, Shield, FolderUp, Database, BarChart3, RefreshCw, ChevronDown, Layers3, ArrowLeft } from "lucide-react";
 import HomeFooter from "./ui/HomeFooter.jsx";
+import TeamPage from "./ui/TeamPage.jsx";
+import { askPublic } from "./features/chat/publicJobs.js";
+import homeQuestions from "./config/homeQuestions.json";
 import AdminLoginPage from "./auth/admin/AdminLoginPage";
 import UserLoginPage from "./auth/user/UserLoginPage";
 import { API_BASE } from "./config/api";
@@ -365,7 +368,7 @@ function feedbackChipStyle(active) {
   };
 }
 
-export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
+export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut, hideSignIn = false, hideAbout = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 640);
   useEffect(() => {
@@ -421,7 +424,7 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
           <span style={{ color: "#111111" }}>.ai</span>
         </button>
 
-        {isMobile ? (
+        {isMobile ? ((isLoggedIn || !hideSignIn || !hideAbout) && (
           <div style={{ justifySelf: "end", position: "relative" }}>
             <button
               onClick={() => setMenuOpen((v) => !v)}
@@ -456,7 +459,7 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
                   zIndex: 50,
                 }}
               >
-                <button
+                {!hideAbout && <button
                   onClick={() => {
                     setPage("about");
                     setMenuOpen(false);
@@ -464,9 +467,9 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
                   style={mobileMenuButtonStyle}
                 >
                   About Cek Data AI
-                </button>
+                </button>}
 
-                {!isLoggedIn ? (
+                {!isLoggedIn ? (!hideSignIn && (
                   <button
                     onClick={() => {
                       setPage("signin");
@@ -476,7 +479,7 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
                   >
                     Sign In
                   </button>
-                ) : (
+                )) : (
                   <>
                     <button
                       onClick={() => {
@@ -512,15 +515,15 @@ export function Header({ page, setPage, isLoggedIn, isAdmin, handleSignOut }) {
               </div>
             ) : null}
           </div>
-        ) : (
+        )) : (
           <div style={{ display: "flex", alignItems: "center", gap: 8, justifySelf: "end" }}>
-            {page !== "about" ? (
+            {!hideAbout && page !== "about" ? (
               <Button variant="outline" onClick={() => setPage("about")}>
                 About Cek Data AI
               </Button>
             ) : null}
 
-            {!isLoggedIn && page !== "signin" ? (
+            {!isLoggedIn && !hideSignIn && page !== "signin" ? (
               <Button variant="outline" onClick={() => setPage("signin")}>
                 Sign In
               </Button>
@@ -572,13 +575,176 @@ const secondaryButtonStyle = {
   cursor: "pointer",
 };
 
-export function HomePage({ setPage, localMode = false, publicMode = false, onStart }) {
-  const questions = publicMode ? ['Bagaimana tren kehilangan tutupan pohon di Aceh selama 2021–2025?', 'Berapa luas kehilangan tutupan pohon di Riau pada 2025?', 'Bandingkan kehilangan tutupan pohon di Kalimantan Timur pada 2024 dan 2025.'] : demoQuestions;
+function AnswerContent({ result, loading = false, onClarify }) {
+  return <>
+                      {canonicalAnswerView(result) ? <CanonicalAnswer result={result}
+                        clarificationDisabled={loading} onClarify={onClarify} /> : <>
+                      {result?.parsed?.penilaian ? (
+                        <div style={{ marginBottom: 12, display: "flex", flexWrap: "wrap", gap: 10 }}>
+                          <Pill
+                            style={{
+                              background: verdictTone(result.parsed.penilaian || "").bg,
+                              color: verdictTone(result.parsed.penilaian || "").color,
+                            }}
+                          >
+                            {result.parsed.penilaian}
+                          </Pill>
+                        </div>
+                      ) : null}
+                      {result?.parsed?.claim && <Section title="Klaim">{result.parsed.claim}</Section>}
+                      {result?.parsed?.penilaian ? (
+                        <Section title={`Penilaian: ${result.parsed.penilaian}`}>
+                          {result.parsed.alasan}
+                        </Section>
+                      ) : !result?.parsed?.finding_groups && (result?.parsed?.jawaban_utama || result?.parsed?.kesimpulan) ? (
+                        <div style={{ marginTop: 16, lineHeight: 1.8 }}>{renderReadableText(result.parsed.jawaban_utama || result.parsed.kesimpulan)}</div>
+                      ) : null}
+                      {result?.parsed?.finding_groups ? (<>
+                        {result.parsed.finding_groups.map(group => <Section key={group.source} title={`Temuan Data ${group.source}`}><>
+                          {renderReadableText(group.findings.map(point => `- ${point}`).join('\n'))}
+                          {group.table && <FindingsTable table={group.table} />}
+                        </></Section>)}
+                        {result.parsed.gfw_context && <Section title="Temuan Data Global Forest Watch"><>
+                          <p>{result.parsed.gfw_context.summary}</p>
+                          <FindingsTable table={result.parsed.gfw_context.table} />
+                        </></Section>}
+                        {result.parsed.kesimpulan && <Section title="Kesimpulan">{result.parsed.kesimpulan}</Section>}
+                      </>) : result?.parsed?.document_answer && result?.parsed?.findings_table ? (<>
+                        <Section title="Temuan Data">{result.parsed.temuan_data}</Section>
+                        <FindingsTable table={result.parsed.findings_table} />
+                      </>) : result?.parsed?.findings_table ? (
+                        <Section title="Temuan Data"><FindingsTable table={result.parsed.findings_table} /></Section>
+                      ) : result?.parsed?.temuan_data ? (
+                        <Section title="Temuan Data">{result.parsed.temuan_data}</Section>
+                      ) : null}
+
+                      {(result?.parsed?.related_evidence || []).map((group, index) => <Section key={`related-${index}`} title="Temuan Data Terkait"><>
+                        <p>{group.summary}</p>
+                        <FindingsTable table={group.table} />
+                        <p><strong>Konteks: </strong>{group.context}</p>
+                        {hasGfwSources(group) ? <GfwSourceFooter result={group} /> : hasMapbiomasSources(group) ? <MapbiomasSourceFooter result={group} /> : <>{[...new Map(group.parsed.source_items.map(source => [source.url, source])).values()].map(source => <div key={source.url}>Sumber: <a href={source.url} target="_blank" rel="noopener noreferrer">{source.display}</a>{source.download_url && <div>Unduh: <a href={source.download_url} target="_blank" rel="noopener noreferrer">{source.title}</a></div>}</div>)}</>}
+                      </></Section>)}
+                      {result?.parsed?.related_evidence_status === 'service_unavailable' && <p>Pencarian data terkait belum selesai karena gangguan layanan. Ini bukan tanda bahwa datanya tidak tersedia.</p>}
+
+                      {!result?.parsed?.temuan_data &&
+                      !result?.parsed?.konteks_penting &&
+                      !result?.parsed?.penilaian &&
+                      !result?.parsed?.alasan &&
+                      !result?.parsed?.peringatan_editorial &&
+                      !result?.parsed?.sumber &&
+                      result?.answer ? (
+                        <p
+                          style={{
+                            margin: 0,
+                            lineHeight: 1.8,
+                            color: COLORS.text,
+                            whiteSpace: "pre-wrap",
+                          }}
+                        >
+                          {result.answer}
+                        </p>
+                      ) : null}
+
+                      {(result?.parsed?.konteks_penting || result?.parsed?.gfw_context?.context) ? (
+                        <Section title="Konteks">
+                          {result.parsed.konteks_penting || result.parsed.gfw_context?.context}
+                        </Section>
+                      ) : null}
+
+                      {result?.parsed?.peringatan_editorial ? (
+                        <div
+                          style={{
+                            marginTop: 16,
+                            borderRadius: 18,
+                            padding: 16,
+                            background: "#fff7fb",
+                            border: "1px solid rgba(239,91,156,0.25)",
+                          }}
+                        >
+                          <div
+                            style={{
+                              marginBottom: 8,
+                              fontSize: 13,
+                              fontWeight: 700,
+                              color: COLORS.primaryDark,
+                              textTransform: "uppercase",
+                            }}
+                          >
+                            Peringatan editorial
+                          </div>
+                          <p style={{ margin: 0, lineHeight: 1.7 }}>
+                            {result.parsed.peringatan_editorial}
+                          </p>
+                        </div>
+                      ) : null}
+
+                      {result?.parsed?.followup_prompt ? (
+                        <div
+                          style={{
+                            marginTop: 16,
+                            borderRadius: 20,
+                            padding: 16,
+                            background: "#f0f4ff",
+                            border: "1px solid rgba(41,128,185,0.25)",
+                          }}
+                        >
+                          <div
+                            style={{
+                              marginBottom: 8,
+                              fontSize: 13,
+                              fontWeight: 700,
+                              color: "#2980b9",
+                              textTransform: "uppercase",
+                            }}
+                          >
+                            Bantu kami membantu kamu
+                          </div>
+                          <p style={{ margin: 0, lineHeight: 1.7 }}>
+                            {result.parsed.followup_prompt}
+                          </p>
+                        </div>
+                      ) : null}
+
+                      {result?.parsed?.document_answer ? (
+                        <>
+                          {!result.parsed.finding_groups && result.parsed.gfw_context && <Section title="Data Global Forest Watch"><>
+                            <p>{result.parsed.gfw_context.summary}</p>
+                            <FindingsTable table={result.parsed.gfw_context.table} />
+                            <p>{result.parsed.gfw_context.context}</p>
+                          </></Section>}
+                          <DocumentSourceFooter result={result} />
+                          {result.parsed.gfw_context && <GfwSourceFooter result={result.parsed.gfw_context} />}
+                        </>
+                      ) : hasMapbiomasSources(result) ? (
+                        <MapbiomasSourceFooter result={result} />
+                      ) : hasGfwSources(result) ? (
+                        <GfwSourceFooter result={result} />
+                      ) : <>
+                        {result?.parsed?.sumber ? (
+                          <Section title="Sumber"><SourceLinks title={result.parsed.sumber}
+                            items={result.parsed.source_items}
+                            value={result.parsed.link_sumber} /></Section>
+                        ) : <SourceLinks value={result?.parsed?.link_sumber} />}
+                        {result?.parsed?.unduh_data ? (
+                          <DownloadLinks value={result.parsed.unduh_data} />
+                        ) : null}
+                      </>}
+
+                      <VerifiedSources claims={result?.claims} />
+                      </>}
+  </>;
+}
+
+export function HomePage({ setPage, localMode = false, publicMode = false, onStart, children }) {
+  const questions = localMode || publicMode ? homeQuestions.map(item => item.question) : demoQuestions;
   const [demoQuestion, setDemoQuestion] = useState(questions[0]);
   const [showDemoAnswer, setShowDemoAnswer] = useState(false);
   const [demoResult, setDemoResult] = useState(null);
   const [demoLoading, setDemoLoading] = useState(false);
   const [demoError, setDemoError] = useState("");
+  const [demoProgress, setDemoProgress] = useState("");
+  const demoRequest = useRef(null);
+  useEffect(() => () => demoRequest.current?.abort(), []);
 
   useEffect(() => {
     const pick = questions[Math.floor(Math.random() * questions.length)];
@@ -586,10 +752,8 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
   }, []);
 
   function refreshDemoQuestion() {
-    let next = demoQuestion;
-    while (questions.length > 1 && next === demoQuestion) {
-      next = questions[Math.floor(Math.random() * questions.length)];
-    }
+    const alternatives = questions.filter(question => question !== demoQuestion);
+    const next = alternatives[Math.floor(Math.random() * alternatives.length)] || demoQuestion;
     setDemoQuestion(next);
     setShowDemoAnswer(false);
     setDemoResult(null);
@@ -597,20 +761,34 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
   }
 
   async function handleDemoAsk() {
-    if (localMode) { onStart?.(); return; }
+    if (localMode && !publicMode) {
+      onStart?.(homeQuestions.find(item => item.question === demoQuestion));
+      return;
+    }
+    if (demoRequest.current) return;
+    const controller = new AbortController();
+    demoRequest.current = controller;
+    const timer = setTimeout(() => controller.abort(), 900000);
     try {
       setDemoLoading(true);
+      setDemoProgress('Sedang memeriksa data…');
       setDemoError("");
       setShowDemoAnswer(false);
       setDemoResult(null);
 
-      const data = await askQuestion({ question: demoQuestion, sources: ['bps'] });
+      const data = publicMode
+        ? await askPublic({demoId:homeQuestions.find(item => item.question === demoQuestion).id,
+            signal:controller.signal,onProgress:setDemoProgress})
+        : await askQuestion({ question: demoQuestion, sources: ['bps'], signal:controller.signal });
+      if (controller.signal.aborted) return;
 
       setDemoResult(data);
       setShowDemoAnswer(true);
     } catch (err) {
-      setDemoError(err.message || "Terjadi kesalahan");
+      if (!controller.signal.aborted) setDemoError(err.message || "Terjadi kesalahan");
     } finally {
+      clearTimeout(timer);
+      demoRequest.current = null;
       setDemoLoading(false);
     }
   }
@@ -662,7 +840,7 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
                 textAlign: "center",
               }}
             >
-              {publicMode ? 'Contoh pertanyaan' : 'Coba versi demo'}
+              {localMode || publicMode ? 'Coba pertanyaan ini' : 'Coba versi demo'}
             </div>
 
             <div style={{ display: "grid", gap: 16 }}>
@@ -686,11 +864,13 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
 
               <div style={{ display: "flex", justifyContent: "center", gap: 12, flexWrap: "wrap" }}>
                 <Button onClick={handleDemoAsk} disabled={demoLoading}>
-                  {demoLoading ? "Memverifikasi..." : localMode ? "Masuk untuk verifikasi" : "Verifikasi"}
+                  {demoLoading ? "Memverifikasi..." : "Verifikasi"}
                 </Button>
-                <Button variant="outline" onClick={refreshDemoQuestion} disabled={demoLoading}>
-                  Refresh
-                </Button>
+                <button type="button" aria-label="Ganti pertanyaan" title="Ganti pertanyaan"
+                  onClick={refreshDemoQuestion} disabled={demoLoading}
+                  style={{ ...secondaryButtonStyle, width: 44, height: 44, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <RefreshCw size={18} aria-hidden="true" />
+                </button>
               </div>
 
               {demoError ? (
@@ -711,134 +891,17 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
                 </div>
               ) : null}
 
-              {showDemoAnswer && canonicalAnswerView(demoResult) ? <CanonicalAnswer result={demoResult} /> : null}
-              {showDemoAnswer && !canonicalAnswerView(demoResult) && !demoResult?.parsed && demoResult?.answer
-                ? <p style={{ whiteSpace: 'pre-wrap' }}>{demoResult.answer}</p> : null}
-              {showDemoAnswer && !canonicalAnswerView(demoResult) && demoResult?.parsed ? (
-                <div style={{ display: "flex", justifyContent: "flex-start" }}>
-                  <div
-                    style={{
-                      maxWidth: "100%",
-                      borderRadius: 28,
-                      padding: 20,
-                      background: "white",
-                      boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
-                      textAlign: "left",
-                    }}
-                  >
-                    <div style={{ marginBottom: 12, display: "flex", flexWrap: "wrap", gap: 10 }}>
-                      <Pill style={{ background: COLORS.primary, color: "white" }}>Demo jawaban</Pill>
-                      {demoResult.parsed.penilaian ? (
-                        <Pill style={{ background: verdict.bg, color: verdict.color }}>
-                          {demoResult.parsed.penilaian}
-                        </Pill>
-                      ) : null}
-                    </div>
-
-                    {!demoResult.parsed.temuan_data &&
-                    !demoResult.parsed.konteks_penting &&
-                    !demoResult.parsed.penilaian &&
-                    !demoResult.parsed.alasan &&
-                    !demoResult.parsed.peringatan_editorial &&
-                    !demoResult.parsed.sumber &&
-                    demoResult.answer ? (
-                      <p
-                        style={{
-                          margin: 0,
-                          lineHeight: 1.8,
-                          color: COLORS.text,
-                          whiteSpace: "pre-wrap",
-                        }}
-                      >
-                        {demoResult.answer}
-                      </p>
-                    ) : null}
-
-                    {demoResult.parsed.temuan_data ? (
-                      <Section title="Temuan data">{demoResult.parsed.temuan_data}</Section>
-                    ) : null}
-                    {demoResult.parsed.kesimpulan ? (
-                      <Section title="Kesimpulan">{demoResult.parsed.kesimpulan}</Section>
-                    ) : null}
-                    {demoResult.parsed.konteks_penting ? (
-                      <Section title="Konteks">{demoResult.parsed.konteks_penting}</Section>
-                    ) : null}
-                    {demoResult.parsed.penilaian ? (
-                      <Section title="Penilaian">{demoResult.parsed.penilaian}</Section>
-                    ) : null}
-                    {demoResult.parsed.alasan ? (
-                      <Section title="Alasan">{demoResult.parsed.alasan}</Section>
-                    ) : null}
-
-                    {demoResult.parsed.peringatan_editorial ? (
-                      <div
-                        style={{
-                          marginTop: 16,
-                          borderRadius: 20,
-                          padding: 16,
-                          background: "#fff7fb",
-                          border: "1px solid rgba(239,91,156,0.25)",
-                        }}
-                      >
-                        <div
-                          style={{
-                            marginBottom: 8,
-                            fontSize: 13,
-                            fontWeight: 700,
-                            color: COLORS.primaryDark,
-                            textTransform: "uppercase",
-                          }}
-                        >
-                          Peringatan editorial
-                        </div>
-                        <p style={{ margin: 0, lineHeight: 1.7 }}>
-                          {demoResult.parsed.peringatan_editorial}
-                        </p>
-                      </div>
-                    ) : null}
-
-                    {demoResult.parsed.followup_prompt ? (
-                      <div
-                        style={{
-                          marginTop: 16,
-                          borderRadius: 20,
-                          padding: 16,
-                          background: "#f0f4ff",
-                          border: "1px solid rgba(41,128,185,0.25)",
-                        }}
-                      >
-                        <div
-                          style={{
-                            marginBottom: 8,
-                            fontSize: 13,
-                            fontWeight: 700,
-                            color: "#2980b9",
-                            textTransform: "uppercase",
-                          }}
-                        >
-                          Bantu kami membantu kamu
-                        </div>
-                        <p style={{ margin: 0, lineHeight: 1.7 }}>
-                          {demoResult.parsed.followup_prompt}
-                        </p>
-                      </div>
-                    ) : null}
-
-                    {demoResult.parsed.sumber ? (
-                      <Section title="Sumber">{demoResult.parsed.sumber}</Section>
-                    ) : null}
-
-                    {demoResult.parsed.unduh_data ? (
-                      <DownloadLinks value={demoResult.parsed.unduh_data} />
-                    ) : null}
-                  </div>
-                </div>
-              ) : null}
+              {demoLoading && <p role="status" aria-live="polite" style={{textAlign:'center',color:COLORS.muted}}>{demoProgress || 'Sedang memeriksa data…'}</p>}
+              {showDemoAnswer && <div className="home-demo-answer" style={{background:'white',borderRadius:24,padding:20,minWidth:0,overflowWrap:'anywhere'}}>
+                <AnswerContent result={demoResult} />
+              </div>}
             </div>
           </div>
         </Card>
 
-        <div
+        {children}
+
+        {!publicMode && <div
           style={{
             marginTop: 18,
             textAlign: "center",
@@ -852,8 +915,8 @@ export function HomePage({ setPage, localMode = false, publicMode = false, onSta
             boxSizing: "border-box",
           }}
         >
-          {publicMode ? 'Daftar atau masuk untuk memeriksa data. Riwayat chat tersimpan di browser ini.' : localMode ? 'Buka chat dan hubungkan sesi untuk memeriksa data. Riwayat sebelumnya tetap tersimpan di browser ini.' : 'Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.'}
-        </div>
+          {localMode ? 'Buka chat dan hubungkan sesi untuk memeriksa data. Riwayat sebelumnya tetap tersimpan di browser ini.' : 'Akses penuh ke fitur chat saat ini hanya tersedia bagi pengguna uji coba yang telah memperoleh akun dari admin. Untuk mencoba versi penuh, silakan hubungi admin.'}
+        </div>}
       </div>
     </div>
   );
@@ -889,7 +952,7 @@ export function AboutPage() {
               rel="noreferrer"
               style={{ color: COLORS.primaryDark, fontWeight: 700, textDecoration: "none" }}
             >
-              Indonesia Data Journalism Network (IDJN)
+              Indonesian Data Journalism Network (IDJN)
             </a>{" "}
             sebagai bagian dari upaya memperkuat praktik jurnalisme berbasis data dan verifikasi berbasis bukti di Indonesia.
           </p>
@@ -905,23 +968,73 @@ export function AboutPage() {
               letterSpacing: 0.6,
             }}
           >
-            Methodology
+            Metodologi
           </div>
 
           <p style={pStyle}>
-            Cek Data AI membantu jurnalis memeriksa klaim menggunakan data resmi. Sistem ini bekerja dengan mencari data yang paling relevan dari basis pengetahuan yang sudah disiapkan, lalu menggunakan AI untuk membantu menyusun jawaban.
+            Cek Data AI membantu jurnalis mencari data, membaca tren, membandingkan angka, dan memeriksa klaim publik. Jawaban disusun berdasarkan data statistik dan laporan yang dapat ditelusuri ke sumbernya.
           </p>
 
           <p style={pStyle}>
-            Pada tahap ini, basis pengetahuan Cek Data AI memuat sekitar 10.000 tabel data resmi dari BPS. Sebelum digunakan, data tersebut terlebih dahulu dibersihkan dan disusun ulang agar lebih rapi, lebih konsisten, dan lebih mudah dicari oleh sistem.
+            Basis pengetahuan Cek Data AI mencakup:
           </p>
+
+          <table aria-label="Sumber dan jumlah data Cek Data AI" style={{ width: '100%', borderCollapse: 'collapse', marginBottom: 20, fontSize: 15, lineHeight: 1.6 }}>
+            <thead>
+              <tr style={{ borderBottom: '2px solid rgba(17,17,17,0.16)' }}>
+                <th scope="col" style={{ padding: '12px 10px', textAlign: 'left' }}>Sumber</th>
+                <th scope="col" style={{ padding: '12px 10px', textAlign: 'right' }}>Jumlah</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['Badan Pusat Statistik (BPS)', '8.611.485 data'],
+                ['Global Forest Watch dan MapBiomas', '836.833 data'],
+                ['Laporan NGO', '205 dokumen'],
+              ].map(([source, count]) => (
+                <tr key={source} style={{ borderBottom: '1px solid rgba(17,17,17,0.1)' }}>
+                  <td style={{ padding: '12px 10px' }}>{source}</td>
+                  <td style={{ padding: '12px 10px', textAlign: 'right' }}>{count}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
 
           <p style={pStyle}>
-            Saat pengguna mengajukan pertanyaan, sistem mencoba mengenali topik, wilayah, dan periode waktu yang dimaksud, lalu mencari data yang paling sesuai. Jawaban kemudian disusun berdasarkan data yang ditemukan. Jika data yang relevan belum tersedia, sistem seharusnya menyatakan keterbatasan itu secara terbuka.
+            Laporan NGO tersebut berasal dari <strong>Auriga Nusantara sebanyak 50 dokumen, Trend Asia 43 dokumen, Satya Bumi 31 dokumen, dan WALHI 81 dokumen</strong>. Isinya mencakup lingkungan hidup, kehutanan, pertambangan, perkebunan, energi, konflik agraria, serta kondisi masyarakat.
           </p>
 
+          <h3 style={{ fontSize: 17, margin: '28px 0 16px' }}>Cara kerja Cek Data AI</h3>
+          <ul style={{ paddingLeft: 22, margin: '0 0 24px', lineHeight: 1.8 }}>
+            <li style={{ marginBottom: 16 }}>
+              <strong>Memahami pertanyaan atau klaim</strong><br />
+              AI mengenali indikator, wilayah, periode, satuan, dan jenis analisis yang diminta. Misalnya, pertanyaan tentang tren kemiskinan perlu dibedakan dari pertanyaan tentang garis kemiskinan atau jumlah penduduk miskin.
+            </li>
+            <li style={{ marginBottom: 16 }}>
+              <strong>Mencari data dan bukti yang relevan</strong><br />
+              Sistem mencari angka dalam data terstruktur serta informasi dalam laporan NGO. Pemilihan bukti mempertimbangkan kesesuaian isi, lokasi, periode, dan indikator, bukan hanya kemiripan kata.
+            </li>
+            <li style={{ marginBottom: 16 }}>
+              <strong>Memeriksa kesesuaian bukti</strong><br />
+              Sebelum digunakan, data diperiksa agar pembandingnya sesuai. Angka kabupaten tidak langsung diperlakukan sebagai angka provinsi, dan kehilangan tutupan pohon tidak otomatis disebut deforestasi permanen. Untuk laporan NGO, sistem memeriksa bagian teks beserta konteks dan halaman sumbernya.
+            </li>
+            <li style={{ marginBottom: 16 }}>
+              <strong>Menghitung dan menyusun temuan</strong><br />
+              Untuk data terstruktur, mesin menghitung selisih, persentase perubahan, total, atau rata-rata sesuai pertanyaan. Temuan ditampilkan dalam tabel atau poin agar dasar jawabannya dapat dibaca dan diperiksa.
+            </li>
+            <li style={{ marginBottom: 16 }}>
+              <strong>Menjelaskan hasil dengan konteks yang relevan</strong><br />
+              AI menyusun jawaban langsung dari bukti yang ditemukan. Laporan NGO dapat menjadi sumber angka maupun penjelasan tambahan. Jika menggunakan beberapa sumber, jawaban mempertahankan perbedaan wilayah, periode, dan cakupan masing-masing. Temuan, perkiraan, risiko, dan rencana tetap dibedakan.
+            </li>
+            <li>
+              <strong>Menampilkan penilaian dan sumber</strong><br />
+              Untuk klaim, mesin memberikan penilaian disertai alasan berdasarkan bukti dan catatan editorial jika diperlukan. Jawaban mencantumkan tautan sumber, tautan unduh jika tersedia, serta halaman laporan yang digunakan.
+            </li>
+          </ul>
+
+          <h3 style={{ fontSize: 17, margin: '28px 0 16px' }}>Batas penggunaan</h3>
           <p style={{ ...pStyle, marginBottom: 0 }}>
-            Sebagai prototipe, Cek Data AI masih dalam tahap pengujian terbatas. Cakupan data dan kualitas sistem akan terus diperbaiki seiring proses uji coba. Untuk saat ini, akses penuh ke fitur chat hanya tersedia bagi pengguna yang telah memperoleh akun uji coba dari admin.
+            Cek Data AI merupakan alat bantu verifikasi dan masih dapat melakukan kesalahan. Jika bukti yang ditemukan belum cukup, jawaban menyatakan keterbatasannya. Hasil pencarian yang kosong tidak otomatis berarti data tersebut tidak tersedia. Jurnalis tetap perlu memeriksa sumber sebelum menggunakan hasil.
           </p>
 
           <div
@@ -3925,7 +4038,7 @@ function AdminPage({ isAdmin, onAuthExpired }) {
   );
 }
 
-export function ChatPage({ localMode = false, ready = true, navigation = null, historyNamespace = "cekdata_chat" }) {
+export function ChatPage({ localMode = false, ready = true, navigation = null, historyNamespace = "cekdata_chat", initialQuestion = null, onInitialQuestionConsumed }) {
   const chatHistoryLimit = 200;
   const [processingStatus, setProcessingStatus] = useState("Sedang memeriksa data…");
   const activeRequest = useRef(null);
@@ -3944,6 +4057,16 @@ export function ChatPage({ localMode = false, ready = true, navigation = null, h
   const [selectedSource, setSelectedSource] = useState("bps");
   const [sourceOptions, setSourceOptions] = useState(publicSourceOptions);
   const [isMobile, setIsMobile] = useState(() => window.innerWidth <= 768);
+  const homeQuestionApplied = useRef(false);
+  useEffect(() => {
+    if (!initialQuestion || !ready || !historyReady || loading || navigation?.page !== 'chat') return;
+    homeQuestionApplied.current = true;
+    setDraft(initialQuestion.question);
+    setSelectedSource(initialQuestion.source);
+    setSelectedId(null);
+    setError('');
+    onInitialQuestionConsumed?.();
+  }, [initialQuestion, ready, historyReady, loading, navigation?.page, onInitialQuestionConsumed]);
   useEffect(() => {
     const resize = () => setIsMobile(window.innerWidth <= 768);
     window.addEventListener('resize', resize);
@@ -3985,7 +4108,7 @@ export function ChatPage({ localMode = false, ready = true, navigation = null, h
           enabled: enabled.has(option.value),
           preview: (response.preview_sources || []).includes(option.value),
         })));
-        if (localMode && enabled.has(response.default_source)) setSelectedSource(response.default_source);
+        if (localMode && !homeQuestionApplied.current && !initialQuestion && enabled.has(response.default_source)) setSelectedSource(response.default_source);
       })
       .catch(() => {});
     return () => controller.abort();
@@ -4401,153 +4524,7 @@ export function ChatPage({ localMode = false, ready = true, navigation = null, h
                         {copiedId === selectedConversation?.id ? <Check size={14} /> : <Copy size={14} />}
                         {copiedId === selectedConversation?.id ? "Tersalin" : "Salin"}
                       </button>
-                      {canonicalAnswerView(selectedConversation.result) ? <CanonicalAnswer result={selectedConversation.result}
-                        clarificationDisabled={loading} onClarify={(question, source) => { setDraft(question); setSelectedSource(source); }} /> : <>
-                      {selectedConversation.result?.parsed?.penilaian ? (
-                        <div style={{ marginBottom: 12, display: "flex", flexWrap: "wrap", gap: 10 }}>
-                          <Pill
-                            style={{
-                              background: verdictTone(selectedConversation.result.parsed.penilaian || "").bg,
-                              color: verdictTone(selectedConversation.result.parsed.penilaian || "").color,
-                            }}
-                          >
-                            {selectedConversation.result.parsed.penilaian}
-                          </Pill>
-                        </div>
-                      ) : null}
-                      {selectedConversation.result?.parsed?.claim && <Section title="Klaim">{selectedConversation.result.parsed.claim}</Section>}
-                      {selectedConversation.result?.parsed?.penilaian ? (
-                        <Section title={`Penilaian: ${selectedConversation.result.parsed.penilaian}`}>
-                          {selectedConversation.result.parsed.alasan}
-                        </Section>
-                      ) : !selectedConversation.result?.parsed?.finding_groups && (selectedConversation.result?.parsed?.jawaban_utama || selectedConversation.result?.parsed?.kesimpulan) ? (
-                        <div style={{ marginTop: 16, lineHeight: 1.8 }}>{renderReadableText(selectedConversation.result.parsed.jawaban_utama || selectedConversation.result.parsed.kesimpulan)}</div>
-                      ) : null}
-                      {selectedConversation.result?.parsed?.finding_groups ? (<>
-                        {selectedConversation.result.parsed.finding_groups.map(group => <Section key={group.source} title={`Temuan Data ${group.source}`}><>
-                          {renderReadableText(group.findings.map(point => `- ${point}`).join('\n'))}
-                          {group.table && <FindingsTable table={group.table} />}
-                        </></Section>)}
-                        {selectedConversation.result.parsed.gfw_context && <Section title="Temuan Data Global Forest Watch"><>
-                          <p>{selectedConversation.result.parsed.gfw_context.summary}</p>
-                          <FindingsTable table={selectedConversation.result.parsed.gfw_context.table} />
-                        </></Section>}
-                        {selectedConversation.result.parsed.kesimpulan && <Section title="Kesimpulan">{selectedConversation.result.parsed.kesimpulan}</Section>}
-                      </>) : selectedConversation.result?.parsed?.document_answer && selectedConversation.result?.parsed?.findings_table ? (<>
-                        <Section title="Temuan Data">{selectedConversation.result.parsed.temuan_data}</Section>
-                        <FindingsTable table={selectedConversation.result.parsed.findings_table} />
-                      </>) : selectedConversation.result?.parsed?.findings_table ? (
-                        <Section title="Temuan Data"><FindingsTable table={selectedConversation.result.parsed.findings_table} /></Section>
-                      ) : selectedConversation.result?.parsed?.temuan_data ? (
-                        <Section title="Temuan Data">{selectedConversation.result.parsed.temuan_data}</Section>
-                      ) : null}
-
-                      {!selectedConversation.result?.parsed?.temuan_data &&
-                      !selectedConversation.result?.parsed?.konteks_penting &&
-                      !selectedConversation.result?.parsed?.penilaian &&
-                      !selectedConversation.result?.parsed?.alasan &&
-                      !selectedConversation.result?.parsed?.peringatan_editorial &&
-                      !selectedConversation.result?.parsed?.sumber &&
-                      selectedConversation.result?.answer ? (
-                        <p
-                          style={{
-                            margin: 0,
-                            lineHeight: 1.8,
-                            color: COLORS.text,
-                            whiteSpace: "pre-wrap",
-                          }}
-                        >
-                          {selectedConversation.result.answer}
-                        </p>
-                      ) : null}
-
-                      {!selectedConversation.result?.parsed?.finding_groups && selectedConversation.result?.parsed?.konteks_penting ? (
-                        <Section title="Konteks">
-                          {selectedConversation.result.parsed.konteks_penting}
-                        </Section>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.peringatan_editorial ? (
-                        <div
-                          style={{
-                            marginTop: 16,
-                            borderRadius: 18,
-                            padding: 16,
-                            background: "#fff7fb",
-                            border: "1px solid rgba(239,91,156,0.25)",
-                          }}
-                        >
-                          <div
-                            style={{
-                              marginBottom: 8,
-                              fontSize: 13,
-                              fontWeight: 700,
-                              color: COLORS.primaryDark,
-                              textTransform: "uppercase",
-                            }}
-                          >
-                            Peringatan editorial
-                          </div>
-                          <p style={{ margin: 0, lineHeight: 1.7 }}>
-                            {selectedConversation.result.parsed.peringatan_editorial}
-                          </p>
-                        </div>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.followup_prompt ? (
-                        <div
-                          style={{
-                            marginTop: 16,
-                            borderRadius: 20,
-                            padding: 16,
-                            background: "#f0f4ff",
-                            border: "1px solid rgba(41,128,185,0.25)",
-                          }}
-                        >
-                          <div
-                            style={{
-                              marginBottom: 8,
-                              fontSize: 13,
-                              fontWeight: 700,
-                              color: "#2980b9",
-                              textTransform: "uppercase",
-                            }}
-                          >
-                            Bantu kami membantu kamu
-                          </div>
-                          <p style={{ margin: 0, lineHeight: 1.7 }}>
-                            {selectedConversation.result.parsed.followup_prompt}
-                          </p>
-                        </div>
-                      ) : null}
-
-                      {selectedConversation.result?.parsed?.document_answer ? (
-                        <>
-                          {!selectedConversation.result.parsed.finding_groups && selectedConversation.result.parsed.gfw_context && <Section title="Data Global Forest Watch"><>
-                            <p>{selectedConversation.result.parsed.gfw_context.summary}</p>
-                            <FindingsTable table={selectedConversation.result.parsed.gfw_context.table} />
-                            <p>{selectedConversation.result.parsed.gfw_context.context}</p>
-                          </></Section>}
-                          <DocumentSourceFooter result={selectedConversation.result} />
-                          {selectedConversation.result.parsed.gfw_context && <GfwSourceFooter result={selectedConversation.result.parsed.gfw_context} />}
-                        </>
-                      ) : hasMapbiomasSources(selectedConversation.result) ? (
-                        <MapbiomasSourceFooter result={selectedConversation.result} />
-                      ) : hasGfwSources(selectedConversation.result) ? (
-                        <GfwSourceFooter result={selectedConversation.result} />
-                      ) : <>
-                        {selectedConversation.result?.parsed?.sumber ? (
-                          <Section title="Sumber"><SourceLinks title={selectedConversation.result.parsed.sumber}
-                            items={selectedConversation.result.parsed.source_items}
-                            value={selectedConversation.result.parsed.link_sumber} /></Section>
-                        ) : <SourceLinks value={selectedConversation.result?.parsed?.link_sumber} />}
-                        {selectedConversation.result?.parsed?.unduh_data ? (
-                          <DownloadLinks value={selectedConversation.result.parsed.unduh_data} />
-                        ) : null}
-                      </>}
-
-                      <VerifiedSources claims={selectedConversation.result?.claims} />
-                      </>}
+                      <AnswerContent result={selectedConversation.result} loading={loading} onClarify={(question, source) => { setDraft(question); setSelectedSource(source); }} />
 
                       <div
                         style={{
@@ -4921,11 +4898,12 @@ export default function App() {
         flexDirection: "column",
       }}
     >
-      <Header page={page} setPage={setPage} isLoggedIn={isLoggedIn} isAdmin={isAdmin} handleSignOut={handleSignOut} />
+      <Header hideAbout page={page} setPage={setPage} isLoggedIn={isLoggedIn} isAdmin={isAdmin} handleSignOut={handleSignOut} />
 
       <div className={page === "chat" && isLoggedIn ? "chat-app-content" : undefined} style={{ flex: 1 }}>
         {page === "home" ? <HomePage setPage={setPage} /> : null}
         {page === "about" ? <AboutPage /> : null}
+        {page === "team" ? <TeamPage onBack={() => setPage("home")} /> : null}
         {page === "signin" ? <UserLoginPage setPage={setPage} setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole} /> : null}
         {page === "admin-signin" ? <AdminLoginPage setPage={setPage} setIsLoggedIn={setIsLoggedIn} setUserRole={setUserRole} /> : null}
         {page === "chat" ? (
@@ -4945,7 +4923,7 @@ export default function App() {
       </div>
 
       {page !== "chat" && page !== "admin" ? (
-        <HomeFooter />
+        <HomeFooter onNavigate={setPage} />
       ) : null}
     </div>
   );

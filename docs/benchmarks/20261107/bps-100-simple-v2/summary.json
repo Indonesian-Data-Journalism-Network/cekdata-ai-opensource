@@ -1,0 +1,152 @@
+{
+  "accuracy_rule": "Correct data answers and verified correct unavailability answers both count as accurate",
+  "limited_is_subset_of_accurate": true,
+  "date": "2026-11-07",
+  "batch": "bps-100-simple-v2",
+  "total": 100,
+  "accurate": 96,
+  "accurate_percent": 96,
+  "data_answer_accurate": 91,
+  "problematic": 4,
+  "problematic_percent": 4,
+  "limited_handled_correctly": 5,
+  "limited_percent": 5,
+  "service_errors": 0,
+  "answerable": 95,
+  "accurate_of_answerable_percent": 95.79,
+  "accurate_but_incomplete": 0,
+  "provinces": 38,
+  "districts": 15,
+  "by_type": [
+    {
+      "kind": "Perbandingan antarwilayah",
+      "total": 15,
+      "accurate": 15,
+      "data_answer_accurate": 15,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Klaim naik/turun",
+      "total": 15,
+      "accurate": 15,
+      "data_answer_accurate": 15,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Tren triwulanan",
+      "total": 10,
+      "accurate": 10,
+      "data_answer_accurate": 10,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Cakupan/periode belum tersedia",
+      "total": 5,
+      "accurate": 5,
+      "data_answer_accurate": 0,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 5,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Permintaan angka/data",
+      "total": 30,
+      "accurate": 29,
+      "data_answer_accurate": 29,
+      "accurate_percent": 96.67,
+      "problematic": 1,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Klaim angka",
+      "total": 20,
+      "accurate": 18,
+      "data_answer_accurate": 18,
+      "accurate_percent": 90.0,
+      "problematic": 2,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Perbandingan antarperiode",
+      "total": 5,
+      "accurate": 4,
+      "data_answer_accurate": 4,
+      "accurate_percent": 80.0,
+      "problematic": 1,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    }
+  ],
+  "problem_cases": [
+    21,
+    46,
+    49,
+    93
+  ],
+  "problem_patterns": [
+    {
+      "pattern": "Nama wilayah yang lebih pendek ikut menjadi target",
+      "count": 2,
+      "cases": [
+        21,
+        93
+      ],
+      "percent_of_problematic": 50.0
+    },
+    {
+      "pattern": "Dua tabel dengan angka sama menghambat penilaian klaim",
+      "count": 1,
+      "cases": [
+        46
+      ],
+      "percent_of_problematic": 25.0
+    },
+    {
+      "pattern": "Kategori perkotaan dianggap nama wilayah",
+      "count": 1,
+      "cases": [
+        49
+      ],
+      "percent_of_problematic": 25.0
+    }
+  ],
+  "code_unchanged": true,
+  "same_code_as_previous_batch": true,
+  "production_provider_changed": false,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "collection": "cekdata_bps_2026_3e768fc0611056",
+  "duplicate_questions_with_previous": 0,
+  "duplicate_task_and_evidence_sets_with_previous": 0,
+  "evidence_cells_checked": 155,
+  "scope": "Model dan workflow nyata melalui adapter Qdrant BPS lokal; bukan pengujian browser. General publik tetap Pinecone.",
+  "grading": "Angka benar tetapi jawaban kurang lengkap tetap akurat. Label klaim salah atau data wilayah lain disajikan sebagai bukti langsung dihitung bermasalah. Penanda gap internal saja tidak otomatis menggagalkan jawaban. Jawaban yang tepat menyatakan data belum tersedia dihitung akurat; keterbatasan tepat adalah bagian dari total akurat, bukan kategori gagal. Lima kontrol keterbatasan ditentukan sebelum tes.",
+  "limitations": "Seratus pertanyaan sederhana menggunakan beberapa pola bahasa, 38 provinsi dan 15 kabupaten/kota. Bukan ukuran akurasi semua pertanyaan bebas. Cakupan 38 provinsi tidak berarti setiap jenis diuji di semua provinsi. Angka dibandingkan dengan arsip API BPS lokal, bukan pengambilan ulang API saat tes. Benchmark500 tidak diubah.",
+  "combined_two_batches": {
+    "total": 200,
+    "accurate": 192,
+    "problematic": 8,
+    "limited": 10,
+    "limited_is_subset_of_accurate": true,
+    "accurate_percent": 96.0,
+    "note": "Gabungan dua batch berbeda pada kode sama; tidak mencakup benchmark500."
+  }
+}

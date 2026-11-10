@@ -11,6 +11,17 @@ from ngo_evidence_policy import EvidenceFit, FindingFit
 
 
 class CombinedReportsTests(unittest.IsolatedAsyncioTestCase):
+    async def test_extraction_keeps_second_question_and_claim_qualifiers(self):
+        evidence,public=self.evidence();base=self.ai();seen=[]
+        class CaptureAI:
+            async def astructured_predict(inner,schema,prompt,**kwargs):
+                if schema.__name__=='DocumentAnswer':seen.append(json.loads(kwargs['question']))
+                return await base.astructured_predict(schema,prompt,**kwargs)
+        question='Apakah semua rumah tangga kehilangan pekerjaan? Berapa persen yang pendapatannya turun?'
+        await answer(CaptureAI(),question,'2026-11-07',evidence,public,None,'question')
+        self.assertTrue(seen)
+        self.assertTrue(all(q==question for q in seen))
+
     def test_health_fallback_keeps_relevant_quantified_evidence(self):
         from ngo_combined import fallback_summary
         findings=[Finding(text='Warga melaporkan debu dari pembangkit.',evidence_id='D1'),

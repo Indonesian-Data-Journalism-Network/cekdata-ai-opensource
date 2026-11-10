@@ -26,6 +26,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, field_validator
 
 COOKIE = 'cekdata_public_session'
+DEMO_COOKIE = 'cekdata_demo_session'
 SESSION_TTL = 7 * 86400
 RESULT_TTL = 300
 JOB_TTL = 900
@@ -95,6 +96,11 @@ class Question(BaseModel):
         value = value.strip()
         if len(value) < 3: raise ValueError('Question too short')
         return value
+
+
+class DemoQuestion(BaseModel):
+    model_config = ConfigDict(extra='forbid')
+    question_id: int = Field(strict=True, ge=1, le=100)
 
 
 def password_hash(password, salt):
@@ -255,8 +261,9 @@ def create_app(config: Config, runner=default_runner, sources=None):
     if sources is None:
         from server import gfw_report, REPORT_PATH
         def sources():
+            from general_data import available
             result=[]
-            if REPORT_PATH.exists():result.append('bps')
+            if available() or REPORT_PATH.exists():result.append('bps')
             if gfw_report():result.append('environment')
             return result
     @asynccontextmanager
@@ -335,6 +342,43 @@ def create_app(config: Config, runner=default_runner, sources=None):
     async def search_sources(request:Request):
         user(request); available=sources()
         return {'sources':available,'default_source':'environment' if 'environment' in available else 'bps','mode':'public'}
+    # The public trial accepts catalog IDs only, never arbitrary prompts/sources.
+    demo_catalog = {item['id']: item for item in json.loads(
+        (Path(__file__).parent / 'frontend/src/config/homeQuestions.json').read_text())}
+    def demo_identity(request):
+        token = request.cookies.get(DEMO_COOKIE, '')
+        try:
+            nonce, expiry, signature = token.split('.')
+            expected = hmac.new(config.gateway_secret.encode(), f'{nonce}.{expiry}'.encode(), hashlib.sha256).hexdigest()
+            if len(nonce) != 32 or not hmac.compare_digest(signature, expected) or int(expiry) <= time.time():
+                return None
+            return 'demo:' + digest(token)
+        except (ValueError, TypeError):
+            return None
+    @app.post('/api/demo/jobs', status_code=202)
+    async def demo_submit(data:DemoQuestion,request:Request,response:Response):
+        entry = demo_catalog.get(data.question_id)
+        if not entry:raise HTTPException(404,'Contoh pertanyaan tidak ditemukan.')
+        if entry['source'] not in sources():raise HTTPException(409,'Sumber data belum tersedia.')
+        ip = digest(request.headers.get('x-cekdata-client', 'unknown'))
+        limiter.take('demo-minute:' + ip, 3, 60)
+        limiter.take('demo-day:' + ip, 20, 86400)
+        uid = demo_identity(request)
+        if not uid:
+            payload = f'{secrets.token_hex(16)}.{int(time.time()) + 86400}'
+            signature = hmac.new(config.gateway_secret.encode(), payload.encode(), hashlib.sha256).hexdigest()
+            token = payload + '.' + signature
+            uid = 'demo:' + digest(token)
+            response.set_cookie(DEMO_COOKIE, token, max_age=86400, httponly=True,
+                                secure=config.secure_cookie, samesite='lax', path='/api/demo')
+        jobs.check_capacity(uid)
+        jid = jobs.submit(uid, Question(question=entry['question'],sources=[entry['source']]))
+        return jobs.get(jid, uid)
+    @app.get('/api/demo/jobs/{jid}')
+    async def demo_get(jid:str,request:Request):
+        uid = demo_identity(request)
+        if not uid:raise HTTPException(401,'Sesi percobaan berakhir. Klik Verifikasi kembali.')
+        return jobs.get(jid,uid)
     @app.post('/api/jobs',status_code=202)
     async def submit(data:Question,request:Request):
         uid=user(request)['id']

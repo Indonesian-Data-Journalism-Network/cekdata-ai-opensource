@@ -1,7 +1,7 @@
 """Geographic scope must come from the cited event, not the question or title."""
 from functools import lru_cache
 import re
-from geography import Geography, normalize
+from geography import Geography, normalize, embedded_place_alias
 from ngo_metadata import explicit_places, spans, STOP
 
 
@@ -41,6 +41,7 @@ def places(text):
     normalized = normalize(text)
     typed=explicit_places(text)
     for match in geo.pattern.finditer(normalized):
+        if embedded_place_alias(text, match[0], geo.aliases):continue
         if re.match(r'\s+(?:utara|selatan|barat|timur|tengah)\b', normalized[match.end():]):
             continue  # An unindexed new district is not its name-prefix parent.
         if re.search(r'\b(?:sungai|river|danau|lake)\s*$', normalized[:match.start()]) or re.match(r'\s+(?:rivers?|lakes?)\b', normalized[match.end():]):

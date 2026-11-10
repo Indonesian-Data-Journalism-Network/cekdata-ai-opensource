@@ -2,14 +2,14 @@
 const routes = new Map([
   ['/api/health', ['GET']], ['/api/auth/me', ['GET']],
   ['/api/auth/signup', ['POST']], ['/api/auth/login', ['POST']],
-  ['/api/auth/logout', ['POST']], ['/api/search/sources', ['GET']], ['/api/jobs', ['POST']],
+  ['/api/auth/logout', ['POST']], ['/api/search/sources', ['GET']], ['/api/jobs', ['POST']], ['/api/demo/jobs', ['POST']],
 ]);
 const json = (detail, status) => Response.json({detail}, {status, headers:{'cache-control':'no-store'}});
 export function makeGateway({getEnv, fetchImpl = fetch}) {
   return async (request, context = {}) => {
     const url = new URL(request.url);
     const path = url.pathname.replace(/^\/\.netlify\/functions\/api(?=\/)/, '/api');
-    const methods = routes.get(path) || (/^\/api\/jobs\/[\w-]{20,64}$/.test(path) ? ['GET'] : []);
+    const methods = routes.get(path) || (/^\/api\/(?:demo\/)?jobs\/[\w-]{20,64}$/.test(path) ? ['GET'] : []);
     if (!methods.length) return json('Alamat layanan tidak ditemukan.',404);
     if (!methods.includes(request.method)) return json('Metode tidak diizinkan.',405);
     const origin = request.headers.get('origin');

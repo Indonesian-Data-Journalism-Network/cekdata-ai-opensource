@@ -1,0 +1,34 @@
+[
+  {
+    "id": 21,
+    "question": "Berapa PDRB atas dasar harga berlaku di Kabupaten Buton Selatan, Sulawesi Tenggara, pada triwulan II 2026?",
+    "issues": [
+      "Indikator/kategori/wilayah/periode bukti tidak sesuai pertanyaan"
+    ],
+    "note": "Pertanyaan hanya Buton Selatan, tetapi tabel juga menampilkan Kabupaten Buton sebagai bukti langsung. Nama wilayah yang lebih pendek ikut terpilih."
+  },
+  {
+    "id": 36,
+    "question": "Benarkah tingkat pengangguran terbuka di Sumatera Barat pada Agustus 2026 sebesar 5,57 persen?",
+    "issues": [
+      "Penilaian klaim tidak sesuai angka sumber"
+    ],
+    "note": "Klaim angka 5,57 persen Sumatera Barat sebenarnya benar. Dua tabel TPT dengan angka identik menyebabkan label Tidak dapat diverifikasi."
+  },
+  {
+    "id": 42,
+    "question": "Benarkah tingkat pengangguran terbuka di Kalimantan Utara pada Agustus 2026 sebesar 3,79 persen?",
+    "issues": [
+      "Penilaian klaim tidak sesuai angka sumber"
+    ],
+    "note": "Klaim angka 3,79 persen Kalimantan Utara sebenarnya benar. Dua tabel TPT dengan angka identik menyebabkan label Tidak dapat diverifikasi."
+  },
+  {
+    "id": 50,
+    "question": "Benarkah tingkat pengangguran terbuka di Kalimantan Tengah pada Agustus 2026 sebesar 4,01 persen?",
+    "issues": [
+      "Penilaian klaim tidak sesuai angka sumber"
+    ],
+    "note": "Klaim angka 4,01 persen Kalimantan Tengah sebenarnya benar. Dua tabel TPT dengan angka identik menyebabkan label Tidak dapat diverifikasi."
+  }
+]

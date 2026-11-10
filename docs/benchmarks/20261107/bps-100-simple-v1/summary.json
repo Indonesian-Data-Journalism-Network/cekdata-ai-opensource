@@ -1,0 +1,129 @@
+{
+  "accuracy_rule": "Correct data answers and verified correct unavailability answers both count as accurate",
+  "limited_is_subset_of_accurate": true,
+  "date": "2026-11-07",
+  "total": 100,
+  "accurate": 96,
+  "accurate_percent": 96,
+  "data_answer_accurate": 91,
+  "problematic": 4,
+  "problematic_percent": 4,
+  "limited_handled_correctly": 5,
+  "limited_percent": 5,
+  "service_errors": 0,
+  "answerable": 95,
+  "accurate_of_answerable_percent": 95.79,
+  "accurate_but_incomplete": 1,
+  "provinces": 38,
+  "districts": 15,
+  "by_type": [
+    {
+      "kind": "Perbandingan antarwilayah",
+      "total": 15,
+      "accurate": 15,
+      "data_answer_accurate": 15,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Klaim naik/turun",
+      "total": 15,
+      "accurate": 15,
+      "data_answer_accurate": 15,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Tren triwulanan",
+      "total": 10,
+      "accurate": 10,
+      "data_answer_accurate": 10,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Perbandingan antarperiode",
+      "total": 5,
+      "accurate": 5,
+      "data_answer_accurate": 5,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 1
+    },
+    {
+      "kind": "Cakupan/periode belum tersedia",
+      "total": 5,
+      "accurate": 5,
+      "data_answer_accurate": 0,
+      "accurate_percent": 100.0,
+      "problematic": 0,
+      "limited": 5,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Permintaan angka/data",
+      "total": 30,
+      "accurate": 29,
+      "data_answer_accurate": 29,
+      "accurate_percent": 96.67,
+      "problematic": 1,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    },
+    {
+      "kind": "Klaim angka",
+      "total": 20,
+      "accurate": 17,
+      "data_answer_accurate": 17,
+      "accurate_percent": 85.0,
+      "problematic": 3,
+      "limited": 0,
+      "service_errors": 0,
+      "accurate_incomplete": 0
+    }
+  ],
+  "problem_cases": [
+    21,
+    36,
+    42,
+    50
+  ],
+  "problem_patterns": [
+    {
+      "pattern": "Cakupan wilayah melebar",
+      "count": 1,
+      "cases": [
+        21
+      ]
+    },
+    {
+      "pattern": "Bukti angka sama dari dua tabel menghambat label klaim",
+      "count": 3,
+      "cases": [
+        36,
+        42,
+        50
+      ]
+    }
+  ],
+  "code_unchanged": true,
+  "production_provider_changed": false,
+  "model": "gpt-4.1-mini-2025-04-14",
+  "collection": "cekdata_bps_2026_3e768fc0611056",
+  "scope": "Workflow dan model nyata, adapter Qdrant BPS lokal, bukan browser dan bukan situs General publik.",
+  "grading": "Angka akurat tetapi kurang lengkap tetap dihitung akurat. Label klaim keliru dan bukti langsung di luar wilayah diminta dihitung bermasalah. Gap internal yang tidak merusak jawaban tidak otomatis dianggap salah. Jawaban yang tepat menyatakan data belum tersedia dihitung akurat; keterbatasan tepat adalah bagian dari total akurat, bukan kategori gagal. Lima kontrol keterbatasan ditentukan sebelum tes. Semua angka/identitas/periode/satuan/tautan bukti dicocokkan ke arsip API lokal, dengan tinjauan arah perbandingan dan tren.",
+  "limitations": "Satu batch sederhana dengan templat pertanyaan bervariasi dan wilayah berbeda; bukan estimasi akurasi seluruh topik atau pertanyaan bebas. Cakupan 38 provinsi bukan berarti setiap jenis soal diuji di semua provinsi. Benchmark500 sebelumnya tidak diubah atau digabung."
+}

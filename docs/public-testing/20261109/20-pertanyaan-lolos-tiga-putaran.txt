@@ -1,0 +1,84 @@
+20 PERTANYAAN LOLOS TIGA PUTARAN — 9 NOVEMBER 2026
+Sumber: benchmark online-mixed500x3-v2, audit 8 November 2026.
+Pertanyaan disalin tanpa perubahan. Dipilih hanya status numeric_checks_passed atau accurate di seluruh tiga putaran; tidak termasuk accurate_partial, correct_limitation, atau service_failure.
+Ini hasil historis, bukan jaminan atau pengujian ulang mesin saat ini. Audit numerik berfokus jawaban utama, tidak seluruh narasi tambahan.
+
+1. [general | bps | ID 4 | Permintaan angka]
+Berapa tingkat partisipasi angkatan kerja di Kalimantan Barat pada Februari 2025?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+2. [general | bps | ID 8 | Permintaan angka]
+Berapa persentase penduduk miskin di Kabupaten Lahat pada 2023?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+3. [general | bps | ID 6 | Tren]
+Bagaimana tren indeks pembangunan manusia di Indonesia selama 2022–2024?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+4. [general | bps | ID 7 | Tren]
+Bagaimana tren nilai tukar petani di Indonesia selama 2021–2023?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+5. [general | bps | ID 2 | Perbandingan tahun]
+Bandingkan tingkat pengangguran terbuka di Bali pada Februari 2025 dan Februari 2026. Berapa perubahannya?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+6. [general | bps | ID 48 | Perbandingan wilayah]
+Pada Februari 2026, mana yang lebih tinggi tingkat pengangguran terbukanya, Jawa Timur atau Maluku Utara?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+7. [general | bps | ID 11 | Klaim angka]
+Benarkah persentase penduduk miskin di Kabupaten Bangkalan pada 2024 sebesar 19,66 persen?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+8. [general | bps | ID 36 | Klaim naik/turun]
+Benarkah jumlah penduduk miskin di Kabupaten Bengkulu Tengah naik dari 2022 ke 2023?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+9. [environment | gfw | ID 5 | data]
+Sebutkan luas kehilangan tutupan pohon di Jawa Tengah pada 2023, dalam hektare.
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+10. [environment | gfw | ID 23 | data]
+Sebutkan luas kehilangan tutupan pohon akibat kebakaran di Kabupaten Buru, Maluku pada 2024, dalam hektare.
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+11. [environment | gfw | ID 37 | tren]
+Tolong tampilkan tren tahunan kehilangan tutupan pohon dalam hutan primer di Kabupaten Bangka Selatan, Bangka Belitung dari 2021 sampai 2025.
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+12. [environment | gfw | ID 50 | rata_rata]
+Berapa rata-rata per tahun kehilangan tutupan pohon akibat kebakaran di Kabupaten Lamongan, Jawa Timur untuk periode 2021 sampai 2025? Sertakan angka setiap tahun.
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+13. [environment | gfw | ID 52 | perbandingan_wilayah]
+Mana yang kehilangan tutupan pohonnya lebih luas pada 2024, Jawa Tengah atau Nusa Tenggara Barat? Tampilkan kedua angkanya dan selisihnya.
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+14. [environment | gfw | ID 67 | klaim_arah]
+Klaim: Kehilangan tutupan pohon di Maluku turun dari 2023 ke 2024. Apakah sesuai data?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+15. [environment | mapbiomas | ID 14 | perbandingan_tahun]
+Bandingkan luas mangrove di Lampung tahun 2022 dengan 2024. Mana yang lebih luas dan berapa selisihnya?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+16. [environment | mapbiomas | ID 167 | tren]
+Bagaimana perubahan luas tutupan sawit di Sumatera setiap tahun dari 2020 sampai 2024?
+Hasil: P1=numeric_checks_passed, P2=numeric_checks_passed, P3=numeric_checks_passed
+
+17. [environment | ngo | ID 142 | laporan_data]
+Apa data yang tersedia tentang tempat tinggal dan mata pencaharian warga terkait proyek Rempang Eco City di Pulau Rempang?
+Hasil: P1=accurate, P2=accurate, P3=accurate
+
+18. [environment | ngo | ID 311 | laporan_data]
+Apa data yang tersedia tentang akses tanah dan penghidupan petani terkait perkebunan tebu di Pundenrejo, Pati?
+Hasil: P1=accurate, P2=accurate, P3=accurate
+
+19. [environment | gabungan | ID 297 | gabungan_data]
+Apa dampak industri nikel terhadap air bersih dan penghidupan warga di Pulau Obi? Tambahkan angka kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara pada 2024.
+Hasil: P1=accurate, P2=accurate, P3=accurate
+
+20. [environment | gabungan | ID 421 | gabungan_tren]
+Jelaskan masalah industri nikel di Pulau Obi dan tampilkan tren kehilangan tutupan pohon di Kabupaten Halmahera Selatan, Maluku Utara untuk 2023–2025.
+Hasil: P1=accurate, P2=accurate, P3=accurate

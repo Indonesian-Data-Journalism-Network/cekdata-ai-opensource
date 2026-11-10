@@ -114,9 +114,18 @@ def plan(question, catalog, reference, evidence=()):
     if any(y not in available for y in years):return None
     return SearchQuery(text=original,indicator_ids=[family['indicator_id']],areas=areas,years=years,population='total')
 
-async def retrieve(question, catalog, reference, retriever, evidence=()):
+async def retrieve(question, catalog, reference, retriever, evidence=(), *, request_intent=None):
     from answer_format import rounded
-    query=plan(question,catalog,reference,evidence)
+    contextual_question=question
+    if request_intent is not None:
+        # A mixed question can give the report and the statistical series
+        # different observation periods. Use the explicitly scoped statistical
+        # part only when the existing geography/indicator guards can resolve it.
+        scoped=[part for part in request_intent.question_parts
+                if re.search(r'kehilangan tutupan pohon|deforestasi',part,re.I)]
+        if len(scoped)==1 and plan(scoped[0],catalog,reference,evidence) is not None:
+            contextual_question=scoped[0]
+    query=plan(contextual_question,catalog,reference,evidence)
     if query is None:return None
     batch=await retriever.search(query)
     if batch.truncated:return None

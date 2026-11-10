@@ -1,0 +1,18 @@
+.public-home-auth { margin-top: 20px; padding: 24px; border-radius: 28px; background: #f7f3ef; box-shadow: 0 1px 3px #0000000d; color: #111; scroll-margin-top: 24px; }
+.public-auth-tabs { display: flex; max-width: 460px; margin: 0 auto 24px; border-bottom: 1px solid #dfd6d0; }
+.public-auth-tabs button { flex: 1; min-height: 44px; font: inherit; font-size: 15px; font-weight: 700; padding: 10px 16px; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px; background: transparent; color: #6f6a67; cursor: pointer; }
+.public-auth-tabs button[aria-selected="true"] { color: #c52770; border-bottom-color: #ef5b9c; }
+.public-home-auth [role="tabpanel"] { max-width: 460px; margin: auto; }
+.public-auth-fields { display: grid; gap: 16px; }
+.public-auth-fields label { display: grid; gap: 6px; font-size: 14px; font-weight: 600; text-align: left; }
+.public-auth-fields input { width: 100%; min-width: 0; box-sizing: border-box; padding: 12px 14px; border: 1px solid #dfd6d0; border-radius: 12px; background: #fff; color: #272321; font: inherit; font-size: 16px; font-weight: 400; }
+.public-auth-fields input::placeholder { color: #6f6a67; opacity: 1; }
+.public-auth-consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 18px; font-size: 13px; line-height: 1.6; text-align: left; }
+.public-auth-consent input { margin: 3px 0 0; width: 16px; height: 16px; flex: none; accent-color: #db4e8c; }
+.public-auth-submit { width: 100%; min-height: 44px; margin-top: 22px; border: 0; background: #ef5b9c; color: #fff; font: inherit; font-size: 15px; font-weight: 700; border-radius: 14px; padding: 12px 20px; cursor: pointer; }
+.public-home-auth button:disabled { opacity: .6; cursor: default; }
+.public-home-auth button:focus-visible, .public-home-auth input:focus-visible, .public-auth-privacy summary:focus-visible { outline: 2px solid #9d2359; outline-offset: 3px; }
+.public-auth-privacy { margin-top: 16px; font-size: 12px; line-height: 1.7; color: #6f6a67; text-align: left; }
+.public-auth-privacy summary { cursor: pointer; }
+.public-auth-privacy p { margin: 8px 0 0; }
+@media (max-width: 480px) { .public-home-auth { padding: 20px 18px; border-radius: 24px; } }

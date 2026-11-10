@@ -2,29 +2,37 @@
   "date": "2026-11-07",
   "total": 500,
   "counts": {
-    "akurat": 428,
+    "akurat": 450,
     "terbatas": 26,
-    "bermasalah": 43,
+    "bermasalah": 21,
     "gangguan_layanan": 3
   },
   "percentages": {
-    "akurat": 85.6,
+    "akurat": 90.0,
     "terbatas": 5.2,
-    "bermasalah": 8.6,
+    "bermasalah": 4.2,
     "gangguan_layanan": 0.6
   },
-  "partial_accepted": 16,
-  "latest_retested_unique": 31,
-  "latest_development_revised_unique": 6,
-  "not_retested": 469,
+  "partial_accepted": 26,
+  "latest_retested_unique": 43,
+  "not_retested_on_latest_version": 457,
+  "ever_retested_unique": 56,
+  "using_original_run_without_retest": 444,
+  "latest_round": {
+    "previous_problematic": 43,
+    "now_accurate": 22,
+    "still_problematic": 21,
+    "partial_accurate": 10,
+    "service_errors": 0
+  },
   "ranking": [
     {
       "kind": "data",
       "label": "Permintaan angka/data",
       "total": 140,
       "akurat": 140,
-      "bermasalah": 0,
       "terbatas": 0,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 100.0,
       "partial_accepted": 0
@@ -34,8 +42,8 @@
       "label": "Tren tahunan",
       "total": 90,
       "akurat": 90,
-      "bermasalah": 0,
       "terbatas": 0,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 100.0,
       "partial_accepted": 1
@@ -45,8 +53,19 @@
       "label": "Perbandingan antar tahun",
       "total": 70,
       "akurat": 70,
-      "bermasalah": 0,
       "terbatas": 0,
+      "bermasalah": 0,
+      "gangguan_layanan": 0,
+      "accuracy_pct": 100.0,
+      "partial_accepted": 0
+    },
+    {
+      "kind": "klaim_arah",
+      "label": "Klaim angka naik/turun",
+      "total": 45,
+      "akurat": 45,
+      "terbatas": 0,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 100.0,
       "partial_accepted": 0
@@ -56,8 +75,8 @@
       "label": "Perbandingan antar wilayah",
       "total": 20,
       "akurat": 20,
-      "bermasalah": 0,
       "terbatas": 0,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 100.0,
       "partial_accepted": 0
@@ -67,85 +86,74 @@
       "label": "Rata-rata tahunan",
       "total": 10,
       "akurat": 10,
-      "bermasalah": 0,
       "terbatas": 0,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 100.0,
-      "partial_accepted": 0
-    },
-    {
-      "kind": "klaim_arah",
-      "label": "Klaim angka naik/turun",
-      "total": 45,
-      "akurat": 44,
-      "bermasalah": 1,
-      "terbatas": 0,
-      "gangguan_layanan": 0,
-      "accuracy_pct": 97.78,
       "partial_accepted": 0
     },
     {
       "kind": "laporan_data",
       "label": "Data dari laporan NGO",
       "total": 20,
-      "akurat": 14,
-      "bermasalah": 6,
+      "akurat": 17,
       "terbatas": 0,
+      "bermasalah": 3,
       "gangguan_layanan": 0,
-      "accuracy_pct": 70.0,
-      "partial_accepted": 3
-    },
-    {
-      "kind": "gabungan_tren",
-      "label": "Gabungan laporan NGO + tren GFW",
-      "total": 20,
-      "akurat": 14,
-      "bermasalah": 6,
-      "terbatas": 0,
-      "gangguan_layanan": 0,
-      "accuracy_pct": 70.0,
-      "partial_accepted": 3
+      "accuracy_pct": 85.0,
+      "partial_accepted": 5
     },
     {
       "kind": "gabungan_data",
       "label": "Gabungan laporan NGO + angka GFW",
       "total": 20,
-      "akurat": 13,
-      "bermasalah": 6,
+      "akurat": 17,
       "terbatas": 0,
+      "bermasalah": 2,
       "gangguan_layanan": 1,
-      "accuracy_pct": 65.0,
-      "partial_accepted": 7
+      "accuracy_pct": 85.0,
+      "partial_accepted": 11
+    },
+    {
+      "kind": "gabungan_tren",
+      "label": "Gabungan laporan NGO + tren GFW",
+      "total": 20,
+      "akurat": 17,
+      "terbatas": 0,
+      "bermasalah": 3,
+      "gangguan_layanan": 0,
+      "accuracy_pct": 85.0,
+      "partial_accepted": 5
     },
     {
       "kind": "laporan_dampak",
       "label": "Penjelasan dampak dari laporan NGO",
       "total": 20,
-      "akurat": 11,
-      "bermasalah": 8,
+      "akurat": 14,
       "terbatas": 0,
+      "bermasalah": 5,
       "gangguan_layanan": 1,
-      "accuracy_pct": 55.0,
-      "partial_accepted": 2
+      "accuracy_pct": 70.0,
+      "partial_accepted": 3
     },
     {
       "kind": "klaim_statemen",
       "label": "Klaim manfaat/dampak umum",
       "total": 20,
-      "akurat": 2,
-      "bermasalah": 16,
+      "akurat": 10,
       "terbatas": 1,
+      "bermasalah": 8,
       "gangguan_layanan": 1,
-      "accuracy_pct": 10.0,
-      "partial_accepted": 0
+      "accuracy_pct": 50.0,
+      "partial_accepted": 1
     },
     {
       "kind": "cakupan_pulau",
       "label": "Cakupan pulau belum tersedia",
       "total": 10,
       "akurat": 0,
-      "bermasalah": 0,
       "terbatas": 10,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 0.0,
       "partial_accepted": 0
@@ -155,8 +163,8 @@
       "label": "Periode belum tersedia (GFW)",
       "total": 10,
       "akurat": 0,
-      "bermasalah": 0,
       "terbatas": 10,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 0.0,
       "partial_accepted": 0
@@ -166,8 +174,8 @@
       "label": "Cakupan/periode belum tersedia (MapBiomas)",
       "total": 5,
       "akurat": 0,
-      "bermasalah": 0,
       "terbatas": 5,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 0.0,
       "partial_accepted": 0
@@ -178,38 +186,38 @@
       "group": "gfw",
       "total": 350,
       "akurat": 330,
-      "bermasalah": 0,
       "terbatas": 20,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
       "accuracy_pct": 94.29
     },
     {
       "group": "mapbiomas",
       "total": 50,
-      "akurat": 44,
-      "bermasalah": 1,
+      "akurat": 45,
       "terbatas": 5,
+      "bermasalah": 0,
       "gangguan_layanan": 0,
-      "accuracy_pct": 88.0
+      "accuracy_pct": 90.0
     },
     {
       "group": "ngo",
       "total": 60,
-      "akurat": 27,
-      "bermasalah": 30,
+      "akurat": 41,
       "terbatas": 1,
+      "bermasalah": 16,
       "gangguan_layanan": 2,
-      "accuracy_pct": 45.0
+      "accuracy_pct": 68.33
     },
     {
       "group": "gabungan",
       "total": 40,
-      "akurat": 27,
-      "bermasalah": 12,
+      "akurat": 34,
       "terbatas": 0,
+      "bermasalah": 5,
       "gangguan_layanan": 1,
-      "accuracy_pct": 67.5
+      "accuracy_pct": 85.0
     }
   ],
-  "method": "Rekap gabungan jawaban terakhir yang tersimpan per ID, bukan pengujian ulang 500 soal pada satu versi kode. Akurat mencakup jawaban parsial yang faktanya tepat. Kelengkapan tidak menjadi syarat kelulusan. Penilaian sumber mengikuti audit arsip dan penelaahan jawaban revisi; bukan verifikasi lapangan independen atas semua klaim penerbit."
+  "method": "Rekap berjalan dari jawaban terakhir yang tersimpan untuk 500 ID unik, gabungan beberapa putaran dan versi mesin. Sebanyak 43 kasus bermasalah diuji ulang pada putaran terbaru; 457 jawaban lain tidak diuji ulang pada versi ini. Ini bukan pengujian ulang 500 pertanyaan sekaligus atau ukuran pasti akurasi mesin saat ini. Jawaban parsial yang faktanya tepat diterima akurat; kesalahan substantif tetap bermasalah. Penilaian membandingkan jawaban dengan bukti arsip, bukan verifikasi lapangan independen semua klaim penerbit."
 }

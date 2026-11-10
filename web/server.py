@@ -46,6 +46,16 @@ class AskInput(BaseModel):
 
 
 async def run_workflow(key: str, question: str, reference: str):
+    # Environment reloads flow's Pydantic types. Refresh General's adapters
+    # before using them so evidence from either store has the same type identity.
+    reload_statistical_engine()
+    import bps_local, pinecone_data
+    for module in (bps_local, pinecone_data):
+        importlib.reload(module)
+    import general_data
+    importlib.reload(general_data)
+    if general_data.available():
+        return await general_data.run(key, question, reference)
     return await run_dataset_workflow(key, question, reference, CATALOG_PATH, COLLECTION)
 
 
@@ -68,15 +78,20 @@ def gfw_report():
     return report if report.get('publication_status') == 'published' else {}
 
 
-async def run_dataset_workflow(key, question, reference, catalog_path, collection):
-    from llama_index.llms.openai import OpenAI
-    from qdrant_client import QdrantClient
-
+def reload_statistical_engine():
     # Reload only the stateless engine between requests, keeping session secrets
     # in RAM in this server. The request lock prevents concurrent reloads.
     import flow, storage, pilot_data
     for module in (flow, storage, pilot_data):
         importlib.reload(module)
+    return flow, storage, pilot_data
+
+
+async def run_dataset_workflow(key, question, reference, catalog_path, collection):
+    from llama_index.llms.openai import OpenAI
+    from qdrant_client import QdrantClient
+
+    flow, storage, pilot_data = reload_statistical_engine()
     catalog = pilot_data.group_catalog(json.loads(catalog_path.read_text()))
     llm = OpenAI(model=os.environ.get('CEKDATA_MODEL', 'gpt-4.1-mini-2025-04-14'),
                  api_key=key, temperature=0, max_tokens=2400, timeout=45, max_retries=0)

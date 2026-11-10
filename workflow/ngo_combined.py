@@ -208,10 +208,9 @@ async def answer(llm, question, reference, evidence, public, gfw, kind, *, recov
     notes = scope_notes(evidence)
     # A report answers its own subject and observation period. The GFW period
     # must not exclude useful local survey evidence from the report search.
-    narrative = question.split('?', 1)[0]
-    if kind == 'claim':
-        narrative = re.sub(r'\b(?:benarkah|apakah benar|apakah betul|klaim|seluruh|semua|hanya|disebabkan)\b', ' ', narrative, flags=re.I)
-        narrative = ' '.join(narrative.split())
+    # Extraction sees every requested part and the original claim qualifiers.
+    # Neutralizing search wording must not delete obligations from evidence reading.
+    narrative = question
 
     def support_for(findings):
         return [{'evidence_id': f.evidence_id, 'title': by_id[f.evidence_id]['title'],

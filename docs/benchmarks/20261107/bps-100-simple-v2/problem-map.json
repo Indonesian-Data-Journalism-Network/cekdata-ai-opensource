@@ -1,0 +1,68 @@
+{
+  "patterns": [
+    {
+      "pattern": "Nama wilayah yang lebih pendek ikut menjadi target",
+      "count": 2,
+      "cases": [
+        21,
+        93
+      ],
+      "percent_of_problematic": 50.0
+    },
+    {
+      "pattern": "Dua tabel dengan angka sama menghambat penilaian klaim",
+      "count": 1,
+      "cases": [
+        46
+      ],
+      "percent_of_problematic": 25.0
+    },
+    {
+      "pattern": "Kategori perkotaan dianggap nama wilayah",
+      "count": 1,
+      "cases": [
+        49
+      ],
+      "percent_of_problematic": 25.0
+    }
+  ],
+  "cases": [
+    {
+      "id": 21,
+      "kind": "Permintaan angka/data",
+      "question": "Berapa PDRB atas dasar harga konstan di Kabupaten Kolaka Timur, Sulawesi Tenggara, pada triwulan I 2026?",
+      "problems": [
+        "Indikator/kategori/wilayah/periode bukti tidak sesuai pertanyaan"
+      ],
+      "manual_review_note": "Pertanyaan meminta Kolaka Timur saja, tetapi tabel menampilkan Kolaka 5.818,30 miliar rupiah sebagai bukti langsung tambahan di samping Kolaka Timur 945,32 miliar rupiah. Cakupan wilayah melebar."
+    },
+    {
+      "id": 46,
+      "kind": "Klaim angka",
+      "question": "Benarkah tingkat pengangguran terbuka di Kalimantan Timur pada Februari 2026 sebesar 5,27 persen?",
+      "problems": [
+        "Penilaian klaim tidak sesuai angka sumber"
+      ],
+      "manual_review_note": "Klaim TPT Kalimantan Timur Februari 2026 sebesar 5,27 persen didukung data. Dua tabel dengan angka identik justru membuat label Tidak dapat diverifikasi; seharusnya Benar."
+    },
+    {
+      "id": 49,
+      "kind": "Klaim angka",
+      "question": "Benarkah persentase penduduk miskin di daerah perkotaan di DI Yogyakarta pada Maret 2026 sebesar 9,55 persen?",
+      "problems": [
+        "Jawaban menyatakan bukti belum cukup padahal data acuan tersedia",
+        "Penilaian klaim tidak sesuai angka sumber"
+      ],
+      "manual_review_note": "Angka kemiskinan perkotaan DI Yogyakarta 9,55 persen benar. Frasa daerah perkotaan ikut dianggap nama wilayah dalam intent, sehingga mesin menyatakan bukti kurang lengkap dan memberi Tidak dapat diverifikasi. Seharusnya Benar."
+    },
+    {
+      "id": 93,
+      "kind": "Perbandingan antarperiode",
+      "question": "Berapa perubahan PDRB atas dasar harga konstan di Kabupaten Labuhan Batu Selatan, Sumatera Utara, dari triwulan I ke triwulan II 2026?",
+      "problems": [
+        "Indikator/kategori/wilayah/periode bukti tidak sesuai pertanyaan"
+      ],
+      "manual_review_note": "Pertanyaan meminta Labuhan Batu Selatan, tetapi Kota Batu ikut ditampilkan sebagai bukti langsung. Selisih Labuhan Batu Selatan 203,68 miliar rupiah juga tidak tampil. Masalah utamanya cakupan wilayah yang salah; bukan sekadar kurang lengkap."
+    }
+  ]
+}

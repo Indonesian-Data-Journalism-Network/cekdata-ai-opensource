@@ -29,6 +29,8 @@ def render_answer(parsed: Dict[str, Any]) -> str:
         if gfw:
             sections.append('Temuan Data Global Forest Watch\n' + gfw['summary'] + '\n\n' + markdown_table(gfw['table']))
         if parsed.get('kesimpulan'): sections.append('Kesimpulan\n' + parsed['kesimpulan'])
+        context = parsed.get('konteks_penting') or (gfw or {}).get('context')
+        if context: sections.append('Konteks\n' + context)
         if parsed.get('peringatan_editorial'): sections.append('Peringatan Editorial\n' + parsed['peringatan_editorial'])
     elif parsed.get('answer_format') == 2:
         if parsed.get('claim'): sections.append('Klaim\n' + parsed['claim'])
@@ -52,6 +54,23 @@ def render_answer(parsed: Dict[str, Any]) -> str:
                           ('Kesimpulan','kesimpulan'),('Temuan Data','temuan_data'),
                           ('Konteks','konteks_penting'),('Peringatan editorial','peringatan_editorial')]:
             if parsed.get(key): sections.append(label+'\n'+str(parsed[key]))
+
+    for group in parsed.get('related_evidence', []):
+        from answer_format import markdown_table
+        text = 'Temuan Data Terkait\n' + group['summary'] + '\n\n' + markdown_table(group['table'])
+        text += '\n\nKonteks\n' + group['context']
+        seen = set()
+        for source in group['parsed']['source_items']:
+            key = (source['display'], source['url'], source.get('dataset_version'))
+            if key in seen: continue
+            seen.add(key)
+            version = ' — versi ' + source['dataset_version'] if source.get('dataset_version') else ''
+            text += '\n\nSumber: ' + source['display'] + version + '\n' + source['url']
+            if source.get('download_url') and 'data-api.globalforestwatch.org/' not in source['download_url']:
+                text += '\nUnduh: ' + source['title'] + '\n' + source['download_url']
+        sections.append(text)
+    if parsed.get('related_evidence_status') == 'service_unavailable':
+        sections.append('Pencarian data terkait belum selesai karena gangguan layanan. Ini bukan tanda bahwa datanya tidak tersedia.')
 
     footer: List[str] = []
     if not parsed.get('document_answer') and any(item.get('source_record_id', '').startswith('mapbiomas:')

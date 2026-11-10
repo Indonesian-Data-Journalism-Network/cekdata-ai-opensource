@@ -5,13 +5,13 @@
 }
 .home-footer-inner {
   box-sizing: border-box;
-  max-width: 1120px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 20px 40px 22px;
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
-  gap: 36px;
+  grid-template-columns: 390px minmax(0, 1fr);
+  gap: 28px;
 }
 .home-footer h2 {
   font: inherit;
@@ -22,6 +22,13 @@
   margin: 0 0 10px;
   line-height: 1.5;
 }
+.home-footer-developer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  column-gap: 24px;
+  align-content: start;
+}
+.home-footer-developer h2 { grid-column: 1; }
 .home-footer-identity {
   color: inherit;
   text-decoration: none;
@@ -37,7 +44,7 @@
 .home-footer-supporters {
   min-width: 0;
   border-left: 1px solid rgba(255, 255, 255, .3);
-  padding-left: 36px;
+  padding-left: 28px;
 }
 .home-footer-logos {
   display: flex;
@@ -50,8 +57,50 @@
 .home-footer-logo img { display: block; height: auto; max-width: 100%; object-fit: contain; }
 .home-footer-eu { width: 135px; }
 .home-footer-internews { width: 103px; }
-@media (max-width: 700px) {
+.home-footer-ims { width: 72px; }
+/* The supplied Informed artwork has a large transparent canvas. Frame that
+   canvas in CSS so its visible mark aligns with the other unchanged logos. */
+.home-footer-informed-frame { position: relative; width: 128px; height: 40px; overflow: hidden; }
+.home-footer-logo .home-footer-informed {
+  position: absolute;
+  width: 188px;
+  max-width: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-footer-navigation {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.home-footer-navigation a, .home-footer-navigation button {
+  font: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.home-footer-navigation a:hover, .home-footer-navigation button:hover { text-decoration: underline; }
+.home-footer-navigation a:focus-visible, .home-footer-navigation button:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+@media (max-width: 800px) {
   .home-footer-inner { grid-template-columns: 1fr; gap: 18px; padding: 20px 24px; }
   .home-footer-supporters { padding: 18px 0 0; border-left: 0; border-top: 1px solid rgba(255, 255, 255, .3); }
-  .home-footer-logos { column-gap: 24px; }
+  .home-footer-developer { grid-template-columns: minmax(0, 1fr) auto; column-gap: 16px; }
+  .home-footer-navigation { gap: 0; }
+  .home-footer-navigation a, .home-footer-navigation button { padding: 10px 0; }
+}
+
+@media (max-width: 380px) {
+  .home-footer-identity { gap: 7px; }
+  .home-footer-identity span, .home-footer-navigation a, .home-footer-navigation button { font-size: 11px; }
 }

@@ -188,8 +188,11 @@ def prefer_direct_scope(selected, question):
 
 
 class PilotAI(LlamaAI):
-    def __init__(self, llm, full_catalog):
+    selection_prompt = MATCH_PROMPT
+    def __init__(self, llm, full_catalog, *, initial_intent=None):
         super().__init__(llm)
+        self.request_intent = initial_intent.model_copy(deep=True) if initial_intent is not None else None
+        self._intent_key = None
         self.catalog = full_catalog
         self.area_names = {area.casefold(): area for c in full_catalog for area in c.get('areas', [])}
         self.area_aliases = {alias.casefold():target for c in full_catalog
@@ -245,6 +248,8 @@ class PilotAI(LlamaAI):
     def candidates(self, text, areas=()):
         # Concept reformulation has already happened. Geographic coverage helps
         # ranking without removing entries whose geographic coverage is incomplete.
+        from request_contract import compatible_candidates
+        candidate_catalog = compatible_candidates(self.catalog, self.request_intent) if self.request_intent is not None else self.catalog
         sources=self.stated_sources(text)
         if len(sources)>1:
             # Reserve space for each explicitly requested publisher before
@@ -253,12 +258,12 @@ class PilotAI(LlamaAI):
             from environment_data import prioritize
             groups=self.publisher_groups(sources)
             for group in groups:
-                subset=[c for c in self.catalog if c['source'] in group]
+                subset=[c for c in candidate_catalog if c['source'] in group]
                 # Rank the measurement/direction before cutting the shortlist.
                 choices=prioritize(select_catalog(text,subset,limit=80),text)
                 ranked.extend(choices[:max(8,40//len(groups))])
         else:
-            ranked = select_catalog(text, self.catalog, limit=80)
+            ranked = select_catalog(text, candidate_catalog, limit=80)
         ranked.sort(key=lambda c: not any(a.casefold() in {v.casefold() for v in c['areas']} for a in areas))
         from environment_data import prioritize
         ranked = prioritize(ranked, text)
@@ -281,7 +286,11 @@ class PilotAI(LlamaAI):
 
     async def understand(self, question, reference, catalog):
         # First AI sees NO shortlist: it translates everyday language independently.
-        intent = await super().understand(question, reference, [])
+        key = (question, str(reference))
+        if self.request_intent is None or (self._intent_key is not None and self._intent_key != key):
+            self.request_intent = await super().understand(question, reference, [])
+        self._intent_key = key
+        intent = self.request_intent.model_copy(deep=True)
         from flow import guard_claim_kind
         guard_claim_kind(intent, question)
         # A model's paraphrase is not a clarification question. Continue when
@@ -326,6 +335,8 @@ class PilotAI(LlamaAI):
         exact_choices = [{**c, 'areas': list(dict.fromkeys(intent.areas + c.get('areas', [])))[:24]}
                          for c in exact_choices]
         choices = list({c['indicator_id']: c for c in exact_choices + choices}.values())
+        from request_contract import compatible_candidates
+        choices = compatible_candidates(choices, intent)
         self.last_selection = {'concept_request': intent.model_dump(mode='json'),
                                'catalog_choices':len(choices)}
         if not choices:
@@ -336,7 +347,7 @@ class PilotAI(LlamaAI):
             import asyncio
             groups=self.publisher_groups(stated_sources)
             async def choose(group):
-                return await self.llm.astructured_predict(IndicatorSelection,MATCH_PROMPT,
+                return await self.llm.astructured_predict(IndicatorSelection,self.selection_prompt,
                     question=question,intent=intent.model_dump_json(),catalog=json.dumps(
                         [c for c in public_choices if c['source'] in group],ensure_ascii=False))
             parts=await asyncio.gather(*(choose(group) for group in groups))
@@ -346,7 +357,7 @@ class PilotAI(LlamaAI):
             selection=IndicatorSelection(indicator_ids=list(dict.fromkeys(ids))[:4],
                 population=parts[0].population if len({p.population for p in parts})==1 else intent.population)
         else:
-            selection = await self.llm.astructured_predict(IndicatorSelection, MATCH_PROMPT,
+            selection = await self.llm.astructured_predict(IndicatorSelection, self.selection_prompt,
                 question=question, intent=intent.model_dump_json(), catalog=json.dumps(public_choices, ensure_ascii=False))
         allowed = {c['indicator_id']:c for c in choices}
         intent.indicator_ids = [i for i in selection.indicator_ids if i in allowed]
@@ -354,6 +365,7 @@ class PilotAI(LlamaAI):
         from environment_data import prefer_requested_transitions
         selected=prefer_requested_transitions(selected,question)
         selected=preserve_loss_selection(selected,self.catalog,question,intent.sources)
+        selected=compatible_candidates(selected,intent)
         if absence_count_claim(question):
             # Resolve only paired presence categories in the very same table/source.
             mapped = []
@@ -399,6 +411,8 @@ class PilotAI(LlamaAI):
         from flow import SearchQuery
         for concept in proposals.queries[:2]:
             choices = self.candidates(concept, state.intent.areas)
+            from request_contract import compatible_candidates
+            choices = compatible_candidates(choices, state.intent)
             if not choices:
                 continue
             selection = await self.llm.astructured_predict(IndicatorSelection, MATCH_PROMPT,
